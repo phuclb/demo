@@ -17,7 +17,11 @@
     fNItem: () => {
       const itemX = document.querySelectorAll('.itemX');
       const itemXTotal = itemX.length;
-      let itemXTemp = new Array(itemXTotal).fill(0);
+      const itemXTemp = new Array(itemXTotal).fill(0);
+      const scrollbarToggle = (isScrollable) => {
+        const viewport = document.querySelector('html');
+        viewport.classList.toggle('of--hidden', isScrollable);
+      };
       if (itemXTotal) {
         itemX.forEach((itemY, itemYId) => {
           const isSplide = itemY.classList.contains('splideX');
@@ -40,6 +44,7 @@
               splideY.style.marginTop = splideMT + 'px';
               splideList.style.transform = 'translateX(' + -splideMT + 'px)';
               splide.go(0);
+              scrollbarToggle(true);
               window.scrollTo(0, 0);
 
               splideGap = splide.options.gap;
@@ -65,7 +70,9 @@
               itemXTemp[splideYId] = splideYEnd;
               if (splideYId === itemXTotal - 1) {
                 itemXTemp[splideYId] = 0;
+                scrollbarToggle(false);
               }
+
               console.log('Splide ' + splideYId + ': ' + splideYStart);
             };
 
@@ -135,6 +142,7 @@
             const figureHandle = () => {
               let figureMT = 0;
               figureY.style.marginTop = figureMT + 'px';
+              scrollbarToggle(true);
               window.scrollTo(0, 0);
 
               let figureXTemp = 0;
@@ -155,7 +163,9 @@
               itemXTemp[figureYId] = figureYEnd;
               if (figureYId === itemXTotal - 1) {
                 itemXTemp[figureYId] = 0;
+                scrollbarToggle(false);
               }
+
               console.log('Figure ' + figureYId + ': ' + figureYStart);
             };
   
