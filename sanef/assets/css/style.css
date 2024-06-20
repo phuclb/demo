@@ -369,6 +369,10 @@ textarea {
   background-color: #333;
   color: #fff;
 }
+.block-sticky {
+  position: sticky !important;
+  top: 0;
+}
 .block-figure {
   position: relative;
   height: 75vh;

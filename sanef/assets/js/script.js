@@ -41,8 +41,11 @@
             // Handle
             const splideHandle = () => {
               let splideMT = 0;
-              splideY.style.marginTop = splideMT + 'px';
-              splideList.style.transform = 'translateX(' + -splideMT + 'px)';
+              let splideHeight, splideTransform;
+              splideHeight = Math.floor(splideDiv.getBoundingClientRect().height) + splideMT;
+              splideTransform = -splideMT;
+              splideY.style.height = splideHeight + 'px';
+              splideList.style.transform = 'translateX(' + splideTransform + 'px)';
               splide.go(0);
               scrollbarToggle(true);
               window.scrollTo(0, 0);
@@ -107,6 +110,7 @@
             // Control
             const splideControl = (scrollPos) => {
               let splideMT = 0;
+              let splideHeight, splideTransform;
               if (scrollPos >= splideYStart) {
                 if (scrollPos <= (splideYEnd + splideYStart)) {
                   splideMT = scrollPos - splideYStart;
@@ -114,8 +118,10 @@
                   splideMT = splideYEnd;
                 }
               }
-              splideY.style.marginTop = splideMT + 'px';
-              splideList.style.transform = 'translateX(' + -splideMT + 'px)';
+              splideHeight = Math.floor(splideDiv.getBoundingClientRect().height) + splideMT;
+              splideTransform = -splideMT;
+              splideY.style.height = splideHeight + 'px';
+              splideList.style.transform = 'translateX(' + splideTransform + 'px)';
             };
   
             // Scroll
