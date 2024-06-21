@@ -1,0 +1,7453 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+sub, sup {
+	font-size: 50%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	outline:none;
+}
+
+body {
+	font-family:'Lato', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.hotel-selected,
+.exp-act {
+	background-color:#F0EBE5;
+}
+
+a {
+	color:#03AAC9;
+	text-decoration:none;
+	transition:all .5s;
+}
+
+.relative {
+	position:relative;
+}
+
+.absolute {
+	position:absolute;
+}
+
+.block {
+	display:block;
+}
+
+.inline-block {
+	display:inline-block;
+}
+
+.flex {
+	display:flex;
+}
+
+.inline-flex {
+	display:inline-flex;
+}
+
+.display-none {
+	display:none;
+}
+
+.flex-1 {
+	flex:1;
+}
+
+.flex-1-5 {
+	flex:1.5;
+}
+
+.flex-2 {
+	flex:2;
+}
+
+.flex-3 {
+	flex:3;
+}
+
+.flex-wrap {
+	flex-wrap:wrap;
+}
+
+.flex-col {
+	flex-direction:column;
+}
+
+.max-content {
+	max-width: max-content;
+}
+
+.max-width {
+	max-width:100%;
+}
+
+.full-width {
+	width:100%;
+}
+
+.half-width {
+	width:50%;
+}
+
+.full-height {
+	height:100%;
+}
+
+.uppercase {
+	text-transform:uppercase;
+}
+
+.line-through {
+	text-decoration: line-through;
+	color:#0c4059;
+	letter-spacing:.33px;
+}
+
+.bold-text {
+	font-weight:700;
+}
+
+.centered-text {
+	text-align:center;
+}
+
+.fs-12 {
+	font-size:12px;
+}
+
+.fs-13 {
+	font-size:13px;
+}
+
+.fs-14 {
+	font-size:14px;
+}
+
+.fs-15 {
+	font-size:15px;
+}
+
+.fs-16 {
+	font-size:16px;
+}
+
+.fs-18 {
+	font-size:18px;
+}
+
+.fs-20 {
+	font-size:20px;
+}
+
+.lh-20 {
+	line-height:20px;
+}
+
+.lightgray-bg {
+	background-color:#F1F4F7;
+}
+
+.gray-bg {
+	background-color:rgba(255, 255, 255, .1);
+}
+
+.darkgray-bg {
+	background-color:#273240;
+}
+
+.superdarkgray-bg {
+	background-color:#54534D;
+}
+
+.white-bg {
+	background-color:#fff;
+}
+
+.skyblue-bg {
+	background-color:#e2f1ff;
+}
+
+.lightblue-bg {
+	background-color:#e0e8f0;
+}
+
+.blue-bg {
+	background-color:#03AAC9;
+}
+
+.darkblue-bg {
+	background-color:#0c4059;
+}
+
+.green-bg {
+	background-color:#006937;
+}
+
+.darkgreen-bg {
+	background-color:#045830;
+}
+
+.beige-bg {
+	background-color: #E0DCD5;
+}
+
+.beige-text {
+	color: #D3D6D8;
+}
+
+.white-text {
+	color:#fff;
+}
+
+.blue-text {
+	color:#03AAC9;
+}
+
+.green-text {
+	color:#658e3c;
+}
+
+.orange-text {
+	color:#e26c3c;
+}
+
+.yellow-text {
+	color:#ffd129;
+}
+
+.gray-text {
+	color:#778593;
+}
+
+.middlegray-text {
+	color:#4E5965;
+}
+
+.darkgray-text { /***************** apply on overall the site **********/
+	color:#273240;
+}
+
+.simplegray-text {
+	color:#5F6A75;
+}
+
+.border-1 {
+	border:1px solid #273240;
+}
+
+.border-1-white {
+	border:1px solid #fff;
+}
+
+.border-1-light {
+	border:1px solid #D3D9DD;
+}
+
+.border-1-default {
+	border:1px solid #B2BAC3;
+}
+
+.border-1-simple {
+	border:1px solid #5F6A75;
+}
+
+.border-rad-4 {
+	border-radius:4px;	
+}
+
+.border-rad-full {
+	border-radius:100%;	
+}
+
+.white-border {
+	border:1px solid #fff;
+}
+
+.pt-100 {
+	padding-top:100px;
+}
+
+.pb-100 {
+	padding-bottom:100px;
+}
+
+.pt-50 {
+	padding-top:50px;
+}
+
+.pb-50 {
+	padding-bottom:50px;
+}
+
+.pt-15 {
+	padding-top:15px;
+}
+
+.pt-10 {
+	padding-top:10px;
+}
+
+.pb-30 {
+	padding-bottom:30px;
+}
+
+.pb-20 {
+	padding-bottom:20px;
+}
+
+.pb-10 {
+	padding-bottom:10px;
+}
+
+.pt-5 {
+	padding-top:5px;
+}
+
+.pb-5 {
+	padding-bottom:5px;
+}
+
+.mt-40 {
+	margin-top:40px;
+}
+
+.mt-30 {
+	margin-top:30px;
+}
+
+.mt-20 {
+	margin-top:20px;
+}
+
+.mt-10 {
+	margin-top:10px;
+}
+
+.mt-5 {
+	margin-top:5px;
+}
+
+.mb-40 {
+	margin-bottom:40px;
+}
+
+.mb-30 {
+	margin-bottom:30px;
+}
+
+.mb-20 {
+	margin-bottom:20px;
+}
+
+.mb-10 {
+	margin-bottom:10px;
+}
+
+.mb-5 {
+	margin-bottom:5px;
+}
+
+.ml-10 {
+	margin-left:10px;
+}
+
+.ml-20 {
+	margin-left:20px;
+}
+
+.mr-20 {
+	margin-right:20px;
+}
+
+.ml-40 {
+	margin-left:40px;
+}
+
+.mr-40 {
+	margin-right:40px;
+}
+
+.pl-20 {
+	padding-left:20px;
+}
+
+.ml-30 {
+	margin-left:30px;
+}
+
+.mr-30 {
+	margin-right:30px;
+}
+
+.ml-60 {
+	margin-left:60px;
+}
+
+.mr-60 {
+	margin-right:60px;
+}
+
+.pl-60 {
+	padding-left:60px;
+}
+
+.pr-60 {
+	padding-right:60px;
+}
+
+.pr-30 {
+	padding-right:30px;
+}
+
+.padding-20 {
+	padding:20px;
+}
+
+.padding-25 {
+	padding:25px;
+}
+
+.padding-30 {
+	padding:30px;
+}
+
+.padding-40 {
+	padding:30px;
+}
+
+.padding-50 {
+	padding:50px;
+}
+
+.margin-auto-hor {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.margin-auto-vert {
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+.left-aligned {
+	margin-right:auto;
+}
+
+.right-aligned {
+	margin-left:auto;
+}
+
+.top-aligned {
+	align-items:flex-start;
+}
+
+.bottom-aligned {
+	align-items:flex-end;
+}
+
+.center-aligned-hor {
+	justify-content:center;
+}
+
+.center-aligned-vert {
+	align-items:center;
+}
+
+.ah-btn {
+	padding-left:12px;
+	padding-right:12px;
+	height:40px;
+	letter-spacing:.33px;
+}
+
+.small-ah-btn {
+	height:32px;
+}
+
+.passive-ah-btn {
+	opacity:.5;
+	pointer-events:none;
+}
+
+.gallery-item-img {
+	object-fit:cover;
+}
+
+.ellipsis {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	line-height:normal;
+}
+
+.ellipsis-multiple {
+	display:-webkit-box;
+	-webkit-line-clamp:initial;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}
+
+.body-covered:before {
+	content:"";
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0, 0, 0, .2);
+	z-index:3;
+}
+
+.has-higher-level {
+	position:relative;
+	z-index:3;
+}
+
+.hidden {
+	opacity:0;
+	visibility:hidden;
+}
+
+.show-layer .hidden {
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0, 0, 0, .6);
+	transition:all .5s;
+}
+
+.hide-vertical-scrollbar {
+	overflow:hidden;
+	touch-action: none;
+	-ms-touch-action: none;
+}
+
+.show-layer:hover .hidden,
+.show-layer.shown .hidden  { /* for demonstration only - to remove later */
+	opacity:1;
+	visibility:visible;
+}
+
+	.container {
+		max-width:1316px;
+		width:100%;
+		margin:auto;
+		padding-left:24px;
+		padding-right:24px;
+		height:inherit;
+	}
+	
+		.top-links {
+			height:36px;
+		}
+			
+			.top-links ul {
+				margin-left:auto;
+				margin-right:18px;
+			}
+		
+				.top-links li:first-child:after {
+					content:"";
+					width:1px;
+					height:16px;
+					border-left:1px #273240 solid;
+					margin-left:11px;
+					margin-right:11px;
+				}
+		
+				.top-links a {
+					color:#273240;
+					letter-spacing:.27px;
+					line-height:15px;
+				}
+				
+				.top-links ul li.active a {
+					color:#273240;
+				}
+				
+			.language-switcher img {
+				margin-left:2px;
+			}
+			
+			.language-switcher ul {
+				right:0;
+				width:120px;
+				margin-top:5px;
+				margin-right:0;
+				padding:15px;
+				z-index:3;
+				transition:all .5s;
+			}
+			
+				.language-switcher ul li a {
+					color:#5f6a75;
+				}
+			
+			.footer .language-switcher ul {
+				bottom:16px;
+			}
+			
+				.footer .language-switcher ul a {
+					color:#5f6a75;
+				}
+				
+				.footer .language-switcher ul li.active a {
+					color:#273240;
+				}
+			
+			.language-switcher.shown ul, /* for demonstration only - to remove later */
+			.language-switcher:hover ul {
+				opacity:1;
+				visibility:visible;
+			}
+			
+				.language-switcher li:not(:first-child) {
+					margin-top:10px;
+				}
+		
+				.language-switcher li:first-child:after {
+					content:none;
+				}
+				
+		.top-nav-bar {
+			position: sticky;
+			top: 0;
+			z-index: 2;
+		}
+		
+		.top-nav-bar.has-higher-level {
+			z-index: 5;
+		}
+					
+			.top-navigation {
+				padding-top:11px;
+				padding-bottom:11px;
+				justify-content:space-between;
+			}
+			
+			.hotel-top-bar {
+				background-color: #F0EBE5;
+			}
+			
+			.hotel-top-bar.level-up {
+				position: sticky;
+				top: 0;
+				z-index: 4;
+			}
+			.top-nav-bar.no-pointer-events {
+				pointer-events:none;
+			}
+			
+			/*.hotel-selected.hide-vertical-scrollbar .hotel-top-bar,
+			.exp-act.hide-vertical-scrollbar .hotel-top-bar {
+				z-index: 1;
+			}*/
+			
+				.hotel-top-bar .top-navigation {
+					padding-top:8px;
+					padding-bottom:16px;
+				}
+				
+				.hotel-top-bar .container .top-navigation {
+					padding-bottom: 0;
+				}
+				
+				.hotel-top-bar > .top-navigation {
+					padding-top: 2px;
+					max-width: 1316px;
+					margin: auto;
+					padding-left: 24px;
+					padding-right: 24px;
+				}
+			
+				.logo img {
+					max-width:105px;
+				}
+			
+				.top-navigation .logo img {
+					margin-right:33px;
+				}
+			
+				.hotel-top-bar .logo img {
+					max-width:212px;
+					margin-right:4px;
+				}
+				
+				.top-navigation ul {
+					width:calc(100% - 105px);
+				}
+		
+				.top-navigation a:not(.ah-btn) {
+					color:#273240;
+					letter-spacing:.33px;
+					line-height:18px;
+				}
+				
+				.hotel-top-bar .top-navigation a:not(.ah-btn) {
+					color:#5F6A75;
+				}
+				
+				.hotel-top-bar .top-navigation a.bold-text {
+					color:#273240;
+				}
+				
+				.top-navigation li:nth-last-child(2) .ah-btn {
+					margin-left: -8px;
+					margin-right: 0;
+				}
+				
+				.top-navigation li:nth-last-child(2) .ah-btn:hover,
+				.top-navigation #activate-ah-filter.ah-btn:hover,
+				.hotel-top-bar .top-navigation .show-booking-bar:hover {
+					background-color:#03AAC9;
+				}
+				
+				.hotel-top-bar .top-navigation .ah-btn {
+					margin-left:32px;
+					margin-right:16px;
+				}
+				
+				.hotel-top-bar .top-navigation ul .ah-btn {
+					margin-left:0;
+					margin-right:0;
+				}
+				
+				.top-navigation li:not(:last-child) a {
+					margin-right:32px;
+				}
+				
+				.hotel-top-bar .top-navigation li:not(:last-child) a {
+					margin-right:29px;
+				}
+				
+				.top-navigation ul li .sub-nav {
+					transform: translateX(-15px) translateY(-2px);
+					z-index:3;
+					transition:all .5s;
+				}
+				
+				.top-navigation ul li.shown .sub-nav, /* for demonstration only - to remove later */
+				.top-navigation ul li:hover .sub-nav {
+					opacity:1;
+					visibility:visible;
+				}
+				
+					.sub-nav-title,
+					.top-navigation .sub-nav li.fs-16 a,
+					.top-navigation .sub-nav li:hover a {
+						color:#273240;
+					}
+					
+					.sub-nav-title {
+						margin-bottom:25px;
+					}
+				
+					.sub-nav-title:after {
+						content:url("../images/icons/arrow-right-blue.svg");
+						margin-left:7px;
+						width:16px;
+						height:11px;
+						vertical-align:middle;
+					}
+						
+					.top-navigation .sub-nav li:not(:last-child) {
+						margin-bottom:16px;
+					}
+					
+					.top-navigation .sub-nav li:first-child {
+						margin-bottom:19px;
+					}
+					
+						.top-navigation .sub-nav li a {
+							margin-right:0;
+							white-space:nowrap;
+							color:#5F6A75;
+						}
+					
+					.sub-nav-img {
+						margin-left:50px;
+					}
+					
+			.top-navigation > .ah-btn {
+				white-space: nowrap;
+				line-height: 40px;
+			}
+
+		.booking-bar {
+			z-index:2;
+			left:0;
+			right:0;
+		}
+		
+		.booking-bar:not(.book-now-bar).has-higher-level {
+			z-index:4;
+		}
+		
+		.booking-bar.book-now-bar.has-higher-level {
+			z-index:3;
+		}
+	
+		.header .swiper-container,
+		.header .video-container {
+			height:560px;
+		}
+		
+		.positive-impact .header .swiper-container {
+			overflow: initial;
+			z-index:0;
+		}
+		
+		.header.large .swiper-container {
+			height:620px;
+		}
+		
+		.header .video-container {
+			overflow: hidden;
+		}
+	
+			.header .video-container video {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+				height: auto;
+				z-index: -1;
+			}
+	
+		.short-header .swiper-container {
+			height:480px;
+		}
+		
+			.swiper-slide { /* remove when a video is used */
+				background-size:cover;
+				background-position:center;
+			}
+				
+				.header strong, /* remove later */
+				.header h1 {
+					max-width:560px;
+					font-size:50px;
+					letter-spacing:1.11px;
+					line-height:64px;
+					align-self:flex-end;
+				}
+				
+				.inner-page-header strong, /* remove later */
+				.inner-page-header h1 {
+					max-width:400px;
+					font-size:40px;
+					font-weight:bold;
+					letter-spacing:.89px;
+					line-height:52px;
+				}
+				
+		.choose-your-hotel-bar {
+			height:80px;
+			margin-top: 57px;
+			padding:20px 40px;
+		}
+				
+			.choose-your-hotel-bar img {
+				max-width:156px;
+			}
+					
+		.ah-filter {
+			max-width:1051px;
+			height:56px;
+			padding:5px 8px;
+		}
+		
+			.ah-filter-hotels {
+				max-width: 342px;
+			}
+			
+			.ah-filter-rooms {
+				max-width: 342px;
+			}
+		
+			.hotel-results .ah-filter-hotels {
+				max-width: 378px;
+			}
+			
+			.ah-filter-arrival,
+			.ah-filter-departure {
+				max-width: 179px;
+			}
+			
+			.hotel-results .ah-filter-arrival,
+			.hotel-results .ah-filter-departure {
+				max-width: 249px;
+			}
+			
+			.ah-filter-search {
+				flex:.65;
+				max-width:120px;
+			}
+			
+				.ah-filter-search .ah-btn:hover {
+					background-color:#03AAC9;
+				}
+		
+		.hotel-selected .book-now-bar .ah-filter {
+			max-width:925px;
+		}
+		
+		.ah-filter.no-max-width,
+		.inner-page-header strong.no-max-width, /* remove later */
+		.inner-page-header h1.no-max-width {
+			max-width:none;
+		}
+			
+			.ah-filter > div[class ^= "ah-filter-"]:before,
+			.hotel-selected .book-now-bar .ah-filter .ah-filter-hotels:before {
+				content:"";
+				height:32px;
+				border-left:1px #B2BAC3 solid;
+				padding-left:5px;
+			}
+			
+			.ah-filter div.ah-filter-hotels:before,
+			.ah-filter div.ah-filter-search:before,
+			.hotel-selected .book-now-bar .ah-filter .ah-filter-arrival:before {
+				content:none;
+			}
+				
+				.ah-filter-item-checkbox {
+					display:none;
+				}
+			
+				.ah-filter-item-label {
+					margin-right:8px;
+				}
+			
+					.ah-filter-item {
+						margin-right:8px;
+						padding-left:10px;
+						height:40px;
+						cursor:pointer;
+					}
+					
+						div.ah-filter-hotels .ah-filter-arrow {
+							right:7px;
+						}
+					
+						.hotel-selected .book-now-bar div.ah-filter-hotels .ah-filter-arrow,
+						.exp-act div.ah-filter-hotels .ah-filter-arrow {
+							right:15px;
+						}
+			
+						.ah-filter-label {
+							line-height:16px;
+							letter-spacing:.29px;
+							color:#273240;
+						}
+						
+						.ah-filter-selection {
+							letter-spacing:.33px;
+						}
+						
+						.ah-filter-search .ah-btn img {
+							margin-right:10px;
+						}
+					
+				.ah-filter-item-checkbox ~ .ah-filter-menu {
+					top:56px;
+					letter-spacing:.33px;
+					z-index:2;
+					transition:all .5s;
+				}
+				
+				.ah-filter-item-checkbox.shown ~ .ah-filter-item-label .ah-filter-item,
+				.ah-filter-item-checkbox:checked ~ .ah-filter-item-label .ah-filter-item {
+					background-color:#F1F4F7;
+				}
+				
+				.ah-filter-item-checkbox.shown ~ .ah-filter-menu, /* for demonstration only - to remove later */
+				.ah-filter-item-checkbox:checked ~ .ah-filter-menu {
+					opacity:1;
+					visibility:visible;
+				}
+				
+				.ah-filter-hotels .ah-filter-menu {
+					width:575px;
+					left:-9px;
+				}
+				
+				.ah-filter-rooms .ah-filter-menu {
+					width: calc(100% - 8px);
+					left:0;
+				}
+				
+				.ah-filter-guests .ah-filter-menu {
+					width:311px;
+					left:0;
+				}
+				
+					.ah-filter-menu div[class ^= "ah-filter-menu-"] {
+						padding:15px 18px;
+						border-bottom:1px #D2DFE7 solid;
+					}
+					
+					.ah-filter-hotels div.ah-filter-menu-body {
+						padding-bottom:0;
+					}
+					
+						.ah-filter-menu input {
+							display:none;
+						}
+						
+						.ah-filter-menu input ~ .ah-filter-menu-checkbox {
+							margin-right:13px;
+						}
+					
+						.ah-filter-menu input ~ .ah-filter-menu-checkbox:before {
+							content:"";
+							display:inline-flex;
+							justify-content:center;
+							width:20px;
+							height:20px;
+							border:1px solid #B2BAC3;
+							border-radius:2.5px;
+							transition:all .5s;
+						}
+						
+						.ah-filter-menu input:checked ~ .ah-filter-menu-checkbox:before {
+							content:url("../images/icons/check-white.svg");
+							background-color:#03AAC9;
+							border-color:#03AAC9;
+						}
+						
+						.ah-filter-menu .ah-btn {
+							margin-left:24px;
+						}
+						
+							.ah-filter-guests-age-counter li {
+								justify-content:space-between;
+							}
+							
+								.ah-filter-guests-age {
+									margin-left:10px;
+									margin-right:10px;
+								}
+								
+								.ah-filter-guests-age-counter em {
+									width:24px;
+									height:24px;
+									color:#778593;
+									cursor:pointer;
+								}
+
+						.ah-filter-menu .ah-btn:hover {
+							opacity:.5;
+						}
+					
+		.ah-experience li {
+			min-width:290px;
+		}
+		
+		.hotel-selected .ah-experience li:nth-child(2) div {
+			background-color:#CC3A4F;
+		}
+			
+		.ah-experience li:not(:nth-child(4n + 4)) {
+			margin-right:20px;
+		}
+		
+		.ah-experience li:nth-child(4) div {
+			background-color:#E26C3C;
+		}
+		
+		.hotel-selected .ah-experience li:nth-child(4) div {
+			background-color:transparent;
+		}
+		
+		.ah-experience li:nth-child(5) div {
+			background-color:#FFD129;
+		}
+		
+		.hotel-selected .ah-experience li:nth-child(5) div {
+			background-color:#B37F2A;
+		}
+		
+		.ah-experience li:nth-child(7) div {
+			background-color:#658E3C;
+		}
+		
+		.hotel-selected .ah-experience li:nth-child(7) div {
+			background-color:#5D584E;
+		}
+			
+			.ah-experience li {
+				cursor:pointer;
+			}
+		
+				.ah-experience li img:not(.ah-experience-icon) {
+					height:302px;
+				}
+			
+				.ah-experience-content strong {
+					width:80%;
+					line-height:26px;
+				}
+				
+				.hotel-selected .ah-experience li:nth-child(5) strong {
+					color:#fff;
+				}
+			
+				.ah-experience-content span {
+					width:80%;
+					line-height:21px;
+					letter-spacing:.33px;
+					-webkit-line-clamp:2;
+				}
+				
+				.ah-experience li:nth-child(4) span {
+					color:#F9E1D8;
+				}
+				
+				.ah-experience li:nth-child(5) span {
+					color:#5D5A3A;
+				}
+				
+				.hotel-selected .ah-experience li .ah-exp-hover {
+					top:0;
+					bottom:0;
+					left:0;
+					right:0;
+					background:rgba(0, 0, 0, .7);
+					transition:all .5s;
+				}
+				
+				.hotel-selected .ah-experience li.shown .ah-exp-hover,
+				.hotel-selected .ah-experience li:hover .ah-exp-hover {
+					opacity:1;
+					visibility:visible;
+				}
+				
+					.hotel-selected .ah-experience li .ah-exp-hover p {
+						max-width:240px;
+						line-height:22px;
+						letter-spacing:.36px;
+						text-align:left;
+						-webkit-line-clamp:4;
+					}
+
+		.experience-in-mauritius h1,
+		.experience-in-mauritius h2 {
+			font-size:32px;
+			letter-spacing:.71px;
+			line-height:46px;
+			color: #273240;
+		}
+		
+		.experience-in-mauritius h1.white-text,
+		.experience-in-mauritius h2.white-text,
+		.result-item-title.white-text,
+		.gallery-items-title.white-text {
+			color: #fff;
+		}
+		
+		.experience-in-mauritius.lh-26 h2 {
+			color: #393d47;
+		}
+		
+		.experience-in-mauritius p {
+			max-width:500px;
+			letter-spacing: .36px;
+			line-height:24px;
+			color:#5F6A75;
+		}
+		
+		.spa-working-hours .experience-in-mauritius p {
+			max-width: 457px;
+		}
+		
+		.otentik-exp-block .experience-in-mauritius p,
+		.otentik-exp-block .gallery-items-para {
+			max-width: 402px;
+		}
+		
+		.hotel-selected .experience-in-mauritius p {
+			color:#4e5965;
+		}
+		
+		.experience-in-mauritius.lh-26 p {
+			line-height:26px;
+		}
+		
+		.prompt-para p {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.our-hotels-list .experience-in-mauritius p {
+			width:40%;
+		}
+		
+		.experience-in-mauritius.has-left-icon.pozspa-icon-2 p {
+			width:80%;
+		}
+		
+		.experience-in-mauritius.has-left-icon.pozspa-icon-2 .green-text,
+		.experience-in-mauritius.selected-room-desc .green-text {
+			color:#006937;
+		}
+		
+		.committed-hotel-props {
+			color:#273240;
+		}
+		
+			.committed-hotel-props li {
+				width:33.3%;
+			}
+		
+				.committed-hotel-props .icon-holder {
+					width:90px;
+					height:73px;
+					background:url("../images/hotel-selected/features-bullet.png");
+					background-size:cover;
+				}
+				
+				.hotel-selected  .committed-hotel-props p {
+					color:#273240;
+				}
+		
+		.section-title {
+			font-size:40px;
+			letter-spacing:.89px;
+			line-height:52px;
+		}
+		
+		.gallery-items .section-title {
+			color:#393D47;
+		}
+		
+		.gallery-list .gallery-items .section-title {
+			color:#273240;
+		}
+		
+		.explore-our-hotels .ah-btn {
+			border:1px #fff solid;
+		}
+			
+		.explore-our-hotels .section-tabs li:not(:first-child) {
+			margin-left:22px;
+		}
+		
+			.explore-our-hotels .section-tabs a {
+				color:rgba(250, 247, 242, .5);
+				letter-spacing: .33px;
+			}
+	
+			.explore-our-hotels .section-tabs li.active a,
+			.explore-our-hotels .section-tabs li:hover a {
+				color:rgba(250, 247, 242, 1);
+			}
+			
+			.hotel-item .gallery-item-img {
+				height:360px;
+			}
+			
+			.hotel-item li .hotel-item-lightbox {
+				background-color:rgba(0, 0, 0, .8);
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;
+				z-index:1;
+				transition:all .5s;
+			}
+			
+			.hotel-item li.shown .hotel-item-lightbox, /* for demonstration only - to remove later */
+			.hotel-item li:hover .hotel-item-lightbox {
+				opacity:1;
+				visibility:visible;
+			}
+			
+			.hotel-item li .hotel-item-title {
+				bottom:0;
+				left:0;
+				right:0;
+				padding-left:17px;
+				padding-right:17px;
+				background-color:rgba(0, 0, 0, .35);
+				line-height:24px;
+				letter-spacing:.4px;
+				transition:all .5s;
+			}
+			
+			.hotel-item li.shown .hotel-item-lightbox ~ .hotel-item-title, /* for demonstration only - to remove later */
+			.hotel-item li:hover .hotel-item-lightbox ~ .hotel-item-title {
+				opacity:0;
+				visibility:hidden;
+			}
+			
+		.gallery-items li {
+			width:calc(33.3% - 20px);
+		}
+		
+		.our-hotels-list .gallery-items li {
+			width:calc(50% - 25px);
+		}
+		
+		.gallery-items.one-col li {
+			width:100%;
+		}
+		
+		.four-cols-gal li {
+			width: calc(25.76% - 30px);
+		}
+		
+		.four-cols-gal li:not(:nth-child(4n + 1)) {
+			margin-left:30px;
+		}
+		
+			.four-cols-gal li p {
+				margin-bottom:10px;
+				line-height: 18px;
+				letter-spacing: .29px;
+			}
+		
+		.gallery-items li:not(:nth-child(3n + 1)) {
+			margin-left:30px;
+		}
+		
+		.gallery-items.has-4-cols li:not(:nth-child(4n + 1)) {
+			margin-left:30px;
+		}
+		
+		.exp-act .hotel-item li:not(:nth-child(3n + 1)),
+		.hotel-selected .gallery-items li:not(:nth-child(3n + 1)),
+		.our-hotels-list .gallery-items li:not(:nth-child(3n + 1)),
+		.gallery-items .ah-result-swiper li:not(:nth-child(3n + 1)),
+		.gallery-items .ah-swiper li:not(:nth-child(3n + 1)) {
+			margin-left:0;
+		}
+		
+		.our-hotels-list .gallery-items > ul > li:nth-child(even) {
+			margin-left:50px;
+		}
+		
+		.map-template img {
+			width: 618px;
+			height: 374px;
+		}
+		
+		.gallery-item-img {
+			height:291px;
+		}
+		
+		.exp-act-list .gallery-item-img,
+		.hotel-results .gallery-items .gallery-item-img {
+			height:300px;
+		}
+		
+		.exp-act .exp-act-list li:not(:nth-child(3n + 1)) {
+			margin-left: 30px;
+		}
+		
+			.exp-act .exp-act-list .gallery-item-img,
+			.exp-act.hotel-selected .exp-act-list .gallery-item-img {
+				max-width:401px;
+				height:300px;
+			}
+		
+		.hotel-results .gallery-items .gallery-item-img {
+			max-width:401px;
+		}
+		
+		.exp-act .gallery-items.kids-slides .gallery-item-img {
+			height:288px;
+		}
+		
+		.gallery-item-img.shorter,
+		.our-hotels-list .gallery-item-img.shorter {
+			height:220px;
+		}
+		
+		.our-hotels-list .four-cols-gal .gallery-item-img.shorter {
+			height:162px;
+		}
+
+		.our-hotels-list .other-experiences img {
+			height:250px;
+		}
+		
+		.our-hotels-list .gallery-item-img,
+		.hotel-selected.exp-act .our-hotels-list .gallery-item-img {
+			height:337px;
+		}
+		
+		.positive-impact .our-hotels-list .gallery-item-img {
+			height:340px;
+		}
+		
+		.hotel-selected .gallery-items .swiper-container {
+			max-width:618px;
+			z-index:0;
+		}
+		
+		.exp-act.hotel-selected .gallery-items .swiper-container {
+			max-width:none;
+		}
+		
+			.hotel-selected .gallery-items li .gallery-item-img {
+				max-width:618px;
+				height:440px;
+			}
+			
+			.hotel-selected .discover-other-rooms .swiper-wrapper .gallery-item-img,
+			.signature-massages-list .swiper-wrapper .gallery-item-img,
+			.our-hotels-list .discover-other-rooms .gallery-item-img {
+				height:426px;
+			}
+			
+			.our-hotels-list .discover-other-rooms li {
+				min-width:500px;
+			}
+			
+			.our-hotels-list .discover-other-rooms li:last-child { /* 2021.05.04 */
+				visibility:hidden;
+			}
+
+		.wedding-large-img {
+			height:560px;
+		}
+		
+		.gallery-items-category {
+			color:#757880;
+		}
+		
+		.experience-in-mauritius.selected-room-desc .gallery-items-title,
+		.gallery-items-title {
+			font-size:24px;
+			letter-spacing:.53px;
+			line-height:34px;
+			color:#273240;
+		}
+		
+		.inspiration-individual .gallery-items .gallery-items-title {
+			max-width:325px;
+		}
+		
+		.result-item-map {
+			float:right;
+		}
+		
+		.result-item-title {
+			max-width:280px;
+			color:#393D47;
+		}
+		
+			.result-item-title a {
+				color:#393D47;
+			}
+		
+			.hotel-selected .result-item-title a {
+				color:#273240;
+			}
+			
+		.result-item .bullet-list.iconic-list span,
+		.our-hotels-list .bullet-list.iconic-list span,
+		.gallery-room-content .bullet-list.iconic-list span, 
+		.hotel-selected .gallery-room-content .bullet-list.simple-list span,
+		.bullet-list.simple-list li, /* added as requested for Wysiwyg */
+		.swiper-slide .bullet-list.iconic-list span {
+			display: inline-block;
+		}
+		
+		.ah-popup-content h2,
+		.our-hotels-list .result-item-title {
+			max-width:none;
+			font-size:24px;
+			line-height:34px;
+			letter-spacing:.53px;
+		}
+		
+		.hotel-selected .gallery-room-content {
+			margin-left:100px;
+			margin-right:100px;
+		}
+		
+			.hotel-selected .gallery-room-content.small-gap {
+				padding-left:8px;
+				padding-right:13px;
+			}
+		
+			.hotel-selected .gallery-room-content.large-gap {
+				padding-left:38px;
+			}
+		
+		.hotel-selected .gallery-room-content-2 {
+			margin-left:108px;
+			margin-right:108px;
+		}
+		
+			.hotel-selected .result-item-title,
+			.exp-act .result-item-title,
+			.our-hotels-list .result-item-title.bigger-sized,
+			.positive-impact .our-hotels-list .selected-room-title {
+				max-width:none;
+				font-size:32px;
+				line-height:46px;
+				letter-spacing:.71px;
+			}
+			
+			.our-hotels-list .result-item-title.bigger-sized.mb-20 {
+				color:#273240;
+			}
+		
+		.gallery-items-para {
+			letter-spacing:.36px;
+			line-height:24px;
+			color:#5F6A75;
+			-webkit-line-clamp:2;
+		}
+		
+		.our-hotels-list .gallery-items .gallery-items-para:first-of-type {
+			font-size:15px;
+			color:#273240;
+		}
+		
+		.our-hotels-list .gallery-items .inspiration-item .gallery-items-para:first-of-type {
+			font-size:16px;
+			color:#5F6A75;
+		}
+		
+		.inspiration-individual .gallery-items .gallery-items-para:first-of-type {
+			color:#5f6a75;
+			line-height:24px;
+		}
+		
+		.meetings-events-list.our-hotels-list .gallery-items .gallery-items-para {
+			font-size:16px;
+			color:#4e5965;
+		}
+		
+		.positive-impact .our-hotels-list .gallery-items-para:not(:last-of-type) {
+			margin-bottom:17px;
+		}
+
+		.gallery-items-para.lh-20 {
+			line-height:20px;
+		}
+		
+		.hotel-selected .gallery-items-para {
+			-webkit-line-clamp:initial;
+			color:#4e5965;
+		}
+		
+		.positive-impact .our-hotels-list .otentik-exp-images-2 .icon {
+			right: -42px;
+			top: 31px;
+		}
+		
+		.gallery-items-link {
+			line-height:18px;
+			color:#03AAC9;
+		}
+		
+		.ah-masonary .gallery-items-link {
+			color:#E4E2E2;
+		}
+		
+		.ah-masonary .gallery-items-link.darkgray-text {
+			color:#273240;
+		}
+
+		.gallery-items-link:after {
+			content:"";
+			display:block;
+			margin-top:5px;
+			border-bottom:1px #03AAC9 solid;
+			transition:all .5s;
+		}
+		
+		.ah-masonary .gallery-items-link:after {
+			border-bottom:1px #E4E2E2 solid;
+		}
+		
+		.ah-masonary .gallery-items-link.darkgray-text:after {
+			border-bottom:1px #273240 solid;
+		}
+		
+		.gallery-items-link:hover:after,
+		.gallery-items-link.darkgray-text:hover:after {
+			border-bottom-color:transparent;
+		}
+		
+		.gallery-items-price strong {
+			letter-spacing:.4px;
+			line-height:24px;
+		}
+		
+		.gallery-items-price del {
+			margin-left:10px;
+			letter-spacing:.33px;
+			color:#0C4059;
+			line-height:18px;
+		}
+		
+		.ah-swiper-arrows div[class ^= "swiper-button-"] {
+			position:absolute;
+			top:50%;
+			transform:translateY(-50%);
+			width:30px;
+			height:30px;
+			margin:0;
+			padding:0;
+			outline:none;
+			background-size:cover;
+		}
+		
+		.ah-swiper-arrows .swiper-button-prev {
+			left:20px;
+			background-image:url("../images/icons/left-arrow.svg");
+		}
+		
+		.ah-swiper-arrows .swiper-button-next {
+			right:20px;
+			background-image:url("../images/icons/right-arrow.svg");
+		}
+		
+		.swiper-pagination .swiper-pagination-bullet,
+		.ah-swiper-header.swiper-container-horizontal .swiper-pagination .swiper-pagination-bullet,
+		.ah-result-swiper.swiper-container-horizontal .swiper-pagination .swiper-pagination-bullet {
+			opacity:1;
+			background:rgba(203,201,201,0.7);
+			width:6px;
+			height:6px;
+			margin:0 3px;
+		}
+		
+		.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+		.ah-swiper-header .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+		.ah-result-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+			background:rgba(255,255,255,1);
+		}
+		
+		.ah-result-swiper .ah-swiper-arrows,
+		.hotel-selected .ah-swiper-header .ah-swiper-arrows,
+		.hotel-selected div[class *= "ah-tripadvisor-header-"] .ah-swiper-arrows {
+			top:calc(50% - 15px);
+			justify-content:space-between;
+			z-index:2;
+		}
+		
+		.hotel-selected div[class ^= "swiper-button-"].tripadvisor-reviews-arrow {
+			width: 30px;
+			height: 30px;
+			border-radius: 0;
+			box-shadow: 0 0 3px 3px rgba(0, 0, 0, .05);
+			background-size: 125%;
+		}
+
+		.hotel-selected .tripadvisor-reviews-arrow.swiper-button-disabled {
+			opacity:0;
+		}
+		
+		.hotel-selected .swiper-button-next.tripadvisor-reviews-arrow {
+			margin-left:0;
+			margin-right:15px;
+		}
+		
+		.ah-result-swiper .ah-swiper-arrows {
+			padding:0 12px;
+		}
+		
+		.hotel-selected .ah-swiper-header .ah-swiper-arrows {
+			padding:0 24px;
+		}
+
+		.ah-result-swiper.shown .swiper-pagination, /* for demonstration only - to remove later */
+		.ah-result-swiper.shown .ah-swiper-arrows, /* for demonstration only - to remove later */
+		.ah-result-swiper:hover .swiper-pagination,
+		.ah-result-swiper:hover .ah-swiper-arrows,
+		.hotel-selected .ah-swiper-header.shown .ah-swiper-arrows,
+		.hotel-selected .ah-swiper-header:hover .ah-swiper-arrows {
+			opacity:1;
+			visibility:visible;
+		}
+		
+			.ah-result-swiper .ah-swiper-arrows div[class ^= "swiper-button-"],
+			.hotel-selected .ah-swiper-header .ah-swiper-arrows div[class ^= "swiper-button-"] {
+				margin-left:0;
+				width:30px;
+				height:30px;
+			}
+			
+		.hotel-selected .newsletter-subscription,
+		.exp-act .newsletter-subscription {
+			background-color:#E0DCD5;
+		}
+			
+			.newsletter-subscription-icon:first-of-type {
+				left: 48px;
+				bottom: -15px;
+			}
+			
+			.newsletter-subscription-icon:last-of-type {
+				right: 38px;
+				top: -24px;
+			}
+				
+			.newsletter-subscription-title {
+				margin-left:5px;
+				margin-right:36px;
+			}
+		
+				.newsletter-subscription-title strong {
+					max-width: 434px;
+					font-size:24px;
+					letter-spacing:.53px;
+					line-height:34px;
+					color:#273240;
+				}
+			
+			.newsletter-subscription-form span {
+				letter-spacing:.31px;
+			}
+			
+			.newsletter-subscription-form input[type="text"] {
+				width:296px;
+				height:40px;
+				padding-left:10px;
+				padding-right:10px;
+				border-radius:6px;
+				background:transparent;
+				outline:none;
+				border-color:#b2b5c1;
+			}
+			
+			.newsletter-subscription-form .ah-btn {
+				margin-left:11px;
+				width:120px;
+				height:40px;
+				border:1px solid #273240;
+				border-radius:6px;
+				color:#273240;
+			}
+		
+	.our-hotels-header-text {
+		padding-left:113px;
+		padding-right:107px;
+	}
+
+		.our-hotels-header h1 {
+			font-size:40px;
+			line-height:52px;
+			letter-spacing:.89px;
+			color:#393D47;
+		}
+		
+		.our-hotels-header p,
+		.bullet-list span,
+		.bullet-list.simple-list li {
+			margin-top:20px;
+			letter-spacing:.36px;
+			line-height:24px;
+			color:#5F6A75;
+		}
+		
+			.bullet-list span,
+			.bullet-list.simple-list ul {
+				display: flex;
+			}
+			.bullet-list.simple-list ul {
+				flex-wrap:wrap;
+			}
+			
+			.bullet-list.simple-list span {
+				align-items: flex-start;
+			}
+			.bullet-list.iconic-list span {
+				align-items: center;
+				color:#4e5965;
+			}
+			.bullet-list.flex-wrap span,
+			.bullet-list.simple-list li {
+				width: 50%;
+			}
+			.bullet-list.simple-list.single-col li {
+				width: 100%;
+			}
+			
+			.selected-room-features.bullet-list {
+				max-width: 808px;
+			}
+			.selected-room-features.bullet-list span {
+				padding-left: 60px;				
+				color:#5f6a75;
+			}
+			.selected-room-desc .bullet-list span {
+				width:25%;
+				margin-bottom: 18px;
+			}
+			.bullet-list:not(.flex-wrap) span {
+				margin-top:0;
+			}
+			.bullet-list:not(.flex-wrap) span:not(:last-child) {
+				margin-right:26px;
+			}
+			
+			.bullet-list span:before,
+			.bullet-list.simple-list li:before,
+			.bullet-list.iconic-list span img.icon {
+				margin-right: 10px;
+			}
+			
+			.bullet-list.iconic-list span img.icon {
+				width: 25px;
+				height: 15px;
+				vertical-align: middle;
+			}
+			
+			.bullet-list.simple-list span:before,
+			.bullet-list.simple-list li:before {
+				content:"\02022";
+			}
+			
+			.bullet-list.flex-wrap span:not(:nth-child(n + 3)),
+			.bullet-list.simple-list li:not(:nth-child(n + 3)) {
+				margin-top:0;
+			}
+			.selected-room-desc .bullet-list.flex-wrap span:not(:nth-child(n + 3)) {
+				margin-top: auto;
+			}
+			
+		.list-by-cols {
+			column-count: 2;
+			column-gap: 30px;
+		}
+			
+		.gallery-room-content-2 .list-by-cols {
+			column-gap: 185px;
+		}
+		
+			.hotel-selected .bullet-list.simple-list.list-by-cols span,
+			.exp-act .bullet-list.simple-list.list-by-cols span {
+				display:flex;
+				margin-right: 0;
+				margin-bottom: 16px;
+			}
+			
+			.hotel-selected .bullet-list.simple-list.list-by-cols ul {
+				display: initial;
+			}
+			
+				.hotel-selected .bullet-list.simple-list.list-by-cols li {
+					display: flex;
+					width: 100%;
+					margin-top: 0;
+					margin-bottom: 16px;
+				}
+		
+	.our-hotels-list {
+		padding-left:109px;
+		padding-right:109px;
+	}
+		
+	.our-hotels-list.narrow {
+		padding-left:64px;
+		padding-right:64px;
+	}
+		
+	.breadcrump {
+		padding-top:5px;
+		padding-bottom:15px;
+		letter-spacing:.31px;
+		color:#5F6A75;
+	}
+		
+		.breadcrump span {
+			margin-left:5px;
+			margin-right:5px;
+		}
+		
+		.breadcrump a {
+			color:#5F6A75;
+		}
+		
+		.breadcrump a:hover {
+			color:#03AAC9;
+		}
+		
+		.features-block li:not(:nth-child(n + 3)) {
+			margin-bottom:40px;
+		}
+			
+		.inspiration-individual .features-block li:nth-child(1) {
+			min-width:325px;
+		}
+			
+		.inspiration-individual .features-block li:nth-child(2) {
+			max-width:228px;
+		}
+			
+		.inspiration-individual .features-block li:nth-child(3) {
+			min-width:277px;
+		}
+			
+		.features-block li:before {
+			content:"";
+			background:url("../images/features/features-bullet.svg");
+			width: 40px;
+			height: 33px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+		
+			.features-block li span {
+				left:15px;
+			}
+	
+		.features-left {
+			margin-right:30px;
+		}
+		
+		.features-middle {
+			margin-left:30px;
+		}
+	
+		.features-left {
+			justify-content:flex-end;
+		}
+		
+			.features-right div div:first-child img {
+				margin-bottom:30px;
+			}
+			
+	.selected-room-title,
+	.our-offers .selected-room-title {
+		font-size:40px;
+		line-height:52px;
+		letter-spacing:.89px;
+		color:#393D47;
+	}
+	
+	.selected-room-desc {
+		width:80%;
+	}
+	
+	.selected-room-desc.shift-left {
+		width: calc(80% + 34px);
+	}
+	
+		.selected-room-desc.shift-left .prompt-para-img {
+			transform: translateX(-62px);
+		}
+		
+	.selected-room-desc.shift-right {
+		padding-left: 92px;
+	}
+	
+	.wedding-content-text .selected-room-desc,
+	.our-offers .experience-in-mauritius p,
+	.choose-your-hotel-bar .darkgray-text,
+	.positive-impact .our-hotels-list .experience-in-mauritius p {
+		max-width:400px;
+	}
+	
+	.positive-impact .our-hotels-list .experience-in-mauritius p {
+		width:100%;
+	}
+	
+	.selected-room-desc.has-left-icon {
+		margin-left:auto;
+	}
+	
+	.otentik-exp-block .selected-room-desc.rightwards,
+	.more-than-spa .experience-in-mauritius {
+		transform: translateX(-12px);
+	}
+	
+	.otentik-exp-block .selected-room-desc.leftwards {
+		transform: translateX(41px);
+	}
+	
+	.hotel-selected-tabs {
+		position: sticky;
+		top: 120px;
+		left:0;
+		right:0;
+		z-index: 1;
+		
+		border-top: 1px #b6bfc6 solid;
+		border-bottom: 1px #b6bfc6 solid;
+		height:42px;
+		background:#fefdfc;
+	}
+	
+	.hotel-selected-tabs.large {
+		height:68px;
+		background:#f0ebe5;
+	}
+	
+		.hotel-selected-tabs ul {
+			height: inherit;
+		}
+	
+		.hotel-selected-tabs li:not(:last-child) {
+			margin-right:32px
+		}
+		
+				.hotel-selected-tabs a {
+					letter-spacing: .31px;
+				}
+				
+	.positive-impact .hotel-selected-tabs {
+		top: 66px;
+		border-top: 0;
+		border-bottom: 0;
+		height:50px;
+		background:#fff;
+		z-index:1;
+	}
+	
+	.positive-impact .hotel-selected-tabs.has-border-top {
+		border-top: 1px #d2dfe7 solid;
+		border-bottom: 1px #d2dfe7 solid
+	}
+				
+	.hotel-selected-tabs.basic {
+		position: static;
+		background:transparent;
+		border-top:0;
+		border-bottom:0;
+	}
+	
+	.gallery-filter-tabs {
+		border-top:1px #D2DFE7 solid;
+		height:auto;
+	}
+	
+	.eat-drink-intro-text {
+		max-width:680px;
+		height:162px;
+	}
+	
+	.title-section#bars-section .eat-drink-intro-text {
+		max-width:777px;
+	}
+	
+	/*.eat-drink-intro-text.wide {
+		max-width:777px;
+	}*/
+	
+	.positive-impact .eat-drink-intro-text {
+		height:auto;
+	}
+
+		.eat-drink-intro-text p,
+		.gallery-items-para.beige-text,
+		.special-offers-list .gallery-items-para.beige-text {
+			line-height:24px;
+			color:#D3D6D8;
+			letter-spacing:.36px;
+		}
+		
+		.signature-massages-list.our-hotels-list .gallery-items-para.beige-text,
+		.special-offers-list.our-hotels-list .gallery-items-para.beige-text,
+		.positive-impact .our-hotels-list .gallery-items-para.beige-text {
+			font-size:16px;
+			color:#D3D6D8;
+		}
+		
+		.positive-impact .our-hotels-list .ah-btn {
+			max-width:130px;
+		}
+		
+		.eat-drink-intro-text.simplegray-text p {
+			color:#5F6A75;
+		}
+		
+		.eat-drink-intro-text .ah-btn {
+			border:1px #fff solid;
+		}
+		
+		.eat-drink-intro-text h2 {
+			color:#fff;
+		}
+			
+	.grid-gallery {
+		display:grid;
+		grid-gap:24px;
+	}
+	
+	.three-grid-cols {
+		grid-template-columns:auto auto auto;
+	}
+	
+	.two-grid-cols {
+		grid-template-columns:auto auto;
+	}
+	
+		/*.grid-gallery-item {
+			min-height:360px;
+		}*/
+		
+		.two-grid-cols .grid-gallery-item:nth-child(n) {
+			grid-column:initial;
+			grid-row:initial;
+		}
+		
+		/* Otentik experiences grid */
+		.otentik-experiences-gallery .grid-gallery-item:nth-child(1) {
+			grid-column:1;
+			grid-row:1 / span 6;
+		}
+		
+		.otentik-experiences-gallery .grid-gallery-item:nth-child(2) {
+			grid-column:2;
+			grid-row:1 / span 3;
+		}
+		
+		.otentik-experiences-gallery .grid-gallery-item:nth-child(3) {
+			grid-column:3;
+			grid-row:1 / span 3;
+		}
+		
+		.otentik-experiences-gallery .grid-gallery-item:nth-child(4) {
+			grid-column:1;
+			grid-row:7 / span 5;
+		}
+		
+		.otentik-experiences-gallery .grid-gallery-item:nth-child(5) {
+			grid-column:2 / span 2;
+			grid-row:4 / span 8;
+		}
+		
+			.otentik-experiences-gallery .grid-gallery-item:nth-child(1) img {
+				max-width: 406px;
+				height: 460px;
+			}
+		
+			.otentik-experiences-gallery .grid-gallery-item:nth-child(2) img,
+			.otentik-experiences-gallery .grid-gallery-item:nth-child(3) img,
+			.otentik-experiences-gallery .grid-gallery-item:nth-child(4) img {
+				max-width: 406px;
+			}
+			
+		/* off the beaten track experiences & kids grids */
+		.track-experiences-gallery .grid-gallery-item:nth-child(n) img,
+		.kids-gallery .grid-gallery-item:nth-child(n) img {
+			max-width: 620px;
+		}
+		
+		.track-experiences-gallery .grid-gallery-item-name,
+		.kids-gallery .grid-gallery-item-name {
+			right: 2px;
+		}
+		
+		/* land activities grid */
+		.land-activities-gallery .grid-gallery-item:nth-child(1) {
+			grid-column:1;
+			grid-row:1 / span 6;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(2) {
+			grid-column:2;
+			grid-row:1 / span 4;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(3) {
+			grid-column:3;
+			grid-row:1 / span 5;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(4) {
+			grid-column:3;
+			grid-row:6 / span 4;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(5) {
+			grid-column:2;
+			grid-row:5 / span 6;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(6) {
+			grid-column:1;
+			grid-row:7 / span 5;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(7) {
+			grid-column:2;
+			grid-row:11 / span 5;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(8) {
+			grid-column:3;
+			grid-row:10 / span 6;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(9) {
+			grid-column:1;
+			grid-row:12 / span 6;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(10) {
+			grid-column:1;
+			grid-row:18 / span 4;
+		}
+		
+		.land-activities-gallery .grid-gallery-item:nth-child(11) {
+			grid-column:2 / span 2;
+			grid-row:16 / span 6;
+		}
+		
+			/*.land-activities-gallery .grid-gallery-item:nth-child(1),
+			.land-activities-gallery .grid-gallery-item:nth-child(5),
+			.land-activities-gallery .grid-gallery-item:nth-child(8),
+			.land-activities-gallery .grid-gallery-item:nth-child(9),
+			.land-activities-gallery .grid-gallery-item:nth-child(1) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(5) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(8) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(9) img {
+				max-width: 406px;
+				min-height: 460px;
+				max-height: 460px;
+			}
+		
+			.land-activities-gallery .grid-gallery-item:nth-child(2),
+			.land-activities-gallery .grid-gallery-item:nth-child(4),
+			.land-activities-gallery .grid-gallery-item:nth-child(10),
+			.land-activities-gallery .grid-gallery-item:nth-child(2) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(4) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(10) img {
+				max-width: 406px;
+				min-height: 320px;
+				max-height: 320px;
+			}
+		
+			.land-activities-gallery .grid-gallery-item:nth-child(3),
+			.land-activities-gallery .grid-gallery-item:nth-child(6),
+			.land-activities-gallery .grid-gallery-item:nth-child(7),
+			.land-activities-gallery .grid-gallery-item:nth-child(3) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(6) img,
+			.land-activities-gallery .grid-gallery-item:nth-child(7) img {
+				max-width: 406px;
+				min-height: 360px;
+				max-height: 360px;
+			}
+			
+			.land-activities-gallery .grid-gallery-item:nth-child(11),
+			.land-activities-gallery .grid-gallery-item:nth-child(11) img {
+				min-height: 460px;
+				max-height: 460px;
+			}*/
+		
+		/* water & beach activities grid */
+		.water-activities-gallery .grid-gallery-item:nth-child(1) {
+			grid-column:1;
+			grid-row:1 / span 5;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(2) {
+			grid-column:2;
+			grid-row:1 / span 4;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(3) {
+			grid-column:3;
+			grid-row:1 / span 6;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(4) {
+			grid-column:1;
+			grid-row:6 / span 4;
+		}
+				
+		.water-activities-gallery .grid-gallery-item:nth-child(5) {
+			grid-column:2;
+			grid-row:5 / span 6;
+		}
+				
+		.water-activities-gallery .grid-gallery-item:nth-child(6) {
+			grid-column:3;
+			grid-row:7 / span 5;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(7) {
+			grid-column:1;
+			grid-row:10 / span 6;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(8) {
+			grid-column:2;
+			grid-row:11 / span 5;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(9) {
+			grid-column:3;
+			grid-row:12 / span 6;
+		}
+		
+		.water-activities-gallery .grid-gallery-item:nth-child(10) {
+			grid-column:1 / span 2;
+			grid-row:16 / span 6;
+		}
+				
+		.water-activities-gallery .grid-gallery-item:nth-child(11) {
+			grid-column:3;
+			grid-row:18 / span 4;
+		}
+		
+			.hotel-selected .grid-gallery-item img {
+				min-height:100%;
+				height:360px;
+			}
+			
+			.grid-gallery-item-name {
+				bottom:0;
+				left:0;
+				right:0;
+				height:42px;
+				padding-left:24px;
+				padding-right:24px;
+				background:rgba(0, 0, 0, .35);
+				line-height:42px;
+			}
+			
+	.title-section {
+		height:320px;
+		position:relative;
+	}
+	
+	.title-section#restaurants-section,
+	.title-section#bars-section {
+		background:#54534D;
+	}
+	
+	.title-section#spa-working-hours-section {
+		background:#006937;
+	}
+	
+	.title-section#poz-section {
+		background:#e6e2dc;
+	}
+	
+	.title-section#poz-menu-section {
+		background:#045830;
+	}
+	
+		#bars-section .has-icon.top-aligned {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+	
+		#bars-section .has-icon.bottom-aligned {
+			align-items: flex-start;
+		}
+	
+		#spa-working-hours-section .has-icon,
+		#poz-section .has-icon,
+		#poz-menu-section .has-icon {
+			position:absolute;
+		}
+		
+		.title-section#spa-working-hours-section .has-icon.top-aligned {
+			left:0;
+			bottom:0;
+		}
+		.title-section#spa-working-hours-section .has-icon.bottom-aligned {
+			right:0;
+			top:0;
+		}
+		
+		.title-section#poz-section .has-icon.top-aligned {
+			left:0;
+			top:0;
+		}
+		.title-section#poz-section .has-icon.bottom-aligned {
+			right:0;
+			bottom:0;
+		}
+		
+		.title-section#poz-menu-section .has-icon.top-aligned {
+			left:0;
+			bottom:43px;
+		}
+		.title-section#poz-menu-section .has-icon.bottom-aligned {
+			right:0;
+			top:36px;
+		}
+		
+		#spa-working-hours-section h3,
+		#poz-menu-section h3 {
+			margin-bottom:5px;
+			padding-bottom:10px;
+			font-size:20px;
+			color:#fff;
+		}
+		
+		.title-section p {
+			max-width:420px;
+		}
+		
+		.title-section#poz-section p {
+			max-width:460px;
+			color:#5F6A75;
+		}
+		
+		.title-section#poz-menu-section .ah-btn {
+			width:120px;
+		}
+			
+	/*.spa-working-hours {
+		height:320px;
+	}
+			
+	.spa-working-hours.large {
+		height:378px;
+		background-color: #e6e2dc;
+	}
+	
+	.rituals-spa-menu {
+		height: 268px;
+	}
+	
+		.rituals-spa-menu .ah-btn {
+			width: 120px;
+		}
+			
+	.spa-working-hours:before,
+	.spa-working-hours:after,
+	.rituals-spa-menu:before,
+	.rituals-spa-menu:after {
+		position:absolute;
+	}*/
+	
+	 .our-spa-products-adv {
+		width:80%;
+	 }
+		
+		.experience-in-mauritius .our-spa-products-adv em {
+			width:68px;
+			height:68px;
+			background-color:#B6BFC6;
+		}
+		
+		.experience-in-mauritius .our-spa-products-adv p {
+			width:90%;
+			color:#273240;
+		}
+	
+	.kids-sticker {
+		width: 215px;
+		height: 215px;
+		padding: 20px;
+		/*background-color: #CC3A4F;*/
+		background:url("../images/hotel-selected/kids/kids-sticker-img.png");
+		bottom: -110px;
+		left: -140px;
+		color: #f0ebe5;
+	}
+	
+	.contact-us .selected-room-title {
+		color:#393d47;
+	}
+	
+	.contact-us .prompt-para p {
+		max-width: 406px;
+	}
+	
+	.contact-us-block {
+		justify-content: center;
+	}
+
+		.contact-us-icon {
+			width:101px;
+			height:101px;
+		}
+
+		.contact-us-block .gallery-items-link {
+			color:#273240;
+			letter-spacing: .36px
+		}
+		
+		.contact-us-block .gallery-items-link:after {
+			border-bottom-color:#273240;
+		}
+		
+	.contact-us .our-hotels-list .four-cols-gal li {
+		width: calc(25.76% - 30.5px);
+	}
+		
+	.ah-masonary.column-count-3 {
+		column-count:3;
+	}
+	
+	.ah-masonary.column-count-2 {
+		column-count:2;
+	}
+	
+		.ah-masonary.column-count-2 img:first-of-type {
+			margin-top:50px;
+		}
+	
+	.ah-masonary.gap-24 {
+		column-gap:24px;
+	}
+	
+	.ah-masonary.gap-30 {
+		column-gap:30px;
+	}
+	
+	.ah-masonary.gap-32 {
+		column-gap:32px;
+	}
+		
+		.ah-masonary.gap-24 img:not(.ah-play-btn) {
+			border-top: 12px transparent solid;
+			border-bottom: 12px transparent solid;
+		}
+		
+		.ah-masonary.gap-30 img:not(.ah-play-btn) {
+			border-top: 15px transparent solid;
+			border-bottom: 15px transparent solid;
+		}
+		
+		.ah-masonary.gap-32 img:not(.ah-play-btn) {
+			border-top: 16px transparent solid;
+			border-bottom: 16px transparent solid;
+		}
+		
+		.ah-masonary.gap-24 .show-layer > .absolute {
+			top:12px;
+			bottom:12px;
+		}
+		
+		.ah-masonary .show-layer > .absolute {
+			top:15px;
+			bottom:15px;
+		}
+	
+		.otentik-exp-masonary.ah-masonary img:not(.ah-play-btn) {
+			margin-top: 0;
+		}
+
+		.otentik-exp-masonary.ah-masonary > *:first-of-type {
+			margin-top:48px;
+		}
+		
+	.get-a-quote-text .experience-in-mauritius {
+		width:calc(100% - 720px);
+	}
+		
+		.get-a-quote-text .prompt-para {
+			max-width: 326px;
+		}
+		
+			.get-a-quote-text .prompt-para img {
+				right:-75px;
+				top:-100px;
+			}
+		
+	.get-a-quote-form > div:first-child {
+		border-right:1px #D3D9DD solid;
+		padding-right:92px;
+	}
+	.ah-popup-content .get-a-quote-form > div:first-child {
+		border-right:0;
+		padding-right:0;
+	}
+		
+	.get-a-quote-form > div:last-child {
+		padding-left:92px;
+	}
+	.ah-popup-content .get-a-quote-form > div:last-child {
+		padding-left:0;
+	}
+	
+	.ah-popup-content .get-a-quote-form > div:first-child {
+		border-right:0;
+	}
+		
+		.get-a-quote-form label {
+			letter-spacing:.31px;
+		}
+		
+		.get-a-quote-form input:not([type="checkbox"]),
+		.get-a-quote-form .selectbox,
+		.get-a-quote-form textarea,
+		.get-a-quote-form select {
+			outline:none;
+			padding-left:13px;
+			padding-right:13px;
+			height:40px;
+			border-radius:6px;
+			letter-spacing:.33px;
+		}
+		
+		.get-a-quote-form select {
+			margin-top: -40px;
+			opacity: 0;
+			padding-left:9px;
+			padding-right:9px;
+			font-family: 'Lato', sans-serif;
+		}
+		
+		.get-a-quote-form .ah-filter-menu {
+			border-bottom: 0;
+			top: 73px;
+			left: 0;
+			right: 0;
+			z-index:1;
+		}
+		
+		.get-a-quote-form .selectbox {
+			appearance: none;
+			background:url("../images/get-a-quote/dropdown-arrow-small.svg");
+			background-repeat: no-repeat;
+			background-position: calc(100% - 14px);
+		}
+		
+		.get-a-quote-form textarea {
+			resize:none;
+			height:112px;
+			padding-top:13px;
+			padding-top:13px;
+			font-family: 'Lato', sans-serif;
+		}
+		
+		.get-a-quote-form input[type="checkbox"],
+		.get-a-quote-form input[type="radio"] {
+			display:none;
+		}
+		
+		.get-a-quote-form input[type="checkbox"] ~ .checkbox:before,
+		.get-a-quote-form input[type="radio"] ~ .checkbox:before {
+			content:"";
+			display:inline-flex;
+			justify-content: center;
+			align-items: center;
+			width:20px;
+			height:20px;
+			border: 1px solid transparent;
+			border-radius:3px;
+			vertical-align: middle;
+			transition:all .5s;
+		}
+		
+		.get-a-quote-form input[type="checkbox"] ~ .checkbox:before {
+			border-color:#778593;
+		}
+		
+		.get-a-quote-form input[type="radio"] ~ .checkbox:before {
+			border-radius:100%;
+			border-color:#b6bfc6;
+		}
+		
+		.get-a-quote-form input[type="radio"] ~ .checkbox {
+			margin-right:9px;
+		}
+		
+		.get-a-quote-form input[type="checkbox"]:checked ~ .checkbox:before {
+			content:url("../images/get-a-quote/checkbox-check.svg");
+			border-color: #03AAC9;
+			background: #03AAC9;
+		}
+		
+		.get-a-quote-form input[type="radio"]:checked ~ .checkbox:before {
+			content:url("../images/get-a-quote/radiobox-check.png");
+			border-color: #273240;
+		}
+		
+		.get-a-quote-form .ah-btn {
+			width:114px;
+		}
+		
+		.get-a-quote-form .ah-filter-menu-footer .ah-btn {
+			width:80px;
+		}
+		
+	.how-we-approach-things .experience-in-mauritius .icon {
+		right:6px;
+		bottom:27px;
+		width:121px;
+		height:88px;
+	}
+	
+	.our-objectives-block .experience-in-mauritius p {
+		max-width:510px;
+	}
+		
+	.our-objectives li {
+		min-height:360px;
+		justify-content: flex-end;
+	}
+	
+	.our-objectives li:nth-child(1) {
+		background-color:#0C4059;
+	}
+	
+	.our-objectives li:nth-child(2) {
+		background-color:#03AAC9;
+	}
+	
+	.our-objectives li:nth-child(3) {
+		background-color:#FFD129;
+	}
+		
+		.our-objectives li span {
+			max-width:205px;
+			letter-spacing: .4px;
+			line-height: 24px;
+			-webkit-line-clamp: 2;
+		}
+		
+		.our-objectives li .current-goal-status {
+			right:16px;
+			top:16px;
+			width: auto;
+			padding-left:11px;
+			padding-right:13px;
+			line-height:32px;
+			background-color:rgba(255, 255, 255, .2);
+			letter-spacing:.31px;
+		}
+		
+			.our-objectives li .current-goal-status img {
+				margin-right:4px;
+			}
+		
+		.green-attitude-foundation-logo {
+			width:182px;
+			height:182px;
+		}
+		
+			.green-attitude-foundation-logo img {
+				width:inherit;
+				height:inherit;
+			}
+			
+	.contact-us-map {
+		height:500px;
+	}
+	
+		.contact-us-map .our-hotels-list .four-cols-gal {
+			max-width:250px;
+		}
+	
+			.contact-us-map .our-hotels-list .four-cols-gal li {
+				width:100%;
+				padding:24px;
+			}
+			
+				.contact-us-map .our-hotels-list .gallery-item-img.shorter {
+					height: 129px;
+				}
+	
+				.contact-us-map .four-cols-gal li p:last-of-type {
+					margin-bottom:0;
+				}
+				
+	.odious-slider-outer {
+		overflow: hidden;
+	}
+	
+		.odious-slider-outer .odious-slider {
+			overflow: visible;
+		}
+		
+	.more-than-spa-left {
+		max-width:464px;
+	}
+		
+	.more-than-spa-right {
+		max-width:400px;
+	}
+	
+	.kids-club-content {
+		max-width: 427px;
+		margin-right: 190px;
+	}
+	
+		.kids-club-content h2 {
+			color:#273240;
+		}
+	
+		.kids-club-content p.bold-text {
+			color:#2b3949;
+		}
+		
+	.contact-us-header h1 {
+		color:#393d47;
+	}
+	
+	.information-services-contact-info .gallery-room-content-2 {
+		height:260px;
+	}
+	
+	.check-in-check-out-block {
+		height:306px;
+	}
+		
+	.newsletter-subscription {
+		min-height:234px;
+	}
+			
+	.hotel-selected .widget-area,
+	.exp-act .widget-area {
+		background-color:#7C7B75;
+	}
+	
+	.poz-spa-col .shift-left {
+		transform:translateX(-26px);
+	}
+	
+	.poz-spa-col .shift-left-2 {
+		transform:translateX(-46px);
+	}
+	
+	.spa-features .shift-right {
+		transform:translateX(24px);
+	}
+	
+	.spa-features .shift-right-2 {
+		transform:translateX(12px);
+	}
+	
+	.section-title-div.shift-right {
+		padding-left:109px;
+	}
+	
+	.cooking-class-popup {
+		bottom: -103px;
+		right: -250px;
+		max-width:330px;
+		background-color:#0C4059;
+		line-height:24px;
+		letter-spacing:.4px;
+	}
+	
+	.pozspa-slider .swiper-slide .gallery-items-para:first-of-type {
+		color:#273240;
+	}
+	
+	.offer-picked-text {
+		max-width:448px;
+	}
+	
+	.tripadvisor-reviews-item {
+		height:250px;
+	}
+	
+	.tripadvisor-reviews-item:first-child {
+		max-width:408px;
+	}
+	
+	.tripadvisor-reviews-item:nth-child(2) {
+		max-width:525px;
+		margin-left:17px;
+		margin-right:17px;
+	}
+	
+	.tripadvisor-reviews-item:last-child {
+		max-width:302px;
+	}
+	
+	.meetings-events-text .experience-in-mauritius {
+		max-width: 400px;
+	}
+	
+	.meetings-events-icon {
+		right:-100px;
+		top:-25px;
+	}
+	
+	.positive-impact .our-purpose {
+		max-width:835px;
+		height:270px;
+		box-shadow: 1px 0 5px 4px rgba(99, 97, 97, .1);
+		padding-left: 107px;
+		padding-right: 107px;
+		bottom: -25%;
+	}
+	
+		.positive-impact .our-purpose .experience-in-mauritius p {
+			-webkit-line-clamp: 4;
+		}
+
+	.who-we-are-block {
+		padding-left:105px;
+		padding-right:105px;
+	}
+	
+		.positive-impact .who-we-are-block .large-img {
+			padding-top:8px;
+			padding-bottom:8px;
+		}
+			
+		.positive-impact .who-we-are-block li .thumb {
+			padding:8px;
+			border: 1px transparent solid;
+			transition:all .5s;
+		}
+		
+		.positive-impact .who-we-are-block li.active .thumb,
+		.positive-impact .who-we-are-block li:hover .thumb {
+			border-color: #03aac9;
+			box-shadow: 0 1px 4px 2px rgba(219, 218, 218, .5);
+		}
+		
+		.positive-impact .who-we-are-block li span {
+			padding-left:8px;
+		}
+		
+		.positive-impact-testimonial .experience-in-mauritius {
+			padding-left:214px;
+			padding-right:214px;
+		}
+		
+			.positive-impact-icon {
+				right: -57px;
+				top: calc(50% - 18px);
+			}
+		
+			.positive-impact-quote {
+				right: 0;
+				bottom: -32px;
+				max-width:460px;
+				height:152px;
+				background-color: #0c4059;
+				line-height:24px;
+				letter-spacing:.4px;
+			}
+		
+		.positive-impact-actions li {
+			flex:1;
+		}
+	
+		.positive-impact-actions li:nth-child(3n + 1),
+		.positive-impact-actions li:nth-child(3n + 2) {
+			min-width:321px;
+		}
+	
+		.positive-impact-actions li:nth-child(3n + 3) {
+			max-width:276px;
+		}
+		
+			.positive-impact-actions .positive-impact-actions-icon {
+				min-width:76px;
+			}
+			
+			.positive-impact-actions .our-hotels-list p {
+				max-width: 230px;
+				width: 100%;
+				margin-left: 15px;
+			}
+			
+		.our-hotels-list-rect {
+			padding: 11px 25px 12px 24px;
+			min-height: 80px;
+		}
+		
+			.our-hotels-list .our-hotels-list-rect .gallery-items-para {
+				color:#273240;
+			}
+		
+	.join-the-movement-bg {
+		height:384px;
+	}
+		
+	.join-the-movement-bg.to-start {
+		background:url("../images/positive-impact/join-the-movement/join-the-movement-bg-1.png");
+		background-size: contain;
+		background-position: center;
+	}
+		
+	.join-the-movement-bg.who-to-join {
+		background:url("../images/positive-impact/join-the-movement/join-the-movement-bg-2.png");
+		background-size: contain;
+		background-position: center;
+	}
+	
+		.join-the-movement-bg .section-title {
+			max-width:492px;
+		}
+		
+		.join-the-movement-bg.to-start .section-title,
+		.join-the-movement-bg.to-start .experience-in-mauritius p {
+			color:#fff;
+		}
+		
+		.join-the-movement-bg.who-to-join .section-title {
+			color:#393d47;
+		}
+		
+		.join-the-movement-bg.who-to-join .experience-in-mauritius p {
+			max-width:429px;
+			color:#4e5965;
+		}
+		
+	.join-the-movement-grid li {
+		width:196px;
+		margin-bottom:18px;
+	}
+	
+	.join-the-movement-grid li:not(:nth-child(6n + 6)) {
+		margin-right:18px;
+	}
+	
+		.join-the-movement-grid li .light-shadow:before {
+			content:"";
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0) 39%);
+			opacity:.4;
+		}
+		
+			.join-the-movement-grid li .title {
+				line-height:24px;
+				letter-spacing:.33px;
+				bottom:0;
+				left:16px;
+				right:16px;
+				bottom:12px;
+			}
+			
+			.join-the-movement-grid li div {
+				line-height:22px;
+				letter-spacing:.36px;
+				padding-left:14px;
+				padding-right:14px;
+			}
+			
+			.join-the-movement-grid li.shown div { /* for demonstration only - to remove later */
+				opacity: 1;
+				visibility: visible;
+			}
+			
+	.positive-impact .join-the-movement-text .ah-btn {
+		max-width: 170px;
+	}
+	
+	.widget-area .logo {
+		justify-content:space-between;
+	}
+
+		.widget-area .logo img {
+			max-width:100px;
+		}
+
+		.widget-area .logo .scroll-up {
+			width:32px;
+			height:32px;
+			background:url("../images/icons/arrow-up-white.png");
+			background-size: cover;
+		}
+
+	.widget-area ul.flex {
+		list-style:initial;
+		list-style-position:inside;
+	}
+
+		.widget-area li {
+			margin-top:4px;
+			margin-bottom:14px;
+			transition:all .5s
+		}
+	
+			.widget-area li a {
+				line-height:22px;
+				color: #dcf5fa;
+			}
+
+			.hotel-selected .widget-area li a,
+			.exp-act .widget-area li a {
+				color: #E4E4E3;
+			}
+			
+	.widget-area-logos {
+		margin-top:auto;
+	}
+	
+		.widget-area-logos img {
+			margin-left:15px;
+		}
+			
+		.social-media-icons img {
+			margin-right:30px;				
+		}
+	
+	.footer {
+		height:38px;
+		background-color:#0B9BB6;
+	}
+	
+	.hotel-selected .footer,
+	.exp-act .footer {
+		background-color:#74736D;
+	}
+	
+		.footer li {
+			margin-right:24px;
+		}
+		
+			.footer a {
+				color:#DCF5FA;
+				letter-spacing:.27px;
+			}
+			
+			.hotel-selected .footer a,
+			.exp-act .footer a {
+				color:#E4E4E3;
+			}
+			
+	.ah-popup-layer {
+		position:fixed;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		z-index:3;
+	}
+	
+		.ah-popup-close {
+			top:24px;
+			right:24px;
+			width:14px;
+			height:14px;
+			background:url("../images/icons/exit.svg");
+			background-size:contain;
+		}
+	
+		.ah-popup-content {
+			/*min-width:347px;*/
+			max-width:715px;
+			/*max-height:80vh;*/
+		}
+		
+		.dining-signature-popup {
+			max-width:552px;
+			padding: 48px;
+			max-height: initial;
+		}
+		
+		.call-me-back-popup {
+			padding-top: 48px;
+			padding-bottom: 24px;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		
+		.call-up-popup {
+			max-width:442px;
+			padding:40px 40px 24px;
+		}
+		
+		.simple-popup {
+			max-width:347px;
+		}
+		
+		.get-quote-popup {
+			max-width:460px;
+			padding-bottom: 32px;
+		}
+		
+			.get-quote-popup .fs-18 {
+				letter-spacing:.4px;
+			}
+			
+			.get-quote-popup .fs-14 {
+				letter-spacing:.31px;
+			}
+			
+			.get-quote-popup.ah-popup-content .ah-btn.small-ah-btn {
+				width:100px;
+				height:40px;
+			}
+
+			.dining-signature-popup .ah-popup-inner-img {
+				height:320px;
+			}
+		
+			.ah-popup-inner {
+				padding-bottom:1px;
+				margin-top: -10px;
+				overflow-y:auto;
+				max-height:calc(80vh - 80px);
+			}
+			
+				.ah-popup-content .cat-title {
+					letter-spacing:.29px;
+					color:#757880;
+				}
+				
+				.ah-popup-content p,
+				.ah-popup-content ul {
+					letter-spacing:.36px;
+					line-height:24px;
+					color:#5F6A75;
+				}
+				
+				.ah-popup-content .half-width {
+					width:300px;
+				}
+				
+					.ah-popup-content .half-width p {
+						letter-spacing:.31px;
+						line-height:20px;
+					}
+			
+				.ah-popup-inner img {
+					max-width:620px;
+				}
+				
+				.call-me-back-popup .ah-popup-inner .call-me-back-icon {
+					justify-content: flex-end;
+					padding-right: 12px;
+				}
+		
+		.ah-popup-content .ah-btn {
+			width:120px;
+			border-color:#273240;
+			transition:all .5s;
+		}
+		
+		.ah-popup-content .ah-btn.small-ah-btn {
+			width:80px;
+		}
+		
+		.ah-popup-content .ah-btn:hover {
+			background:#273240;
+			color:#fff;
+		}
+
+@media screen and (min-width:1281px) {
+	.explore-our-hotels .swiper-wrapper.hotel-item {
+		display: flex;
+		flex-wrap: wrap;
+		transition: none !important;
+		transform: none !important;
+	}
+	
+	.hotel-item li {
+		width:calc(50% - 20px) !important;
+	}
+
+	.hotel-item li:not(:nth-child(2n + 2)) {
+		margin-right: 24px !important;
+	}
+	
+	.explore-our-hotels .hotel-item li {
+		margin-right: 0 !important;
+		width: 50% !important;
+		margin-bottom: 48px;
+	}
+		
+	.explore-our-hotels .hotel-item li:nth-child(even) {
+		display: flex;
+		justify-content: flex-end;
+	}
+		
+		.explore-our-hotels .hotel-item li:nth-child(odd) .hotel-item-title {
+			right: 24px;
+		}
+	
+		.explore-our-hotels .hotel-item li a,
+		.explore-our-hotels .hotel-item li .gallery-item-img {
+			max-width: 610px;
+		}
+	
+		.explore-our-hotels .hotel-item li:nth-child(even) a {
+			width: calc(100% - 24px);
+		}
+		
+	.widget-area .logo {
+		max-width: 342px;
+	}
+	
+	.widget-area .flex-3:not(.logo) {
+		margin-right: 28px;
+	}
+			
+		.widget-area li:nth-child(odd) {
+			max-width: 173px;
+		}
+		
+	.widget-area .flex-1-5 {
+		max-width:181px;
+		transform: translateX(-4px);
+	}
+		
+	.widget-area div:nth-of-type(4) {
+		margin-right:7px;
+	}
+		
+	.widget-area .container > div:last-child {
+		transform: translateX(-4px);
+	}
+}
+			
+@media screen and (max-width:1280px) {
+	.sub-nav.positive-impact {
+		right: 0;
+	}
+	
+	.hotel-top-bar .top-navigation ul {
+		width: 100%;
+	}
+
+		.top-navigation li:not(:last-child) a {
+			margin-right:15px;
+		}
+		
+		.hotel-top-bar .top-navigation li:nth-child(n) a {
+			margin-right:14px;
+		}
+	
+	.top-navigation .ah-btn {
+		margin-left:0;
+	}
+	
+		.sub-nav-img {
+			margin-left: 15px;
+		}
+	
+	.ah-experience li {
+		margin-right:20px;
+	}
+		
+		.tripadvisor-reviews img:nth-child(2) {
+			margin:18px 0;
+		}
+		
+	.hotel-selected .selected-room-desc.has-left-icon .prompt-para-icon-alt {
+		position:static;
+		height: 94px;
+		margin-left: auto;
+	}
+	
+	.newsletter-subscription {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+		.newsletter-subscription-title {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		
+		.newsletter-subscription-icon:first-of-type {
+			left: 0;
+			bottom: initial;
+		}
+		
+		.newsletter-subscription-icon:last-of-type {
+			right: 0;
+			top: initial;
+		}
+		
+	.otentik-exp-block .selected-room-desc.rightwards,
+	.otentik-exp-block .selected-room-desc.leftwards {
+		transform:none;
+	}
+		
+	.otentik-exp-block img,
+	.our-hotels-list .other-experiences img,
+	.more-than-spa img,
+	.our-offers-grid li img {
+		max-width:100%;
+	}
+	
+	.our-offers .large-img img,
+	.features-block img {
+		width: 100%;
+	}
+	
+	.tripadvisor-reviews {
+		flex-direction:column;
+	}
+	
+		.tripadvisor-reviews-item:nth-child(n) {
+			max-width:327px;
+			width:100%;
+		}
+		
+			.tripadvisor-reviews-item:nth-child(n) img {
+				max-height:152px;
+				width: auto;
+			}
+	
+		.tripadvisor-reviews-item:first-child {
+			height:200px;
+		}
+	
+		.tripadvisor-reviews-item:nth-child(2) {
+			margin: 18px 0;
+			height:189px;
+		}
+		
+			.tripadvisor-reviews-item:nth-child(2) .ah-swiper-arrows {
+				opacity:0;
+			}
+		
+		.tripadvisor-reviews-item:last-child {
+			height:270px;
+		}
+		
+	.gallery-list {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+		.gallery-list .ah-masonary img {
+			width: 100%;
+		}
+		
+	.get-a-quote-text .get-a-quote-img {
+		width: 100%;
+	}
+	
+	.inspiration-individual .features-block ul {
+		flex-direction: column;
+	}
+	
+		.inspiration-individual .features-block li:nth-child(n) {
+			min-width: initial;
+			max-width: none;
+		}
+		
+		.inspiration-individual .features-block li:not(:last-child) {
+			margin-bottom:33px;
+		}
+		
+	.meetings-events-text .container > .flex {
+		flex-direction:column;
+	}
+	
+		.meetings-events-text .container > .flex .flex-1:first-child {
+			order:2;
+		}
+	
+			.meetings-events-text .ml-60 {
+				margin-left:0;
+			}
+		
+			.meetings-events-text .mr-60 {
+				margin-right:0;
+			}
+			
+				.meetings-events-text .experience-in-mauritius {
+					max-width:none;
+					width: 100%;
+					margin-top: 0;
+					padding-top: 60px;
+				}
+				
+					.meetings-events-icon {
+						right:0;
+					}
+				
+						.meetings-events-text .meetings-events-icon img {
+							width:134px;
+						}
+				
+					.meetings-events-text .experience-in-mauritius p {
+						max-width: none;
+					}
+					
+					.meetings-events-text img {
+						margin-left: auto;
+						margin-right: auto;
+					}
+					
+					.meetings-events-text .large-img img {
+						margin-top:16px;
+					}
+					
+	.positive-impact .template-banners img:first-child {
+		width:100%;
+	}
+	
+	.join-the-movement-grid li:not(:nth-child(6n + 6)) {
+		margin-right:0;
+	}
+}
+
+@media screen and (max-width:1140px) {
+	.sub-nav.positive-impact {
+		right: auto;
+	}
+	
+	.top-navigation ul ul:first-of-type {
+		margin-right: 40px;
+	}
+	
+	.sub-nav-img {
+		display:none;
+	}
+}
+
+@media screen and (min-width:1081px) {
+	.booking-bar.be-sticky-1,
+	.book-now-bar.be-sticky-2,
+	.book-now-bar.be-sticky-3 {
+		display: block;
+		position: sticky;
+	}
+	
+	.booking-bar.be-sticky-1 {
+		top: 66px;
+	}
+	
+	.book-now-bar.be-sticky-2 {
+		top: 120px;
+	}
+	
+	.book-now-bar.be-sticky-3 {
+		top: 222px;
+	}
+
+	.top-navigation .sub-nav ul:last-of-type {
+		margin-left:50px;
+	}
+	
+	.top-navigation .sub-nav ul:only-of-type {
+		margin-left:0;
+	}
+	
+	.hotel-top-bar .top-navigation .ah-btn,
+	.hotel-top-bar .top-navigation .ah-btn ~ span {
+		margin-top: 8px;
+	}
+	
+	.gallery-items .odious-slider img {
+		max-width: 400px;
+	}
+	
+	.exp-act .gallery-items .odious-slider .hotel-item li:nth-child(n) {
+		margin-right: 32px !important;
+		width: initial !important;
+	}
+		
+		.exp-act .gallery-items .odious-slider img {
+			max-width: 500px;
+			height:380px;
+		}
+		
+	.has-left-parent .selected-room-desc.has-left-icon {
+		margin-left:auto;
+		margin-right:auto;
+		padding-left: 27px;
+	}
+	.has-left-parent .selected-room-desc.has-left-icon .shift-left {
+		transform: translateX(-53px);
+	}
+	
+	.bullet-list.simple-list.single-col li:not(:first-child) {
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width:1080px) {
+		.hide-on-mobile {
+			display:none;
+		}
+		
+		.show-on-mobile {
+			display:block;
+		}
+		
+		.top-nav-bar {
+			border-bottom: 1px #d3d9dd solid;
+		}
+		
+		.hide-vertical-scrollbar .hotel-top-bar.level-up {
+			z-index: 1;
+		}
+		
+		.top-nav-bar.has-higher-level {
+			z-index: 3;
+		}
+		
+		.top-navigation .logo {
+			margin-left: 47px;
+		}
+		
+			.top-navigation .logo img {
+				width: auto;
+				max-height: 38px;
+				margin-right: 0;
+			}
+
+		.breadcrump {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 13px;
+			letter-spacing: .29px;
+		}
+			
+		.booking-bar {
+			padding: 0;
+		}
+			
+		.hotel-top-bar .top-navigation {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		
+			.hotel-top-bar .top-navigation .logo {
+				margin-left: 0;
+			}
+			
+				.hotel-top-bar .top-navigation .logo img {
+					margin-right: 26px;
+					height: 41px;
+					max-height: none;
+				}
+				
+			.hotel-top-bar #hotel-selected-dropdown ~ ul {
+				padding: 8px 24px 7px;
+				background:#f0ebe5;
+				
+				position:absolute;
+				top:50px;
+				left:0;
+				right:0;
+				z-index:1;
+				
+				opacity:0;
+				visibility:hidden;
+				transition:all .5s;
+			}
+			
+			.hotel-selected .header-slider .swiper-container,
+			.exp-act .header-slider .swiper-container {
+				z-index:0;
+			}
+			
+				.hotel-top-bar #hotel-selected-dropdown ~ ul a {
+					display: block;
+					margin-right: 0;
+					color:#273240;
+					line-height: 34px;
+				}
+			
+			.hotel-top-bar #hotel-selected-dropdown:checked ~ ul {
+				display:block;
+				opacity:1;
+				visibility:visible;
+			}
+			
+			.top-navigation ul li .sub-nav {
+				display:none;
+			}
+			
+		.hotel-top-bar > .top-navigation {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+			.hotel-selected-dropdown {
+				display:flex;
+				border-top: 1px #b2bac3 solid;
+				border-bottom: 1px #b2bac3 solid;
+			}
+			
+			.hotel-selected .hotel-top-bar #hotel-selected-dropdown:checked ~ .hotel-selected-dropdown {
+				border-top-color: #5f6a75;
+				border-bottom-color: #5f6a75;
+			}
+			
+				.hotel-selected-dropdown-active {
+					padding-left:24px;
+					padding-right:15px;
+					justify-content: space-between;
+					cursor:pointer;
+				}
+				
+					.hotel-selected-dropdown-active span:not(.hotel-selected-dropdown-arrow) {
+						padding-right: 20px;
+					}
+				
+					.hotel-selected-dropdown-arrow {
+						width:12px;
+						height:7px;
+						background:url("../images/icons/dropdown-arrow-ah-filter.svg");
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+		
+			.hotel-top-bar > .top-navigation .ah-btn {
+				margin-left: 0;
+				margin-right: 0;
+				border-radius: 0;
+				height: 48px;
+				display: flex;
+				justify-content: center;
+			}
+		
+		.burger-menu-icon {
+			display:block;
+		}
+		
+		.open-burger-menu ~ .burger-menu-icon {
+			cursor: pointer;
+			left: 24px;
+			top: 17px;
+		}
+		
+		#toggle-filter.open-burger-menu ~ .burger-menu-icon,
+		#toggle-features.open-burger-menu ~ .burger-menu-icon {
+			right: 24px;
+			left: auto;
+		}
+		
+			.open-burger-menu ~ .burger-menu-icon em {
+				width: 22px;
+				height: 2px;
+				margin: 6px 0;
+				transition: all .25s;
+			}
+		
+		.open-burger-menu ~ ul {
+			border-top: 1px #e2e2e2 solid;
+			flex-direction: column;
+			align-items: flex-start;
+			background-color: #f1f4f7;
+			padding: 27px 24px;
+			
+			position: fixed;
+			top: 62px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+			
+			visibility: hidden;
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+		
+		.open-burger-menu:checked ~ ul {
+			visibility: visible;
+			opacity: 1;
+			width: auto;
+			height: auto;
+			
+		}
+		
+			.open-burger-menu ~ ul > li {
+				width: 100%;
+			}
+		
+				.open-burger-menu ~ ul > li > a:not(.ah-btn) {
+					display: flex;
+					margin-right: 0;
+					font-size: 16px;
+					line-height: 48px;
+				}
+				
+			.open-burger-menu ~ ul li.has-child {
+				background:url("../images/icons/arrow-right-dark.svg");
+				background-repeat: no-repeat;
+				background-position: right center;
+			}
+				
+			.open-burger-menu ~ ul .very-top-links {
+				margin-top: auto;
+			}
+			
+				.open-burger-menu ~ ul .very-top-links .ah-btn {
+					width: 120px;
+				}
+			
+				.open-burger-menu ~ ul .very-top-links .ah-btn:first-child {
+					margin-right: 24px;
+				}
+				
+				.open-burger-menu ~ ul .language-switcher {
+					margin-top:19px;
+				}
+				
+					.open-burger-menu ~ ul .language-switcher ul {
+						left: 50px;
+						right: auto;
+						bottom: 0;
+						width: auto !important;
+					}
+					
+				.open-burger-menu ~ ul li.has-child .sub-nav {
+					transition: all .5s;
+					left: auto;
+				}
+					
+				.open-burger-menu ~ ul li.has-child .sub-nav.show-sub-nav {
+					display: block;
+					opacity: 1;
+					visibility: visible;
+					margin-top: 0;
+					background-color: #f1f4f7;
+					padding:30px 24px;
+					border: 0;
+					transform: none;
+					
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+				}
+				
+					.sub-nav-close {
+						margin-bottom: 36px;
+						background:url("../images/icons/arrow-left-dark.svg");
+						background-repeat: no-repeat;
+						background-position: left center;
+					}
+				
+					.open-burger-menu ~ ul li.has-child .show-sub-nav > div {
+						flex-direction: column;
+						overflow: auto;
+					}
+					
+					.open-burger-menu ~ ul li.has-child .show-sub-nav > div.tall {
+						height: calc(100% - 96px);
+					}
+				
+					.open-burger-menu ~ ul li.has-child .show-sub-nav > div.lower {
+						height: calc(100% - 51px);
+					}
+					
+						.open-burger-menu ~ ul li.has-child .show-sub-nav ul {
+							width: 100%;
+							margin-top: 11px;
+						}
+						
+						.open-burger-menu ~ ul li.has-child .show-sub-nav ul:not(:first-of-type) {
+							margin-top: 46px;
+						}
+							
+							.open-burger-menu ~ ul li.has-child .show-sub-nav ul li:not(:last-child) {
+								margin-bottom: 22px;
+							}
+							
+								.open-burger-menu ~ ul li.has-child .show-sub-nav a {
+									margin-right: 0;
+								}
+
+								.open-burger-menu ~ ul li.has-child .show-sub-nav ul a {
+									font-size:16px;
+									color: #273240;
+								}
+								
+								.open-burger-menu ~ ul li.has-child .language-switcher ul li:not(:last-child) {
+									margin-bottom: 0;
+								}
+								
+									.open-burger-menu ~ ul li .language-switcher ul a {
+										margin-right: 0;
+										color: #5f6a75;
+									}
+									
+									.open-burger-menu ~ ul li .language-switcher ul li.active a {
+										color: #273240;
+									}
+								
+									.open-burger-menu ~ ul li.has-child .language-switcher ul a {
+										font-size:14px;
+										color: #5f6a75;
+									}
+							
+								.open-burger-menu ~ ul li.has-child .show-sub-nav ul li.fs-16 a {
+									font-size: 18px;
+									font-weight: 600;
+								}
+								
+								.sub-nav-title {
+									font-size: 16px;
+								}
+		
+		.open-burger-menu:checked ~ .burger-menu-icon em:first-child,
+		#toggle-filter ~ .burger-menu-icon em:first-child {
+			transform: rotate(45deg);
+			top: 7px;
+		}
+		
+		.open-burger-menu:checked ~ .burger-menu-icon em:nth-child(2),
+		#toggle-filter ~ .burger-menu-icon em:nth-child(2) {
+			visibility: hidden;
+			transition: all .1s;
+		}
+		
+		.open-burger-menu:checked ~ .burger-menu-icon em:last-child,
+		#toggle-filter ~ .burger-menu-icon em:last-child {
+			transform: rotate(-45deg);
+			top: -9px;
+		}
+		
+	.ah-filter {
+		height: auto;
+		border: 0;
+		flex-direction: column;
+		padding: 0;
+		flex: 1;
+		width: 100%;
+	}
+	
+	.hotel-selected .ah-filter {
+		max-width:none;
+	}
+	
+		.ah-filter > div[class ^= "ah-filter-"]:before,
+		.hotel-selected .book-now-bar .ah-filter .ah-filter-hotels:before {
+			border-left:0;
+			padding-left: 0;
+		}
+	
+		.ah-filter > div[class ^= "ah-filter-"] {
+			width: 100%;
+			margin-bottom: 16px;
+			flex: none;
+			max-width: none;
+		}
+	
+		.ah-filter > div[class ^= "ah-filter-"]:before,
+		.hotel-selected .ah-filter .ah-filter-hotels:before {
+			content:none;
+		}
+		
+		.ah-filter-item-label {
+			margin-right: 0;
+			border: solid 1px #b2bac3;
+			border-radius: 4px;
+			padding: 10px 7px 10px 5px;
+		}
+		
+		.get-a-quote-form .ah-filter-item-label {
+			border: 0;
+			padding: 0;
+		}
+		
+			.ah-filter-item-checkbox.shown ~ .ah-filter-item-label .ah-filter-item,
+			.ah-filter-item-checkbox:checked ~ .ah-filter-item-label .ah-filter-item,
+			.ah-filter .datepicker-label:hover .ah-filter-item {
+				background-color: transparent;
+			}
+			
+			.ah-filter-hotels .ah-filter-menu,
+			.ah-filter-guests .ah-filter-menu {
+				left: 0;
+				margin-top: 10px;
+				width: 100%;
+			}
+			
+				.ah-filter-hotels div.ah-filter-menu-body {
+					flex-direction: column;
+					max-height: 210px;
+					overflow-y: auto;
+				}
+				
+				.ah-filter-menu-footer .gallery-items-link {
+					margin-top: 0;
+				}
+		
+		.ah-filter-wrapper {
+			display:none;
+		}
+		
+		.ah-filter-wrapper.activate-ah-filter,
+		.ah-features-wrapper.activate-features-list {
+			display:block;
+			position: fixed;
+			background: #fff;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 4;
+		}
+		
+			.ah-filter-wrapper .top-navigation,
+			.ah-features-wrapper .top-navigation {
+				display: block;
+				padding: 13px 24px 13px;
+				border-bottom:1px #d3d9dd solid;
+				height: 65px;
+			}
+		
+				.ah-filter-wrapper .top-navigation .logo {
+					margin-left: 0;
+				}
+				
+			.ah-filter-wrapper .ah-filter-body,
+			.ah-features-wrapper .ah-filter-body {
+				padding: 0 24px 16px;
+				overflow-y:auto;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.ah-filter-wrapper .ah-filter-body {
+				height: calc(100vh - 199px);
+			}
+			
+			.ah-features-wrapper .ah-filter-body {
+				height: calc(100vh - 91px);
+			}
+			
+				.ah-filter-wrapper .ah-filter-body > span {
+					display: block;
+				}
+			
+				.ah-features-wrapper .gallery-items-title {
+					margin-top: 0;
+					margin-bottom: 22px;
+					font-size: 24px;
+					letter-spacing: .53px;
+					line-height: 34px;
+					color:#393d47;
+				}
+				
+				.ah-features-wrapper .ah-filter-body .bullet-list {
+					flex-direction: column;
+					font-size:16px;
+					padding: 0;
+				}
+				
+					.exp-act .ah-features-wrapper .ah-filter-body .bullet-list span:nth-child(n + 2) {
+						margin-top: 22px;
+					}
+					
+					.exp-act .ah-features-wrapper .ah-filter-body .list-by-cols span:nth-child(n + 2) {
+						margin-top: 22px;
+					}
+			
+				.ah-filter-wrapper .ah-filter-body .ah-filter-search {
+					margin-top: auto;
+					margin-bottom: 0;
+					flex: 2;
+					display: flex;
+				}
+				
+					.ah-filter-wrapper .ah-filter-body .ah-filter-search .ah-btn {
+						width: 100%;
+						height: 48px;
+						margin-top: auto;
+					}
+
+				.ah-filter-rooms #ah-filter-item-checkbox ~ .ah-filter-menu,
+				.ah-filter-rooms #ah-filter-item-checkbox_2 ~ .ah-filter-menu,
+				.ah-filter-guests #ah-filter-item-checkbox4 ~ .ah-filter-menu,
+				.ah-filter-guests #ah-filter-item-checkbox4_2 ~ .ah-filter-menu {
+					display:none;
+				}
+
+				.ah-filter-rooms #ah-filter-item-checkbox:checked ~ .ah-filter-menu,
+				.ah-filter-rooms #ah-filter-item-checkbox_2:checked ~ .ah-filter-menu,
+				.ah-filter-guests #ah-filter-item-checkbox4:checked ~ .ah-filter-menu,
+				.ah-filter-guests #ah-filter-item-checkbox4_2:checked ~ .ah-filter-menu {
+					display:block;
+				}
+				
+		.search-details-show {
+			cursor:pointer;
+		}
+		
+			.search-details-text {
+				line-height:18px;
+				letter-spacing:.33px;
+			}
+			
+			.search-details-icon {
+				width:14px;
+				height:8px;
+				background:url("../images/icons/dropdown-arrow-down.svg");
+			}
+			
+			.search-details-icon.rotated {
+				background:url("../images/icons/dropdown-arrow-up.svg");
+			}
+				
+		.hotel-results .ah-filter-wrapper.hotel-results-filter {
+			display:block;
+		}
+		
+			.hotel-results:not(.hide-vertical-scrollbar) .hotel-results-filter .top-navigation,
+			.hotel-results:not(.hide-vertical-scrollbar) .hotel-results-filter .ah-filter-body > span {
+				display:none;
+			}
+			
+			.hotel-results:not(.hide-vertical-scrollbar) .hotel-results-filter .ah-filter-body {
+				height: auto;
+				margin-top: 0;
+				padding: 0;
+				overflow-y: initial;
+			}
+			
+				.hotel-results:not(.hide-vertical-scrollbar) .hotel-results-filter .ah-filter-body .ah-filter {
+					margin-top: 24px;
+				}
+
+	.our-hotels-header-text,		
+	.our-hotels-list,
+	.our-hotels-list.narrow {
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	.hotel-selected-tabs {
+		top: 110px;
+		white-space: nowrap;
+	}
+	
+	.hotel-selected .hotel-selected-tabs.large {
+		overflow-x: auto;
+		overflow-y: hidden;
+		height: 42px;
+		background: #fff;
+	}
+	
+	.positive-impact .hotel-selected-tabs {
+		top: 62px;
+	}
+	
+		.hotel-selected-tabs li:not(:last-child) {
+			margin-right: 20px;
+		}
+	
+			.hotel-selected-tabs a {
+				font-size:14px;
+				letter-spacing: .31px;
+			}
+				
+	.odious-slider {
+		padding-right:72px;
+	}
+	
+	.hotel-selected .gallery-items .swiper-container {
+		max-width: none;
+	}
+	
+		.hotel-selected .gallery-items .odious-slider .gallery-item-img:not(.icon),
+		.kids-slides .gallery-item-img:not(.icon) {
+			height: 200px;
+		}
+		
+		.hotel-selected .experiences-activities-block .gallery-items .odious-slider .gallery-item-img:not(.icon) {
+			height: 240px;
+		}
+		
+	.hotel-selected .selected-room-features {
+		margin: -2px 0 -3px 0;
+		flex-direction: column;
+	}
+	
+		.hotel-selected .bullet-list.flex-wrap span,
+		.bullet-list.simple-list li {
+			padding-left: 0;
+			width: 100%;
+			margin-top: 0;
+			font-size: 16px;
+		}
+		
+		.hotel-selected .selected-room-desc ~ .ah-features-wrapper .bullet-list.iconic-list span {
+			margin-bottom: 16px;
+		}
+		
+		/*.hotel-selected .white-bg .bullet-list.flex-wrap span {
+			color:#778593;
+		}
+		
+		.hotel-selected .bullet-list.flex-wrap span:not(:last-child) {
+			margin-bottom: 22px;
+		}*/
+		
+		.bullet-list.simple-list li {
+			width:100%;
+			margin-top: 0;
+		}
+		
+		.hotel-selected .bullet-list.simple-list li:not(:last-child),
+		.our-offers-grid .bullet-list.simple-list li:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		
+	.selected-room-desc {
+		width: 100%;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	
+	.selected-room-desc.shift-left {
+		width: 100%;
+	}
+	
+	.selected-room-desc.shift-right {
+		padding-left: 0;
+	}
+	
+		.selected-room-desc.shift-left .prompt-para-img {
+			transform: none;
+		}
+	
+	.experience-in-mauritius.selected-room-desc {
+		padding-bottom: 0;		
+	}
+	
+		.experience-in-mauritius.selected-room-desc .gallery-items-title {
+			font-size:20px;
+			line-height:26px;
+			letter-spacing:.44px;
+		}
+	
+		.hotel-selected .selected-room-desc p {
+			max-width:none;
+			margin-bottom: 40px;
+		}
+
+	.selected-room-desc .gallery-items-title {
+		margin-bottom: 23px;
+	}
+	
+		.selected-room-desc .bullet-list,
+		.kids-services-facilities .bullet-list {
+			margin-bottom: 0;
+			height: 232px;
+			overflow: hidden;
+		}
+		
+		.selected-room-desc .bullet-list {
+			height: 210px;
+		}
+		
+		.kids-services-facilities .bullet-list {
+			flex-direction: column;
+			flex-wrap: initial;
+			font-size: 16px;
+		}
+		
+			.kids-services-facilities .bullet-list span {
+				width: 100%;
+			}
+		
+			.kids-services-facilities .bullet-list span:nth-child(n + 2) {
+				margin-top:22px;
+			}
+		
+		.list-by-cols {
+			column-count: 1;
+			padding: 23px 15px;
+		}
+		
+			.list-by-cols .list-by-cols-wrapper {
+				height: 230px;
+				overflow: hidden;
+				margin-bottom: 18px;
+			}
+		
+	.experiences-activities-block > .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.kids-club ul {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+		.kids-club li,
+		.kids-services-facilities-block li {
+			flex-direction: column;
+			width: 100%;			
+		}
+		
+			.kids-club-content {
+				max-width: none;
+				margin-right: 0;
+				margin-bottom: 50px;
+			}
+				
+				.kids-club .result-item-title,
+				.kids-services-facilities-block h1,
+				.all-in-all-out-package-includes .result-item-title {
+					font-size:24px;
+					line-height:34px;
+					letter-spacing:.53px;
+				}
+				
+				.kids-club .result-item-title,
+				.kids-services-facilities-block h1 {
+					margin-bottom: 16px;
+					padding-bottom: 0;
+				}
+			
+				.kids-club-content p {
+					max-width: none;
+				}
+				
+				.kids-club-content p.bold-text {
+					padding-top: 10px;
+				}
+				
+				.kids-club-img > img {
+					height: 364px;
+				}
+				
+				.kids-services-facilities-img {
+					height: 234px;
+					margin-bottom: 40px;
+				}
+				
+				.kids-club-img > img,
+				.kids-services-facilities-img {
+					width: 100%;
+					object-fit: cover;
+					object-position: top;
+				}
+				
+				.kids-sticker {
+					position: static;
+					margin-top: 50px;
+				}
+				
+		.kids-services-facilities-block {
+			padding-bottom: 0;
+		}
+			
+			.kids-services-facilities-list {
+				margin-left: -24px;
+				padding: 37px 24px 40px;
+				width: calc(100% + 48px);
+			}
+			
+	.all-in-all-out-package-includes .gallery-room-content {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.wedding-content-text .ml-60 {
+		margin-left:0;
+	}
+	
+	.wedding-content-text .selected-room-desc {
+		max-width:none;
+	}
+	
+	.hotel-selected .gallery-room-content-2 {
+		margin: 0;
+	}
+	
+	.hotel-selected .gallery-room-content-2.pt-100 {
+		padding-bottom: 0;
+	}
+			
+	.gallery-room-content-2 .odious-slider .swiper-slide img {
+		height:247px;
+	}
+	
+	.poz-spa-col .shift-left,
+	.poz-spa-col .shift-left-2,
+	.spa-features .shift-right,
+	.spa-features .shift-right-2 {
+		transform:none;
+	}
+	
+	.otentik-exp-block .container > .mt-20.mb-20 {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	
+	.otentik-exp-block .ml-60 {
+		margin-left: 0;
+	}
+	
+		.otentik-exp-block .experience-in-mauritius {
+			margin-top: 0;
+			padding-top: 0;
+		}
+							
+			.otentik-exp-block .experience-in-mauritius .otentik-exp-images {
+				order: -1;
+				padding-top: 0;
+				margin-top: 0;
+			}
+			
+				.otentik-exp-block .experience-in-mauritius .otentik-exp-images img {
+					max-width: 156px;
+					height: 180px;
+				}
+				
+				.otentik-exp-block .experience-in-mauritius .otentik-exp-images img:not(.large-img) {
+					margin-top:25px;
+					margin-left:15px;
+					margin-bottom: 8px;
+				}
+				
+				.otentik-exp-block .experience-in-mauritius p {
+					max-width: none;
+					font-size: 15px;
+					line-height: 24px;
+				}
+				
+				.otentik-exp-block .experience-in-mauritius > .mt-30 {
+					margin-top: 15px;
+				}
+				
+	.discover-other-otentik-exp {
+		padding-top: 30px;
+	}
+	
+		.discover-other-otentik-exp .our-hotels-list {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		
+			.discover-other-otentik-exp .gallery-items-title {
+				margin-bottom: 21px;
+				margin-top: 7px;
+			}
+				
+	.discover-other-otentik-exp .swiper-slide .gallery-item-img {
+		height:200px;
+	}
+	
+	/*.main .exp-act.spa-working-hours.large.pt-100 {
+		padding-top:0;
+	}
+	
+	.main .exp-act.spa-working-hours.large.pb-100 {
+		padding-bottom:0;
+	}
+	
+	.spa-working-hours.large {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: auto;
+		flex-direction: column;
+	}
+		
+		.spa-working-hours.large > img {
+			position: static;
+			object-fit:cover;
+			width:154px;
+		}
+		
+		.spa-working-hours.large > img:first-of-type {
+			margin-right: auto;
+			margin-bottom:25px;
+			height:126px;
+		}
+		
+		.spa-working-hours.large > img:last-of-type {
+			margin-left: auto;
+			margin-top:16px;
+			height:132px;
+		}
+		
+		.spa-working-hours.large .experience-in-mauritius p {
+			max-width:none;
+			margin-top: -9px;
+			line-height: 24px;
+		}*/
+		
+	.more-than-spa .ml-60 {
+		margin-left:0;
+	}
+	
+	.more-than-spa .experience-in-mauritius {
+		transform: none;
+	}
+	
+					
+	.main .more-than-spa.pt-100 {
+		padding-top:36px;
+	}
+				
+	.main .more-than-spa.pb-100 {
+		padding-bottom:5px;
+	}
+				
+		.more-than-spa .flex {
+			flex-direction: column;
+		}
+		
+			.more-than-spa-images.flex {
+				order:-1;
+				flex-direction: row;
+				margin-bottom: 20px;
+			}
+			
+				.more-than-spa-images img {
+					width:156px;
+					height:180px;
+				}
+			
+				.more-than-spa-images img:not(.large-img) {
+					margin-top:25px;
+					margin-left:15px;
+				}
+				
+	.section-title-div.shift-right {
+		padding-left:0;
+	}
+	
+	.positive-impact-testimonial .experience-in-mauritius {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+		.positive-impact-testimonial .experience-in-mauritius .positive-impact-icon {
+			right: 0;
+		}
+
+	.positive-impact .otentik-exp-list .otentik-exp-images-2 img.icon {
+		right:0;
+	}
+	
+	.newsletter-subscription .flex {
+		flex-direction:column;
+		align-items:center;
+	}
+		
+		.newsletter-subscription-title {
+			padding-left:0;
+			padding-right:0;
+			text-align:center;
+		}
+	
+		.newsletter-subscription .experience-in-mauritius p {
+			max-width: none;
+		}
+		
+		.newsletter-subscription-form {
+			margin-top:42px;
+		}
+		
+			.newsletter-subscription-form span {
+				text-align: center;
+			}
+		
+			.newsletter-subscription-form input[type="text"] {
+				margin-bottom:24px;
+				text-align:center;
+			}
+			
+			.newsletter-subscription-form .ah-btn {
+				margin-left:0;
+			}
+			
+		.widget-area .container {
+			flex-direction:column;
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+		
+			.widget-area .logo {
+				margin-bottom:8px;
+			}
+			
+			.widget-area .logo .scroll-up {
+				display:block;
+			}
+		
+			.widget-area strong {
+				margin-top:31px;
+			}
+			
+			.widget-area ul li {
+				margin-bottom: 19px;
+			}
+			.widget-area ul.flex li {
+				margin-bottom: 14px;
+			}
+				
+				.widget-area li a {
+					letter-spacing: .33px;
+					color: #dcf5fa;
+				}
+			
+			.social-media-icons {
+				margin-top: 8px;
+				margin-bottom: 15px;
+			}
+				
+			.widget-area-logos {
+				width: 100%;
+				margin-top:23px;
+			}
+				
+				.widget-area-logos img {
+					margin-left: 0;
+					margin-right: 32px;
+				}
+}
+
+@media screen and (max-width:812px) {
+	.hide-on-mobile-2 {
+		display:none;
+	}
+	
+	.show-on-mobile-2 {
+		display:block;
+	}
+		
+	.header .swiper-container {
+		height:500px;
+	}
+	
+	.hotel-selected .header .swiper-container,
+	.exp-act .header .swiper-container {
+		height:470px;
+	}
+	
+		.header h1 {
+			padding-bottom: 40px;
+			font-size: 32px;
+			font-weight: normal;
+			line-height: 40px;
+			letter-spacing: .71px;
+		}					
+		
+	.ah-experience {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+		
+	.hotel-selected .ah-experience.pb-100 {
+		padding-bottom:0;
+	}
+	
+		.gallery-items .container > ul,
+		.section-title-div {
+			flex-direction:column;
+		}
+		
+		.ah-experience ul {
+			align-items: center;
+		}
+	
+		.ah-experience li:nth-child(n + 1) {
+			width: 307px;
+			height:307px;
+		}
+		
+			.ah-experience li:nth-child(n + 1) .ah-experience-content {
+				height: inherit;
+			}
+		
+		.ah-experience li:nth-child(2n + 2) {
+			margin-right: 0;
+		}
+	
+		.hotel-selected .ah-experience li:nth-child(n + 1) {
+			width: 307px;
+			height:307px;
+		}
+
+		.ah-experience li img:not(.ah-experience-icon) {
+			height:307px;
+		}
+		
+		.experience-in-mauritius h2 {
+			font-size: 24px;
+			line-height: 32px;
+			letter-spacing: .53px;
+			color: #393d47;
+		}
+		
+		.hotel-selected .ah-experience h2 {
+			text-align: center;
+		}
+		
+		.our-hotels-list .experience-in-mauritius h2 {
+			margin-bottom:12px;
+		}
+		
+		.experience-in-mauritius .prompt-para-icon {
+			height: 49px;
+		}
+		
+		.experience-in-mauritius .experiences-activities-icon {
+			height: 79px;
+		}
+		
+		.exp-act .experience-in-mauritius .meetings-events-icon {
+			height: 72px;
+		}
+		
+		/*.exp-act .experience-in-mauritius img:not(.max-width) {
+			height: 61px;
+		}*/
+		
+		.experience-in-mauritius .prompt-para-img {
+			max-width: 375px;
+			width: 100%;
+			height: auto;
+			margin-right: auto;
+			margin-left: 0;
+		}
+		
+		.experience-in-mauritius p {
+			margin-left: 0;
+			margin-right: 0;
+			max-width: none;
+			line-height: 26px;
+			letter-spacing: .4px;
+		}
+		
+		.experience-in-mauritius.prompt-para p {
+			line-height: 24px;
+		}
+		
+		.positive-impact .experience-in-mauritius.prompt-para p {
+			font-size:16px;
+		}
+		
+		.hotel-selected .experience-in-mauritius p {
+			line-height: 24px;
+			letter-spacing: .36px;
+			
+			display: flex;
+			flex-direction: column;
+		}
+		
+			.hotel-selected .experience-in-mauritius .prompt-para-icon,
+			.exp-act .experience-in-mauritius .prompt-para-icon {
+				position: static;
+			}
+			
+			.hotel-selected .experience-in-mauritius.has-right-icon .prompt-para-icon,
+			.exp-act .experience-in-mauritius.has-right-icon .prompt-para-icon {
+				margin-left: auto;
+			}
+			
+			.hotel-selected .experience-in-mauritius.selected-room-desc .prompt-para-icon {
+				max-width: 106px;
+				height: auto;
+				/*margin-top: -3px;
+				margin-bottom: 8px;*/
+				margin-top: 47px;
+				margin-bottom: 8px;
+			}
+		
+		.committed-hotel h2 {
+			margin-bottom: 17px;
+		}
+		
+		.committed-hotel-block {
+			flex-direction: column;
+		}
+		
+			.committed-hotel-block .gallery-items-link {
+				margin-top: 2px;
+				padding-top: 0;
+			}
+			
+		.committed-hotel-props {
+			flex-direction: column;
+			align-items: center;
+		}
+		
+			.committed-hotel-props li {
+				width: 100%;
+			}
+			
+			.committed-hotel-props li:last-of-type {
+				padding-bottom: 0;
+			}
+			
+		
+		
+		/***/
+		.explore-our-hotels {
+			padding-top: 10px;
+			padding-bottom: 0;
+		}
+		
+		.gallery-items {
+			padding-top: 25px;
+			padding-bottom: 44px;
+			margin-bottom: 0;
+		}
+		
+		.hotel-results .gallery-items {
+			padding-top: 10px;
+		}
+		
+		.exp-act .main .gallery-items {
+			padding-top: 15px;
+		}
+		
+		
+		.exp-act .main .gallery-items.pt-50 {
+			padding-bottom: 0;
+		}
+		
+		.hotel-selected .gallery-items {
+			padding-top: 0;
+			margin-top: 0;
+			padding-bottom: 0;
+		}
+		
+		.hotel-selected .gallery-items.pb-100 {
+			padding-top: 40px;
+			padding-bottom: 0;
+		}
+		
+			.hotel-selected .gallery-items ul li:not(.swiper-slide) {
+				flex-direction: column;
+				padding-bottom: 40px;
+				margin-bottom: 0;
+			}
+			
+				.hotel-selected .gallery-items .swiper-container {
+					width: 100%;
+					max-width: none;
+				}
+			
+					.hotel-selected .gallery-items .swiper-container img,
+					.all-in-all-out-package-includes .wedding-content-image img {
+						max-width: none;
+						height: 200px;
+					}
+				
+				.hotel-selected .gallery-room-content {
+					margin-top: 16px;
+					margin-left: 0;
+					margin-right: 0;
+					order: 2;
+				}
+				
+				.hotel-selected .gallery-room-content.small-gap,
+				.hotel-selected .gallery-room-content.large-gap {
+					padding-left:0;
+					padding-right:0;
+				}
+				
+					.hotel-selected .gallery-items .result-item-title {
+						margin-bottom: -2px;
+						font-size: 20px;
+						line-height: 26px;
+						letter-spacing: .44px;
+					}
+		
+		.section-title-div {
+			margin-bottom: 8px;
+		}
+		
+			.section-title,
+			.selected-room-title {
+				margin-bottom: 16px;
+				font-size: 24px;
+				line-height: 34px;
+				letter-spacing: .53px;
+			}
+			
+			.positive-impact .our-hotels-list .selected-room-title {
+				margin-top: 20px;
+				margin-bottom: 0;
+			}
+			
+			.positive-impact .our-hotels-list h2.selected-room-title {
+				margin-top: -1px;
+				margin-bottom: 2px;
+				font-size: 24px;
+				line-height: 34px;
+				letter-spacing: .53px;
+			}
+			
+			.explore-our-hotels .ah-btn {
+				min-width: 110px;
+				justify-content: center;
+				height: 40px;
+				margin-right: auto;
+			}
+			
+			.section-tabs {
+				margin-top: 41px;
+				margin-bottom: 33px;
+				font-size: 14px;
+			}
+			
+		.gallery-items-title {
+			margin-top: 16px;
+			margin-bottom: 12px;
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: .4px;
+		}
+		
+		.inspiration-list .gallery-items-title {
+			margin-bottom: 7px;
+			padding-top: 0;
+		}
+		
+		.inspiration-individual .gallery-items .gallery-items-title {
+			max-width: none;
+			padding-top: 0;
+			margin-bottom: 2px;
+		}
+		
+		.meetings-events-list.our-hotels-list .gallery-items-title {
+			font-size: 20px;
+			line-height: 26px;
+			letter-spacing: .44px;
+		}
+		
+		.positive-impact .positive-impact-testimonial.our-offers .gallery-items-title {
+			margin-top: 7px;
+			padding-bottom: 3px;
+			font-size:24px;
+		}
+		
+		.gallery-items-para {
+			font-size:14px;
+			line-height:20px;
+			letter-spacing: .31px;
+			-webkit-line-clamp: initial;
+		}
+		
+		.meetings-events-list.our-hotels-list .gallery-items .gallery-items-para {
+			margin-bottom: -4px;
+			padding-bottom: 0;
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: .33px;
+		}
+		
+		.our-hotels-list .gallery-items-para,
+		.hotel-selected .gallery-items-para {
+			font-size:15px;
+			line-height: 24px;
+		}
+		
+		.inspiration-list .gallery-items li .gallery-items-para {
+			padding-bottom: 4px;
+			line-height: 24px;
+		}
+		
+		.pozspa-slider .swiper-slide .gallery-items-para:last-of-type {
+			font-size:13px;
+			line-height: 18px;
+		}
+		
+		.our-hotels-list .gallery-items-para:first-of-type {
+			padding-bottom: 2px;
+			line-height: 21px;
+		}
+		
+		.our-hotels-list .our-hotels-list-rect {
+			margin-top:24px;
+		}
+		
+		.positive-impact .our-hotels-list .ah-btn {
+			max-width: 160px;
+			height: 48px;
+			width: 100%;
+		}
+		
+		.positive-impact .our-hotels-list .our-hotels-list-rect.show-on-mobile {
+			display: flex;
+		}
+		
+			.our-hotels-list .our-hotels-list-rect .gallery-items-para {
+				padding-bottom: 0;
+				line-height: 24px;
+				font-size: 16px;
+			}
+		
+		.gallery-items-link {
+			margin-top: 12px;
+			font-weight: normal;
+		}
+		
+		.positive-impact .our-hotels-list .eat-drink-intro-text .gallery-items-link {
+			margin-top: 0;
+			margin-bottom: 8px;
+		}
+		
+		.gallery-items-category {
+			margin-top: 16px;
+			margin-bottom: -12px;
+		}
+		
+		.meetings-events-list.our-hotels-list {
+			padding-bottom: 0;
+			margin-bottom: 12px;
+		}
+		
+			.meetings-events-list.our-hotels-list .gallery-items {
+				padding-top: 0;
+			}
+				
+				.meetings-events-list .gallery-items > ul {
+					flex-direction: column;
+				}
+				
+					.meetings-events-list .gallery-items > ul li {
+						width: 100%;
+					}
+					
+						.meetings-events-list .gallery-items ul li .gallery-items-title {
+							margin-bottom: 2px;
+							padding-top: 0;
+						}
+					
+					.meetings-events-list .gallery-items ul li:nth-child(even) {
+						margin-left: 0;
+					}
+		
+		.our-hotels-list {
+			padding-bottom:28px;
+		}
+		
+		.main .inspiration-individual.pt-100 {
+			padding-top: 40px;
+			padding-bottom: 24px;
+			margin-bottom: 0;
+		}
+		
+		.main .inspiration-list.pt-100 {
+			margin-bottom: 7px;
+			padding-top: 16px;
+		}
+		
+			.our-hotels-list .gallery-items {
+				padding-top: 20px;
+				padding-bottom: 0;
+			}
+				
+				.our-hotels-list .gallery-items li {
+					padding-bottom: 8px;
+				}
+				
+				.inspiration-list .gallery-items li {
+					padding-bottom: 0;
+				}
+				
+					.our-hotels-list .gallery-items .result-item-title {
+						margin-top: 16px;
+						margin-bottom: 6px;
+						padding-top: 0;
+						font-size: 18px;
+						line-height: 24px;
+						letter-spacing: .4px;
+					}
+					
+					.our-hotels-list .gallery-items .bullet-list,
+					.hotel-selected .gallery-items .bullet-list {
+						padding-top: 0;
+						padding-bottom: 0;
+						margin-bottom: -10px;
+						line-height: 36px;
+					}
+					
+					.our-hotels-list .gallery-items .bullet-list {
+						margin-bottom: -6px;
+					}
+					
+					.inspiration-individual .gallery-items .bullet-list {
+						margin-bottom: 15px;
+					}
+					
+						.our-hotels-list .gallery-items .bullet-list span:not(:last-child) {
+							margin-right: 16px;
+						}
+					
+					.our-hotels-list .gallery-items .gallery-items-price {
+						margin-top:12px;
+						margin-bottom: -4px;
+					}
+					
+					.our-hotels-list .ah-btn,
+					.hotel-selected .gallery-items .ah-btn,
+					.selected-room-desc .ah-btn,
+					.experiences-activities-block .ah-btn,
+					.kids-services-facilities-list .ah-btn,
+					.list-by-cols .ah-btn {
+						height: 40px;
+						width: 110px;
+						justify-content: center;
+					}
+					
+		.choose-your-hotel-bar {
+			height: auto;
+			flex-direction: column;
+			margin-top: 31px;
+			padding: 16px;
+		}
+		
+			.choose-your-hotel-bar .mr-60 {
+				margin-right:0;
+				margin-bottom:10px;
+			}
+		
+			.choose-your-hotel-bar .darkgray-text {
+				margin-left:0;
+			}
+					
+		.hotel-results .gallery-items {
+			padding-bottom: 30px;
+		}
+					
+			.hotel-results .gallery-items li,
+			.hotel-results .gallery-items li .result-item,
+			.hotel-results .gallery-items .gallery-item-img {
+				width:100%;
+			}
+			
+			.hotel-results .gallery-items .gallery-item-img {
+				max-width:none;
+			}
+			
+			.hotel-results .gallery-items .result-item-title {
+				padding-top:0;
+			}
+			
+			.hotel-results .gallery-items .bullet-list {
+				margin-top:2px;
+			}
+			
+			.hotel-results .gallery-items .gallery-items-price {
+				padding-top:2px;
+				margin-bottom: -4px;
+			}
+			
+			.hotel-results .gallery-items .gallery-items-link {
+				margin-top: 0;
+			}
+		
+		.hotel-results .gallery-items .container > ul > li:nth-child(n) {
+			margin-left: 0;
+			padding-bottom: 0;
+			margin-bottom: 30px;
+		}
+			
+		.explore-our-hotels .hotel-item .gallery-item-img,
+		.gallery-items .gallery-item-img {
+			height:241px;
+		}
+			
+		.our-hotels-list .gallery-items .gallery-item-img,
+		.exp-act .gallery-items img,
+		.gallery-room-content-2 .wedding-content-image img,
+		.our-offers-grid  ul li .our-offers-grid-img img,
+		.pozspa-slider .swiper-slide .gallery-item-img,
+		.hotel-results .gallery-items .gallery-item-img,
+		.how-we-approach-things .gallery-items ul li img,
+		.who-we-are-slider .swiper-slide img {
+			height:200px;
+		}
+		
+		.hotel-item li .hotel-item-title {
+			font-size: 16px;
+			letter-spacing: .36px;
+		}
+		
+		.ah-swiper-arrows {
+			display:none;
+		}
+		
+		.tripadvisor-reviews-item:last-child .ah-swiper-arrows {
+			display:block;
+		}
+		
+			.tripadvisor-reviews-item:last-child .ah-swiper-arrows .tripadvisor-reviews-arrow {
+				position: absolute;
+				right: 0;
+				left: auto;
+				top: calc(50% - 15px);
+			}
+		
+		.main .our-hotels-header.pt-100 {
+			padding-top: 32px;
+		}
+		
+		.main .our-hotels-header.pb-100 {
+			padding-bottom: 40px;
+		}
+		
+			.our-hotels-header .container {
+				flex-direction:column;
+			}
+			
+				.our-hotels-header-text {
+					margin-top: 32px;
+					order: 2;
+				}
+				
+				.our-hotels-header img {
+					max-width: none;
+					width: 100%;
+					height: 198px;
+					object-fit: cover;
+				}
+				
+				.our-hotels-header h1 {
+					font-size:24px;
+					line-height:34px;
+				}
+				
+			.our-hotels-list .experience-in-mauritius.pt-100 {
+				padding-top: 36px;
+			}
+				
+				.our-hotels-list .experience-in-mauritius p {
+					margin-left: auto;
+					margin-right: auto;
+					padding-bottom: 3px;
+					line-height: 24px;
+					letter-spacing: .36px;
+				}
+				
+			.our-hotels-list-text .experience-in-mauritius {
+				margin-top: 13px;
+				margin-bottom: -4px;
+			}
+			
+				.our-hotels-list-text .experience-in-mauritius h2 {
+					margin-top: 20px;
+					margin-bottom: 7px;
+				}
+				
+				.our-hotels-list-text .experience-in-mauritius p {
+					width: 100%;
+					line-height: 24px;
+				}
+				
+			.features-block {
+				flex-direction: column;
+				margin-top: 40px;
+				margin-bottom: 0;
+			}
+			
+				.features-left {
+					margin-right:0;
+				}
+			
+					.features-left ul {
+						flex-direction: column;
+					}
+				
+						.features-left ul li:nth-child(n) {
+							margin-bottom:33px;
+							width: 100%;
+						}
+						
+					.features-left img,
+					.features-right img {
+						width:157px;
+						object-fit: cover;
+					}
+					
+				.features-right > div:first-child {
+					margin-right: 13px;
+					margin-top: 13px;
+				}
+			
+					.features-right > div:first-child div:first-child img {
+						height: 167px;
+						margin-bottom: 13px;
+					}
+			
+					.features-right > div:first-child div:last-child img {
+						height: 169px;
+					}
+			
+					.features-right > div:last-child div:first-child img {
+						height: 195px;
+						margin-bottom: 13px;
+					}
+			
+					.features-right > div:last-child div:last-child img {
+						height: 141px;
+					}
+				
+		.eat-drink-intro-text {
+			margin-top: 0;
+			margin-bottom: 0;
+			flex-direction: column;
+			max-width: none;
+			height: auto;
+		}
+		
+		.experiences-activities-block > .container .pb-50 {
+			padding-bottom: 40px;
+		}
+			
+		.main .experiences-activities-block.pb-100 {
+			padding-bottom: 40px;
+		}
+		
+			.experiences-activities-block .result-item-title {
+				font-size: 24px;
+				line-height: 30px;
+				letter-spacing: .53px;
+			}
+			
+		.gallery-items .exp-act-list {
+			margin-top: 5px;
+		}
+				
+			.gallery-items .exp-act-list li {
+				width: 100%;
+				padding-bottom: 8px;
+			}
+			
+			.gallery-items .exp-act-list li:not(:nth-child(3n + 1)) {
+				margin-left: 0;
+			}
+			
+				.gallery-items .exp-act-list li h3 {
+					margin-top:18px;
+					margin-bottom: 11px;
+				}
+			
+				.gallery-items .exp-act-list li .gallery-items-para {
+					margin-bottom:18px;
+				}
+			
+				.gallery-items .exp-act-list li .gallery-items-link {
+					margin-top: 0;
+				}
+				
+		.main .poz-spa-col.pt-100 {
+			padding-top:0;
+		}
+				
+		.main .poz-spa-col.pb-100 {
+			padding-bottom:40px;
+		}
+					
+			.poz-spa-col > .flex {
+				flex-direction: column;
+				margin-top: 0;
+			}
+			
+				.hotel-selected .selected-room-desc.has-left-icon .prompt-para-icon-alt {
+					transform: translateY(40px);
+				}
+			
+				.poz-spa-col .poz-spa-col-img {
+					margin-left: 0;
+					height: 364px;
+					width: 100%;
+					object-fit: cover;
+				}
+				
+		.more-than-spa-left,
+		.more-than-spa-right {
+			max-width:none;
+		}
+		
+		.more-than-spa-right,
+		.has-left-parent .poz-spa-col .shift-left {
+			order:-1;
+		}
+		
+			.more-than-spa-right h1,
+			.our-spa-products h1,
+			.has-left-parent .poz-spa-col h1 {
+				margin-bottom: 15px;
+				font-size: 24px;
+				line-height: 34px;
+				letter-spacing: .53px;
+			}
+			
+			.inspiration-individual .experience-in-mauritius {
+				margin-bottom: -4px;
+				padding-bottom: 0;
+			}
+			
+				.inspiration-individual .experience-in-mauritius h1 {
+					margin-bottom: 0;
+				}
+		
+			.more-than-spa-right p:not(:last-of-type) {
+				margin-bottom: 10px;
+			}
+		
+			.more-than-spa-right p.green-text {
+				margin-top: 21px;
+				margin-bottom: 8px;
+			}
+			
+			.has-left-parent .poz-spa-col p:not(:last-of-type) {
+				margin-bottom: 0;
+			}
+			
+			.has-left-parent .poz-spa-col p.green-text {
+				margin-bottom: 8px;
+			}
+			
+		.title-section {
+			height:340px;
+		}
+		
+			.title-section#restaurants-section .has-icon img {
+				max-width: 76px;
+			}
+		
+			.title-section#bars-section .has-icon img {
+				max-width: 88px;
+			}
+		
+			.title-section .margin-auto-vert {
+				margin-left: 0;
+				margin-right: 0;
+			}
+				
+			.title-section#spa-working-hours-section .has-icon.top-aligned,
+			.title-section#poz-section .has-icon.top-aligned,
+			.title-section#poz-menu-section .has-icon.top-aligned {
+				bottom: 20px;
+			}
+			
+			.title-section#spa-working-hours-section .has-icon.bottom-aligned,
+			.title-section#poz-section .has-icon.bottom-aligned,
+			.title-section#poz-menu-section .has-icon.bottom-aligned {
+				top: 20px;
+			}
+				
+				.title-section#spa-working-hours-section .has-icon img {
+					height: 104px;
+					max-width: none;
+				}
+				
+				.title-section#poz-section .has-icon.top-aligned img {
+					height: 126px;
+				}
+				
+				.title-section#poz-section .has-icon.bottom-aligned img {
+					width: 154px;
+				}
+				
+				.title-section#poz-menu-section .has-icon img {
+					height: 73px;
+					max-width: none;
+				}
+
+				.title-section#poz-menu-section .ah-btn {
+					height: 48px;
+				}
+			
+			/*.spa-working-hours img:first-of-type {
+				bottom: 20px !important;
+			}
+			
+			.spa-working-hours img:last-of-type {
+				top: 20px !important;
+			}*/
+			
+			.spa-working-hours .our-hotels-list {
+				height: inherit;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+				.spa-working-hours .our-hotels-list .experience-in-mauritius {
+					width: 100%;
+					margin: 0;
+				}
+				
+					.spa-working-hours .our-hotels-list .experience-in-mauritius p,
+					.our-spa-products .experience-in-mauritius p {
+						width: 100%;
+					}
+					
+		.main .our-spa-products.pt-100 {
+			padding-top: 43px;
+		}
+		
+		.main .our-spa-products.pb-100 {
+			padding-bottom: 30px;
+		}
+		
+			.our-hotels-list .experience-in-mauritius .our-spa-products-icon:not(.max-width) {
+				width: 50px;
+				height: 69px;
+				margin-bottom: 10px;
+				object-fit: cover;
+			}
+			
+			.our-spa-products h1 {
+				padding-top: 10px;
+				margin-bottom: 6px;
+			}
+			
+			.our-spa-products-adv {
+				width: 100%;
+				padding-top:24px;
+				padding-bottom:20px;
+				flex-direction: column;
+			}
+			
+				.our-spa-products-adv li {
+					margin-bottom:37px;
+				}
+				
+					.our-spa-products .our-spa-products-adv li em {
+						width: 114px;
+						height: 114px;
+					}
+
+					.our-spa-products-adv li p {
+						margin-top:2px;
+					}
+					
+		.hotel-selected .spa-features.pt-100 {
+			padding-top:0;
+		}
+		
+			.spa-features ul {
+				margin-bottom: 0;
+			}
+				
+				.hotel-selected .spa-features.gallery-items ul li {
+					padding-bottom: 56px;
+				}
+				
+				.spa-features.gallery-items .bullet-list.simple-list ul li {
+					padding-bottom: 0;
+				}
+					
+				.spa-features li .gallery-room-content {
+					order: -1;
+					margin-top: 40px;
+					margin-bottom: 40px;
+				}
+				
+					.hotel-selected .spa-features .result-item-title {
+						margin-bottom: 6px;
+						font-size: 24px;
+						line-height: 34px;
+						letter-spacing: .53px;
+					}
+					
+					.hotel-selected .spa-features .bullet-list.flex-wrap span:not(:last-child) {
+						margin-bottom: 16px;
+					}
+					
+					.hotel-selected .spa-features .bullet-list.flex-wrap li {
+						color: #778593;
+					}
+					
+					.hotel-selected .spa-features .bullet-list.flex-wrap li {
+						padding-bottom: 0;
+					}
+					
+					.hotel-selected .spa-features .ah-filter-body .bullet-list.flex-wrap ul {
+						flex-direction: column;
+					}
+					
+						.hotel-selected .spa-features .ah-filter-body .bullet-list.flex-wrap li {
+							width:100%;
+							margin-top: 0;
+						}
+				
+				.hotel-selected .spa-features li .spa-features-img {
+					height:233px;
+				}
+				
+		.main .kids-club.pb-100,
+		.main .kids-services-facilities-block.pb-100 {
+			padding-bottom: 0;
+		}
+		
+		.wedding-content {
+			flex-direction: column;
+		}
+		
+		.main .wedding-content.pt-100 {
+			padding-top: 40px;
+		}
+		
+		.main .wedding-content.pb-100 {
+			padding-bottom: 40px;
+		}
+		
+			.wedding-content-text {
+				max-width:none;
+			}
+		
+			.wedding-content-image {
+				order:2;
+				margin-top: 35px;
+			}
+		
+				.wedding-content-image img {
+					width: 100%;
+					height:363px;
+					object-fit: cover;
+				}
+			
+				.wedding-content .gallery-items-title {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				
+				.wedding-content p {
+					margin-top:10px;
+					line-height: 24px;
+				}
+				
+		.wedding-large-img {
+			height:271px;
+		}
+		
+		.wedding-content-text .experience-in-mauritius {
+			padding-bottom:2px;
+		}
+			
+			.wedding-content-text .flex-3 .experience-in-mauritius .gallery-items-title {
+				margin-top: 6px;
+				margin-bottom: 6px;
+				font-size:24px;
+				line-height:34px;
+				letter-spacing:.53px;
+				text-transform: lowercase;
+			}
+			
+			.wedding-content-text .experience-in-mauritius p {
+				line-height:24px;
+			}
+			
+		.main .all-in-all-out-package-includes.pt-100 {
+			padding-top: 36px;
+		}
+		
+			.all-in-all-out-package-includes .result-item-title {
+				text-align: left;
+			}
+			
+			.all-in-all-out-package-includes ul {
+				justify-content: flex-start;
+				margin-top: 21px;
+				margin-bottom: 23px;
+			}
+			
+				.all-in-all-out-package-includes ul li {
+					margin-left: 0;
+				}
+			
+			.all-in-all-out-package-includes .wedding-content {
+				margin-top: 0;
+				padding-top: 0;
+				padding-bottom: 17px;
+			}
+				
+				.all-in-all-out-package-includes .wedding-content-image {
+					order:-1;
+					margin-top: 0;
+					margin-bottom: 30px;
+				}
+				
+				.all-in-all-out-package-includes .wedding-content-text {
+					margin-left:0;
+				}
+					
+					.all-in-all-out-package-includes .wedding-content-text .experience-in-mauritius p {
+						margin-bottom: 0;
+					}
+					
+		.all-in-all-out-conditions {
+			padding: 16px;
+			flex-direction: column;
+		}
+		
+			.all-in-all-out-conditions .flex-1 img {
+				position: absolute;
+				right: 46px;
+				top: 16px;
+				width: 75px;
+			}
+			
+			.all-in-all-out-conditions h2 {
+				padding-top: 34px;
+				text-transform: lowercase;
+			}
+			
+		.gallery-room-content-2 .wedding-content-image {
+			order:-1;
+			margin-left: 0;
+			margin-top: 0;
+		}
+			
+		.gallery-room-content-2 .wedding-content-text:not(.ml-60) {
+			margin-top: 40px;
+		}
+			
+		.gallery-room-content-2 .wedding-content-text.ml-60 {
+			margin-top: 15px;
+			margin-left: 0;
+		}
+			
+			.gallery-room-content-2 .wedding-content-text.ml-60 p {
+				margin-bottom:0;
+			}
+		
+			.gallery-room-content-2 .wedding-content-text .experience-in-mauritius {
+				width: 100%;
+			}
+			
+				.gallery-room-content-2 .gallery-items-title {
+					margin-top: 0;
+					font-size: 20px;
+					line-height: 26px;
+				}
+				
+		.main .information-services-contact-info.pb-100 {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			margin-left: -24px;
+			width: calc(100% + 48px);
+		}
+		
+			.information-services-contact-info .gallery-room-content-2 {
+				padding-top: 43px;
+				padding-left:24px;
+				padding-right:24px;
+				height: auto;
+			}
+			
+				.information-services-contact-info .gallery-room-content-2 > .flex {
+					flex-direction: column;
+					padding-top: 23px;
+				}
+				
+				.information-services-contact-info .gallery-room-content-2 .flex-1:not(:last-of-type) {
+					margin-bottom: 28px;
+				}
+				
+				.information-services-contact-info .gallery-room-content-2 .flex-1:last-of-type {
+					margin-bottom: 0;
+				}
+					
+					.information-services-contact-info .gallery-room-content-2 .flex-1 > span,
+					.information-services-contact-info .gallery-room-content-2 .flex-1 > a {
+						margin-bottom:15px;
+					}
+					
+		.gallery-room-content-2 .list-by-cols {
+			margin-top: 0;
+			padding:0;
+		}
+		
+		.contact-us-header {
+			text-align: center;
+		}
+		
+			.contact-us-header h1,
+			.section-title-div.shift-right .gallery-items-title {
+				margin-bottom: 0;
+				font-size:24px;
+				letter-spacing:.53px;
+			}
+			
+			.section-title-div.shift-right .gallery-items-title {
+				margin-top: -14px;
+				margin-bottom: 5px;
+				font-size: 20px;
+				line-height: 24px;
+				letter-spacing: .44px;
+			}
+			
+			.contact-us-header.experience-in-mauritius p {
+				width:100%;
+			}
+			
+		.contact-us-block {
+			margin-bottom: -20px;
+			padding-top: 2px;
+			flex-direction: column;
+			align-items: center;
+		}
+			
+			.contact-us-block > .flex {
+				flex-direction: column;
+			}
+			
+			.contact-us-block > .flex:not(:first-child) {
+				margin-top:40px;
+			}
+			
+				.contact-us-item {
+					margin-left:0;
+					text-align: center;
+				}
+				
+					.contact-us-item span,
+					.contact-us-item a {
+						margin-top: 15px;
+						margin-bottom: 0;
+					}
+					
+					.meetings-events-contact-us .contact-us-item span,
+					.meetings-events-contact-us .contact-us-item a {
+						margin-top: 12px;
+					}
+		
+		.main .otentik-exp-intro-text.pt-100 {
+			padding-top: 32px;
+		}
+		
+		.main .otentik-exp-intro-text.pb-100 {
+			padding-bottom: 13px;
+		}
+					
+			.otentik-exp-intro-text .our-hotels-list,
+			.otentik-exp-list {
+				flex-direction: column;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			
+				.otentik-exp-intro-text .eat-drink-intro-text {
+					margin-right: 0;
+					font-size: 15px;
+				}
+			
+				.otentik-exp-intro-text .our-hotels-list .result-item-title {
+					font-size: 24px;
+					line-height: 34px;
+					letter-spacing: .53px;
+				}
+				
+				.otentik-exp-intro-text .otentik-exp-intro-icon {
+					position: static;
+					order: -1;
+					margin-bottom: 11px;
+				}
+				
+					.otentik-exp-intro-text .otentik-exp-intro-icon img {
+						max-width:119px;
+						margin-left: auto;
+					}
+			
+				.otentik-exp-intro-text .otentik-exp-masonary.ah-masonary {
+					margin-top:40px;
+					width: max-content;
+					column-gap: 16px;
+				}
+				
+					.otentik-exp-intro-text .otentik-exp-masonary.ah-masonary img {
+						width: 156px;
+						border-top: 8px;
+						max-height: 193px;
+						border-bottom: 0;
+						margin-bottom: 16px;
+						object-fit: cover;
+					}
+					
+				.positive-impact .otentik-exp-intro-text .our-hotels-list > div:last-child {
+					margin-left: 0;
+					margin-bottom: 24px;
+					order: -1;
+				}
+					
+				.positive-impact .otentik-exp-intro-text .our-hotels-list .otentik-exp-images-2 {
+					margin-left: 0;
+					margin-right: 0;
+					margin-top: 8px;
+					margin-bottom: 23px
+				}
+				
+					.positive-impact .otentik-exp-intro-text .our-hotels-list .otentik-exp-images-2 img {
+						height:200px;
+						max-width: none;
+					}
+				
+					.positive-impact .otentik-exp-intro-text .otentik-exp-masonary.ah-masonary {
+						margin-top: 19px;
+					}
+					
+						.positive-impact .otentik-exp-masonary.ah-masonary > *:first-of-type,
+						.positive-impact .otentik-exp-masonary.ah-masonary > *:last-of-type {
+							margin-top: 0;
+						}
+						
+						.positive-impact .otentik-exp-masonary.ah-masonary > *:last-of-type img {
+							transform: translateY(25px);
+						}
+					
+					.positive-impact .otentik-exp-intro-text .otentik-exp-masonary.ah-masonary img {
+						max-height: 181px;
+					}
+						
+				.positive-impact .otentik-exp-intro-text .our-hotels-list > div:first-child {
+					padding-top: 0;
+				}
+					
+			.otentik-exp-list.our-hotels-list {
+				margin-top: 6px;
+				margin-bottom: -20px;
+				padding-bottom: 0;
+			}
+			
+			.positive-impact .otentik-exp-list.our-hotels-list {
+				margin-top: 0;
+				margin-bottom: -10px;
+			}
+			
+			.positive-impact .our-hotels-list:not(.otentik-exp-list) {
+				padding-bottom: 0;
+			}
+			
+				.positive-impact .otentik-exp-intro-text.pb-100 {
+					padding-bottom: 50px;
+				}
+			
+					.positive-impact .otentik-exp-intro-text .eat-drink-intro-text .result-item-title {
+						margin-bottom:12px;
+					}
+					
+				.otentik-exp-list .mr-60 {
+					margin-right: 0;
+				}
+						
+				.otentik-exp-list .ml-60 {
+					margin-left: 0;
+				}
+						
+				.otentik-exp-list .otentik-exp-images-2 {
+					order: -1;
+				}
+				
+				.otentik-exp-list .gallery-items-title,
+				.cooking-class .our-hotels-list .otentik-exp-block .result-item-title {
+					margin-top: 5px;
+					margin-bottom: 8px;
+					padding-bottom: 0;
+					font-size: 24px;
+					line-height: 34px;
+					letter-spacing: .53px;
+				}
+				
+				.positive-impact .otentik-exp-list .gallery-items-title {
+					margin-top: 0;
+					margin-bottom: 12px;
+				}
+				
+				.cooking-class .our-hotels-list .otentik-exp-block .result-item-title {
+					margin-top: 16px;
+				}
+							
+				.otentik-exp-list.our-hotels-list .gallery-items-para,
+				.cooking-class .our-hotels-list .otentik-exp-block .gallery-items-para {
+					line-height: 24px;
+				}
+				
+				.positive-impact .otentik-exp-list.our-hotels-list .gallery-items-para {
+					font-size: 15px;
+				}
+				
+				.positive-impact .otentik-exp-list.our-hotels-list .our-hotels-list-rect .gallery-items-para {
+					font-size: 16px;
+				}
+				
+				
+				.cooking-class .our-hotels-list .otentik-exp-block .gallery-items-para {
+					max-width: 100%;
+					margin-bottom: 30px;
+				}
+							
+				.otentik-exp-list.our-hotels-list .gallery-items-para ~ .mt-20 {
+					margin-top:14px;
+				}
+				
+					.otentik-exp-list .otentik-exp-images-2 img {
+						max-width:156px;
+						object-fit: cover;
+					}
+					
+					.otentik-exp-list .otentik-exp-images-2 img.ml-30 {
+						margin-left: 0;
+					}
+						
+					.otentik-exp-list .otentik-exp-images-2 img.large-img {
+						max-height: 180px;
+						margin-right: 15px;
+						order: -1;
+					}
+						
+					.otentik-exp-list .otentik-exp-images-2 img:not(.large-img) {
+						max-height: 126px;
+					}
+					
+					.positive-impact .otentik-exp-list .otentik-exp-images-2 img.icon {
+						right: -3px;
+						top: -33px;
+						width: 55px;
+						height: 45px;
+					}
+					
+		.cooking-class {
+			margin-top: 10px;
+		}
+					
+		.main .cooking-class.pt-100 {
+			padding-top: 40px;
+		}
+
+		.main .cooking-class.pb-100 {
+			padding-bottom: 40px;
+		}
+		
+			.cooking-class .our-hotels-list {
+				flex-direction: column
+			}
+			
+				.cooking-class .our-hotels-list {
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+			
+					.cooking-class .our-hotels-list .otentik-exp-block {
+						order: 2;
+						margin-right: 0;
+						padding-bottom: 0;
+					}
+				
+					.cooking-class .our-hotels-list .ml-60 {
+						margin-left: 0;
+					}
+					
+						.cooking-class .our-hotels-list img {
+							max-height: 201px;
+						}
+						
+					.cooking-class-popup {
+						position: static;
+						max-width: none;
+					}
+					
+		.main .signature-massages-list.pt-100 {
+			padding-top:40px;
+		}
+					
+		.main .signature-massages-list.pb-50 {
+			padding-bottom:9px;
+		}
+		
+			.signature-massages-list .experience-in-mauritius {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			
+			.signature-massages-list .gallery-items {
+				padding-top: 0;
+			}
+			
+				.signature-massages-list .gallery-items > ul {
+					flex-direction: column;
+				}
+				
+					.signature-massages-list .gallery-items > ul > li:nth-child(n) {
+						width: 100%;
+						margin-left: 0;
+					}
+					
+						.signature-massages-list .gallery-items > ul > li h2 {
+							margin-top: 5px;
+							padding-bottom: 0;
+						}
+						
+		.our-offers-icon {
+			margin-bottom: 4px;
+		}
+						
+		.our-offers .selected-room-title {
+			margin-bottom: 10px;
+			padding-bottom: 0;
+			font-size:32px;
+			line-height:40px;
+			letter-spacing:.71px;
+		}
+			
+		.our-offers .experience-in-mauritius p {
+			max-width:none;
+			line-height: 24px;
+		}
+		
+		.main .special-offers-list.pt-100 {
+			padding-top:40px;
+		}
+		
+		.main .our-offers-grid.pt-100 {
+			padding-top:56px;
+			margin-bottom: 6px;
+		}
+		
+			.special-offers-list .experience-in-mauritius h2 {
+				margin-bottom: 9px;
+			}
+		
+			.special-offers-list .gallery-items ul,
+			.our-offers-grid  ul li {
+				flex-direction: column;
+				margin-bottom: 0;
+			}
+			
+				.special-offers-list .gallery-items ul li:nth-child(n) {
+					width: 100%;
+					margin-left: 0;
+					margin-top: 0;
+					margin-bottom: 40px;
+				}
+			
+				.special-offers-list .gallery-items ul li:last-child {
+					margin-bottom: 4px;
+				}
+				
+				.our-offers-grid  ul li .our-offers-grid-img {
+					order:-1;
+					margin-right: 0;
+				}
+				
+					.our-offers-grid  ul li .our-offers-grid-img img {
+						width: 100%;
+						object-fit: cover;
+					}
+					
+				.our-offers-grid  ul li .ml-60 {
+					margin-left: 0;
+				}
+				
+				.our-offers-grid  ul li .mr-60 {
+					margin-right: 0;
+				}
+				
+					.our-offers-grid  ul li .gallery-items-title {
+						padding-bottom:0;
+						font-size: 20px;
+						line-height: 26px;
+					}
+					
+					.our-offers-grid  ul li .bullet-list {
+						padding-bottom:0;
+						margin-bottom: 15px;
+					}
+					
+		.our-offers .large-img {
+			margin-bottom: -34px;
+			padding-top: 32px;
+			padding-bottom: 0;
+		}
+					
+			.our-offers .large-img img {
+				height: 218px;
+				object-fit:cover;
+			}
+					
+		.offer-picked {
+			flex-direction: column;
+		}
+		
+		.main .offer-picked.pt-100 {
+			padding-top:40px;
+		}
+		
+		.main .offer-picked.pb-100 {
+			padding-bottom:40px;
+		}
+		
+			.offer-picked .mr-20 {
+				margin-right:0;
+			}
+			
+			.offer-picked .gallery-items-title {
+				margin: 0;
+				font-size:20px;
+				line-height:26px;
+				letter-spacing:.44px;
+				color:#273240;
+			}
+			
+			.offer-picked-text {
+				max-width:none;
+			}
+			
+				.experience-in-mauritius.has-left-icon.pozspa-icon-2 .offer-picked-text p {
+					width:100%;
+					margin-top: 10px;
+					line-height: 24px;
+				}
+				
+			.offer-picked-img {
+				margin-top:35px;
+			}
+				
+				.offer-picked-img img {
+					width: 100%;
+					height: 301px;
+					object-fit: cover;
+				}
+				
+		.contact-us .prompt-para {
+			padding-bottom:25px;
+		}
+				
+			.contact-us .selected-room-title {
+				margin-bottom: 12px;
+				padding-bottom: 0;
+			}
+			
+			.contact-us .selected-room-title,
+			.contact-us .our-hotels-list .result-item-title {
+				font-size: 24px;
+				line-height: 32px;
+				letter-spacing: .53px;
+			}
+					
+			.contact-us .prompt-para p {
+				max-width: none;
+				line-height: 24px;
+			}
+			
+			.contact-us-block > div:not(:last-child) {
+				margin-bottom: 40px;
+			}
+			
+				.contact-us-icon {
+					width: 114px;
+					height: 114px;
+					margin-bottom: 3px;
+				}
+				
+					.contact-us-icon img {
+						width:71px;
+					}
+					
+		.contact-us .our-hotels-list.pt-100 {
+			padding-top:86px;
+		}
+		
+		.contact-us .our-hotels-list.mb-40 {
+			margin-bottom:0;
+		}
+		
+			.contact-us .our-hotels-list .pb-50 {
+				padding-bottom:0;
+			}
+			
+				.contact-us .our-hotels-list .four-cols-gal {
+					margin-top:32px;
+					margin-left: 16px;
+					margin-right: 16px;
+					flex-direction: column;
+				}
+			
+					.contact-us .our-hotels-list .four-cols-gal li {
+						width: 100%;
+						margin-left: 0;
+					}
+					
+					.contact-us .our-hotels-list .four-cols-gal li:not(:last-child) {
+						margin-bottom:40px;
+					}
+					
+						.contact-us .our-hotels-list .four-cols-gal li .gallery-item-img {
+							height:180px;
+						}
+					
+						.contact-us .our-hotels-list .four-cols-gal li h2 {
+							margin-bottom:14px;
+						}
+						
+		.contact-us-map {
+			height:480px;
+		}
+		
+			.contact-us-map .our-hotels-list {
+				top: auto !important;
+				bottom: -4px;
+				left: 0 !important;
+				right: 0 !important;
+				padding-bottom: 0;
+			}
+			
+				.contact-us-map .our-hotels-list .four-cols-gal {
+					max-width: none;
+					margin-top: 0;
+				}
+				
+					.contact-us-map .our-hotels-list .four-cols-gal li {
+						padding: 12px;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+					}
+					
+						.contact-us-map .four-cols-gal li .gallery-item-img {
+							width: 140px;
+							max-height: 129px;
+							margin-right: 12px;
+						}
+						
+						.contact-us-map .four-cols-gal li > div {
+							width:calc(100% - 152px);
+						}
+						
+							.contact-us-map .four-cols-gal li h2 {
+								margin-top: 0;
+								font-size: 14px;
+							}
+							
+							.contact-us-map .four-cols-gal li p {
+								word-break: break-word;
+							}
+							
+		.gallery-list {
+			margin-top: 0;
+			padding-top: 35px;
+			padding-bottom: 4px;
+		}
+		
+			.gallery-list .experience-in-mauritius {
+				margin-bottom:28px;
+			}
+
+				.gallery-list .experience-in-mauritius .section-title {
+					margin-bottom: 8px;
+					padding-bottom: 0;
+					font-size:32px;
+					line-height:46px;
+					letter-spacing:.71px;
+				}
+
+				.gallery-list .experience-in-mauritius p {
+					width:100%;
+				}
+				
+			.gallery-list .hotel-selected-tabs {
+				margin-bottom: 15px;
+			}
+				
+			.gallery-list .ah-masonary {
+				column-gap: 9px;
+			}
+			
+				.gallery-list .ah-masonary img:not(.ah-play-btn) {
+					border-top-width: 0;
+					border-bottom-width: 9px;
+				}
+				
+				.gallery-list .ah-masonary .show-layer > .absolute {
+					top: 0;
+					bottom: 9px;
+				}
+				
+			.gallery-filter-tabs {
+				flex-wrap: nowrap;
+				overflow-x: auto;
+			}
+			
+				.gallery-filter-tabs a {
+					white-space: nowrap;
+				}
+				
+		.get-a-quote-text {
+			padding-top: 80px;
+			padding-bottom:40px;
+		}
+			
+			.get-a-quote-text > .flex {
+				flex-direction: column;
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+			
+				.get-a-quote-text .experience-in-mauritius {
+					width:100%;
+				}
+			
+					.get-a-quote-text .prompt-para {
+						max-width:none;
+						margin-bottom: 40px;
+					}
+					
+						.get-a-quote-text .prompt-para img {
+							width: 85px;
+							right: 64px;
+							top: -53px;
+						}
+				
+						.get-a-quote-text .selected-room-title {
+							margin-bottom: 0;
+							font-size:32px;
+							line-height:46px;
+							letter-spacing:.71px;
+						}
+						
+				.get-a-quote-text .get-a-quote-img {
+					height: 218px;
+					object-fit: cover;
+				}
+				
+		.main .get-a-quote-form.pt-100 {
+			padding-top: 0;
+			padding-bottom: 0;
+			flex-direction: column;
+		}
+		
+			.get-a-quote-form > div:nth-child(n) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			
+			.get-a-quote-form > div:first-child {
+				border-right:0;
+			}
+			
+				.get-a-quote-form .get-a-quote-2-cols {
+					flex-direction: column;
+				}
+				
+					.get-a-quote-form .gallery-items-title {
+						margin-top: 50px;
+					}
+				
+					.get-a-quote-form .get-a-quote-2-cols .flex-1.pl-20 {
+						margin-top:20px;
+						padding-top:10px;
+						padding-left:0;
+					}
+			
+					.get-a-quote-form input:not([type="checkbox"]),
+					.get-a-quote-form .selectbox,
+					.get-a-quote-form .ah-btn {
+						height:48px;
+					}
+					
+					.get-a-quote-form .ah-btn {
+						width:100%;
+					}
+					
+				.get-a-quote-form .check-group {
+					flex-direction: column;
+				}
+				
+					.get-a-quote-form .check-group label.ml-40 {
+						margin-left: 0;
+					}
+					
+						.get-a-quote-form .check-group span:not(.checkbox) {
+							order: -1;
+							flex: 1;
+						}
+						
+						.get-a-quote-form .check-group span.checkbox {
+							margin-right:0;
+						}
+				
+					.get-a-quote-form .check-group label:not(:last-child) {
+						margin-bottom:22px;
+					}
+					
+						.get-a-quote-form input[type="checkbox"] ~ .checkbox:before {
+							width: 23px;
+							height: 23px;
+						}
+
+						.get-a-quote-form input[type="radio"] ~ .checkbox:before {
+							width: 26px;
+							height: 26px;
+							padding-top: 3px;
+						}
+						
+						.get-a-quote-form input[type="radio"]:checked ~ .checkbox:before {
+							content: url(../images/get-a-quote/radiobox-check-2.png);
+						}
+						
+				.get-a-quote-form .ah-filter-menu {
+					top: 81px;
+				}
+				
+		.main .meetings-events-text.pb-100 {
+			padding-top: 37px;
+		}
+						
+		.main .meetings-events-text.pb-100 {
+			padding-bottom: 20px;
+		}
+		
+			.meetings-events-text .experience-in-mauritius .gallery-items-title {
+				margin-bottom: 10px;
+			}
+			
+			.meetings-events-text .experience-in-mauritius p {
+				line-height: 24px;
+			}
+			
+			.meetings-events-text .experience-in-mauritius .pt-50 {
+				padding-top: 18px;
+			}
+			
+		.main .meetings-events-contact-us.pt-100 {
+			padding-top: 32px;
+		}
+			
+		.main .meetings-events-contact-us.pb-100 {
+			padding-bottom: 32px;
+		}
+			
+			.meetings-events-contact-us .contact-us-block {
+				margin-top:22px;
+			}
+			
+				.meetings-events-contact-us .contact-us-block .flex-1 {
+					margin-bottom: 0;
+				}
+				
+		.main .how-we-approach-things.pt-100 {
+			padding-top: 45px;
+			padding-bottom: 0;
+		}
+				
+			.how-we-approach-things .experience-in-mauritius {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 0;
+			}
+						
+				.how-we-approach-things .experience-in-mauritius .icon {
+					position: static;
+					width: 78px;
+					height: auto;
+					order: -1;
+				}
+				
+				.how-we-approach-things .experience-in-mauritius h2 {
+					margin-bottom: 6px;
+				}
+				
+				.how-we-approach-things .experience-in-mauritius .gallery-items-para {
+					font-size:16px;
+				}
+				
+				.how-we-approach-things .gallery-items {
+					padding-bottom: 0;
+				}
+				
+					.how-we-approach-things .gallery-items ul {
+						flex-direction: column;
+						margin-top: 10px;
+						margin-bottom: -8px;
+					}
+					
+						.how-we-approach-things .gallery-items ul li {
+							width: 100%;
+							margin-top: 0;
+							margin-left: 0;
+							padding-bottom: 28px;
+						}
+						
+							.how-we-approach-things .gallery-items ul li .gallery-items-title {
+								padding-top: 0;
+								padding-bottom: 0;
+								margin-bottom: -3px;
+							}
+						
+							.how-we-approach-things .gallery-items ul li .ah-btn {
+								height:40px;
+							}
+							
+		.main .our-objectives-block.pt-100 {
+			padding-top: 36px;
+			padding-bottom: 0;
+		}
+		
+			.our-objectives-block .experience-in-mauritius {
+				padding-bottom: 23px;
+			}
+			
+				.our-objectives-block .experience-in-mauritius h2 {
+					padding-bottom:0;
+				}
+			
+				.our-objectives-block .experience-in-mauritius p {
+					max-width: none;
+				}
+
+			.our-objectives-block .our-hotels-list .experience-in-mauritius {
+				padding-bottom: 0;
+				margin-top: -15px;
+			}
+				
+			.our-objectives ul {
+				flex-direction: column;
+				margin-top: 27px;
+				margin-bottom: -12px;
+			}
+			
+				.our-objectives ul li {
+					margin:0 0 24px 0;
+					min-height: 314px;
+					padding-bottom: 32px;
+				}
+				
+					.our-objectives ul li .ah-masonary {
+						margin-top: 19px;
+					}
+					
+		.main .green-attitude-foundation.pt-100 {
+			padding-top: 35px;
+			padding-bottom: 36px;
+		}
+		
+			.green-attitude-foundation .experience-in-mauritius {
+				flex-direction: column;
+			}
+			
+				.green-attitude-foundation-logo {
+					margin-right: 0;
+					width: 150px;
+					height: 149px;
+				}
+				
+				.green-attitude-foundation-logo ~ div {
+					margin-left: 0;
+					margin-top: 33px;
+				}
+				
+					.green-attitude-foundation .experience-in-mauritius p {
+						line-height: 24px;
+					}
+					
+		.positive-impact .our-purpose {
+			margin-left: 16px;
+			margin-right: 16px;
+			width: calc(100% - 32px);
+			height: auto;
+			padding: 35px 24px 17px;
+		}
+		
+			.positive-impact .our-purpose h1 {
+				margin-bottom: 18px;
+				padding-bottom: 0;
+				max-width: none;
+				font-weight: 600;
+			}
+			
+			.positive-impact .our-purpose .experience-in-mauritius .flex {
+				flex-direction:column;
+			}
+			
+				.positive-impact .our-purpose .experience-in-mauritius .mr-20 {
+					margin-right:0;
+				}
+				
+				.positive-impact .our-purpose .experience-in-mauritius .ml-20 {
+					margin-left:0;
+				}
+			
+				.positive-impact .our-purpose .experience-in-mauritius p {
+					margin-bottom:15px;
+					line-height: 24px;
+				}
+				
+		.main .who-we-are-text.pt-100 {
+			padding-top: 33px;
+			padding-bottom: 0;
+		}
+		
+			.who-we-are-text.experience-in-mauritius img {
+				width: 57px;
+			}
+			
+		.who-we-are-slider {
+			margin-bottom: -10px;
+		}
+			
+			.who-we-are-slider .swiper-slide .gallery-items-title {
+				margin-top: 1px;
+				font-weight: 400;
+			}
+			
+				.who-we-are-slider .swiper-slide .gallery-items-title .uppercase {
+					font-weight: 600;
+					text-transform: initial;
+				}
+		
+		.who-we-are-slider .swiper-slide p {
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: .33px;
+		}
+		
+		.main .positive-impact-testimonial.pb-100 {
+			padding-bottom: 100px;
+		}
+		
+		.main .positive-impact-testimonial.our-offers {
+			padding-top: 56px;
+			padding-bottom: 64px;
+		}
+		
+			.positive-impact-testimonial .experience-in-mauritius {
+				margin-top: 7px;
+			}
+						
+				.positive-impact-testimonial .experience-in-mauritius .pt-50 {
+					padding-top: 33px;
+				}
+				
+					.positive-impact-testimonial .experience-in-mauritius h2 {
+						max-width: 200px;
+						line-height: 34px;
+					}
+				
+					.positive-impact-testimonial .experience-in-mauritius .large-img {
+						height: 200px;
+					}
+					
+					.positive-impact-testimonial .experience-in-mauritius img.positive-impact-icon {
+						top: -55px;
+						width: 58px;
+					}
+					
+					.positive-impact-testimonial .positive-impact-quote {
+						top: 210px;
+						padding: 24px 16px;
+						width: calc(100% - 16px);
+						height: auto;
+						left: 16px;
+						max-width: none;
+						bottom: auto;
+					}
+					
+						.positive-impact-testimonial .positive-impact-quote .fs-18 {
+							font-size:16px;
+						}
+						
+		.main .we-protect-our-environment.pt-100 {
+			padding-top:64px;
+		}
+		
+		.main .we-protect-our-environment.pb-100 {
+			padding-bottom:64px;
+		}
+		
+			.we-protect-our-environment .experience-in-mauritius img {
+				width: 106px;
+			}
+						
+			.we-protect-our-environment .experience-in-mauritius h2 {
+				margin-top: 13px;
+				margin-bottom: 13px;
+			}
+							
+			.we-protect-our-environment .experience-in-mauritius p {
+				font-size: 16px;
+				letter-spacing: .36px;
+			}
+			
+		.main .positive-impact-actions.pt-100 {
+			padding-top: 20px;
+		}
+			
+		.main .positive-impact-actions.pb-100 {
+			padding-bottom: 0;
+		}
+		
+			.positive-impact-actions .our-hotels-list h2 {
+				text-align:center;
+			}
+			
+			.positive-impact-actions .our-hotels-list ul {
+				margin-top:18px;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			
+				.positive-impact-actions .our-hotels-list ul li {
+					min-width: initial;
+					max-width: none;
+					width: 100%;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				
+					.positive-impact-actions .positive-impact-actions-icon {
+						min-width: 61px;
+						height: 68px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					
+						.positive-impact-actions .positive-impact-actions-icon img {
+							max-height: 68px;
+							max-width: 45px;
+							height: 72%;
+						}
+						
+						.positive-impact-actions .our-hotels-list .experience-in-mauritius ul li p {
+							max-width: none;
+							margin-left: 12px
+						}
+						
+		.positive-impact-features {
+			margin-top: 0;
+		}
+		
+		.positive-impact-features.pb-50 {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			margin-top: -15px;
+		}
+		
+			.positive-impact-features .our-hotels-list {
+				flex-direction: column;
+				padding-bottom: 0;
+			}
+			
+				.positive-impact-features .our-hotels-list .experience-in-mauritius {
+					width:100%;
+					padding-bottom: 10px;
+				}
+				
+					.positive-impact-features .our-hotels-list .experience-in-mauritius > span {
+						margin-bottom:3px;
+					}
+				
+					.positive-impact-features .our-hotels-list .experience-in-mauritius p {
+						max-width: none;
+						font-size: 16px;
+						line-height: 24px;
+					}
+		
+		.positive-impact .merge-cols.pt-100 {
+			padding-top: 57px;
+		}
+		
+		.positive-impact .merge-cols.pb-100 {
+			padding-bottom: 64px;
+		}
+		
+		.positive-impact .made-in-morris.merge-cols.pt-100 {
+			padding-top: 48px;
+		}
+		
+		.positive-impact .made-in-morris.merge-cols.pb-100 {
+			padding-bottom: 37px;
+		}
+		
+			.positive-impact .positive-impact-testimonial .experience-in-mauritius {
+				flex-direction: column;
+				align-items: center;
+			}
+			
+				.positive-impact .positive-impact-testimonial .experience-in-mauritius .flex.flex-col {
+					order: 2;
+					margin-top: 13px;
+					text-align: center;
+				}
+				
+					.positive-impact .positive-impact-testimonial .experience-in-mauritius h2 {
+						padding-bottom: 0;
+						max-width: none;
+					}
+					
+					.positive-impact .positive-impact-testimonial .experience-in-mauritius .gallery-items-para {
+						font-size:16px;
+					}
+					
+				.positive-impact .positive-impact-testimonial.made-in-morris .experience-in-mauritius .mr-40 {
+					margin-right: 0;
+				}
+				
+					.positive-impact .positive-impact-testimonial.made-in-morris .icon {
+						width:168px;
+						margin-bottom:7px;
+					}
+					
+					.positive-impact .positive-impact-testimonial.made-in-morris .experience-in-mauritius .gallery-items-para {
+						font-size:15px;
+					}
+					
+		.positive-impact .join-the-movement-bg.to-start {
+			background:url("../images/positive-impact/join-the-movement/join-the-movement-bg-1-mobile.png");
+			background-position: center;
+		}
+		
+		.positive-impact .join-the-movement-bg.who-to-join {
+			background:url("../images/positive-impact/join-the-movement/join-the-movement-bg-2-mobile.png");
+			background-position: center;
+		}
+		
+			.positive-impact .join-the-movement-bg .section-title {
+				margin-bottom: 17px;
+				line-height: 29px;
+				font-weight: 400;
+			}
+			
+			.positive-impact .join-the-movement-bg.to-start .experience-in-mauritius.prompt-para p {
+				color:#d3d6d8;
+			}
+					
+		.positive-impact .otentik-exp-intro-text .otentik-exp-list.our-hotels-list .otentik-exp-images-2 {
+			margin-bottom: 0;
+		}
+					
+		.positive-impact .otentik-exp-intro-text .otentik-exp-list.our-hotels-list .join-the-movement-text {
+			margin-bottom: 18px;
+			padding:12px 16px 16px;
+		}
+		
+			.positive-impact .join-the-movement-icon {
+				float: right;
+				margin-top: 0;
+				padding-right: 16px;
+			}
+			
+				.positive-impact .join-the-movement-icon .icon-as-an-individual {
+					width:33px;
+					height:51px;
+				}
+			
+				.positive-impact .join-the-movement-icon .icon-as-a-company {
+					width:79px;
+					height:55px;
+				}
+			
+				.positive-impact .join-the-movement-icon .icon-as-an-attitude-guest {
+					width:39px;
+					height:61px;
+				}
+		
+			.positive-impact .join-the-movement-text .gallery-items-title {
+				margin-top:28px;
+				font-size: 20px;
+				line-height: 26px;
+			}
+			
+			.positive-impact .join-the-movement-text .bullet-list {
+				padding-bottom:0;
+			}
+			
+				.positive-impact .join-the-movement-text .bullet-list > span:last-of-type {
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				
+			.positive-impact .join-the-movement-text .ah-btn {
+				max-width: 170px;
+				margin-top: 24px;
+			}
+			
+		.join-the-movement-grid li {
+			width: calc(50% - 8px);
+		}
+		
+		.join-the-movement-grid li:nth-child(odd) {
+			margin-right:8px;
+		}
+		
+		.join-the-movement-grid li:nth-child(even) {
+			margin-left:8px;
+		}
+		
+			.join-the-movement-grid li img {
+				height:156px;
+				object-fit: cover;
+			}
+		
+			.join-the-movement-grid li.flex a {
+				width: 100%;
+			}
+			
+				.join-the-movement-grid li.flex img {
+					width: 62%;
+					min-width: 102px;
+					object-fit: contain;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			
+			.join-the-movement-grid li .title {
+				left: 8px;
+				right: 44px;
+				bottom: 8px;
+				font-size: 15px;
+			}
+			
+			.join-the-movement-grid li div {
+				padding-left: 5px;
+				padding-right: 5px;
+				font-size: 14px;
+				line-height: normal;
+			}
+			
+		.ah-popup-content:not(.call-up-popup) {
+			max-width: none;
+			max-height: none;
+			width: 100vw;
+			height: 100vh;
+			padding: 0;
+		}
+		
+			.ah-popup-content:not(.call-up-popup) .ah-popup-top {
+				height: 65px;
+				border-bottom: 1px #d3d9dd solid;
+			}
+			
+				.ah-popup-content:not(.call-up-popup) .ah-popup-close {
+					width: 18px;
+					height: 18px;
+					background: url(../images/icons/exit-big.svg);
+					background-size: contain;
+				}
+			
+			.ah-popup-content:not(.call-up-popup) .ah-popup-inner {
+				margin-top: 0;
+				max-height: none;
+				height: calc(100% - 65px);
+				padding: 17px 24px 24px;
+			}
+			
+				.ah-popup-inner .cat-title {
+					margin-top: 33px;
+					font-size:15px;
+					letter-spacing:.33px;
+				}
+			
+				.ah-popup-inner h2 {
+					color:#393d47;
+					text-transform: lowercase;
+				}
+				
+				.call-me-back-popup .ah-popup-inner h2 {
+					margin-top:0;
+				}
+				
+				.call-up-popup .ah-popup-inner h2 {
+					margin-bottom: 15px;
+					font-size:20px;
+					line-height:26px;
+					color:#273240;
+				}
+			
+				.ah-popup-inner .half-width {
+					width: 100%;
+				}
+			
+				.hotel-selected .ah-popup-inner .ah-popup-inner-img {
+					height:260px;
+				}
+			
+				.exp-act .ah-popup-inner .ah-popup-inner-img {
+					height:200px;
+				}
+				
+				.ah-popup-inner .bullet-list.simple-list,
+				.ah-popup-inner .bullet-list.simple-list ul {
+					flex-direction: column;
+				}
+				
+					.ah-popup-inner .fs-20 {
+						font-size:18px;
+						letter-spacing: .4px;
+					}
+				
+					.ah-popup-inner .bullet-list.simple-list span:nth-child(n + 2) {
+						width: 100%;
+						margin-top: 20px;
+					}
+					
+				.call-me-back-popup .ah-popup-inner .lightgray-bg {
+					flex-direction:column;
+				}
+				
+					.call-me-back-popup .ah-popup-inner .call-me-back-icon {
+						order:-1;
+						padding-right: 0;
+						justify-content: center;
+						padding-bottom: 10px;
+					}
+					
+					.call-me-back-popup .ah-popup-inner strong {
+						text-align: center;
+					}
+					
+					.call-me-back-popup .ah-btn {
+						height: 48px;
+					}
+					
+					.call-me-back-popup .ah-btn {
+						flex: 1;
+					}
+					
+			.call-up-popup {
+				margin-left:24px;
+				margin-right:24px;
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+		
+		.newsletter-subscription .flex {
+			align-items: flex-start;
+			position: relative;
+		}
+		
+			.newsletter-subscription-icon:first-of-type,
+			.newsletter-subscription-icon:last-of-type {
+				right: 0;
+				top: 85px;
+				left: auto;
+			}
+			
+				.newsletter-subscription-icon img {
+					height:32px;
+				}
+				
+				.newsletter-subscription-icon:first-of-type img {
+					transform: translateX(-15px) translateY(-30px) rotate(80deg);
+				}
+				
+				.newsletter-subscription-icon:last-of-type img {
+					transform: translateX(-55px) translateY(-10px);
+				}
+			
+			.newsletter-subscription-title {
+				text-align: left;
+			}
+	
+				.newsletter-subscription-title strong {
+					font-size: 20px;
+					line-height: 26px;
+					letter-spacing: .44px;
+				}
+				
+				.newsletter-subscription-title strong:first-letter {
+					text-transform: lowercase;
+				}
+			
+			.newsletter-subscription-title .experience-in-mauritius p {
+				font-size:14px;
+				line-height:20px;
+				letter-spacing:.31px;
+			}
+			
+			.newsletter-subscription-form {
+				padding-left: 0;
+				padding-right: 0;
+				width: 100%;
+			}
+			
+				.newsletter-subscription-form span {
+					text-align: left;
+				}
+				
+				.newsletter-subscription-form label,
+				.newsletter-subscription-form .ah-btn,
+				.newsletter-subscription-form input[type="text"] {
+					width: 100%;
+				}
+				
+				.newsletter-subscription-form input[type="text"] {
+					height: 48px;
+					border-color: #b2bac3;
+					text-align: left;
+				}
+				
+				.newsletter-subscription-form .ah-btn {
+					height: 48px;
+					align-items: center;
+					font-size: 15px;
+				}
+					
+		.footer {
+			height:48px;
+			position: relative;
+		}
+		
+			.footer .container > ul {
+				width: 100%;
+				justify-content: space-between;
+			}
+			
+				.footer li {
+					margin: 0;
+				}
+		
+			.footer .language-switcher {
+				position: absolute;
+				bottom: 108px;
+				right: 24px;
+			}
+		
+		.main .pt-100 {
+			padding-top:50px;
+		}
+		
+		.main .pb-100 {
+			padding-bottom:50px;
+		}
+		
+		.main .wedding-content-text.pb-100 {
+			padding-bottom:0;
+			background: #fff;
+		}
+		
+		.main .mt-50 {
+			margin-top:25px;
+		}
+		
+		.main .template-banners {
+			margin-top: 14px;
+			margin-bottom: -16px;
+			padding: 0;
+		}
+		
+		.positive-impact .main .template-banners {
+			margin-bottom: 5px;
+			margin-top: 5px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		
+			.main .template-banners img:last-of-type {
+				max-width:375px;
+				width:100%;
+			}
+		
+			.positive-impact .main .template-banners img:last-of-type {
+				width: initial;
+			}
+}
+
+@media screen and (max-width:414px) {
+	.inspiration-header .swiper-slide {
+		background-image: url(../images/inspiration/inspiration-header.jpg) !important;
+	}
+	
+	.inspiration-individual-header .swiper-slide {
+		background-image: url(../images/inspiration/inspiration-individual-header.jpg) !important;
+	}
+	
+	.ah-experience ul {
+		flex-direction:column;
+	}
+	
+		.ah-experience li:nth-child(n + 1) {
+			margin-right: 0;
+		}
+		
+	.our-hotels-list .experience-in-mauritius p {
+		width: 100%;		
+	}
+	
+	.our-hotels-list .gallery-items > ul {
+		flex-direction: column;
+	}
+	
+		.our-hotels-list .gallery-items ul li {
+			width: 100%;
+		}
+		
+		.our-hotels-list .gallery-items > ul > li:nth-child(even) {
+			margin-left: 0;
+		}
+		
+	.tripadvisor-reviews img {
+		width:100%;
+		max-width: none;
+	}
+	
+	.gallery-list .hotel-selected-tabs.basic li:not(:last-child) {
+		margin-right: 25px;
+	}
+	
+	.gallery-list .ah-masonary {
+		column-count: 1;
+		margin-left: -24px;
+		width: calc(100% + 48px);
+	}
+	
+		.ah-masonary .show-title,
+		.gallery-list .ah-masonary .show-layer .show-title,
+		.join-the-movement-grid .show-layer .show-title {
+			width:12px;
+			height:12px;
+			background:#f1f4f7;
+			top:auto;
+			bottom:38px;
+			right:30px;
+			box-shadow: 0 0 0 6px rgba(241, 244, 247, .4);
+		}
+		
+		.join-the-movement-grid .show-layer .show-title {
+			width: 10px;
+			height: 10px;
+			bottom: 18px;
+			right: 18px;
+			box-shadow: 0 0 0 5px rgba(241, 244, 247, .4);
+			z-index:1;
+		}
+		
+		.join-the-movement-grid li.flex .show-layer .show-title {
+			background:#adafb1;
+			box-shadow: 0 0 0 5px rgba(208, 210, 212, .4);
+		}
+		
+		.gallery-list .ah-masonary .show-layer:hover .show-title,
+		.join-the-movement-grid li.shown .show-layer .show-title, /* for demonstration only - to remove later */
+		.join-the-movement-grid .show-layer:hover .show-title {
+			width:6px;
+			height:6px;
+			bottom:41px;
+			right: 33px;
+		}
+		
+		.join-the-movement-grid li.shown .show-layer .show-title, /* for demonstration only - to remove later */
+		.join-the-movement-grid .show-layer:hover .show-title {
+			bottom: 20px;
+			right: 20px;
+		}
+		
+		.inspiration-individual .ah-masonary {
+			column-count: 2;
+			column-gap: 13px;
+		}
+			
+			.inspiration-individual .ah-masonary a:nth-child(n + 4) {
+				transform: translateY(24px);
+			}
+		
+				.inspiration-individual .ah-masonary img:not(.ah-play-btn) {
+					border-top-width: 7px;
+					border-bottom-width: 6px;
+				}
+				
+				.inspiration-individual .ah-masonary .show-layer > .absolute {
+					top: 7px;
+					bottom: 6px;
+				}
+				
+					.inspiration-individual .ah-masonary .show-layer strong {
+						margin-bottom:0;
+						font-size: 16px;
+					}
+			
+				.inspiration-individual .ah-masonary .show-title,
+				.inspiration-individual .ah-masonary .show-layer .show-title {
+					width: 10px;
+					height: 10px;
+					bottom: 24px;
+					top: auto;
+					right: 18px;
+					box-shadow: 0 0 0 5px rgba(241, 244, 247, .4);
+				}
+				
+				.inspiration-individual .ah-masonary .show-layer:hover .show-title {
+					width:6px;
+					height:6px;
+					bottom: 26px;
+					right: 19px;
+				}
+			
+				.ah-masonary .ah-play-btn {
+					width: 17px;
+				}
+				
+	.meetings-events-list.pt-100 {
+		padding-top: 20px;
+	}
+	
+		.meetings-events-list .gallery-items ul li {
+			padding-bottom: 0;
+		}
+		
+			.meetings-events-list .gallery-items ul li .gallery-items-title {
+				margin-bottom: -2px;
+				padding-bottom: 0;
+			}
+			
+	.attitude-committed-to-tourism .container {
+		height:304px;
+		display: flex;
+		align-items: center;
+	}
+	
+		.attitude-committed-to-tourism .container .experience-in-mauritius {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		
+			.attitude-committed-to-tourism img {
+				width: 62px;
+			}
+			
+			.attitude-committed-to-tourism .experience-in-mauritius h2 {
+				line-height:34px;
+				color:#273240;
+			}
+			
+	.hotel-selected-tabs.large ul li:last-child {
+		padding-right:24px;
+	}
+}
+
+@media screen and (max-width:375px) {
+	.hotel-selected .ah-experience li:nth-child(n + 1) {
+		min-width: initial;
+		width: 100%;
+	}
+}
