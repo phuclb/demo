@@ -593,18 +593,32 @@
 .nux-intro {
   padding-top: var(--intro-py);
   padding-bottom: var(--intro-py);
+}
+.nux-intro-icon {
+  margin-bottom: 30px;
+}
+.nux-intro-title,
+.nux-intro-summary {
   font-family: "PP Formula Condensed", sans-serif;
-  font-size: var(--intro-fs);
   font-weight: 900;
-  line-height: calc(1em + 6px);
   color: #0b4159;
+}
+.nux-intro-title {
+  font-size: var(--intro-title-fs);
+  line-height: 1;
+}
+.nux-intro-summary {
+  margin-top: 10px;
+  font-size: var(--intro-summary-fs);
+  line-height: calc(1em + 6px);
 }
 
 /* mobile */
 @media (max-width: 767px) {
   .nux-intro {
     --intro-py: 40px;
-    --intro-fs: 28px;
+    --intro-title-fs: 36px;
+    --intro-summary-fs: 24px;
   }
 }
 
@@ -612,7 +626,8 @@
 @media (min-width: 768px) {
   .nux-intro {
     --intro-py: 80px;
-    --intro-fs: 36px;
+    --intro-title-fs: 64px;
+    --intro-summary-fs: 32px;
   }
 }
 
