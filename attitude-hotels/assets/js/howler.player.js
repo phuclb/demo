@@ -1,7 +1,6 @@
 /* HowlerJS */
 
 // Path
-const howlerPath = '../assets/audio/';
 const invisible = 'invisible';
 
 // Elements
@@ -51,7 +50,7 @@ Player.prototype = {
       sound = data.howl;
     } else {
       sound = data.howl = new Howl({
-        src: [howlerPath + data.file + '.mp3'],
+        src: [data.file],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function() {
           // Display the duration.
@@ -254,15 +253,15 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([{
     title: 'Rave Digger',
-    file: 'rave-digger',
+    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/rave_digger.mp3',
     howl: null
   }, {
     title: '80s Vibe',
-    file: '80s-vibe',
+    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/80s-vibe.mp3',
     howl: null
   }, {
     title: 'Running Out',
-    file: 'running-out',
+    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/running-out.mp3',
     howl: null
   }
 ]);
