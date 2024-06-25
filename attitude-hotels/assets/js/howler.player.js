@@ -257,11 +257,11 @@ var player = new Player([{
     howl: null
   }, {
     title: '80s Vibe',
-    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/80s-vibe.mp3',
+    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/80s_vibe.mp3',
     howl: null
   }, {
     title: 'Running Out',
-    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/running-out.mp3',
+    file: 'https://howlerjs.com/assets/howler.js/examples/player/audio/running_out.mp3',
     howl: null
   }
 ]);
