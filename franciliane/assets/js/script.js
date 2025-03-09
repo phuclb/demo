@@ -31,20 +31,24 @@ const App = {
         e.preventDefault();
       });
 
-      const qI1 = document.getElementById('qI1');
-      const qI1Panel = document.querySelectorAll('.form-panel');
-      if (qI1) {
-        if (parseInt(qI1.value)) {
-          const selectedPanel = document.querySelector('.form-panel:nth-child(' + parseInt(qI1.value) + ')');
-          selectedPanel.classList.remove('hidden');
-          selectedPanel.querySelectorAll('.form-control').forEach(control => {
-            control.setAttribute('required', true);
-            pristine = new Pristine(cForm, fConfig);
-          });
+      const fWho = document.querySelector('.form-who');
+      const fPanel = document.querySelectorAll('.form-panel');
+      if (fWho) {
+        let fWhoValue = parseInt(fWho.value);
+        if (fWhoValue) {
+          const selectedPanel = document.querySelector('.form-panel:nth-child(' + fWhoValue + ')');
+          if (selectedPanel) {
+            selectedPanel.classList.remove('hidden');
+            selectedPanel.querySelectorAll('.form-control').forEach(control => {
+              control.setAttribute('required', true);
+              pristine = new Pristine(cForm, fConfig);
+            });
+          }
         }
-        qI1.addEventListener('change', () => {
-          qI1Panel.forEach((panel, index) => {
-            if ((index + 1) === parseInt(qI1.value)) {
+        fWho.addEventListener('change', () => {
+          fWhoValue = parseInt(fWho.value) - 1;
+          fPanel.forEach((panel, index) => {
+            if (index === fWhoValue) {
               panel.classList.remove('hidden');
               panel.querySelectorAll('.form-control').forEach(control => {
                 control.setAttribute('required', true);
@@ -52,11 +56,11 @@ const App = {
             } else {
               panel.classList.add('hidden');
               panel.querySelectorAll('.form-control').forEach(control => {
-                control.setAttribute('required', false);
+                control.removeAttribute('required');
               });
             }
-            pristine = new Pristine(cForm, fConfig);
           });
+          pristine = new Pristine(cForm, fConfig);
         });
       }
     }
