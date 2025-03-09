@@ -16,19 +16,49 @@ const App = {
     const cForm = document.getElementById('contestForm');
     if (cForm) {
       const fConfirm = cForm.querySelector('.form-confirm');
-      const pristine = new Pristine(cForm, {
+      const fConfig = {
         classTo: 'form-pristine',
         errorClass: 'error',
         successClass: 'success',
         errorTextParent: 'form-pristine',
         errorTextTag: 'div',
         errorTextClass: 'form-alert'
-      });
+      };
+      let pristine = new Pristine(cForm, fConfig);
       cForm.addEventListener('submit', (e) => {
         const valid = pristine.validate();
         fConfirm.classList.toggle('hidden', !valid);
         e.preventDefault();
       });
+
+      const qI1 = document.getElementById('qI1');
+      const qI1Panel = document.querySelectorAll('.form-panel');
+      if (qI1) {
+        if (parseInt(qI1.value)) {
+          const selectedPanel = document.querySelector('.form-panel:nth-child(' + parseInt(qI1.value) + ')');
+          selectedPanel.classList.remove('hidden');
+          selectedPanel.querySelectorAll('.form-control').forEach(control => {
+            control.setAttribute('required', true);
+            pristine = new Pristine(cForm, fConfig);
+          });
+        }
+        qI1.addEventListener('change', () => {
+          qI1Panel.forEach((panel, index) => {
+            if ((index + 1) === parseInt(qI1.value)) {
+              panel.classList.remove('hidden');
+              panel.querySelectorAll('.form-control').forEach(control => {
+                control.setAttribute('required', true);
+              });
+            } else {
+              panel.classList.add('hidden');
+              panel.querySelectorAll('.form-control').forEach(control => {
+                control.setAttribute('required', false);
+              });
+            }
+            pristine = new Pristine(cForm, fConfig);
+          });
+        });
+      }
     }
   },
 

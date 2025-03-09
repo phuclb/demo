@@ -10,7 +10,7 @@
     <link rel="icon" href="assets/img/favicon.png" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..700&family=Work+Sans:ital,wght@1,600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400..700;1,400..700&display=swap">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
@@ -170,17 +170,173 @@
                       <div class="form-summary font-bold">Pour c&eacute;l&eacute;brer la Journ&eacute;e mondiale de l&rsquo;eau, le Service public de l&rsquo;eau lance un grand concours photo.</div>
                       <div class="form-info font-bold">Et si vous regardiez l&rsquo;eau autrement ?<br>Au quotidien, l&rsquo;eau nous accompagne.<br>Elle peut &ecirc;tre domestiqu&eacute;e, consomm&eacute;e, admir&eacute;e et elle peut m&ecirc;me nous tomber sur la t&ecirc;te. Prenez le temps d&rsquo;observer l&rsquo;eau d&rsquo;lle-de-France et de la capter avec un objectif.</div>
                       <div class="form-group">
-                        <div class="form-dropdown form-block form-pristine">
+                        <div class="form-dropdown form-pristine">
                           <label class="sr-only" for="qI1">Je suis...</label>
-                          <select class="w-full font-semibold font-italic" id="qI1" name="qI1" required data-pristine-required-message="Ce champ est obligatoire.">
+                          <select class="form-input w-full font-semibold font-italic" id="qI1" name="qI1" required data-pristine-required-message="Ce champ est obligatoire.">
                             <option value="" disabled selected hidden>Je suis...*</option>
-                            <option value="Un francilien">Un francilien</option>
-                            <option value="Un collaborateur Franciliane">Un collaborateur Franciliane</option>
-                            <option value="Un agent du SEDIF">Un agent du SEDIF</option>
+                            <option value="1">Un francilien</option>
+                            <option value="2">Un collaborateur Franciliane</option>
+                            <option value="3">Un agent du SEDIF</option>
                           </select>
                           <svg width="18" height="10" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#down"></use>
                           </svg>
+                        </div>
+                        <div class="form-condition">
+                          <div class="form-panel hidden">
+                            <div class="form-info font-semibold">Avant de commencer, v&eacute;rifiez que votre commune fait bien partie du territoire du Syndicat des Eaux d&rsquo;&Icirc;le-de-France</div>
+                            <div class="form-dropdown form-block form-pristine">
+                              <label class="sr-only" for="qI1A">J&rsquo;habite la commune de</label>
+                              <select class="form-input form-control w-full font-semibold font-italic" id="qI1A" name="qI1A" data-pristine-required-message="Ce champ est obligatoire.">
+                                <option value="" disabled selected hidden>J&rsquo;habite la commune de*</option>
+                                <option value="Ablon-sur-Seine">Ablon-sur-Seine</option>
+                                <option value="Alfortville">Alfortville</option>
+                                <option value="Andilly">Andilly</option>
+                                <option value="Antony">Antony</option>
+                                <option value="Argenteuil">Argenteuil</option>
+                                <option value="Athis-Mons">Athis-Mons</option>
+                                <option value="Aubervilliers">Aubervilliers</option>
+                                <option value="Aulnay-sous-Bois">Aulnay-sous-Bois</option>
+                                <option value="Auvers-sur-Oise">Auvers-sur-Oise</option>
+                                <option value="Bagneux">Bagneux</option>
+                                <option value="Beauchamp">Beauchamp</option>
+                                <option value="Bessancourt">Bessancourt</option>
+                                <option value="B&eacute;themont-la-For&ecirc;t">B&eacute;themont-la-For&ecirc;t</option>
+                                <option value="Bezons">Bezons</option>
+                                <option value="Bi&egrave;vres">Bi&egrave;vres</option>
+                                <option value="Boulogne-Billancourt">Boulogne-Billancourt</option>
+                                <option value="Bourg-la-Reine">Bourg-la-Reine</option>
+                                <option value="Brou-sur-Chantereine">Brou-sur-Chantereine</option>
+                                <option value="Bry-sur-Marne">Bry-sur-Marne</option>
+                                <option value="Butry-sur-Oise">Butry-sur-Oise</option>
+                                <option value="Champigny-sur-Marne">Champigny-sur-Marne</option>
+                                <option value="Charenton-le-Pont">Charenton-le-Pont</option>
+                                <option value="Ch&acirc;tenay-Malabry">Ch&acirc;tenay-Malabry</option>
+                                <option value="Ch&acirc;tillon">Ch&acirc;tillon</option>
+                                <option value="Chaville">Chaville</option>
+                                <option value="Chelles">Chelles</option>
+                                <option value="Chennevi&egrave;res-sur-Marne">Chennevi&egrave;res-sur-Marne</option>
+                                <option value="Choisy-le-Roi">Choisy-le-Roi</option>
+                                <option value="Clamart">Clamart</option>
+                                <option value="Clichy-la- Garenne">Clichy-la- Garenne</option>
+                                <option value="Clichy-sous Bois">Clichy-sous Bois</option>
+                                <option value="Cormeilles-en-Parisis">Cormeilles-en-Parisis</option>
+                                <option value="Coubron">Coubron</option>
+                                <option value="Deuil-la-Barre">Deuil-la-Barre</option>
+                                <option value="Domont">Domont</option>
+                                <option value="Drancy">Drancy</option>
+                                <option value="Dugny">Dugny</option>
+                                <option value="Eaubonne">Eaubonne</option>
+                                <option value="Ecouen">Ecouen</option>
+                                <option value="Enghien-les-Bains">Enghien-les-Bains</option>
+                                <option value="Epinay-sur-Seine">Epinay-sur-Seine</option>
+                                <option value="Ermont">Ermont</option>
+                                <option value="Fontenay-aux-Roses">Fontenay-aux-Roses</option>
+                                <option value="Fontenay-sous-Bois">Fontenay-sous-Bois</option>
+                                <option value="Franconville">Franconville</option>
+                                <option value="Fr&eacute;pillon">Fr&eacute;pillon</option>
+                                <option value="Gagny">Gagny</option>
+                                <option value="Gournay- sur-Marne">Gournay- sur-Marne</option>
+                                <option value="Groslay">Groslay</option>
+                                <option value="Herblay">Herblay</option>
+                                <option value="Houilles">Houilles</option>
+                                <option value="Igny">Igny</option>
+                                <option value="Issy-les-Moulineaux">Issy-les-Moulineaux</option>
+                                <option value="Joinville-le-Pont">Joinville-le-Pont</option>
+                                <option value="Jouy-en Josas">Jouy-en Josas</option>
+                                <option value="Juvisy-sur-Orge">Juvisy-sur-Orge</option>
+                                <option value="La Courneuve">La Courneuve</option>
+                                <option value="La Frette-sur-Seine">La Frette-sur-Seine</option>
+                                <option value="Le Bourget">Le Bourget</option>
+                                <option value="Le Mesnil le Roi">Le Mesnil le Roi</option>
+                                <option value="Le Perreux-sur-Marne">Le Perreux-sur-Marne</option>
+                                <option value="Le Plessis-Bouchard">Le Plessis-Bouchard</option>
+                                <option value="Le Plessis-Robinson">Le Plessis-Robinson</option>
+                                <option value="Le Raincy">Le Raincy</option>
+                                <option value="Les Loges-en-Josas">Les Loges-en-Josas</option>
+                                <option value="Les Pavillons-sous-Bois">Les Pavillons-sous-Bois</option>
+                                <option value="Levallois-Perret">Levallois-Perret</option>
+                                <option value="L'Ha&yuml;-les-Roses">L'Ha&yuml;-les-Roses</option>
+                                <option value="L'Ile-Saint-Denis">L'Ile-Saint-Denis</option>
+                                <option value="Livry-Gargan">Livry-Gargan</option>
+                                <option value="Maisons-Alfort">Maisons-Alfort</option>
+                                <option value="Malakoff">Malakoff</option>
+                                <option value="Margency">Margency</option>
+                                <option value="Massy">Massy</option>
+                                <option value="M&eacute;riel">M&eacute;riel</option>
+                                <option value="M&eacute;ry-sur-Oise">M&eacute;ry-sur-Oise</option>
+                                <option value="Meudon">Meudon</option>
+                                <option value="Montfermeil">Montfermeil</option>
+                                <option value="Montigny-l&egrave;s-Cormeilles">Montigny-l&egrave;s-Cormeilles</option>
+                                <option value="Montlignon">Montlignon</option>
+                                <option value="Montmagny">Montmagny</option>
+                                <option value="Montmorency">Montmorency</option>
+                                <option value="Montrouge">Montrouge</option>
+                                <option value="Neuilly-sur-Marne">Neuilly-sur-Marne</option>
+                                <option value="Neuilly-Plaisance">Neuilly-Plaisance</option>
+                                <option value="Neuilly-sur-Seine">Neuilly-sur-Seine</option>
+                                <option value="Nogent-sur-Marne">Nogent-sur-Marne</option>
+                                <option value="Noisy-le-Grand">Noisy-le-Grand</option>
+                                <option value="Pierrefitte-sur-Seine">Pierrefitte-sur-Seine</option>
+                                <option value="Pierrelaye">Pierrelaye</option>
+                                <option value="Piscop">Piscop</option>
+                                <option value="Puteaux">Puteaux</option>
+                                <option value="Rosny-sous-Bois">Rosny-sous-Bois</option>
+                                <option value="Rungis">Rungis</option>
+                                <option value="Saint-Brice-sous-For&ecirc;t">Saint-Brice-sous-For&ecirc;t</option>
+                                <option value="Saint-Denis">Saint-Denis</option>
+                                <option value="Saint-Gratien">Saint-Gratien</option>
+                                <option value="Saint-Leu-la-For&ecirc;t">Saint-Leu-la-For&ecirc;t</option>
+                                <option value="Saint-Mand&eacute;">Saint-Mand&eacute;</option>
+                                <option value="Saint-Maur-des-Foss&eacute;s">Saint-Maur-des-Foss&eacute;s</option>
+                                <option value="Saint-Maurice">Saint-Maurice</option>
+                                <option value="Saint-Ouen">Saint-Ouen</option>
+                                <option value="Saint-Prix">Saint-Prix</option>
+                                <option value="Sannois">Sannois</option>
+                                <option value="Sarcelles">Sarcelles</option>
+                                <option value="Sartrouville">Sartrouville</option>
+                                <option value="Sceaux">Sceaux</option>
+                                <option value="Sevran">Sevran</option>
+                                <option value="S&egrave;vres">S&egrave;vres</option>
+                                <option value="Soisy-sous-Montmorency">Soisy-sous-Montmorency</option>
+                                <option value="Stains">Stains</option>
+                                <option value="Taverny">Taverny</option>
+                                <option value="Thiais">Thiais</option>
+                                <option value="Vaires-sur-Marne">Vaires-sur-Marne</option>
+                                <option value="Valmondois">Valmondois</option>
+                                <option value="Vanves">Vanves</option>
+                                <option value="Vaujours">Vaujours</option>
+                                <option value="V&eacute;lizy Villacoublay">V&eacute;lizy Villacoublay</option>
+                                <option value="Verri&egrave;res-le-Buisson">Verri&egrave;res-le-Buisson</option>
+                                <option value="Villejuif">Villejuif</option>
+                                <option value="Villemomble">Villemomble</option>
+                                <option value="Villeneuve-le-Roi">Villeneuve-le-Roi</option>
+                                <option value="Villeparisis">Villeparisis</option>
+                                <option value="Villetaneuse">Villetaneuse</option>
+                                <option value="Villiers-Adam">Villiers-Adam</option>
+                                <option value="Villiers-le-Bel">Villiers-le-Bel</option>
+                                <option value="Villiers-sur-Marne">Villiers-sur-Marne</option>
+                                <option value="Vincennes">Vincennes</option>
+                                <option value="Viroflay">Viroflay</option>
+                                <option value="Wissous">Wissous</option>
+                              </select>
+                              <svg width="18" height="10" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#down"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="form-panel hidden">
+                            <div class="form-pristine">
+                              <label class="sr-only" for="qI1B">Votre mail</label>
+                              <input class="form-input form-control w-full font-semibold font-italic" type="email" id="qI1B" name="qI1B" placeholder="Votre mail" data-pristine-required-message="Ce champ est obligatoire." data-pristine-email-message="Ce champ n&eacute;cessite une adresse e-mail valide.">
+                            </div>
+                          </div>
+                          <div class="form-panel hidden">
+                            <div class="form-pristine">
+                              <label class="sr-only" for="qI1C">Votre mail</label>
+                              <input class="form-input form-control w-full font-semibold font-italic" type="email" id="qI1C" name="qI1C" placeholder="Votre mail" data-pristine-required-message="Ce champ est obligatoire." data-pristine-email-message="Ce champ n&eacute;cessite une adresse e-mail valide.">
+                            </div>
+                          </div>
                         </div>
                         <div class="form-block form-pristine">
                           <label class="sr-only" for="qI2">Nom</label>
@@ -198,41 +354,42 @@
                           <label class="sr-only" for="qI5">Adresse mail</label>
                           <input class="form-input w-full font-semibold font-italic" type="email" id="qI5" name="qI5" placeholder="Adresse mail*" required data-pristine-required-message="Ce champ est obligatoire." data-pristine-email-message="Ce champ n&eacute;cessite une adresse e-mail valide.">
                         </div>
-                        <div class="form-checkbox form-pristine">
-                          <input class="form-checkbox--input sr-only" type="checkbox" id="qI7" name="qI7" required data-pristine-required-message="Pour jouer, vous devez accepter ces conditions.">
-                          <label class="form-checkbox--label d-inline-block font-semibold font-italic" for="qI7">Je suis majeur, j'ai lu et j'accepte le r&egrave;glement</label>
-                        </div>
-                        <div class="form-block">
-                          <button class="form-button font-bold text-uppercase" type="submit">Valider</button>
-                        </div>
-                        <div class="form-required font-semibold font-italic">* Champs obligatoires</div>
-                        <div class="form-confirm font-semibold hidden">
-                          <p>F&eacute;licitations !</p>
-                          <p>Votre participation a bien &eacute;t&eacute; enregistr&eacute;e.</p>
-                          <p>Si votre photo est s&eacute;lectionn&eacute;e par le jury, nous vous informerons avant le 30 juin 2024.</p>
-                        </div>
+                        <div class="form-support">* Champs obligatoires</div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-aside text-center">
+                  <div class="form-aside">
                     <div class="form-image">
                       <img class="w-full h-auto" src="assets/img/photo.jpg" alt="Photo" width="1260" height="1050">
                     </div>
-                    <div class="form-award text-uppercase">
+                    <div class="form-award text-uppercase text-center">
                       <h3 class="form-award--title font-bold">30 lots &agrave; gagner !</h3>
                       <div class="form-award--info font-medium">Nuits sur l&rsquo;eau, vols en montgolfi&egrave;re, appareils photos &eacute;tanches, bapt&ecirc;mes de plong&eacute;e, pommeaux de douche &eacute;cologiques, gourdes...</div>
                     </div>
-                    <div class="form-upload p-relative form-pristine">
-                      <span class="form-upload--icon p-absolute d-flex justify-center align-center">
-                        <svg width="26" height="34" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#arrow"></use>
-                        </svg>
-                      </span>
+                    <div class="form-icon d-flex justify-center align-center">
+                      <svg width="26" height="34" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="form-upload form-pristine text-center">
                       <input class="form-upload--input sr-only" type="file" id="fI6" name="fI6" required data-pristine-required-message="Ce champ est obligatoire.">
-                      <label class="form-upload--label d-flex flex-col justify-center align-center font-bold text-uppercase" for="fI6">
-                        <span>D&eacute;posez</span>
-                        <span>votre photo</span>
-                      </label>
+                      <label class="form-upload--label d-block font-bold text-uppercase" for="fI6">D&eacute;posez votre photo</label>
+                    </div>
+                    <div class="form-support">
+                      <p>Le poids la photo ne doit pas d&eacute;passer 5 Mo. Le participant c&egrave;de tous ses droits d&rsquo;utilisation sans limitation de dur&eacute;e pour la photo d&eacute;pos&eacute;e et, si elle repr&eacute;sente des personnages, il s&rsquo;engage &agrave; avoir eu l&rsquo;accord de ces personnes (ou des deux parents si c&rsquo;est un mineur) pour faire participer la photo au Jeu.</p>
+                      <p class="text-center"><a href="#" target="_blank">R&egrave;glement du Jeu-concours</a></p>
+                    </div>
+                    <div class="form-checkbox form-pristine">
+                      <input class="form-checkbox--input sr-only" type="checkbox" id="qI7" name="qI7" required data-pristine-required-message="Pour jouer, vous devez accepter ces conditions.">
+                      <label class="form-checkbox--label d-inline-block font-medium" for="qI7">Je suis majeur, j'ai lu et j'accepte le r&egrave;glement.</label>
+                    </div>
+                    <div class="form-block text-center">
+                      <button class="form-button font-bold text-uppercase" type="submit">Valider</button>
+                    </div>
+                    <div class="form-confirm font-semibold hidden">
+                      <p>F&eacute;licitations !</p>
+                      <p>Votre participation a bien &eacute;t&eacute; enregistr&eacute;e.</p>
+                      <p>Si vous &ecirc;tes tir&eacute;(&eacute;) au sort, vous serez recontact&eacute;(e) par e-mail.</p>
                     </div>
                   </div>
                 </div>
@@ -242,6 +399,30 @@
             </div>
           </section>
           <!-- contest -->
+
+          <a class="participant d-flex flex-wrap justify-between align-stretch" href="#">
+            <div class="participant-label d-flex justify-start align-center font-bold">Voir les photos<br>des participants</div>
+            <div class="participant-gallery">
+              <ul>
+                <li>
+                  <img class="w-full h-auto obj-cover" src="assets/img/photo-1.jpg" alt="Image" width="300" height="300">
+                </li>
+                <li>
+                  <img class="w-full h-auto obj-cover" src="assets/img/photo-2.jpg" alt="Image" width="300" height="300">
+                </li>
+                <li class="hidden-xs">
+                  <img class="w-full h-auto obj-cover" src="assets/img/photo-3.jpg" alt="Image" width="300" height="300">
+                </li>
+                <li class="hidden-xs">
+                  <img class="w-full h-auto obj-cover" src="assets/img/photo-1.jpg" alt="Image" width="300" height="300">
+                </li>
+                <li class="hidden-xs">
+                  <img class="w-full h-auto obj-cover" src="assets/img/photo-2.jpg" alt="Image" width="300" height="300">
+                </li>
+              </ul>
+            </div>
+          </a>
+          <!-- participant -->
 
           <section class="jury text-center">
             <h2 class="jury-title font-bold text-uppercase">Jury</h2>
@@ -331,9 +512,13 @@
                 </div>
               </div>
             </div>
-            <div class="jury-partner font-medium">
-              <div class="jury-label">En partenariat avec</div>
-              <img class="max-w-full h-auto" src="assets/img/logo-louis-lumiere.png" alt="Louis Lumi&egrave;re" width="304" height="100">
+            <div class="jury-partner i1">
+              <div class="jury-label font-medium">En partenariat avec</div>
+              <div class="jury-logo">
+                <a href="#" target="_blank">
+                  <img class="max-w-full h-auto" src="assets/img/logo-louis-lumiere.png" alt="Louis Lumi&egrave;re" width="304" height="100">
+                </a>
+              </div>
               <div class="jury-link d-flex justify-center align-center">
                 <a href="#" target="_blank">
                   <svg width="24" height="24" aria-hidden="true" focusable="false">
@@ -349,15 +534,19 @@
                 </a>
               </div>
             </div>
+            <div class="jury-partner i2">
+              <h2 class="jury-label font-medium">Remerciements &agrave; notre partenaire</h2>
+              <div class="jury-logo">
+                <a href="#" target="_blank">
+                  <img class="obj-cover" src="assets/img/logo-westay.png" alt="WeStay" width="90" height="90">
+                </a>
+              </div>
+            </div>
           </section>
           <!-- jury -->
 
-          <section class="partner text-center">
-            <h2 class="partner-title font-medium">Remerciements &agrave; notre partenaire</h2>
-          </section>
-          <!-- partner -->
-
         </div>
+        <div class="apostrophe hidden-xs"></div>
       </main>
       <!-- main -->
 
