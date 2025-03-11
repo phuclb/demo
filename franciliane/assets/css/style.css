@@ -642,10 +642,10 @@ textarea {
   -webkit-box-orient: vertical;
 }
 .line-clamp-4 {
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
 }
 .line-clamp-8 {
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 8;
 }
 
 .obj-cover {
@@ -945,6 +945,10 @@ textarea {
   -webkit-box-shadow: 0 3px 6px var(--c-black-a-30);
           box-shadow: 0 3px 6px var(--c-black-a-30);
 }
+.footer-info small {
+  font-size: 12px;
+  line-height: 14px;
+}
 .footer-info p + p {
   margin-top: 15px;
 }
@@ -970,7 +974,7 @@ textarea {
 }
 .footer-link li:nth-child(3) {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 .footer-social a {
   text-decoration: none;
