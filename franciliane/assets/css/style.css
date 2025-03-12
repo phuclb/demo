@@ -1029,6 +1029,9 @@ textarea {
   .footer-newsletter {
     margin-inline: calc(var(--gap) * -1.5);
   }
+  .footer-partner {
+    text-align: center;
+  }
 }
 
 /* tablet - desktop */
@@ -1047,11 +1050,10 @@ textarea {
   }
   .footer-link {
     max-width: 320px;
-    margin-top: 18px;
   }
   .footer-social {
     position: absolute;
-    bottom: 12px;
+    bottom: 20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
