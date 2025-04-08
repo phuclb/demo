@@ -18,7 +18,7 @@
 
     <div class="wrapper">
 
-      <header class="header">
+      <header class="header p-fixed">
         <div class="container max-w-1280">
           <h1 class="header-title sr-only">iLucians</h1>
           <div class="header-logo p-relative d-flex justify-center align-center">
@@ -29,16 +29,16 @@
               <img src="assets/img/logo-leau-dile-de-france.svg" alt="L'eau d'&Icirc;le-de-France" width="88" height="50">
             </a>
           </div>
-          <button class="header-toggle p-absolute d-flex justify-center align-center hidden-lg">
-            <span class="header-toggle--text sr-only">Menu</span>
-            <svg class="header-toggle--menu" width="24" height="18" aria-hidden="true" focusable="false">
+          <button class="header-toggle toggle p-absolute d-flex justify-center align-center hidden-lg" data-target="#menu" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Menu</span>
+            <svg width="24" height="18" aria-hidden="true" focusable="false">
               <use href="assets/img/sprites.svg#menu"></use>
             </svg>
-            <svg class="header-toggle--close" width="20" height="20" aria-hidden="true" focusable="false">
+            <svg width="20" height="20" aria-hidden="true" focusable="false">
               <use href="assets/img/sprites.svg#close"></use>
             </svg>
           </button>
-          <div class="header-menu text-center">
+          <div class="header-menu text-center" id="menu">
             <nav class="header-nav i1 font-medium">
               <ul>
                 <li><a href="#">Contenus p&eacute;dagogiques</a></li>
@@ -73,14 +73,21 @@
               <div class="header-toolbar">
                 <a class="header-login d-inline-flex justify-center align-center font-semibold" href="#">Se connecter</a>
               </div>
-              <div class="header-search">
+              <div class="header-search hidden">
                 <button class="header-search--toggle d-flex justify-center align-center hidden-xs hidden-sm">
                   <span class="sr-only">Recherche</span>
                   <svg width="14" height="14" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#search"></use>
                   </svg>
                 </button>
-                <div class="header-search--form"></div>
+                <div class="header-search--form p-relative">
+                  <input type="text" placeholder="Recherche sur le site" aria-label="Recherche sur le site">
+                  <button class="p-absolute d-flex justify-center align-center" type="submit">
+                    <svg width="18" height="18" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -200,8 +207,8 @@
               <li><a href="#">Cr&eacute;dits</a></li>
             </ul>
           </div>
-          <div class="footer-partner text-right">
-            <a class="d-inline-flex justify-center align-center" href="#">
+          <div class="footer-partner p-absolute">
+            <a class="d-flex justify-center align-center h-full" href="#">
               <img src="assets/img/logo-sedif.svg" alt="SEDIF" width="70" height="60">
             </a>
           </div>

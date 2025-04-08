@@ -5,7 +5,27 @@ const App = {
    * Initialize the application
    */
   init() {
-    App.fN();
+    App.toggle();
+  },
+
+  /**
+   * Toggle
+   */
+  toggle() {
+    const allToggles = document.querySelectorAll('.toggle');
+    if (allToggles.length) {
+      allToggles.forEach(toggle => {
+        const target = document.getElementById(toggle.getAttribute('aria-controls'));
+        if (target) {
+          toggle.addEventListener('click', (e) => {
+            target.classList.toggle('active');
+            toggle.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', !toggle.classList.contains('active'));
+            e.preventDefault();
+          });
+        }
+      });
+    }
   },
 
   /**

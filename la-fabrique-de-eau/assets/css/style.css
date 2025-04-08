@@ -352,6 +352,10 @@ textarea {
   position: relative;
 }
 
+.wrapper {
+  padding-top: var(--header-h);
+}
+
 .container {
   margin-inline: auto;
   padding-inline: var(--gap);
@@ -957,6 +961,13 @@ textarea {
   Header
 --------------------------------------------------
 **/
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  background-color: var(--c-white);
+}
 .header-logo {
   position: relative;
   height: var(--header-h);
@@ -981,16 +992,16 @@ textarea {
 .header-toggle:hover {
   color: var(--c-pelorous-blue);
 }
-.header-toggle--menu {
+.header-toggle svg {
   display: block;
 }
-.header-toggle--close {
+.header-toggle svg + svg {
   display: none;
 }
-.header-toggle.active .header-toggle--menu {
+.header-toggle.active svg {
   display: none;
 }
-.header-toggle.active .header-toggle--close {
+.header-toggle.active svg + svg {
   display: block;
 }
 .header-partner {
@@ -1095,9 +1106,22 @@ textarea {
     top: var(--header-h);
     right: 0;
     left: 0;
-    display: none;
+    height: calc(100vh - var(--header-h));
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: calc(var(--gap) * 1.25);
     padding-inline: var(--gap);
     background-color: var(--c-white);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-property: opacity, visibility;
+            transition-property: opacity, visibility;
+  }
+  .header-menu.active {
+    opacity: 1;
+    visibility: visible;
   }
   .header-search {
     margin-top: var(--gap);
@@ -1184,6 +1208,9 @@ textarea {
 --------------------------------------------------
 **/
 .footer {
+  --footer-partner-w: calc(var(--gap) * 5);
+  --footer-partner-h: calc(var(--gap) * 4.5);
+  padding-block: var(--footer-pt) var(--footer-pb);
   background-color: var(--c-violet);
   color: var(--c-prussian-blue);
 }
@@ -1240,9 +1267,13 @@ textarea {
 .footer-contact span {
   display: block;
 }
+.footer-partner {
+  right: var(--gap);
+  bottom: calc(var(--footer-pb) * -1);
+  width: var(--footer-partner-w);
+  height: var(--footer-partner-h);
+}
 .footer-partner a {
-  width: 122px;
-  height: 108px;
   background-color: var(--c-white);
   border-radius: 6px 6px 0 0;
 }
@@ -1250,31 +1281,31 @@ textarea {
 /* mobile - tablet */
 @media (max-width: 1279px) {
   .footer {
+    --footer-pt: calc(var(--gap) * 4.5);
+    --footer-pb: var(--footer-partner-h);
     --footer-nav-fs: 18px;
     --footer-nav-lh: 24px;
     --footer-link-fs: 14px;
     --footer-link-lh: 18px;
     --footer-contact-fs: 16px;
     --footer-contact-lh: 1.25;
-    padding-top: calc(var(--gap) * 4.5);
     text-align: center;
   }
   .footer-nav {
-    margin-top: calc(var(--gap) * 0.625);
+    margin-top: calc(var(--gap) * 0.75);
   }
   .footer-nav ul {
     width: 100%;
   }
   .footer-link {
     margin-top: calc(var(--gap) * 1.875);
-    padding-top: var(--gap);
-    padding-bottom: calc(var(--gap) * 0.625);
+    padding-block: var(--gap) calc(var(--gap) * 0.5);
   }
   .footer-link li {
     width: 100%;
   }
   .footer-social {
-    margin-top: calc(var(--gap) * 2.25);
+    margin-top: calc(var(--gap) * 2);
   }
   .footer-toolbar {
     margin-top: calc(var(--gap) * 1.5);
@@ -1284,6 +1315,8 @@ textarea {
 /* desktop */
 @media (min-width: 1280px) {
   .footer {
+    --footer-pt: calc(var(--gap) * 1.75);
+    --footer-pb: calc(var(--gap) * 1.75);
     --footer-nav-fs: 14px;
     --footer-nav-lh: 18px;
     --footer-link-fs: 12px;
@@ -1293,17 +1326,15 @@ textarea {
     --footer-contact-lh: 18px;
   }
   .footer-nav {
-    padding-top: calc(var(--gap) * 1.75);
-    padding-right: calc(var(--gap) * 21);
-    padding-bottom: calc(var(--gap) * 0.625);
-    padding-left: calc(var(--gap) * 11);
+    padding-inline: calc(var(--gap) * 11) calc(var(--gap) * 21);
   }
   .footer-nav ul + ul {
     margin-left: calc(var(--gap) * 1.5);
   }
   .footer-link {
-    padding-top: calc(var(--gap) * 2.625);
-    padding-bottom: calc(var(--gap) * 1.625);
+    margin-top: calc(var(--gap) * 0.75);
+    padding-top: calc(var(--gap) * 2.5);
+    padding-inline: calc(var(--footer-partner-w) + var(--gap));
   }
   .footer-link li + li {
     position: relative;
@@ -1323,25 +1354,20 @@ textarea {
   }
   .footer-logo,
   .footer-social,
-  .footer-toolbar,
-  .footer-partner {
+  .footer-toolbar {
     position: absolute;
   }
   .footer-logo {
-    top: calc(var(--gap) * 2.625);
+    top: calc(var(--gap) * 0.875);
     left: calc(var(--gap) * 3);
   }
   .footer-social {
-    top: calc(var(--gap) * 2.125);
+    top: calc(var(--gap) * 0.375);
     right: calc(var(--gap) * 13);
   }
   .footer-toolbar {
-    top: calc(var(--gap) * 1.75);
+    top: 0;
     right: calc(var(--gap) * 3);
-  }
-  .footer-partner {
-    right: var(--gap);
-    bottom: 0;
   }
 }
 
