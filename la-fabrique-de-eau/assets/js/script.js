@@ -18,9 +18,17 @@ const App = {
         const target = document.getElementById(toggle.getAttribute('aria-controls'));
         if (target) {
           toggle.addEventListener('click', (e) => {
+            const isActive = toggle.classList.contains('active');
+            const activeToggle = document.querySelector('.toggle.active');
+            if (!isActive && activeToggle) {
+              const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
+              activeTarget.classList.remove('active');
+              activeToggle.classList.remove('active');
+              activeToggle.setAttribute('aria-expanded', isActive);
+            }
             target.classList.toggle('active');
             toggle.classList.toggle('active');
-            toggle.setAttribute('aria-expanded', !toggle.classList.contains('active'));
+            toggle.setAttribute('aria-expanded', !isActive);
             e.preventDefault();
           });
         }

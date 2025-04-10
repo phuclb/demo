@@ -204,6 +204,7 @@ template {
   --c-regent-blue: #a4c3db;
   --c-pelorous-blue: #2581c4;
   --c-prussian-blue: #002043;
+  --c-midnight-blue: #001c48;
   --c-green: #a2c617;
   --c-green-a-40: #a2c617;
   --c-eastern-blue: #00989b;
@@ -217,7 +218,7 @@ template {
   --c-violet: #e9f2f9;
   --gap: 24px;
   --logo-w: 116px;
-  --header-h: 112px;
+  --header-h: 108px;
 }
 
 /**
@@ -1368,6 +1369,82 @@ textarea {
   .footer-toolbar {
     top: 0;
     right: calc(var(--gap) * 3);
+  }
+}
+
+/**
+--------------------------------------------------
+  Banner
+--------------------------------------------------
+**/
+.banner-image {
+  height: calc(100vh - var(--header-h));
+  max-height: var(--banner-image-h);
+  margin-inline: calc(var(--gap) * -1);
+}
+.banner-tag,
+.banner-title {
+  line-height: 1;
+}
+.banner-tag {
+  margin-bottom: calc(var(--gap) * 0.25);
+  font-size: 22px;
+}
+.banner-title {
+  font-size: 44px;
+  color: var(--c-pelorous-blue);
+}
+.banner-subtitle {
+  margin-top: var(--gap);
+  font-size: 14px;
+  letter-spacing: 3.5px;
+  line-height: 18px;
+}
+.banner-summary {
+  margin-top: calc(var(--gap) * 0.5);
+  font-size: 18px;
+  line-height: 24px;
+}
+.banner-content {
+  padding-top: calc(var(--gap) * 5.25);
+  padding-bottom: calc(var(--gap) * 2.25);
+  padding-inline: var(--banner-content-px);
+  background-color: var(--c-midnight-blue);
+  background-color: transparent;
+  background-image: url(../img/clip.svg);
+  background-position: var(--banner-content-bp);
+  background-repeat: no-repeat;
+  background-size: 1024px auto;
+  color: var(--c-white);
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .banner {
+    --banner-image-h: 420px;
+    --banner-content-px: var(--gap);
+    --banner-content-bp: 100% -140px;
+  }
+  .banner-content {
+    position: relative;
+    margin-top: calc(var(--gap) * -4);
+    margin-inline: calc(var(--gap) * -1);
+  }
+}
+
+/* tablet - desktop */
+@media (min-width: 768px) {
+  .banner {
+    --banner-image-h: 720px;
+    --banner-content-w: 768px;
+    --banner-content-px: calc(var(--gap) * 3);
+    --banner-content-bp: 100% -140px;
+  }
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: var(--banner-content-w);
   }
 }
 
