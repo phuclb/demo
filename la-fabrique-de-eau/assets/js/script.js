@@ -5,6 +5,7 @@ const App = {
    * Initialize the application
    */
   init() {
+    App.slide();
     App.toggle();
   },
 
@@ -33,6 +34,29 @@ const App = {
           });
         }
       });
+    }
+  },
+
+  /**
+   * Slide
+   */
+  slide() {
+    const articleSlider = document.querySelector('.article-slider');
+    if (articleSlider) {
+      const articleSplide = new Splide('.article-slider.splide', {
+        gap: 18,
+        perPage: 1,
+        mediaQuery: 'min',
+        breakpoints: {
+          768: {
+            perPage: 2,
+          },
+          1024: {
+            perPage: 3,
+          }
+        }
+      });
+      articleSplide.mount();
     }
   },
 
