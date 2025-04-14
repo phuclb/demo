@@ -1682,8 +1682,8 @@ textarea {
 }
 .article-card--button,
 .article-card--summary {
-  font-size: var(--article-card-summary-fs);
-  line-height: var(--article-card-summary-lh);
+  font-size: var(--article-card-button-fs);
+  line-height: var(--article-card-button-lh);
 }
 .article-card--button {
   padding: var(--article-card-button-py) var(--g-15);
@@ -1730,8 +1730,8 @@ textarea {
     --article-card-category-fs: 14px;
     --article-card-category-lh: 18px;
     --article-card-button-py: var(--g-9);
-    --article-card-summary-fs: 16px;
-    --article-card-summary-lh: 1.25;
+    --article-card-button-fs: 16px;
+    --article-card-button-lh: 1.25;
   }
   .article-card--image {
     height: var(--article-card-image-h);
@@ -1763,8 +1763,8 @@ textarea {
     --article-card-category-fs: 10px;
     --article-card-category-lh: 14px;
     --article-card-button-py: var(--g-6);
-    --article-card-summary-fs: 12px;
-    --article-card-summary-lh: 16px;
+    --article-card-button-fs: 12px;
+    --article-card-button-lh: 16px;
   }
   .article-card.primary .article-card--image {
     height: var(--article-pCard-image-h);
@@ -1799,6 +1799,90 @@ textarea {
   .article-card.secondary .article-card--title {
     font-size: var(--article-sCard-title-fs);
     line-height: var(--article-sCard-title-lh);
+  }
+}
+
+/**
+--------------------------------------------------
+  Benefit
+--------------------------------------------------
+**/
+.benefit {
+  padding-top: calc(var(--g-24) * 3);
+  padding-bottom: var(--g-48);
+  background-color: var(--c-prussian-blue);
+  color: var(--c-violet);
+}
+.benefit-title,
+.benefit-subtitle {
+  color: var(--c-jordy-blue);
+}
+.benefit-title {
+  font-size: 36px;
+  line-height: 42px;
+}
+.benefit-subtitle {
+  font-size: var(--benefit-subtitle-fs);
+  line-height: var(--benefit-subtitle-lh);
+}
+.benefit-button,
+.benefit-summary {
+  font-size: var(--benefit-button-fs);
+  line-height: var(--benefit-button-lh);
+}
+.benefit-button {
+  padding: var(--benefit-button-py) var(--g-15);
+  text-decoration: none;
+  background-color: var(--c-pelorous-blue);
+  border-radius: 24px;
+  color: var(--c-white);
+}
+.benefit-button:hover {
+  background-color: var(--c-white);
+  color: var(--c-pelorous-blue);
+}
+.benefit-button svg {
+  margin-left: var(--g-15);
+}
+.benefit-button span {
+  display: block;
+}
+.benefit-summary {
+  margin-top: var(--g-3);
+}
+.benefit-toolbar {
+  margin-top: var(--g-36);
+}
+.benefit-icon {
+  width: 28px;
+  margin-top: var(--g-12);
+  margin-right: var(--g-24);
+}
+.benefit-item {
+  max-width: 368px;
+  margin-top: var(--g-36);
+  margin-inline: var(--g-21);
+}
+
+/* mobile - tablet */
+@media (max-width: 1279px) {
+  .benefit {
+    --benefit-subtitle-fs: 18px;
+    --benefit-subtitle-lh: 24px;
+    --benefit-button-fs: 16px;
+    --benefit-button-lh: 1.25;
+    --benefit-button-py: var(--g-12);
+  }
+}
+
+/* desktop */
+@media (min-width: 1280px) {
+  .benefit {
+    --benefit-subtitle-fs: 16px;
+    --benefit-subtitle-lh: 1.25;
+    --benefit-button-fs: 14px;
+    --benefit-button-lh: 18px;
+    --benefit-button-py: var(--g-9);
   }
 }
 
