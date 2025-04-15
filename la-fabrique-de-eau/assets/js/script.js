@@ -5,8 +5,9 @@ const App = {
    * Initialize the application
    */
   init() {
-    App.slide();
     App.toggle();
+    App.splide();
+    App.height();
   },
 
   /**
@@ -38,9 +39,9 @@ const App = {
   },
 
   /**
-   * Slide
+   * Splide
    */
-  slide() {
+  splide() {
     const articleSlider = document.querySelector('.article-slider');
     if (articleSlider) {
       const articleSplide = new Splide('.article-slider.splide', {
@@ -58,6 +59,37 @@ const App = {
       });
       articleSplide.mount();
     }
+
+    const activitySlider = document.querySelector('.activity-slider');
+    if (activitySlider) {
+      const activitySplide = new Splide('.activity-slider.splide', {
+        type: 'loop',
+        gap: 18,
+        perPage: 1,
+        mediaQuery: 'min',
+        breakpoints: {
+          768: {
+            perPage: 2
+          },
+          1280: {
+            perPage: 1,
+            padding: '216px',
+            gap: 48
+          }
+        }
+      });
+      activitySplide.mount();
+    }
+  },
+
+  /**
+   * Height
+   */
+  height() {
+    document.body.matchHeight({
+      property: 'min-height',
+      attributeName: 'data-mh'
+    });
   },
 
   /**
