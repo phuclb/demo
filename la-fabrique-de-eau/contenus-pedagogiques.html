@@ -22,7 +22,9 @@
         <div class="container max-w-1280">
           <h2 class="header-title sr-only">La fabrique de l'eau</h2>
           <div class="header-logo p-relative d-flex justify-center align-center">
-            <img src="assets/img/logo-la-fabrique-de-leau.svg" alt="La fabrique de l'eau" width="116" height="52">
+            <a href="#">
+              <img src="assets/img/logo-la-fabrique-de-leau.svg" alt="La fabrique de l'eau" width="116" height="52">
+            </a>
           </div>
           <div class="header-partner p-absolute">
             <a href="#">
@@ -40,7 +42,7 @@
           <div class="header-menu text-center" id="menu">
             <nav class="header-nav i1 font-medium">
               <ul>
-                <li><a href="#">Contenus p&eacute;dagogiques</a></li>
+                <li><a class="font-bold" href="#">Contenus p&eacute;dagogiques</a></li>
                 <li><a href="#">Animations</a></li>
                 <li><a href="#">Recrutement</a></li>
               </ul>
@@ -113,82 +115,98 @@
         </section>
         <!-- banner -->
 
-        <section class="menu">
+        <section class="activity-section">
           <div class="container max-w-1280">
-            <header class="menu-header text-center">
-              <h2 class="menu-title font-bold text-uppercase">3 espaces distincts<br>pour r&eacute;pondre &agrave; tous vos besoins<br>p&eacute;dagogiques sur l&rsquo;eau</h2>
+            <header class="activity-section--header" data-mh="activity-section">
+              <h2 class="activity-section--title font-extrabold text-uppercase">Ils ont particip&eacute;<br>&agrave; une animation !</h2>
             </header>
-            <div class="menu-body d-flex flex-wrap justify-center align-stretch">
-              <div class="menu-card i1 p-relative of-hidden radius-6">
-                <div class="menu-card--image bg-alto">
-                  <img class="w-full h-full obj-cover" src="assets/img/photo-1.jpg" alt="Image" width="800" height="530">
+            <div class="activity-section--body">
+              <div class="activity-slider splide i2" role="group" aria-label="Ils ont particip&eacute; &agrave; une animation !">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
+                        <div class="activity-card--image max-w-full ratio-16x9">
+                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
+                        </div>
+                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
+                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
+                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#play"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="splide__slide">
+                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
+                        <div class="activity-card--image max-w-full ratio-16x9">
+                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
+                        </div>
+                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
+                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
+                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#play"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="splide__slide">
+                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
+                        <div class="activity-card--image max-w-full ratio-16x9">
+                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
+                        </div>
+                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
+                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
+                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#play"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="splide__slide">
+                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
+                        <div class="activity-card--image max-w-full ratio-16x9">
+                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
+                        </div>
+                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
+                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
+                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#play"></use>
+                          </svg>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="menu-card--body">
-                  <h3 class="menu-card--title d-flex justify-start align-center font-bold text-uppercase">
-                    <svg class="flex-none rounded" width="48" height="48" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#education"></use>
+                <div class="splide__arrows d-flex justify-center align-center">
+                  <button class="splide__arrow splide__arrow--prev d-flex justify-center align-center rounded">
+                    <svg width="12" height="18" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#prev"></use>
                     </svg>
-                    <span class="flex-auto">Contenus<br>p&eacute;dagogiques</span>
-                  </h3>
-                  <div class="menu-card--summary">&Eacute;l&egrave;ves, professeurs, parents... d&eacute;couvrez nos ressources p&eacute;dagogiques sur l&rsquo;eau du robinet pour vous aider &agrave; tout comprendre et &agrave; adopter des pratiques responsables.</div>
-                </div>
-                <div class="menu-card--toolbar p-absolute text-center">
-                  <a class="menu-card--button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
-                    <span>D&eacute;couvrir</span>
-                    <svg width="9" height="14" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#right"></use>
+                  </button>
+                  <ul class="splide__pagination d-flex justify-center align-center"></ul>
+                  <button class="splide__arrow splide__arrow--next d-flex justify-center align-center rounded">
+                    <svg width="12" height="18" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#next"></use>
                     </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="menu-card i2 p-relative of-hidden radius-6">
-                <div class="menu-card--image bg-alto">
-                  <img class="w-full h-full obj-cover" src="assets/img/photo-2.jpg" alt="Image" width="800" height="530">
-                </div>
-                <div class="menu-card--body">
-                  <h3 class="menu-card--title d-flex justify-start align-center font-bold text-uppercase">
-                    <svg class="flex-none rounded" width="48" height="48" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#activity"></use>
-                    </svg>
-                    <span class="flex-auto">Animations</span>
-                  </h3>
-                  <div class="menu-card--summary">Nous mettons gratuitement &agrave; votre disposition des animations adapt&eacute;es &agrave; tous les publics pour valoriser l&rsquo;eau du robinet comme eau de boisson, tout savoir sur l&rsquo;eau potable et aider &agrave; ma&icirc;triser sa consommation d&rsquo;eau.</div>
-                </div>
-                <div class="menu-card--toolbar p-absolute text-center">
-                  <a class="menu-card--button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
-                    <span>R&eacute;server</span>
-                    <svg width="9" height="14" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="menu-card i3 p-relative of-hidden radius-6">
-                <div class="menu-card--image bg-alto">
-                  <img class="w-full h-full obj-cover" src="assets/img/photo-3.jpg" alt="Image" width="800" height="530">
-                </div>
-                <div class="menu-card--body">
-                  <h3 class="menu-card--title d-flex justify-start align-center font-bold text-uppercase">
-                    <svg class="flex-none rounded" width="48" height="48" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#recruitment"></use>
-                    </svg>
-                    <span class="flex-auto">Recrutement animateurs</span>
-                  </h3>
-                  <div class="menu-card--summary">&Agrave; la recherche d&rsquo;un job qui a du sens ? Rejoignez la communaut&eacute; des animateurs et animatrices de L&rsquo;Eau d&rsquo;&Icirc;le-de-France.</div>
-                </div>
-                <div class="menu-card--toolbar p-absolute text-center">
-                  <a class="menu-card--button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
-                    <span>Envoyer son CV</span>
-                    <svg width="9" height="14" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#right"></use>
-                    </svg>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
+            <footer class="activity-section--footer" data-mh="activity-section">
+              <div class="activity-section--summary font-medium">Mini-conf&eacute;rences L'eau &agrave; l'&eacute;cole, visites d'usine, stands p&eacute;dagogiques pour expositions communales... d&eacute;couvrez l'animation qui correspond &agrave; vos besoins.</div>
+              <div class="activity-section--toolbar">
+                <a class="activity-section--button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
+                  <span>Toutes nos animations</span>
+                  <svg width="9" height="14" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#right"></use>
+                  </svg>
+                </a>
+              </div>
+            </footer>
           </div>
         </section>
-        <!-- menu -->
+        <!-- activity-section -->
 
         <section class="article-section">
           <div class="container max-w-1280">
@@ -401,149 +419,6 @@
           </div>
         </section>
         <!-- article-section -->
-
-        <section class="benefit">
-          <div class="container max-w-1280">
-            <h2 class="benefit-title font-extrabold text-center text-uppercase">Cr&eacute;ez votre compte pour profiter<br>de nombreux avantages</h2>
-            <div class="benefit-list d-flex flex-wrap justify-center align-stretch">
-              <div class="benefit-item d-flex justify-start align-start">
-                <div class="benefit-icon flex-none">
-                  <svg width="28" height="32" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#calendar"></use>
-                  </svg>
-                </div>
-                <div class="benefit-content flex-auto">
-                  <h3 class="benefit-subtitle font-bold">R&eacute;servez une animation p&eacute;dagogique</h3>
-                  <div class="benefit-summary font-medium">Mini-conf&eacute;rences, visites d'usine, Fresque de l'eau, expositions communales. Perro dis reni officil iquissin prepe aspelis ma velestis...</div>
-                </div>
-              </div>
-              <div class="benefit-item d-flex justify-start align-start">
-                <div class="benefit-icon flex-none">
-                  <svg width="28" height="32" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#ring"></use>
-                  </svg>
-                </div>
-                <div class="benefit-content flex-auto">
-                  <h3 class="benefit-subtitle font-bold">Recevez nos actualit&eacute;s</h3>
-                  <div class="benefit-summary font-medium">Une newsletter, des alertes par e-mail &agrave; chaque nouveaut&eacute;. Doles aspelis ma velestis magniatis id magni am explacc ullorei caestio...</div>
-                </div>
-              </div>
-              <div class="benefit-item d-flex justify-start align-start">
-                <div class="benefit-icon flex-none">
-                  <svg width="28" height="32" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#resource"></use>
-                  </svg>
-                </div>
-                <div class="benefit-content flex-auto">
-                  <h3 class="benefit-subtitle font-bold">Acc&eacute;dez &agrave; des ressources exclusives</h3>
-                  <div class="benefit-summary font-medium">T&eacute;l&eacute;chargez guides, fiches pratiques et outils p&eacute;dagogiques. Prepe pra doles aspelis ma velestis magniatis id magni am explacc ullorei caestio exerumquo essequas...</div>
-                </div>
-              </div>
-            </div>
-            <div class="benefit-toolbar text-center">
-              <a class="benefit-button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
-                <span>Cr&eacute;er un compte</span>
-                <svg width="9" height="14" aria-hidden="true" focusable="false">
-                  <use href="assets/img/sprites.svg#right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
-        <!-- benefit -->
-
-        <section class="activity-section">
-          <div class="container max-w-1280">
-            <header class="activity-section--header" data-mh="activity-section">
-              <h2 class="activity-section--title font-extrabold text-uppercase">Ils ont particip&eacute;<br>&agrave; une animation !</h2>
-            </header>
-            <div class="activity-section--body">
-              <div class="activity-slider splide i2" role="group" aria-label="Ils ont particip&eacute; &agrave; une animation !">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
-                        <div class="activity-card--image max-w-full ratio-16x9">
-                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
-                        </div>
-                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
-                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
-                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
-                            <use href="assets/img/sprites.svg#play"></use>
-                          </svg>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="splide__slide">
-                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
-                        <div class="activity-card--image max-w-full ratio-16x9">
-                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
-                        </div>
-                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
-                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
-                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
-                            <use href="assets/img/sprites.svg#play"></use>
-                          </svg>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="splide__slide">
-                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
-                        <div class="activity-card--image max-w-full ratio-16x9">
-                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
-                        </div>
-                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
-                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
-                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
-                            <use href="assets/img/sprites.svg#play"></use>
-                          </svg>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="splide__slide">
-                      <a class="activity-card p-relative d-block of-hidden bg-alto radius-6" href="#">
-                        <div class="activity-card--image max-w-full ratio-16x9">
-                          <img class="w-full h-full obj-cover" src="assets/img/placeholder.png" alt="Image" width="1024" height="640">
-                        </div>
-                        <div class="activity-card--body p-absolute d-flex justify-start align-end">
-                          <h3 class="activity-card--title font-extrabold text-uppercase">Les monstrodos les coulisses d'une usine de production d&rsquo;eau potable</h3>
-                          <svg class="activity-card--icon p-absolute rounded" width="72" height="72" aria-hidden="true" focusable="false">
-                            <use href="assets/img/sprites.svg#play"></use>
-                          </svg>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="splide__arrows d-flex justify-center align-center">
-                  <button class="splide__arrow splide__arrow--prev d-flex justify-center align-center rounded">
-                    <svg width="12" height="18" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#prev"></use>
-                    </svg>
-                  </button>
-                  <ul class="splide__pagination d-flex justify-center align-center"></ul>
-                  <button class="splide__arrow splide__arrow--next d-flex justify-center align-center rounded">
-                    <svg width="12" height="18" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#next"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <footer class="activity-section--footer" data-mh="activity-section">
-              <div class="activity-section--summary font-medium">Mini-conf&eacute;rences L'eau &agrave; l'&eacute;cole, visites d'usine, stands p&eacute;dagogiques pour expositions communales... d&eacute;couvrez l'animation qui correspond &agrave; vos besoins.</div>
-              <div class="activity-section--toolbar">
-                <a class="activity-section--button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
-                  <span>Toutes nos animations</span>
-                  <svg width="9" height="14" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#right"></use>
-                  </svg>
-                </a>
-              </div>
-            </footer>
-          </div>
-        </section>
-        <!-- activity-section -->
 
         <section class="about">
           <div class="container max-w-1280 d-flex flex-wrap justify-start align-stretch">

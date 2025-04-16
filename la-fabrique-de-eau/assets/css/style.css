@@ -213,8 +213,9 @@ template {
   --c-rich-blue-a-40: rgba(101, 97, 169, 0.4);
   --c-pink: #eb5a7d;
   --c-pink-a-40: rgba(235, 90, 125, 0.4);
-  --c-red: #fc023f;
+  --c-alto: #ddd;
   --c-gray: #707070;
+  --c-red: #fc023f;
   --c-purple: #9373b1;
   --c-violet: #e9f2f9;
   --gap: 24px;
@@ -642,6 +643,9 @@ textarea {
   white-space: nowrap;
 }
 
+.bg-alto {
+  background-color: var(--c-alto);
+}
 .bg-black {
   background-color: var(--c-black);
 }
@@ -649,6 +653,9 @@ textarea {
   background-color: var(--c-white);
 }
 
+.c-alto {
+  color: var(--c-alto);
+}
 .c-black {
   color: var(--c-black);
 }
@@ -676,6 +683,17 @@ textarea {
 .obj-contain {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.radius-6 {
+  border-radius: 6px;
+}
+.radius-24 {
+  border-radius: 24px;
+}
+
+.rounded {
+  border-radius: 50%;
 }
 
 .sr-only {
@@ -930,7 +948,6 @@ textarea {
   padding: 0;
   background-color: transparent;
   border: 0;
-  border-radius: 24;
   color: var(--splide-color-1);
 }
 .splide__arrow:hover {
@@ -1085,7 +1102,6 @@ textarea {
   line-height: 18px;
   background-color: var(--c-white);
   border: var(--c-eastern-blue) solid 2px;
-  border-radius: 20px;
   color: var(--c-eastern-blue);
 }
 .header-user--toggle:hover {
@@ -1111,7 +1127,19 @@ textarea {
   background-color: var(--c-eastern-blue);
   color: var(--c-white);
 }
-.header-login {
+.header-search--toggle {
+  width: var(--header-button-h);
+  height: var(--header-button-h);
+  padding: 0;
+  background-color: var(--c-prussian-blue);
+  border: 0;
+  color: var(--c-white);
+}
+.header-search--toggle:hover {
+  background-color: var(--c-white);
+  color: var(--c-prussian-blue);
+}
+.header-button {
   height: var(--header-button-h);
   padding-inline: var(--header-nav-px);
   font-size: var(--header-nav-fs);
@@ -1119,25 +1147,11 @@ textarea {
   text-decoration: none;
   background-color: var(--c-pelorous-blue);
   border: var(--c-pelorous-blue) solid 2px;
-  border-radius: 20px;
   color: var(--c-white);
 }
-.header-login:hover {
+.header-button:hover {
   background-color: var(--c-white);
   color: var(--c-pelorous-blue);
-}
-.header-search--toggle {
-  width: var(--header-button-h);
-  height: var(--header-button-h);
-  padding: 0;
-  background-color: var(--c-prussian-blue);
-  border: 0;
-  border-radius: 50%;
-  color: var(--c-white);
-}
-.header-search--toggle:hover {
-  background-color: var(--c-white);
-  color: var(--c-prussian-blue);
 }
 
 /* mobile - tablet */
@@ -1287,34 +1301,6 @@ textarea {
   font-size: var(--footer-link-fs);
   line-height: var(--footer-link-lh);
 }
-.footer-social,
-.footer-contact {
-  font-size: var(--footer-contact-fs);
-  line-height: var(--footer-contact-lh);
-}
-.footer-social ul {
-  margin-top: var(--g-9);
-}
-.footer-social li + li {
-  margin-left: var(--g-24);
-}
-.footer-contact {
-  padding: var(--g-9) var(--g-15);
-  text-decoration: none;
-  background-color: var(--c-pelorous-blue);
-  border-radius: 24px;
-  color: var(--c-white);
-}
-.footer-contact:hover {
-  background-color: var(--c-white);
-  color: var(--c-pelorous-blue);
-}
-.footer-contact svg {
-  margin-left: var(--g-9);
-}
-.footer-contact span {
-  display: block;
-}
 .footer-partner {
   right: var(--g-24);
   bottom: calc(var(--footer-pb) * -1);
@@ -1324,6 +1310,33 @@ textarea {
 .footer-partner a {
   background-color: var(--c-white);
   border-radius: 6px 6px 0 0;
+}
+.footer-button,
+.footer-social {
+  font-size: var(--footer-button-fs);
+  line-height: var(--footer-button-lh);
+}
+.footer-button {
+  padding: var(--g-9) var(--g-15);
+  text-decoration: none;
+  background-color: var(--c-pelorous-blue);
+  color: var(--c-white);
+}
+.footer-button:hover {
+  background-color: var(--c-white);
+  color: var(--c-pelorous-blue);
+}
+.footer-button svg {
+  margin-left: var(--g-9);
+}
+.footer-button span {
+  display: block;
+}
+.footer-social ul {
+  margin-top: var(--g-9);
+}
+.footer-social li + li {
+  margin-left: var(--g-24);
 }
 
 /* mobile - tablet */
@@ -1335,8 +1348,8 @@ textarea {
     --footer-nav-lh: 24px;
     --footer-link-fs: 14px;
     --footer-link-lh: 18px;
-    --footer-contact-fs: 16px;
-    --footer-contact-lh: 1.25;
+    --footer-button-fs: 16px;
+    --footer-button-lh: 1.25;
     text-align: center;
   }
   .footer-nav {
@@ -1370,8 +1383,8 @@ textarea {
     --footer-link-fs: 12px;
     --footer-link-lh: 16px;
     --footer-link-g: var(--g-36);
-    --footer-contact-fs: 14px;
-    --footer-contact-lh: 18px;
+    --footer-button-fs: 14px;
+    --footer-button-lh: 18px;
   }
   .footer-nav {
     padding-inline: calc(var(--g-24) * 11) calc(var(--g-24) * 21);
@@ -1449,11 +1462,9 @@ textarea {
   margin-bottom: var(--menu-card-py);
   margin-inline: var(--menu-card-px);
   background-color: var(--c-violet);
-  border-radius: 6px;
 }
 .menu-card--image {
   height: var(--menu-image-h);
-  background-color: var(--menu-color-1);
 }
 .menu-card--title {
   font-size: 20px;
@@ -1466,7 +1477,6 @@ textarea {
   background-color: var(--menu-color-1);
   background-clip: padding-box;
   border: var(--menu-color-2) solid 4px;
-  border-radius: 50%;
   color: var(--c-white);
 }
 .menu-card--title span {
@@ -1485,7 +1495,6 @@ textarea {
   line-height: var(--menu-button-lh);
   text-decoration: none;
   background-color: var(--menu-color-1);
-  border-radius: 24px;
   color: var(--c-white);
 }
 .menu-card--button:hover {
@@ -1565,7 +1574,6 @@ textarea {
   text-decoration: none;
   background-color: var(--c-white);
   border: var(--c-pink) solid 1px;
-  border-radius: 24px;
   color: var(--c-pink);
 }
 .article-section--button:hover {
@@ -1608,10 +1616,6 @@ textarea {
   padding-top: var(--g-30);
   padding-bottom: var(--g-48);
 }
-.article-card--image {
-  background-color: var(--c-white);
-  border-radius: 6px;
-}
 .article-card--category {
   margin-bottom: var(--g-9);
   font-size: var(--article-card-category-fs);
@@ -1641,7 +1645,6 @@ textarea {
   padding: var(--article-card-button-py) var(--g-15);
   text-decoration: none;
   background-color: var(--c-pink);
-  border-radius: 24px;
   color: var(--c-white);
 }
 .article-card--button:hover {
@@ -1800,7 +1803,6 @@ textarea {
   padding: var(--g-9) var(--g-15);
   text-decoration: none;
   background-color: var(--c-white);
-  border-radius: 24px;
   color: var(--c-pelorous-blue);
 }
 .benefit-button:hover {
@@ -1875,7 +1877,6 @@ textarea {
   text-decoration: none;
   background-color: var(--c-white);
   border: var(--c-eastern-blue) solid 1px;
-  border-radius: 24px;
   color: var(--c-eastern-blue);
 }
 .activity-section--button:hover {
@@ -1897,10 +1898,6 @@ textarea {
 .activity-section--footer {
   margin-top: var(--activity-section-footer-mt);
 }
-.activity-card {
-  background-color: var(--c-violet);
-  border-radius: 6px;
-}
 .activity-card--image {
   min-height: var(--activity-card-image-h);
 }
@@ -1920,7 +1917,6 @@ textarea {
   padding: 0;
   background-color: var(--c-eastern-blue);
   border: 0;
-  border-radius: 50%;
   color: var(--c-white);
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
@@ -2057,6 +2053,7 @@ textarea {
 --------------------------------------------------
 **/
 .about {
+  padding-top: var(--g-48);
   padding-bottom: var(--g-48);
 }
 .about-title {
@@ -2097,7 +2094,6 @@ textarea {
   text-decoration: none;
   background-color: var(--c-white);
   border: var(--c-pelorous-blue) solid 1px;
-  border-radius: 24px;
   color: var(--c-pelorous-blue);
 }
 .about-button:hover {
@@ -2116,8 +2112,8 @@ textarea {
 }
 .about-body,
 .about-image {
-  width: var(--about-column-w);
-  padding-inline: var(--about-column-g);
+  width: calc(var(--about-column-w) - var(--about-column-g) * 2);
+  margin-inline: var(--about-column-g);
 }
 .about-body {
   margin-top: var(--about-column-mt);
@@ -2157,7 +2153,6 @@ textarea {
   max-height: var(--banner-image-max-h);
   min-height: var(--banner-image-min-h);
   margin-inline: calc(var(--g-24) * -1);
-  background-color: var(--c-violet);
 }
 .banner-tag,
 .banner-title {
@@ -2294,17 +2289,11 @@ textarea {
   margin-inline: calc(var(--newsletter-item-x) * -1);
 }
 .newsletter-input,
-.newsletter-button,
-.newsletter-checkbox {
-  border-radius: 24px;
-}
-.newsletter-input,
 .newsletter-button {
   height: var(--newsletter-input-h);
   font-size: 16px;
   line-height: 1.25;
   border: 0;
-  border-radius: 24px;
 }
 .newsletter-input {
   width: 100%;
