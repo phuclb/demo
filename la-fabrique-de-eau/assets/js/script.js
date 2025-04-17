@@ -48,6 +48,7 @@ const App = {
         gap: 18,
         perPage: 1,
         mediaQuery: 'min',
+        arrows: true,
         breakpoints: {
           768: {
             perPage: 2,
