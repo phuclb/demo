@@ -95,19 +95,22 @@
 
       <main class="main">
 
-        <section class="banner">
-          <div class="container max-w-1280">
-            <div class="banner-image bg-alto">
-              <picture class="d-block h-full">
-                <source media="(min-width: 768px)" srcset="assets/img/banner-1-b.jpg">
-                <img class="w-full h-full obj-cover" src="assets/img/banner-1-a.jpg" alt="Image">
-              </picture>
+        <section class="banner primary">
+          <div class="container max-w-1280 of-hidden">
+            <div class="banner-image p-relative bg-alto">
+              <img class="w-full h-full obj-cover hidden-sm hidden-lg" src="assets/img/banner-1-a.jpg" alt="Image" width="730" height="470">
+              <img class="w-full h-full obj-cover hidden-xs" src="assets/img/banner-1-b.jpg" alt="Image" width="1280" height="700">
             </div>
             <div class="banner-content">
               <div class="banner-tag font-bold text-uppercase">Bienvenue sur</div>
               <h1 class="banner-title font-bold text-uppercase">La fabrique de l'eau</h1>
               <h2 class="banner-subtitle font-medium text-uppercase">La plateforme p&eacute;dagogique et de recrutement d&rsquo;animateurs de L&rsquo;Eau d&rsquo;&Icirc;le-de-France</h2>
               <div class="banner-summary font-bold">D&eacute;couvrez toutes les ressources de votre Service public de l&rsquo;eau pour bien s&rsquo;informer sur l&rsquo;eau du robinet : des contenus p&eacute;dagogiques et des animations pour sensibiliser vos publics. Et si vous voulez faire partie de l&rsquo;aventure : rejoignez-nous en devenant animateur.</div>
+              <div class="banner-shape p-absolute">
+                <svg class="w-full h-auto" width="1608" height="1140" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#s1"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </section>
@@ -190,10 +193,10 @@
         </section>
         <!-- menu -->
 
-        <section class="article-section">
+        <section class="article-section article-theme">
           <div class="container max-w-1280">
             <header class="article-section--header text-center">
-              <h2 class="article-section--title font-extrabold text-uppercase">Nos actualit&eacute;s<br>p&eacute;dagogiques</h2>
+              <h2 class="article-section--title font-extrabold text-uppercase">Nos actualit&eacute;s p&eacute;dagogiques</h2>
               <div class="article-section--toolbar">
                 <a class="article-section--button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
                   <span>Toutes nos actualit&eacute;s</span>
@@ -208,7 +211,7 @@
                 <div class="splide__track">
                   <ul class="splide__list">
                     <li class="splide__slide">
-                      <article class="article-card primary">
+                      <article class="article-card primary article-theme">
                         <div class="article-card--image of-hidden bg-alto radius-6">
                           <img class="w-full h-full obj-cover" src="assets/img/photo-4.jpg" alt="Image" width="800" height="530">
                         </div>
@@ -230,7 +233,7 @@
                       </article>
                     </li>
                     <li class="splide__slide">
-                      <article class="article-card primary">
+                      <article class="article-card primary article-theme">
                         <div class="article-card--image of-hidden bg-alto radius-6">
                           <img class="w-full h-full obj-cover" src="assets/img/photo-5.jpg" alt="Image" width="800" height="530">
                         </div>
@@ -252,7 +255,7 @@
                       </article>
                     </li>
                     <li class="splide__slide">
-                      <article class="article-card primary">
+                      <article class="article-card primary article-theme">
                         <div class="article-card--image of-hidden bg-alto radius-6">
                           <img class="w-full h-full obj-cover" src="assets/img/photo-6.jpg" alt="Image" width="800" height="530">
                         </div>
@@ -274,7 +277,7 @@
                       </article>
                     </li>
                     <li class="splide__slide">
-                      <article class="article-card primary">
+                      <article class="article-card primary article-theme">
                         <div class="article-card--image of-hidden bg-alto radius-6">
                           <img class="w-full h-full obj-cover" src="assets/img/photo-7.jpg" alt="Image" width="800" height="530">
                         </div>
@@ -313,7 +316,7 @@
               </div>
               <div class="article-list d-flex justify-center align-start hidden-xs hidden-sm">
                 <div class="article-item">
-                  <article class="article-card primary">
+                  <article class="article-card primary article-theme">
                     <div class="article-card--image of-hidden bg-alto radius-6">
                       <img class="w-full h-full obj-cover" src="assets/img/photo-4.jpg" alt="Image" width="800" height="530">
                     </div>
@@ -335,7 +338,7 @@
                   </article>
                 </div>
                 <div class="article-item">
-                  <article class="article-card secondary d-flex justify-start align-start">
+                  <article class="article-card secondary article-theme d-flex justify-start align-start">
                     <div class="article-card--image flex-none of-hidden bg-alto radius-6">
                       <img class="w-full h-full obj-cover" src="assets/img/photo-5.jpg" alt="Image" width="800" height="530">
                     </div>
@@ -355,7 +358,7 @@
                       </div>
                     </div>
                   </article>
-                  <article class="article-card secondary d-flex justify-start align-start">
+                  <article class="article-card secondary article-theme d-flex justify-start align-start">
                     <div class="article-card--image flex-none of-hidden bg-alto radius-6">
                       <img class="w-full h-full obj-cover" src="assets/img/photo-6.jpg" alt="Image" width="800" height="530">
                     </div>
@@ -375,7 +378,7 @@
                       </div>
                     </div>
                   </article>
-                  <article class="article-card secondary d-flex justify-start align-start">
+                  <article class="article-card secondary article-theme d-flex justify-start align-start">
                     <div class="article-card--image flex-none of-hidden bg-alto radius-6">
                       <img class="w-full h-full obj-cover" src="assets/img/photo-7.jpg" alt="Image" width="800" height="530">
                     </div>
@@ -574,8 +577,8 @@
       </main>
       <!-- main -->
 
-      <section class="newsletter text-center">
-        <div class="container max-w-500">
+      <section class="newsletter p-relative of-hidden text-center">
+        <div class="newsletter-container container max-w-500">
           <h2 class="newsletter-title font-extrabold">Inscrivez-vous<br>&agrave; notre newsletter</h2>
           <div class="newsletter-summary font-medium">Pour rester inform&eacute; gr&acirc;ce &agrave; nos derni&egrave;res actualit&eacute;s s&eacute;lectionnez la newsletter qui correspond &agrave; votre profil :</div>
           <div class="newsletter-form d-flex flex-wrap justify-center align-center">
@@ -606,6 +609,11 @@
             <button class="newsletter-button font-medium radius-24" type="submit">S&rsquo;inscrire</button>
           </div>
           <div class="newsletter-info font-medium">En vous inscrivant, vous acceptez de recevoir nos communications et confirmez avoir pris connaissance de notre <a href="#">politique de confidentialit&eacute;.</a></div>
+        </div>
+        <div class="newsletter-shape p-absolute">
+          <svg class="w-full h-auto" width="1608" height="832" aria-hidden="true" focusable="false">
+            <use href="assets/img/sprites.svg#s2"></use>
+          </svg>
         </div>
       </section>
       <!-- newsletter -->
