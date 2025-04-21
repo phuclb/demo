@@ -31,6 +31,14 @@
               <img src="assets/img/logo-leau-dile-de-france.svg" alt="L'eau d'&Icirc;le-de-France" width="84" height="48">
             </a>
           </div>
+          <div class="header-profile p-absolute">
+            <a class="header-profile--button d-inline-flex justify-center align-center font-semibold" href="#">
+              <svg class="hidden-lg" width="10" height="16" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#user"></use>
+              </svg>
+              <span class="hidden-xs hidden-sm">Se connecter</span>
+            </a>
+          </div>
           <button class="header-toggle toggle p-absolute d-flex justify-center align-center hidden-lg" data-target="#menu" aria-expanded="false" aria-controls="menu" aria-label="Menu">
             <svg width="24" height="18" aria-hidden="true" focusable="false">
               <use href="assets/img/sprites.svg#menu"></use>
@@ -39,7 +47,7 @@
               <use href="assets/img/sprites.svg#close"></use>
             </svg>
           </button>
-          <div class="header-menu text-center" id="menu">
+          <div class="header-menu" id="menu">
             <nav class="header-nav i1 font-medium">
               <ul>
                 <li><a href="#">Contenus p&eacute;dagogiques</a></li>
@@ -53,41 +61,41 @@
                 <li><a href="#">Nous conna&icirc;tre</a></li>
               </ul>
             </nav>
-            <div class="header-toolbox">
-              <div class="header-user">
-                <span class="header-user--label font-semibold hidden-lg">Vous &ecirc;tes :</span>
-                <button class="header-user--toggle d-flex justify-center align-center font-semibold radius-24 hidden-xs hidden-sm">
-                  <span>Vous &ecirc;tes</span>
-                  <svg width="12" height="7" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#down"></use>
-                  </svg>
-                </button>
-                <ul class="header-user--list font-medium">
-                  <li><a href="#">Enseignant - Directeur/Chef d&rsquo;&eacute;tablissement</a></li>
-                  <li><a href="#">&Eacute;l&egrave;ve - &Eacute;tudiant</a></li>
-                  <li><a href="#">Parent</a></li>
-                  <li><a href="#">Collectivit&eacute;</a></li>
-                  <li><a href="#">Centre de loisirs</a></li>
-                  <li><a href="#">Club - Association sportive</a></li>
-                </ul>
-              </div>
-              <div class="header-toolbar">
-                <a class="header-button d-inline-flex justify-center align-center font-semibold radius-24" href="#">Se connecter</a>
-              </div>
-              <div class="header-search">
-                <button class="header-search--toggle toggle d-flex justify-center align-center rounded hidden-xs hidden-sm" data-target="#search" aria-expanded="false" aria-controls="search" aria-label="Recherche">
-                  <svg width="14" height="14" aria-hidden="true" focusable="false">
+            <div class="header-user">
+              <span class="header-user--label font-semibold hidden-lg">Vous &ecirc;tes :</span>
+              <button class="header-user--toggle toggle d-flex justify-center align-center font-semibold hidden-xs hidden-sm" data-target="#user" aria-expanded="false" aria-controls="user" aria-label="user">
+                <span>Vous &ecirc;tes</span>
+                <svg width="12" height="7" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="header-user--list of-hidden font-medium" id="user">
+                <li><a href="#">Enseignant - Directeur/Chef d&rsquo;&eacute;tablissement</a></li>
+                <li><a href="#">&Eacute;l&egrave;ve - &Eacute;tudiant</a></li>
+                <li><a href="#">Parent</a></li>
+                <li><a href="#">Collectivit&eacute;</a></li>
+                <li><a href="#">Centre de loisirs</a></li>
+                <li><a href="#">Club - Association sportive</a></li>
+              </ul>
+            </div>
+            <div class="header-search">
+              <button class="header-search--toggle toggle d-flex justify-center align-center rounded hidden-xs hidden-sm" data-target="#search" aria-expanded="false" aria-controls="search" aria-label="Recherche">
+                <svg width="14" height="14" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#search"></use>
+                </svg>
+              </button>
+              <div class="header-search--form p-relative d-flex justify-start align-center" id="search">
+                <input class="header-search--input w-full font-medium" type="text" placeholder="Recherche sur le site" aria-label="Rechercher par mot-cl&eacute;">
+                <button class="header-search--button p-absolute d-flex justify-center align-center rounded" type="submit" aria-label="Recherche">
+                  <svg width="16" height="16" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#search"></use>
                   </svg>
                 </button>
-                <div class="header-search--form p-relative hidden" id="search">
-                  <input type="text" placeholder="Recherche sur le site" aria-label="Recherche sur le site">
-                  <button class="p-absolute d-flex justify-center align-center rounded" type="submit" aria-label="Recherche">
-                    <svg width="18" height="18" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#search"></use>
-                    </svg>
-                  </button>
-                </div>
+                <button class="header-search--close close d-flex justify-center align-center rounded hidden-xs hidden-sm" type="button" aria-label="Fermer">
+                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#remove"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -112,10 +120,10 @@
               <div class="banner-summary font-medium"><strong>Nous mettons gratuitement</strong><br>&agrave; votre disposition des animations adapt&eacute;es &agrave; tous les publics pour valoriser l&rsquo;eau du robinet comme eau de boisson, tout savoir sur l&rsquo;eau potable et aider &agrave; ma&icirc;triser sa consommation d&rsquo;eau.</div>
               <div class="banner-shape p-absolute">
                 <svg class="w-full h-auto hidden-sm hidden-lg" width="1534" height="1238" aria-hidden="true" focusable="false">
-                  <use href="assets/img/sprites.svg#s4"></use>
+                  <use href="assets/img/sprites.svg#s3"></use>
                 </svg>
                 <svg class="w-full h-auto hidden-xs" width="896" height="1738" aria-hidden="true" focusable="false">
-                  <use href="assets/img/sprites.svg#s3"></use>
+                  <use href="assets/img/sprites.svg#s4"></use>
                 </svg>
               </div>
             </div>
