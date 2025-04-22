@@ -5,9 +5,9 @@ const App = {
    * Initialize the application
    */
   init() {
-    App.toggler();
-    App.splider();
+    App.slider();
     App.matcher();
+    App.toggler();
   },
 
   /**
@@ -68,9 +68,9 @@ const App = {
   },
 
   /**
-   * Splider
+   * Slider
    */
-  splider() {
+  slider() {
     const articleSlider = document.querySelector('.article-slider');
     if (articleSlider) {
       const articleSplide = new Splide('.article-slider.splide', {
@@ -90,9 +90,9 @@ const App = {
       articleSplide.mount();
     }
 
-    const activitySlider = document.querySelector('.activity-slider');
-    if (activitySlider) {
-      const activitySplide = new Splide('.activity-slider.splide', {
+    const carouselSlider = document.querySelector('.carousel-slider');
+    if (carouselSlider) {
+      const carouselSplide = new Splide('.carousel-slider.splide', {
         type: 'loop',
         gap: 18,
         perPage: 1,
@@ -108,7 +108,24 @@ const App = {
           }
         }
       });
-      activitySplide.mount();
+      carouselSplide.mount();
+    }
+
+    const testimonialSlider = document.querySelector('.testimonial-slider');
+    if (testimonialSlider) {
+      const testimonialSplide = new Splide('.testimonial-slider.splide', {
+        perPage: 1,
+        mediaQuery: 'min',
+        breakpoints: {
+          768: {
+            perPage: 2
+          },
+          1280: {
+            perPage: 3
+          }
+        }
+      });
+      testimonialSplide.mount();
     }
   },
 
