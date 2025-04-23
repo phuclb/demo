@@ -127,6 +127,25 @@ const App = {
       });
       testimonialSplide.mount();
     }
+
+    const relativeSlider = document.querySelector('.relative-slider');
+    if (relativeSlider) {
+      const relativeSplide = new Splide('.relative-slider.splide', {
+        gap: 24,
+        perPage: 1,
+        mediaQuery: 'min',
+        arrows: true,
+        breakpoints: {
+          768: {
+            perPage: 2,
+          },
+          1024: {
+            perPage: 3,
+          }
+        }
+      });
+      relativeSplide.mount();
+    }
   },
 
   /**
