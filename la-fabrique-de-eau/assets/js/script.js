@@ -77,7 +77,6 @@ const App = {
         gap: 18,
         perPage: 1,
         mediaQuery: 'min',
-        arrows: true,
         breakpoints: {
           768: {
             perPage: 2,
@@ -102,9 +101,9 @@ const App = {
             perPage: 2
           },
           1280: {
+            gap: 48,
             perPage: 1,
-            padding: '216px',
-            gap: 48
+            padding: '216px'
           }
         }
       });
@@ -128,13 +127,12 @@ const App = {
       testimonialSplide.mount();
     }
 
-    const relativeSlider = document.querySelector('.relative-slider');
-    if (relativeSlider) {
-      const relativeSplide = new Splide('.relative-slider.splide', {
+    const relationSlider = document.querySelector('.relation-slider');
+    if (relationSlider) {
+      const relationSplide = new Splide('.relation-slider.splide', {
         gap: 24,
         perPage: 1,
         mediaQuery: 'min',
-        arrows: true,
         breakpoints: {
           768: {
             perPage: 2,
@@ -144,7 +142,7 @@ const App = {
           }
         }
       });
-      relativeSplide.mount();
+      relationSplide.mount();
     }
   },
 
