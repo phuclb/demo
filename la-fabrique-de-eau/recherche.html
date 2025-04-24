@@ -20,9 +20,11 @@
 
       <header class="header header-line p-fixed">
         <div class="container max-w-1280">
-          <h2 class="header-title sr-only">La fabrique de l'eau</h2>
+          <h1 class="header-title sr-only">La fabrique de l'eau</h1>
           <div class="header-logo p-relative d-flex justify-center align-center">
-            <img src="assets/img/logo-la-fabrique-de-leau.svg" alt="La fabrique de l'eau" width="116" height="52">
+            <a href="#">
+              <img src="assets/img/logo-la-fabrique-de-leau.svg" alt="La fabrique de l'eau" width="116" height="52">
+            </a>
           </div>
           <div class="header-partner p-absolute">
             <a href="#">
@@ -103,24 +105,57 @@
 
       <main class="main">
 
-        <section class="site">
-          <div class="container max-w-1120">
-            <header class="site-header d-flex flex-wrap justify-start align-center">
-              <div class="site-icon p-relative">
-                <svg class="w-full h-auto" width="198" height="230" aria-hidden="true" focusable="false">
-                  <use href="assets/img/sprites.svg#s6"></use>
+        <div class="search">
+          <div class="container max-w-1184">
+            <div class="breadcrumb font-medium">
+              <a href="#">Accueil</a>
+              <span>/</span>
+              <strong class="font-medium">R&eacute;sultats de recherche</strong>
+            </div>
+            <!-- breadcrumb -->
+            <div class="search-form p-relative">
+              <input class="search-input w-full font-bold radius-24" type="text" value="Eco-Kawaii" placeholder="Recherche sur le site" aria-label="Recherche sur le site">
+              <button class="search-button p-absolute d-flex justify-center align-center rounded" type="submit" aria-label="Recherche">
+                <svg width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#search"></use>
                 </svg>
-                <span class="site-type p-absolute d-flex justify-center align-center font-extrabold">404</span>
+              </button>
+            </div>
+            <div class="search-result font-medium"><strong>3</strong> r&eacute;sultats trouv&eacute;s</div>
+          </div>
+          <div class="container max-w-972">
+            <div class="search-list">
+              <div class="search-item">
+                <article class="search-card">
+                  <div class="search-card--meta font-medium">Actualités</div>
+                  <a class="search-card--link d-block" href="#">
+                    <h2 class="search-card--title font-extrabold">Les petits éco-kawaï envahissent les cantines scolaires !</h2>
+                    <div class="search-card--summary font-semibold">totaturitia doluptasped ute re, aut eossit volorepra quas suntemp ellitaest, ut et etusdandit, solorporias voluptatium et eum ut esti dolupis ipid ma conet minum quia none nis utaecte molorisit quidi te veliquo ma ditia num cum que suntibu stionsed ut voleces consedio omnis accullaborum re postrunt aut quid moluptatem...</div>
+                  </a>
+                </article>
               </div>
-              <h1 class="site-title font-extrabold">OUPS !<br>Cette page est introuvable</h1>
-            </header>
-            <div class="site-body">
-              <div class="site-info font-extrabold">Il semble que le lien que vous avez suivi est incorrect ou que la page a &eacute;t&eacute; d&eacute;plac&eacute;e.</div>
-              <div class="site-note font-semibold">Error type 404</div>
+              <div class="search-item">
+                <article class="search-card">
+                  <div class="search-card--meta font-medium">Animation</div>
+                  <a class="search-card--link d-block" href="#">
+                    <h2 class="search-card--title font-extrabold">Sets de table Les petits Eco-Kawaii</h2>
+                    <div class="search-card--summary font-semibold">es deliquunt aspelitatur sitatio necturem illut ventiam, andignatem facculluptas dendunt platium, ute estrum explitem facepre icabore vitium net verciis volo maximet, in ped mint vitempe nimus doluptatqui desequis ducipsapidi...</div>
+                  </a>
+                </article>
+              </div>
+              <div class="search-item">
+                <article class="search-card">
+                  <div class="search-card--meta font-medium">Contenus pédagogiques</div>
+                  <a class="search-card--link d-block" href="#">
+                    <h2 class="search-card--title font-extrabold">Les petits Eco-Kawaii</h2>
+                    <div class="search-card--summary font-semibold">quisi ullaten danisciist ex ea volum que conemoditas sinte dolorro te coreperum dolo dollita temodio blabo. Me rest, sinum explaud isquam que ex expliberum abo. Assequi ute mi, sum repro cum quatur rem re mod quo et volo te non rae ma...</div>
+                  </a>
+                </article>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- site -->
+        </div>
+        <!-- search -->
 
       </main>
       <!-- main -->
