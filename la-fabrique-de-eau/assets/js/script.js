@@ -5,6 +5,7 @@ const App = {
    * Initialize the application
    */
   init() {
+    App.form();
     App.slider();
     App.matcher();
     App.toggler();
@@ -154,6 +155,20 @@ const App = {
       property: 'min-height',
       attributeName: 'data-mh'
     });
+  },
+
+  /**
+   * Form
+   */
+  form() {
+    const fileInput = document.querySelectorAll('input[type="file"]');
+    if (fileInput.length) {
+      fileInput.forEach(input => {
+        input.addEventListener('change', () => {
+          console.log(input.value);
+        });
+      });
+    }
   },
 
   /**

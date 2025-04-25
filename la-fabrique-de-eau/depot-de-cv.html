@@ -87,7 +87,7 @@
               <div class="header-search--form p-relative d-flex justify-start align-center" id="search">
                 <input class="header-search--input w-full font-medium radius-24" type="text" placeholder="Recherche sur le site" aria-label="Recherche sur le site">
                 <button class="header-search--button p-absolute d-flex justify-center align-center rounded" type="submit" aria-label="Recherche">
-                  <svg width="16" height="16" aria-hidden="true" focusable="false">
+                  <svg width="14" height="14" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#search"></use>
                   </svg>
                 </button>
@@ -119,14 +119,50 @@
               <h1 class="section-title font-extrabold">D&eacute;posez votre CV pour postuler</h1>
               <div class="section-group max-w-924 mx-auto">
                 <div class="section-summary font-semibold">Vous souhaitez devenir animateur, vous habitez en r&eacute;gion parisienne, vous aimez transmettre des savoirs, d&eacute;posez votre CV et remplissez le formulaire, nous vous recontacterons rapidement.</div>
-                <div class="section-info font-medium">Millupit ex enesto modit occabor rorem. Nequi rerchil laudit que vellent urerum inissed quae nonsequo denim re repe voluptatem quis idi nonseru ptature scimet ese prorro core sitiis rero ommoluptam quae voluptae parum et haribus, ut odit voluptate pa exerum fugit officab orest, eum estibus, omni officabor a dolore, vent, quam anducidelit labor renecte andi rest magnati nihil ex ea non earunt maio. Nam velic tem volorem poreprerum fuga. Iquia que verspis non cus nonsed.</div>
               </div>
             </header>
           </div>
           <div class="container max-w-972">
             <div class="section-body">
 
-              A
+              <div class="form form-theme t3">
+                <section class="form-section">
+                  <h2 class="form-section--title font-extrabold">CV</h2>
+                  <div class="form-section--body">
+                    <div class="form-upload">
+                      <input class="form-upload--input w-full font-medium radius-6 sr-only" type="file" id="file" required>
+                      <label class="form-upload--label form-file p-relative d-flex flex-wrap justify-start align-center font-medium radius-6" for="file">
+                        <em class="flex-none font-normal">Ajouter un document</em>
+                        <span class="flex-auto">PDF, JPG, PNG / Max. 10 Mo *</span>
+                        <i class="p-absolute d-flex justify-center align-center font-normal rounded">
+                          <svg width="24" height="16" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#upload"></use>
+                          </svg>
+                        </i>
+                      </label>
+                    </div>
+                  </div>
+                </section>
+                <section class="form-section">
+                  <h2 class="form-section--title font-extrabold">Coordonn&eacute;es</h2>
+                  <div class="form-section--body">
+                    <div class="form-group">
+                      <input class="form-input w-full font-medium radius-6 error" type="text" placeholder="Civilité *" aria-label="Civilité" required>
+                      <input class="form-input w-full font-medium radius-6" type="text" placeholder="Nom *" aria-label="Nom" required>
+                      <input class="form-input w-full font-medium radius-6" type="text" placeholder="Prénom *" aria-label="Prénom" required>
+                      <input class="form-input w-full font-medium radius-6" type="email" placeholder="Email *" aria-label="Email" required>
+                      <input class="form-input w-full font-medium radius-6" type="text" placeholder="Téléphone *" aria-label="Téléphone" required>
+                    </div>
+                    <div class="form-footer d-flex flex-row-reverse flex-wrap justify-between align-start">
+                      <div class="form-info font-medium">* Champs obligatoires</div>
+                      <div class="form-toolbar">
+                        <button class="form-submit font-semibold radius-24" type="submit">Envoyer</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!-- form -->
 
             </div>
           </div>
@@ -185,7 +221,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-toolbar">
+          <div class="footer-toolbar hidden-xs hidden-sm">
             <a class="footer-button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
               <span>Contactez-nous</span>
               <svg width="9" height="14" aria-hidden="true" focusable="false">

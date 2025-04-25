@@ -310,7 +310,6 @@ svg {
 }
 
 a,
-svg,
 button,
 input,
 textarea {
@@ -1289,7 +1288,7 @@ textarea {
     --header-list-fs: 16px;
     --header-list-lh: 1.25;
     --header-form-py: 0;
-    --header-input-px: var(--g-24);
+    --header-input-px: var(--g-18);
     --header-input-border: var(--c-prussian-blue);
     --header-submit-s: 38px;
     --header-login-w: 26px;
@@ -1368,7 +1367,7 @@ textarea {
     --header-list-fs: 13px;
     --header-list-lh: 18px;
     --header-form-py: var(--g-24);
-    --header-input-px: var(--g-30);
+    --header-input-px: var(--g-24);
     --header-input-border: var(--c-white);
     --header-submit-s: 44px;
     --header-login-h: var(--header-button-h);
@@ -1652,7 +1651,88 @@ textarea {
 --------------------------------------------------
 **/
 .form {
-  --form-input-h: 50px;
+  --form-input-h: 52px;
+  --form-submit-h: 36px;
+  --form-upload-x: var(--g-12);
+  --form-upload-s: 40px;
+}
+.form-file,
+.form-input,
+.form-textarea {
+  min-height: var(--form-input-h);
+  padding: var(--g-9) var(--g-18);
+  font-size: 18px;
+  background-color: var(--c-white);
+  border: var(--c-gray) solid 1px;
+}
+.form-file.error,
+.form-input.error,
+.form-textarea.error {
+  border-color: var(--c-red);
+}
+.form-input:not(:first-child),
+.form-textarea:not(:first-child) {
+  margin-top: var(--g-15);
+}
+.form-submit {
+  min-height: var(--form-submit-h);
+  padding: var(--g-6) var(--g-24);
+  font-size: var(--form-submit-fs);
+  line-height: var(--form-submit-lh);
+  background-color: var(--c-pelorous-blue);
+  border: var(--c-pelorous-blue) solid 1px;
+  color: var(--c-white);
+}
+.form-submit:hover {
+  background-color: var(--c-white);
+  color: var(--c-pelorous-blue);
+}
+.form-upload--label {
+  padding-right: calc(var(--form-upload-s) + var(--form-upload-x) * 2);
+  line-height: 24px;
+}
+.form-upload--label em,
+.form-upload--label span {
+  color: var(--c-regent-blue);
+}
+.form-upload--label em {
+  margin-right: var(--g-24);
+}
+.form-upload--label i {
+  right: var(--form-upload-x);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: var(--form-upload-s);
+  height: var(--form-upload-s);
+  background-color: var(--c-white);
+}
+.form-upload--label:hover i {
+  background-color: var(--c-prussian-blue);
+  color: var(--c-white);
+}
+.form-upload--input.selected + .form-upload--label {
+  color: var(--c-prussian-blue);
+}
+.form-info {
+  padding-block: var(--g-6);
+  font-size: 18px;
+  line-height: 24px;
+}
+.form-footer {
+  margin-top: var(--g-36);
+}
+.form-section--title {
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--form-theme);
+}
+.form-section--body {
+  margin-top: var(--g-24);
+}
+.form-section:not(:first-child) {
+  margin-top: calc(var(--g-24) * 2.25);
 }
 .form-theme {
   --form-theme: var(--c-pelorous-blue);
@@ -1671,7 +1751,21 @@ textarea {
 }
 
 /* mobile - tablet */
+@media (max-width: 1279px) {
+  .form {
+    --form-submit-fs: 16px;
+    --form-submit-lh: 1.25;
+  }
+}
+
 /* desktop */
+@media (min-width: 1280px) {
+  .form {
+    --form-submit-fs: 14px;
+    --form-submit-lh: 18px;
+  }
+}
+
 /**
 --------------------------------------------------
   Menu
@@ -3766,6 +3860,9 @@ textarea {
   --newsletter-checkbox-w: 207px;
   margin-top: var(--g-30);
   margin-inline: calc(var(--newsletter-item-x) * -1);
+}
+.newsletter-icon {
+  color: var(--c-prussian-blue);
 }
 .newsletter-input,
 .newsletter-button {
