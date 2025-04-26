@@ -84,6 +84,7 @@ const App = {
             perPage: 2,
           },
           1024: {
+            gap: 24,
             perPage: 3,
           }
         }
