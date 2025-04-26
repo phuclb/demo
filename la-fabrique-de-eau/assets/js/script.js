@@ -6,6 +6,7 @@ const App = {
    */
   init() {
     App.form();
+    App.modal();
     App.slider();
     App.matcher();
     App.toggler();
@@ -169,6 +170,18 @@ const App = {
         });
       });
     }
+  },
+
+  /**
+   * Modal
+   */
+  modal() {
+    MicroModal.init({
+      disableScroll: true,
+      disableFocus: false,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true
+    });
   },
 
   /**

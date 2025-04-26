@@ -122,14 +122,14 @@
                 <img class="w-full h-full obj-cover" src="assets/img/photo-10.jpg" alt="Image" width="900" height="600">
               </div>
               <div class="editor-section--toolbar">
-                <a class="editor-button i2 d-flex justify-between align-center font-semibold radius-6" href="#">
+                <button class="editor-button i2 d-flex justify-between align-center font-semibold radius-6" data-micromodal-trigger="m1">
                   <em class="flex-auto font-normal">T&eacute;l&eacute;charger Le journal de l&rsquo;eau</em>
                   <span class="flex-none d-flex justify-center align-center rounded">
                     <svg width="16" height="16" aria-hidden="true" focusable="false">
                       <use href="assets/img/sprites.svg#download"></use>
                     </svg>
                   </span>
-                </a>
+                </button>
               </div>
             </header>
           </div>
@@ -431,6 +431,22 @@
         </div>
       </footer>
       <!-- footer -->
+
+      <div class="modal" id="m1" aria-hidden="true">
+        <div class="modal__overlay p-fixed d-flex justify-center align-start" tabindex="-1" data-micromodal-close>
+          <div class="modal__container p-relative radius-6" role="dialog" aria-modal="true">
+            <button class="modal__close p-absolute d-flex justify-center align-center" aria-label="Fermer" data-micromodal-close>
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#remove"></use>
+              </svg>
+            </button>
+            <div class="modal__content">
+              A
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
 
     </div>
     <!-- wrapper -->
