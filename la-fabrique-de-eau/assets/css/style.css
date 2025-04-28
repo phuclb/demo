@@ -1806,12 +1806,20 @@ textarea {
   --menu-body-px: var(--g-24);
   --menu-theme-1: var(--c-pelorous-blue);
   --menu-theme-2: var(--c-pelorous-blue-a-40);
-  padding-top: calc(var(--g-24) * 3);
-  padding-bottom: var(--g-48);
+}
+.menu-py-1 {
+  padding-block: var(--menu-py);
+}
+.menu-py-2 {
+  padding-top: var(--g-24);
+  padding-bottom: var(--menu-py);
 }
 .menu-title {
   font-size: 36px;
   line-height: 42px;
+}
+.menu-body {
+  margin-top: var(--g-48);
 }
 .menu-card {
   max-width: var(--menu-card-w);
@@ -1890,7 +1898,6 @@ textarea {
   --menu-theme-2: var(--c-pink-a-40);
 }
 .menu-list {
-  margin-top: var(--g-48);
   margin-bottom: calc(var(--menu-card-py) * -1);
   margin-inline: calc(var(--menu-card-px) * -1);
 }
@@ -1898,6 +1905,7 @@ textarea {
 /* mobile - tablet */
 @media (max-width: 1279px) {
   .menu {
+    --menu-py: var(--g-48);
     --menu-button-h: 38px;
     --menu-button-fs: 16px;
     --menu-button-lh: 1.25;
@@ -1907,6 +1915,7 @@ textarea {
 /* desktop */
 @media (min-width: 1280px) {
   .menu {
+    --menu-py: calc(var(--g-24) * 3);
     --menu-button-h: 36px;
     --menu-button-fs: 14px;
     --menu-button-lh: 18px;
@@ -2095,30 +2104,49 @@ textarea {
   font-size: var(--editor-editor-fs);
   line-height: var(--editor-editor-lh);
 }
+.editor-text h1:not(:first-child),
 .editor-text h2:not(:first-child),
 .editor-text h3:not(:first-child),
 .editor-text h4:not(:first-child),
 .editor-text h5:not(:first-child),
+.editor-text h6:not(:first-child),
 .editor-text p:not(:first-child),
 .editor-text ul:not(:first-child),
 .editor-text ol:not(:first-child),
 .editor-text blockquote:not(:first-child) {
-  margin-top: var(--g-30);
+  margin-top: 1.875em;
 }
+.editor-text h1,
 .editor-text h2,
 .editor-text h3,
 .editor-text h4,
 .editor-text h5,
+.editor-text h6,
 .editor-text blockquote {
   font-weight: var(--fw-bold);
   line-height: calc(1em + 6px);
 }
+.editor-text h1 + p,
+.editor-text h1 + ul,
+.editor-text h1 + ol,
 .editor-text h2 + p,
+.editor-text h2 + ul,
+.editor-text h2 + ol,
 .editor-text h3 + p,
+.editor-text h3 + ul,
+.editor-text h3 + ol,
 .editor-text h4 + p,
-.editor-text h5 + p {
-  margin-top: var(--g-15) !important;
+.editor-text h4 + ul,
+.editor-text h4 + ol,
+.editor-text h5 + p,
+.editor-text h5 + ul,
+.editor-text h5 + ol,
+.editor-text h6 + p,
+.editor-text h6 + ul,
+.editor-text h6 + ol {
+  margin-top: 1em !important;
 }
+.editor-text h1,
 .editor-text h2 {
   font-size: 1.625em;
 }
@@ -2128,7 +2156,8 @@ textarea {
 .editor-text h4 {
   font-size: 1.375em;
 }
-.editor-text h5 {
+.editor-text h5,
+.editor-text h6 {
   font-size: 1.25em;
 }
 .editor-text ul,
@@ -2142,7 +2171,7 @@ textarea {
   list-style: decimal;
 }
 .editor-text li:not(:first-child) {
-  margin-top: var(--g-6);
+  margin-top: 0.375em;
 }
 .editor-text a {
   color: var(--c-rich-blue);
@@ -2171,6 +2200,10 @@ textarea {
 .editor-text.large {
   --editor-editor-fs: 18px;
   --editor-editor-lh: 24px;
+}
+.editor-text.xlarge {
+  --editor-editor-fs: 20px;
+  --editor-editor-lh: 1.2;
 }
 .editor-item {
   width: var(--editor-item-w);
@@ -2317,7 +2350,7 @@ textarea {
   color: var(--editor-theme);
 }
 .editor-section--meta {
-  margin-top: var(--g-36);
+  margin-top: var(--g-30);
   font-size: 20px;
   line-height: 1.2;
 }
@@ -2424,11 +2457,11 @@ textarea {
   .editor-section--header {
     position: relative;
     min-height: var(--editor-section-image-h);
-    padding-block: var(--g-24);
+    padding-block: var(--g-30);
     padding-right: calc(var(--editor-section-image-w) + var(--g-48));
   }
   .editor-section--header.has-toolbar {
-    padding-bottom: calc(var(--editor-section-button-h) + var(--g-24));
+    padding-bottom: calc(var(--editor-section-button-h) + var(--g-30));
   }
   .editor-section--header.has-toolbar .editor-section--toolbar {
     position: absolute;
