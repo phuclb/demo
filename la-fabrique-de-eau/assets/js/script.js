@@ -52,7 +52,7 @@ const App = {
       });
     }
 
-    const allCloses = document.querySelectorAll('.close');
+    const allCloses = document.querySelectorAll('.toggle-close');
     if (allCloses.length) {
       allCloses.forEach(close => {
         close.addEventListener('click', (e) => {
@@ -73,79 +73,87 @@ const App = {
    * Slider
    */
   slider() {
-    const articleSlider = document.querySelector('.article-slider');
-    if (articleSlider) {
-      const articleSplide = new Splide('.article-slider.splide', {
-        gap: 18,
-        perPage: 1,
-        mediaQuery: 'min',
-        breakpoints: {
-          768: {
-            perPage: 2,
-          },
-          1024: {
-            gap: 24,
-            perPage: 3,
+    const articleSlider = document.querySelectorAll('.article-slider');
+    if (articleSlider.length) {
+      articleSlider.forEach(slider => {
+        const articleSplide = new Splide(slider, {
+          gap: 18,
+          perPage: 1,
+          mediaQuery: 'min',
+          breakpoints: {
+            768: {
+              perPage: 2,
+            },
+            1024: {
+              gap: 24,
+              perPage: 3
+            }
           }
-        }
+        });
+        articleSplide.mount();
       });
-      articleSplide.mount();
     }
 
-    const carouselSlider = document.querySelector('.carousel-slider');
-    if (carouselSlider) {
-      const carouselSplide = new Splide('.carousel-slider.splide', {
-        type: 'loop',
-        gap: 18,
-        perPage: 1,
-        mediaQuery: 'min',
-        breakpoints: {
-          768: {
-            perPage: 2
-          },
-          1280: {
-            gap: 48,
-            perPage: 1,
-            padding: '216px'
+    const relationSlider = document.querySelectorAll('.relation-slider');
+    if (relationSlider.length) {
+      relationSlider.forEach(slider => {
+        const relationSplide = new Splide(slider, {
+          gap: 24,
+          perPage: 1,
+          mediaQuery: 'min',
+          breakpoints: {
+            768: {
+              perPage: 2
+            },
+            1024: {
+              perPage: 3
+            }
           }
-        }
+        });
+        relationSplide.mount();
       });
-      carouselSplide.mount();
     }
 
-    const testimonialSlider = document.querySelector('.testimonial-slider');
-    if (testimonialSlider) {
-      const testimonialSplide = new Splide('.testimonial-slider.splide', {
-        perPage: 1,
-        mediaQuery: 'min',
-        breakpoints: {
-          768: {
-            perPage: 2
-          },
-          1280: {
-            perPage: 3
+    const carouselSlider = document.querySelectorAll('.carousel-slider');
+    if (carouselSlider.length) {
+      carouselSlider.forEach(slider => {
+        const carouselSplide = new Splide(slider, {
+          type: 'loop',
+          gap: 18,
+          perPage: 1,
+          mediaQuery: 'min',
+          breakpoints: {
+            768: {
+              perPage: 2
+            },
+            1280: {
+              gap: 48,
+              perPage: 1,
+              padding: '216px'
+            }
           }
-        }
+        });
+        carouselSplide.mount();
       });
-      testimonialSplide.mount();
     }
 
-    const relationSlider = document.querySelector('.relation-slider');
-    if (relationSlider) {
-      const relationSplide = new Splide('.relation-slider.splide', {
-        gap: 24,
-        perPage: 1,
-        mediaQuery: 'min',
-        breakpoints: {
-          768: {
-            perPage: 2,
-          },
-          1024: {
-            perPage: 3,
+    const testimonialSlider = document.querySelectorAll('.testimonial-slider');
+    if (testimonialSlider.length) {
+      testimonialSlider.forEach(slider => {
+        const testimonialSplide = new Splide(slider, {
+          perPage: 1,
+          mediaQuery: 'min',
+          breakpoints: {
+            768: {
+              perPage: 2
+            },
+            1280: {
+              perPage: 3
+            }
           }
-        }
+        });
+        testimonialSplide.mount();
       });
-      relationSplide.mount();
     }
   },
 
