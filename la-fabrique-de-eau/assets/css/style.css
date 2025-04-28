@@ -2310,6 +2310,10 @@ textarea {
   height: var(--editor-play-s);
   background-color: var(--c-white-a-50);
   color: var(--c-white);
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: background-color, color;
+          transition-property: background-color, color;
 }
 .editor-media--button:hover svg {
   background-color: var(--c-white);
@@ -3390,20 +3394,6 @@ textarea {
 
 /**
 --------------------------------------------------
-  Calendar
---------------------------------------------------
-**/
-/* mobile - tablet */
-/* desktop */
-/**
---------------------------------------------------
-  Education
---------------------------------------------------
-**/
-/* mobile - tablet */
-/* desktop */
-/**
---------------------------------------------------
   Activity
 --------------------------------------------------
 **/
@@ -4002,6 +3992,9 @@ textarea {
 .breadcrumb a:hover {
   text-decoration: underline;
   color: var(--c-pelorous-blue);
+}
+.breadcrumb span {
+  display: inline-block;
 }
 
 /**

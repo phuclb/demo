@@ -73,86 +73,47 @@ const App = {
    * Slider
    */
   slider() {
-    const articleSlider = document.querySelectorAll('.article-slider');
-    if (articleSlider.length) {
-      articleSlider.forEach(slider => {
-        const articleSplide = new Splide(slider, {
-          gap: 18,
-          perPage: 1,
-          mediaQuery: 'min',
-          breakpoints: {
-            768: {
-              perPage: 2,
-            },
-            1024: {
-              gap: 24,
-              perPage: 3
-            }
-          }
-        });
-        articleSplide.mount();
+    const generalParams = {
+      gap: 24,
+      perPage: 1,
+      perMove: 1,
+      mediaQuery: 'min',
+      breakpoints: {
+        768: {
+          perPage: 2,
+        },
+        1280: {
+          perPage: 3
+        }
+      }
+    };
+    const generalSplide = document.querySelectorAll('.splide__general');
+    if (generalSplide.length) {
+      generalSplide.forEach(slider => {
+        new Splide(slider, generalParams).mount();
       });
     }
 
-    const relationSlider = document.querySelectorAll('.relation-slider');
-    if (relationSlider.length) {
-      relationSlider.forEach(slider => {
-        const relationSplide = new Splide(slider, {
-          gap: 24,
+    const carouselParams = {
+      type: 'loop',
+      gap: 24,
+      perPage: 1,
+      mediaQuery: 'min',
+      breakpoints: {
+        768: {
+          perPage: 2
+        },
+        1280: {
+          gap: 48,
           perPage: 1,
-          mediaQuery: 'min',
-          breakpoints: {
-            768: {
-              perPage: 2
-            },
-            1024: {
-              perPage: 3
-            }
-          }
-        });
-        relationSplide.mount();
-      });
-    }
-
-    const carouselSlider = document.querySelectorAll('.carousel-slider');
-    if (carouselSlider.length) {
-      carouselSlider.forEach(slider => {
-        const carouselSplide = new Splide(slider, {
-          type: 'loop',
-          gap: 18,
-          perPage: 1,
-          mediaQuery: 'min',
-          breakpoints: {
-            768: {
-              perPage: 2
-            },
-            1280: {
-              gap: 48,
-              perPage: 1,
-              padding: '216px'
-            }
-          }
-        });
-        carouselSplide.mount();
-      });
-    }
-
-    const testimonialSlider = document.querySelectorAll('.testimonial-slider');
-    if (testimonialSlider.length) {
-      testimonialSlider.forEach(slider => {
-        const testimonialSplide = new Splide(slider, {
-          perPage: 1,
-          mediaQuery: 'min',
-          breakpoints: {
-            768: {
-              perPage: 2
-            },
-            1280: {
-              perPage: 3
-            }
-          }
-        });
-        testimonialSplide.mount();
+          padding: '216px'
+        }
+      }
+    };
+    const carouselSplide = document.querySelectorAll('.splide__carousel');
+    if (carouselSplide.length) {
+      carouselSplide.forEach(slider => {
+        new Splide(slider, carouselParams).mount();
       });
     }
   },
