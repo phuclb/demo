@@ -9176,6 +9176,19 @@ textarea {
 .frm_forms.with_frm_style .frm_form_field.form-field button {
   font-weight: var(--fw-semibold);
 }
+.frm_forms.with_frm_style .frm_dropzone {
+  max-width: 100%;
+  margin: 0;
+}
+.frm_forms.with_frm_style .frm_dropzone .dz-message {
+  padding: var(--g-24) var(--g-18);
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 6px;
+}
+.frm_forms.with_frm_style .frm_dropzone .frm_small_text {
+  margin-top: var(--g-6);
+}
 .frm_forms.with_frm_style .frm_error,
 .frm_forms.with_frm_style .frm_error_style {
   display: none;
@@ -9259,9 +9272,10 @@ textarea {
   border: var(--c-gray) solid 1px;
   border-radius: 6px;
 }
-.form-cv .frm_forms.with_frm_style .frm_form_field.form-field button {
+.form-cv .frm_forms.with_frm_style .frm_form_field.form-field button[type=submit] {
+  min-width: 108px;
   min-height: var(--form-submit-h);
-  padding: var(--g-6) var(--g-24);
+  padding: var(--g-6) var(--g-18);
   font-size: var(--form-submit-fs);
   line-height: var(--form-submit-lh);
   background-color: var(--c-pelorous-blue);
@@ -9269,7 +9283,7 @@ textarea {
   border-radius: 24px;
   color: var(--c-white);
 }
-.form-cv .frm_forms.with_frm_style .frm_form_field.form-field button:hover {
+.form-cv .frm_forms.with_frm_style .frm_form_field.form-field button[type=submit]:hover {
   background-color: var(--c-white);
   color: var(--c-pelorous-blue);
 }
@@ -9556,11 +9570,9 @@ textarea {
   padding-bottom: var(--menu-py);
 }
 .menu-title {
+  margin-bottom: var(--g-48);
   font-size: 36px;
   line-height: 42px;
-}
-.menu-body {
-  margin-top: var(--g-48);
 }
 .menu-card {
   max-width: var(--menu-card-w);
