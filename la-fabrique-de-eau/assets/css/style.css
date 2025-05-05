@@ -7637,10 +7637,12 @@ template {
   --c-white-a-50: rgba(255, 255, 255, 0.5);
   --c-gray: #707070;
   --c-gray-a-50: rgba(112, 112, 112, 0.5);
-  --c-red: #fc023f;
   --c-alto: #ddd;
   --c-purple: #9373b1;
   --c-violet: #e9f2f9;
+  --c-red: #fc023f;
+  --c-green: #a2c617;
+  --c-yellow: #f7a502;
   --c-jordy-blue: #7cb3dc;
   --c-regent-blue: #a4c3db;
   --c-pelorous-blue: #2581c4;
@@ -7679,6 +7681,7 @@ template {
   --g-48: calc(var(--gap) * 2);
   --logo-w: 116px;
   --header-h: 108px;
+  --footer-h: 305px;
 }
 
 /**
@@ -11333,6 +11336,181 @@ textarea {
 
 /**
 --------------------------------------------------
+  Dashboard
+--------------------------------------------------
+**/
+.dashboard-message {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.dashboard-activity {
+  --db-activity-card-w: 432px;
+  --db-activity-card-g: var(--g-24);
+  --db-activity-status-s: 40px;
+  --db-activity-status-p: var(--g-24);
+  margin-bottom: calc(var(--db-activity-card-g) * -2);
+  margin-inline: calc(var(--db-activity-card-g) * -1);
+}
+.dashboard-activity--title {
+  margin-right: var(--g-48);
+  font-size: 26px;
+  line-height: 32px;
+}
+.dashboard-activity--meta {
+  margin-top: var(--g-24);
+  font-size: 14px;
+  line-height: 18px;
+}
+.dashboard-activity--link,
+.dashboard-activity--summary {
+  font-size: 18px;
+  line-height: 24px;
+}
+.dashboard-activity--link a,
+.dashboard-activity--summary a {
+  color: currentColor;
+}
+.dashboard-activity--link a:hover,
+.dashboard-activity--summary a:hover {
+  color: var(--c-pelorous-blue);
+}
+.dashboard-activity--link {
+  margin-top: var(--g-18);
+}
+.dashboard-activity--summary {
+  margin-top: var(--g-3);
+}
+.dashboard-activity--status {
+  top: var(--db-activity-status-p);
+  right: var(--db-activity-status-p);
+  width: var(--db-activity-status-s);
+  height: var(--db-activity-status-s);
+  background-color: var(--db-activity-status-bg);
+  -webkit-box-shadow: inset 0 0 0 1px var(--db-activity-status-bd);
+          box-shadow: inset 0 0 0 1px var(--db-activity-status-bd);
+  color: var(--db-activity-status-c);
+}
+.dashboard-activity--card {
+  max-width: var(--db-activity-card-w);
+  width: 100%;
+  min-height: var(--db-activity-card-h);
+  margin-bottom: calc(var(--db-activity-card-g) * 2);
+  margin-inline: var(--db-activity-card-g);
+  padding-top: var(--g-42);
+  padding-bottom: var(--g-30);
+  padding-right: var(--g-45);
+  padding-left: var(--g-21);
+  border: var(--c-prussian-blue) solid 1px;
+}
+.dashboard-activity--card.i1 {
+  --db-activity-status-bg: var(--c-white);
+  --db-activity-status-bd: var(--c-prussian-blue);
+  --db-activity-status-c: var(--c-prussian-blue);
+}
+.dashboard-activity--card.i2 {
+  --db-activity-status-bg: var(--c-red);
+  --db-activity-status-bd: var(--c-red);
+  --db-activity-status-c: var(--c-white);
+}
+.dashboard-activity--card.i3 {
+  --db-activity-status-bg: var(--c-green);
+  --db-activity-status-bd: var(--c-green);
+  --db-activity-status-c: var(--c-white);
+}
+.dashboard-activity--card.i4 {
+  --db-activity-status-bg: var(--c-yellow);
+  --db-activity-status-bd: var(--c-yellow);
+  --db-activity-status-c: var(--c-white);
+}
+.dashboard-education {
+  --db-education-card-w: 532px;
+  --db-education-card-g: var(--g-18);
+  --db-education-button-h: 50px;
+  margin-bottom: calc(var(--db-education-card-g) * -2);
+  margin-inline: calc(var(--db-education-card-g) * -1);
+}
+.dashboard-education--image {
+  top: 0;
+  left: 0;
+  width: var(--db-education-image-s);
+  height: var(--db-education-image-s);
+}
+.dashboard-education--title {
+  font-size: var(--db-education-title-fs);
+  line-height: var(--db-education-title-lh);
+}
+.dashboard-education--summary {
+  margin-top: var(--g-12);
+  font-size: 12px;
+  line-height: 1.25;
+}
+.dashboard-education--button {
+  padding: var(--g-12) var(--g-18);
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  border: var(--c-gray) solid 1px;
+  color: var(--c-prussian-blue);
+}
+.dashboard-education--button svg {
+  margin-left: var(--g-24);
+}
+.dashboard-education--button span {
+  display: block;
+}
+.dashboard-education--button:hover {
+  background-color: var(--c-pelorous-blue);
+  border-color: var(--c-pelorous-blue);
+  color: var(--c-white);
+}
+.dashboard-education--card {
+  width: 100%;
+  max-width: var(--db-education-card-w);
+  margin-bottom: calc(var(--db-education-card-g) * 2);
+  margin-inline: var(--db-education-card-g);
+}
+.dashboard-education--body {
+  min-height: var(--db-education-card-min-h);
+  padding-top: var(--g-3);
+  padding-bottom: calc(var(--db-education-button-h) + var(--g-15));
+  padding-left: calc(var(--db-education-image-s) + var(--g-18));
+}
+.dashboard-education--toolbar {
+  right: 0;
+  bottom: 0;
+  left: var(--db-education-toolbar-x);
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .dashboard-activity {
+    --db-activity-card-h: 185px;
+  }
+  .dashboard-education {
+    --db-education-title-fs: 16px;
+    --db-education-title-lh: 1.25;
+    --db-education-image-s: 156px;
+    --db-education-card-min-h: calc(var(--db-education-image-s) + var(--db-education-button-h) + var(--g-15));
+    --db-education-toolbar-x: 0;
+  }
+}
+
+/* tablet - desktop */
+@media (min-width: 768px) {
+  .dashboard-activity {
+    --db-activity-card-h: 215px;
+  }
+  .dashboard-education {
+    --db-education-title-fs: 20px;
+    --db-education-title-lh: 1.2;
+    --db-education-image-s: 204px;
+    --db-education-card-min-h: var(--db-education-image-s);
+    --db-education-toolbar-x: calc(var(--db-education-image-s) + var(--g-15));
+  }
+}
+
+/**
+--------------------------------------------------
   Site
 --------------------------------------------------
 **/
@@ -11760,7 +11938,7 @@ textarea {
   --section-theme: var(--c-pink);
 }
 
-/* mobile - tablet */
+/* mobile */
 @media (max-width: 767px) {
   .section {
     --section-pb: var(--g-48);
@@ -11768,11 +11946,18 @@ textarea {
   }
 }
 
-/* desktop */
+/* tablet - desktop */
 @media (min-width: 768px) {
   .section {
     --section-pb: calc(var(--g-24) * 3);
     --section-ta: center;
+  }
+}
+
+/* desktop */
+@media (min-width: 1280px) {
+  .section-full {
+    min-height: calc(100vh - (var(--header-h) + var(--footer-h)));
   }
 }
 
