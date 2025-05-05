@@ -6,16 +6,17 @@ const App = {
    */
   init() {
     App.form();
+    App.match();
+    App.media();
     App.modal();
-    App.slider();
-    App.matcher();
-    App.toggler();
+    App.splide();
+    App.toggle();
   },
 
   /**
-   * Toggler
+   * Toggle
    */
-  toggler() {
+  toggle() {
     const allToggles = document.querySelectorAll('.toggle');
     if (allToggles.length) {
       allToggles.forEach(toggle => {
@@ -70,9 +71,9 @@ const App = {
   },
 
   /**
-   * Slider
+   * Splide
    */
-  slider() {
+  splide() {
     const generalParams = {
       gap: 24,
       perPage: 1,
@@ -95,9 +96,10 @@ const App = {
     }
 
     const carouselParams = {
-      type: 'loop',
       gap: 24,
       perPage: 1,
+      perMove: 1,
+      start: 1,
       mediaQuery: 'min',
       breakpoints: {
         768: {
@@ -119,9 +121,9 @@ const App = {
   },
 
   /**
-   * Matcher
+   * Match
    */
-  matcher() {
+  match() {
     document.body.matchHeight({
       property: 'min-height',
       attributeName: 'data-mh'
@@ -132,11 +134,22 @@ const App = {
    * Form
    */
   form() {
-    const fileInput = document.querySelectorAll('input[type="file"]');
-    if (fileInput.length) {
-      fileInput.forEach(input => {
-        input.addEventListener('change', () => {
-          console.log(input.value);
+  },
+
+  /**
+   * Media
+   */
+  media() {
+    const media = document.querySelectorAll('.media');
+    if (media.length) {
+      media.forEach(item => {
+        const button = item.querySelector('.media-button');
+        const iframe = item.querySelector('.media-embed iframe');
+        button.addEventListener('click', (e) => {
+          iframe.setAttribute('src', iframe.getAttribute('data-src'));
+          iframe.removeAttribute('data-src');
+          item.classList.add('active');
+          e.preventDefault();
         });
       });
     }
@@ -152,44 +165,6 @@ const App = {
       awaitOpenAnimation: true,
       awaitCloseAnimation: true
     });
-  },
-
-  /**
-   * Scroller
-   */
-  scroller: () => {
-    const scroller = document.querySelectorAll('.scroller');
-    if (scroller.length) {
-      scroller.forEach(button => {
-        const id = button.getAttribute('href');
-        const target = document.querySelector(id);
-        button.addEventListener('click', e => {
-          if (target) {
-            const scrollPos = target.getBoundingClientRect().top;
-            App.scrollTo(scrollPos);
-          }
-          e.preventDefault();
-        });
-      });
-    }
-  },
-
-  /**
-   * ScrollTo
-   */
-  scrollTo: (scrollPos) => {
-    const headerH = document.querySelector('.header').getBoundingClientRect().height;
-    const wScrollY = window.scrollY;
-    window.scrollTo({
-      top: scrollPos + wScrollY - headerH,
-      behavior: 'auto'
-    });
-  },
-
-  /**
-   * Placeholder for a function
-   */
-  fN() {
   }
 };
 
