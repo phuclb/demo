@@ -17,9 +17,9 @@ const App = {
    * Toggle
    */
   toggle() {
-    const allToggles = document.querySelectorAll('.toggle');
-    if (allToggles.length) {
-      allToggles.forEach(toggle => {
+    const toggles = document.querySelectorAll('.toggle');
+    if (toggles.length) {
+      toggles.forEach(toggle => {
         const target = document.getElementById(toggle.getAttribute('aria-controls'));
         if (target) {
           toggle.addEventListener('click', (e) => {
@@ -53,9 +53,9 @@ const App = {
       });
     }
 
-    const allCloses = document.querySelectorAll('.toggle-close');
-    if (allCloses.length) {
-      allCloses.forEach(close => {
+    const closes = document.querySelectorAll('.toggle-close');
+    if (closes.length) {
+      closes.forEach(close => {
         close.addEventListener('click', (e) => {
           const activeToggle = document.querySelector('.toggle.active');
           if (activeToggle) {
@@ -134,6 +134,15 @@ const App = {
    * Form
    */
   form() {
+    const frmOption = document.querySelectorAll('.frm_radio, .frm_checkbox');
+    if (frmOption.length) {
+      frmOption.forEach(option => {
+        const label = option.querySelector('label');
+        if (label) {
+          label.insertAdjacentHTML('beforeend', '<span><svg width="17" height="11" aria-hidden="true" focusable="false"><use href="assets/img/sprites.svg#tick"></use></svg></span>');
+        }
+      });
+    }
   },
 
   /**
