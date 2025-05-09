@@ -11589,10 +11589,6 @@ textarea {
   Dashboard
 --------------------------------------------------
 **/
-.dashboard-message {
-  font-size: 20px;
-  line-height: 1.2;
-}
 .dashboard-activity {
   --db-activity-card-w: 432px;
   --db-activity-card-g: var(--g-24);
@@ -12149,16 +12145,13 @@ textarea {
 --------------------------------------------------
 **/
 .section {
+  padding-top: var(--g-24);
   padding-bottom: var(--section-y);
 }
 .section-title {
   font-size: 36px;
   line-height: 42px;
   color: var(--section-theme);
-}
-.section-info {
-  margin-top: var(--g-24);
-  line-height: 1.25;
 }
 .section-summary {
   margin-top: var(--g-30);
@@ -12174,12 +12167,44 @@ textarea {
 .section-summary strong {
   font-weight: var(--fw-extrabold);
 }
+.section-info,
+.section-toolbar {
+  margin-top: var(--g-24);
+}
+.section-info {
+  line-height: 1.25;
+}
+.section-info a {
+  color: currentColor;
+}
+.section-info a:hover {
+  color: var(--c-pelorous-blue);
+}
+.section-info strong {
+  font-weight: var(--fw-semibold);
+}
+.section-info p:not(:first-child) {
+  margin-top: var(--g-15);
+}
+.section-button {
+  font-size: 14px;
+  line-height: 18px;
+  padding: var(--g-9) var(--g-21);
+  text-decoration: none;
+  background-color: var(--section-theme);
+  -webkit-box-shadow: inset 0 0 0 2px var(--c-pelorous-blue);
+          box-shadow: inset 0 0 0 2px var(--c-pelorous-blue);
+  color: var(--c-white);
+}
+.section-button:hover {
+  background-color: var(--c-white);
+  color: var(--c-pelorous-blue);
+}
 .section-header {
   margin-top: var(--g-24);
-  text-align: var(--section-ta);
 }
 .section-body {
-  margin-top: var(--section-y);
+  margin-top: var(--g-48);
 }
 .section-full {
   min-height: calc(100vh - (var(--header-h) + var(--footer-h)));
@@ -12204,7 +12229,6 @@ textarea {
 @media (max-width: 767px) {
   .section {
     --section-y: var(--g-48);
-    --section-ta: left;
   }
 }
 
@@ -12212,7 +12236,6 @@ textarea {
 @media (min-width: 768px) {
   .section {
     --section-y: calc(var(--g-24) * 3);
-    --section-ta: center;
   }
 }
 
@@ -12222,7 +12245,7 @@ textarea {
 --------------------------------------------------
 **/
 .breadcrumb {
-  padding-block: var(--g-24);
+  padding-bottom: var(--g-24);
   font-size: 12px;
   line-height: 16px;
 }
