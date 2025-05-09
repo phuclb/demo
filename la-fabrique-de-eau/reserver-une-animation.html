@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>La fabrique de l'eau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/img/favicon.png" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="header header-line p-fixed">
+        <div class="container max-w-1280">
+          <h2 class="header-title sr-only">La fabrique de l'eau</h2>
+          <div class="header-logo p-relative d-flex justify-center align-center">
+            <a href="#">
+              <img src="assets/img/logo-la-fabrique-de-leau.svg" alt="La fabrique de l'eau" width="116" height="52">
+            </a>
+          </div>
+          <div class="header-partner p-absolute">
+            <a href="https://www.leaudiledefrance.fr/" target="_blank">
+              <img src="assets/img/logo-leau-dile-de-france.svg" alt="L'eau d'&Icirc;le-de-France" width="84" height="48">
+            </a>
+          </div>
+          <div class="header-profile p-absolute">
+            <a class="header-profile--button d-inline-flex justify-center align-center font-semibold" href="#">
+              <svg class="hidden-lg" width="10" height="16" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#user"></use>
+              </svg>
+              <span class="hidden-xs hidden-sm">Se connecter</span>
+            </a>
+          </div>
+          <button class="header-toggle toggle p-absolute d-flex justify-center align-center hidden-lg" data-target="#menu" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+            <svg width="24" height="18" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#menu"></use>
+            </svg>
+            <svg width="20" height="20" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#close"></use>
+            </svg>
+          </button>
+          <div class="header-menu" id="menu">
+            <nav class="header-nav i1 font-medium">
+              <ul>
+                <li><a href="#">Contenus p&eacute;dagogiques</a></li>
+                <li><a class="font-bold" href="#">Animations</a></li>
+                <li><a href="#">Recrutement</a></li>
+              </ul>
+            </nav>
+            <nav class="header-nav i2 font-medium">
+              <ul>
+                <li><a href="#">Nos actualit&eacute;s</a></li>
+                <li><a href="#">Nous conna&icirc;tre</a></li>
+              </ul>
+            </nav>
+            <div class="header-user">
+              <span class="header-user--label font-semibold hidden-lg">Vous &ecirc;tes :</span>
+              <button class="header-user--toggle toggle d-flex justify-center align-center font-semibold hidden-xs hidden-sm" data-target="#user" aria-expanded="false" aria-controls="user">
+                <span>Vous &ecirc;tes</span>
+                <svg width="12" height="7" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="header-user--list of-hidden font-medium" id="user">
+                <li><a href="#">Enseignant - Directeur/Chef d&rsquo;&eacute;tablissement</a></li>
+                <li><a href="#">&Eacute;l&egrave;ve - &Eacute;tudiant</a></li>
+                <li><a href="#">Parent</a></li>
+                <li><a href="#">Collectivit&eacute;</a></li>
+                <li><a href="#">Centre de loisirs</a></li>
+                <li><a href="#">Club - Association sportive</a></li>
+              </ul>
+            </div>
+            <div class="header-search">
+              <button class="header-search--toggle toggle d-flex justify-center align-center rounded hidden-xs hidden-sm" data-target="#search" aria-expanded="false" aria-controls="search" aria-label="Recherche">
+                <svg width="14" height="14" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#search"></use>
+                </svg>
+              </button>
+              <div class="header-search--form p-relative d-flex justify-start align-center" id="search">
+                <input class="header-search--input w-full font-medium radius-24" type="text" placeholder="Recherche sur le site" aria-label="Recherche sur le site">
+                <button class="header-search--button p-absolute d-flex justify-center align-center rounded" type="submit" aria-label="Recherche">
+                  <svg width="14" height="14" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+                <button class="header-search--close toggle-close d-flex justify-center align-center rounded hidden-xs hidden-sm" type="button" aria-label="Fermer">
+                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#remove"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+
+      <main class="main">
+
+        <section class="section section-full section-theme t2">
+          <div class="container max-w-972">
+            <div class="breadcrumb font-medium">
+              <a href="#">Accueil</a>
+              <span>/</span>
+              <a href="#">Nos animations</a>
+              <span>/</span>
+              <strong class="font-medium">R&eacute;server une animation</strong>
+            </div>
+            <!-- breadcrumb -->
+            <header class="section-header">
+              <h1 class="section-title font-extrabold">R&eacute;server une animation<br>&laquo; mini-conf&eacute;rences L&rsquo;Eau &agrave; l&rsquo;&eacute;cole &raquo;</h1>
+              <div class="section-summary font-semibold text-left">
+                <p>Cette animation est r&eacute;serv&eacute;e aux &eacute;l&egrave;ves de CE2, CM1 et CM2 du territoire du SEDIF.<br>Ce formulaire doit &ecirc;tre compl&eacute;t&eacute; int&eacute;gralement afin que nous puissions analyser votre demande et vous recontacter dans les plus brefs d&eacute;lais.</p>
+                <p><strong>&Agrave; pr&eacute;voir imp&eacute;rativement : au minimum 2 classes lors d&rsquo;une matin&eacute;e d&rsquo;animation<br>&laquo; L&rsquo;eau &agrave; l&rsquo;&eacute;cole &raquo; et maximum 3 classes par jour.</strong></p>
+              </div>
+            </header>
+          </div>
+          <div class="container max-w-972">
+            <div class="section-body">
+
+              <div class="form-nux form-theme t2">
+                <div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_9_container" data-token="e834f604dda5ddf09cfc16dbcdfe5221">
+                  <form enctype="multipart/form-data" method="post" class="frm-show-form  frm_pro_form " id="form_wewc74" data-token="e834f604dda5ddf09cfc16dbcdfe5221" style="overflow-x: visible;">
+                    <div class="frm_form_fields ">
+                      <fieldset>
+                        <legend class="frm_screen_reader">R&eacute;server une animation</legend>
+                        <div class="frm_fields_container">
+                          <div id="frm_field_83_container" class="frm_form_field  frm_html_container form-field">
+                            <h2>L&rsquo;&eacute;tablissement</h2>
+                          </div>
+                          <div id="frm_field_91_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_l7ykk4" id="field_l7ykk4_label" class="frm_primary_label">Nom d&rsquo;&eacute;tablissement <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_l7ykk4" name="item_meta[91]" value="" placeholder="Nom d'&eacute;tablissement" data-reqmsg="Nom d'&eacute;tablissement cannot be blank." aria-required="true" data-invmsg="Nom d'&eacute;tablissement is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_92_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_w33902" id="field_w33902_label" class="frm_primary_label">Adresse 1 <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_w33902" name="item_meta[92]" value="" placeholder="Adresse 1" data-reqmsg="Adresse 1 cannot be blank." aria-required="true" data-invmsg="Adresse 1 is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_103_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_eksi0" id="field_eksi0_label" class="frm_primary_label">Adresse 2 <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_eksi0" name="item_meta[103]" value="" placeholder="Adresse 2" data-reqmsg="Adresse 2 cannot be blank." aria-required="true" data-invmsg="Adresse 2 is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_93_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_zkqwf2" id="field_zkqwf2_label" class="frm_primary_label">Code postal <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_zkqwf2" name="item_meta[93]" value="" data-frmmask="99999" placeholder="Code postal" data-reqmsg="Code postal cannot be blank." aria-required="true" data-invmsg="Code postal is invalid" aria-invalid="false" pattern="\d\d\d\d\d$">
+                          </div>
+                          <div id="frm_field_94_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_bwixk3" id="field_bwixk3_label" class="frm_primary_label">Commune <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_bwixk3" name="item_meta[94]" value="" placeholder="Commune" data-reqmsg="Commune cannot be blank." aria-required="true" data-invmsg="Commune is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_107_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_1n1sp" id="field_1n1sp_label" class="frm_primary_label">Horaires d&rsquo;ouverture <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_1n1sp" name="item_meta[107]" value="" placeholder="Horaires d'ouverture" data-reqmsg="Horaires d'ouverture cannot be blank." aria-required="true" data-invmsg="Horaires d'ouverture is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_106_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_gmc8d" id="field_gmc8d_label" class="frm_primary_label">Horaires de la r&eacute;cr&eacute;ation du matin <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_gmc8d" name="item_meta[106]" value="" placeholder="Horaires de la r&eacute;cr&eacute;ation du matin" data-reqmsg="Horaires de la r&eacute;cr&eacute;ation du matin cannot be blank." aria-required="true" data-invmsg="Horaires de la r&eacute;cr&eacute;ation du matin is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_105_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_pku2p" id="field_pku2p_label" class="frm_primary_label">Horaires de la r&eacute;cr&eacute;ation de l&rsquo;apr&egrave;s-midi <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_pku2p" name="item_meta[105]" value="" placeholder="Horaires de la r&eacute;cr&eacute;ation de l'apr&egrave;s-midi" data-reqmsg="Horaires de la r&eacute;cr&eacute;ation de l'apr&egrave;s-midi cannot be blank." aria-required="true" data-invmsg="Horaires de la r&eacute;cr&eacute;ation de l'apr&egrave;s-midi is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_95_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_cfjd42_label" class="frm_primary_label">L&rsquo;&eacute;tablissement dispose-t-il d&rsquo;un parking gratuit ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_cfjd42_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_95-0">
+                                <label for="field_cfjd42-0">
+                                  <input type="checkbox" name="item_meta[95][]" id="field_cfjd42-0" value="Oui" data-reqmsg="L'&eacute;tablissement dispose-t-il d'un parking gratuit ? cannot be blank." data-invmsg="L'&eacute;tablissement dispose-t-il d'un parking gratuit ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_95-1">
+                                <label for="field_cfjd42-1">
+                                  <input type="checkbox" name="item_meta[95][]" id="field_cfjd42-1" value="Non" data-reqmsg="L'&eacute;tablissement dispose-t-il d'un parking gratuit ? cannot be blank." data-invmsg="L'&eacute;tablissement dispose-t-il d'un parking gratuit ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="frm_field_108_container" class="frm_form_field  frm_first frm_html_container form-field">
+                            <h2>Date souhait&eacute;e</h2>
+                          </div>
+                          <div id="frm_field_109_container" class="frm_form_field form-field  frm_required_field frm_top_container">
+                            <label for="field_nca4e" id="field_nca4e_label" class="frm_primary_label">Date <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_nca4e" name="item_meta[109]" value="" maxlength="10" data-reqmsg="Date cannot be blank." aria-required="true" data-invmsg="Date is invalid" class="frm_date hasDatepicker" aria-invalid="false" aria-describedby="frm_desc_field_nca4e">
+                            <div class="frm_description" id="frm_desc_field_nca4e">Consultez le calendrier pour conna&icirc;tre les disponibilit&eacute;s et s&eacute;lectionnez le jour souhait&eacute;.</div>
+                          </div>
+                          <div id="frm_field_110_container" class="frm_form_field  frm_first frm_html_container form-field">
+                            <h2>La mini-conf&eacute;rence 1 : contact r&eacute;f&eacute;rent</h2>
+                          </div>
+                          <div id="frm_field_111_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_233ny" id="field_233ny_label" class="frm_primary_label">Nom enseignant <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_233ny" name="item_meta[111]" value="" placeholder="Nom enseignant" data-reqmsg="Nom enseignant cannot be blank." aria-required="true" data-invmsg="Nom enseignant is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_88_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_2f9xo4" id="field_2f9xo4_label" class="frm_primary_label">Classe <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_2f9xo4" name="item_meta[88]" value="" placeholder="Classe" data-reqmsg="Classe cannot be blank." aria-required="true" data-invmsg="Classe is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_112_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_3e1fh" id="field_3e1fh_label" class="frm_primary_label">Effectif <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_3e1fh" name="item_meta[112]" value="" placeholder="Effectif" data-reqmsg="Effectif cannot be blank." aria-required="true" data-invmsg="Effectif is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_104_container" class="frm_form_field form-field  frm_required_field frm_none_container frm_first">
+                            <label for="field_4slyq" id="field_4slyq_label" class="frm_primary_label">T&eacute;l&eacute;phone portable <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_4slyq" name="item_meta[104]" value="" placeholder="T&eacute;l&eacute;phone portable" data-reqmsg="T&eacute;l&eacute;phone portable cannot be blank." aria-required="true" data-invmsg="T&eacute;l&eacute;phone portable is invalid" aria-invalid="false" aria-describedby="frm_desc_field_4slyq">
+                            <div class="frm_description" id="frm_desc_field_4slyq">Il est imp&eacute;ratif qu&rsquo;un num&eacute;ro de portable soit actif, pour faciliter l&rsquo;acc&egrave;s &agrave; l&rsquo;&eacute;tablissement scolaire.</div>
+                          </div>
+                          <div id="frm_field_113_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_o0gcy_label" class="frm_primary_label">La classe dispose-t-elle d&rsquo;un tableau num&eacute;rique ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_o0gcy_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_113-0">
+                                <label for="field_o0gcy-0">
+                                  <input type="checkbox" name="item_meta[113][]" id="field_o0gcy-0" value="Oui" data-reqmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? cannot be blank." data-invmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_113-1">
+                                <label for="field_o0gcy-1">
+                                  <input type="checkbox" name="item_meta[113][]" id="field_o0gcy-1" value="Non" data-reqmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? cannot be blank." data-invmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                            <div class="frm_description" id="frm_desc_field_o0gcy">Si tableau num&eacute;rique en classe, une cl&eacute; USB sera remise par l&rsquo;animateur/animatrice &agrave; l&rsquo;issue de la prestation.</div>
+                          </div>
+                          <div id="frm_field_119_container" class="frm_form_field  frm_first frm_html_container form-field">
+                            <h2>La mini-conf&eacute;rence 2 : contact r&eacute;f&eacute;rent</h2>
+                          </div>
+                          <div id="frm_field_118_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_8s2q5" id="field_8s2q5_label" class="frm_primary_label">Nom enseignant <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_8s2q5" name="item_meta[118]" value="" placeholder="Nom enseignant" data-reqmsg="Nom enseignant cannot be blank." aria-required="true" data-invmsg="Nom enseignant is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_117_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_fm5qu" id="field_fm5qu_label" class="frm_primary_label">Classe <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_fm5qu" name="item_meta[117]" value="" placeholder="Classe" data-reqmsg="Classe cannot be blank." aria-required="true" data-invmsg="Classe is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_116_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_a2vof" id="field_a2vof_label" class="frm_primary_label">Effectif <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_a2vof" name="item_meta[116]" value="" placeholder="Effectif" data-reqmsg="Effectif cannot be blank." aria-required="true" data-invmsg="Effectif is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_115_container" class="frm_form_field form-field  frm_required_field frm_none_container frm_first">
+                            <label for="field_44wjz" id="field_44wjz_label" class="frm_primary_label">T&eacute;l&eacute;phone portable <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_44wjz" name="item_meta[115]" value="" placeholder="T&eacute;l&eacute;phone portable" data-reqmsg="T&eacute;l&eacute;phone portable cannot be blank." aria-required="true" data-invmsg="T&eacute;l&eacute;phone portable is invalid" aria-invalid="false" aria-describedby="frm_desc_field_44wjz">
+                            <div class="frm_description" id="frm_desc_field_44wjz">Il est imp&eacute;ratif qu&rsquo;un num&eacute;ro de portable soit actif, pour faciliter l&rsquo;acc&egrave;s &agrave; l&rsquo;&eacute;tablissement scolaire.</div>
+                          </div>
+                          <div id="frm_field_114_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_zaun9_label" class="frm_primary_label">La classe dispose-t-elle d&rsquo;un tableau num&eacute;rique ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_zaun9_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_114-0">
+                                <label for="field_zaun9-0">
+                                  <input type="checkbox" name="item_meta[114][]" id="field_zaun9-0" value="Oui" data-reqmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? cannot be blank." data-invmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_114-1">
+                                <label for="field_zaun9-1">
+                                  <input type="checkbox" name="item_meta[114][]" id="field_zaun9-1" value="Non" data-reqmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? cannot be blank." data-invmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                            <div class="frm_description" id="frm_desc_field_zaun9">Si tableau num&eacute;rique en classe, une cl&eacute; USB sera remise par l&rsquo;animateur/animatrice &agrave; l&rsquo;issue de la prestation.</div>
+                          </div>
+                          <div id="frm_field_125_container" class="frm_form_field  frm_first frm_html_container form-field">
+                            <h2>La mini-conf&eacute;rence 3 (&eacute;ventuellement) : contact r&eacute;f&eacute;rent</h2>
+                          </div>
+                          <div id="frm_field_124_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_j263g" id="field_j263g_label" class="frm_primary_label">Nom enseignant <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_j263g" name="item_meta[124]" value="" placeholder="Nom enseignant" data-reqmsg="Nom enseignant cannot be blank." aria-required="true" data-invmsg="Nom enseignant is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_123_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_76m7" id="field_76m7_label" class="frm_primary_label">Classe <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_76m7" name="item_meta[123]" value="" placeholder="Classe" data-reqmsg="Classe cannot be blank." aria-required="true" data-invmsg="Classe is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_122_container" class="frm_form_field form-field  frm_required_field frm_none_container">
+                            <label for="field_ohy4b" id="field_ohy4b_label" class="frm_primary_label">Effectif <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_ohy4b" name="item_meta[122]" value="" placeholder="Effectif" data-reqmsg="Effectif cannot be blank." aria-required="true" data-invmsg="Effectif is invalid" aria-invalid="false">
+                          </div>
+                          <div id="frm_field_121_container" class="frm_form_field form-field  frm_required_field frm_none_container frm_first">
+                            <label for="field_bciud" id="field_bciud_label" class="frm_primary_label">T&eacute;l&eacute;phone portable <span class="frm_required" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="field_bciud" name="item_meta[121]" value="" placeholder="T&eacute;l&eacute;phone portable" data-reqmsg="T&eacute;l&eacute;phone portable cannot be blank." aria-required="true" data-invmsg="T&eacute;l&eacute;phone portable is invalid" aria-invalid="false" aria-describedby="frm_desc_field_bciud">
+                            <div class="frm_description" id="frm_desc_field_bciud">Il est imp&eacute;ratif qu&rsquo;un num&eacute;ro de portable soit actif, pour faciliter l&rsquo;acc&egrave;s &agrave; l&rsquo;&eacute;tablissement scolaire.</div>
+                          </div>
+                          <div id="frm_field_120_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_1a2yq_label" class="frm_primary_label">La classe dispose-t-elle d&rsquo;un tableau num&eacute;rique ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_1a2yq_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_120-0">
+                                <label for="field_1a2yq-0">
+                                  <input type="checkbox" name="item_meta[120][]" id="field_1a2yq-0" value="Oui" data-reqmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? cannot be blank." data-invmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_120-1">
+                                <label for="field_1a2yq-1">
+                                  <input type="checkbox" name="item_meta[120][]" id="field_1a2yq-1" value="Non" data-reqmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? cannot be blank." data-invmsg="La classe dispose-t-elle d'un tableau num&eacute;rique ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                            <div class="frm_description" id="frm_desc_field_1a2yq">Si tableau num&eacute;rique en classe, une cl&eacute; USB sera remise par l&rsquo;animateur/animatrice &agrave; l&rsquo;issue de la prestation.</div>
+                          </div>
+                          <div id="frm_field_126_container" class="frm_form_field  frm_first frm_html_container form-field">
+                            <p>Si vous souhaitez des.mini-conf&eacute;rences suppl&eacute;mentaires (minimum 2 de plus), <br>merci de remplir un nouveau formulaire. </p>
+                          </div>
+                          <div id="frm_field_90_container" class="frm_form_field  frm_html_container form-field">
+                            <h2>Contenus p&eacute;dagogiques bonus</h2>
+                          </div>
+                          <div id="frm_field_128_container" class="frm_form_field  frm_first frm_html_container form-field">
+                            <p>En tant qu&rsquo;&eacute;tablissement ayant b&eacute;n&eacute;fici&eacute; de mini-conf&eacute;rences l&rsquo;Eau &agrave; l&rsquo;&eacute;cole, <br>vous pouvez b&eacute;n&eacute;ficier de contenus p&eacute;dagogiques bonus. </p>
+                          </div>
+                          <div id="frm_field_127_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_dwnu4_label" class="frm_primary_label">L&rsquo;&eacute;tablissement scolaire a-t-il d&eacute;j&agrave; la malle p&eacute;dagogique ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_dwnu4_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_127-0">
+                                <label for="field_dwnu4-0">
+                                  <input type="checkbox" name="item_meta[127][]" id="field_dwnu4-0" value="Oui" data-reqmsg="L'&eacute;tablissement scolaire a-t-il d&eacute;j&agrave; la malle p&eacute;dagogique ? cannot be blank." data-invmsg="L'&eacute;tablissement scolaire a-t-il d&eacute;j&agrave; la malle p&eacute;dagogique ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_127-1">
+                                <label for="field_dwnu4-1">
+                                  <input type="checkbox" name="item_meta[127][]" id="field_dwnu4-1" value="Non" data-reqmsg="L'&eacute;tablissement scolaire a-t-il d&eacute;j&agrave; la malle p&eacute;dagogique ? cannot be blank." data-invmsg="L'&eacute;tablissement scolaire a-t-il d&eacute;j&agrave; la malle p&eacute;dagogique ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                            <div class="frm_description" id="frm_desc_field_dwnu4">Si tableau num&eacute;rique en classe, une cl&eacute; USB sera remise par l&rsquo;animateur/animatrice &agrave; l&rsquo;issue de la prestation.</div>
+                          </div>
+                          <div id="frm_field_129_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_teq0b_label" class="frm_primary_label">Si non, souhaitez vous obtenir la malle p&eacute;dagogique ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_teq0b_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_129-0">
+                                <label for="field_teq0b-0">
+                                  <input type="checkbox" name="item_meta[129][]" id="field_teq0b-0" value="Oui" data-reqmsg="Si non, souhaitez vous obtenir la malle p&eacute;dagogique ? cannot be blank." data-invmsg="Si non, souhaitez vous obtenir la malle p&eacute;dagogique ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_129-1">
+                                <label for="field_teq0b-1">
+                                  <input type="checkbox" name="item_meta[129][]" id="field_teq0b-1" value="Non" data-reqmsg="Si non, souhaitez vous obtenir la malle p&eacute;dagogique ? cannot be blank." data-invmsg="Si non, souhaitez vous obtenir la malle p&eacute;dagogique ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                            <div class="frm_description" id="frm_desc_field_teq0b">Si tableau num&eacute;rique en classe, une cl&eacute; USB sera remise par l&rsquo;animateur/animatrice &agrave; l&rsquo;issue de la prestation.</div>
+                          </div>
+                          <div id="frm_field_130_container" class="frm_form_field form-field  frm_required_field frm_top_container lfdle_form_checkbox_1line vertical_radio">
+                            <div id="field_p6jww_label" class="frm_primary_label">Souhaitez-vous obtenir le kit du nuage robinet ? <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_p6jww_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_130-0">
+                                <label for="field_p6jww-0">
+                                  <input type="checkbox" name="item_meta[130][]" id="field_p6jww-0" value="Oui" data-reqmsg="Souhaitez-vous obtenir le kit du nuage robinet ? cannot be blank." data-invmsg="Souhaitez-vous obtenir le kit du nuage robinet ? est non valide" aria-invalid="false" aria-required="true"> Oui </label>
+                              </div>
+                              <div class="frm_checkbox" id="frm_checkbox_130-1">
+                                <label for="field_p6jww-1">
+                                  <input type="checkbox" name="item_meta[130][]" id="field_p6jww-1" value="Non" data-reqmsg="Souhaitez-vous obtenir le kit du nuage robinet ? cannot be blank." data-invmsg="Souhaitez-vous obtenir le kit du nuage robinet ? est non valide" aria-invalid="false"> Non </label>
+                              </div>
+                            </div>
+                            <div class="frm_description" id="frm_desc_field_p6jww">Si tableau num&eacute;rique en classe, une cl&eacute; USB sera remise par l&rsquo;animateur/animatrice &agrave; l&rsquo;issue de la prestation.</div>
+                          </div>
+                          <div id="frm_field_131_container" class="frm_form_field  frm_html_container form-field">
+                            <h2>Commentaires</h2>
+                          </div>
+                          <div id="frm_field_132_container" class="frm_form_field form-field  frm_none_container">
+                            <label for="field_439it" id="field_439it_label" class="frm_primary_label">Commentaires <span class="frm_required" aria-hidden="true"></span>
+                            </label>
+                            <textarea name="item_meta[132]" id="field_439it" rows="5" placeholder="Merci d'indiquer tout autre &eacute;l&eacute;ment &agrave; prendre en compte dans votre demande." data-invmsg="Commentaires is invalid" aria-invalid="false"></textarea>
+                          </div>
+                          <div id="frm_field_100_container" class="frm_form_field form-field  frm_required_field frm_none_container lfdle_form_checkbox_1choice vertical_radio">
+                            <div id="field_s6dp74_label" class="frm_primary_label">Acceptation CGU <span class="frm_required" aria-hidden="true">*</span>
+                            </div>
+                            <div class="frm_opt_container" aria-labelledby="field_s6dp74_label" role="group">
+                              <div class="frm_checkbox" id="frm_checkbox_100-0">
+                                <label for="field_s6dp74-0">
+                                  <input type="checkbox" name="item_meta[100][]" id="field_s6dp74-0" value="Je reconnais avoir lu, compris et accept&eacute;, consectetur adipiscing elit. Praesent finibus massa purus, eu ornare erat auctor in. Phasellus sem erat, hendrerit vitae vestibulum eget, pulvinar at nibh. Maecenas non pulvinar urna, in suscipit felis. Fusce ipsum lectus, efficitur id justo sed, ullamcorper ornare massa. Praesent sit amet iaculis lacus. In aliquam fringilla lacinia." data-reqmsg="Acceptation CGU cannot be blank." data-invmsg="Acceptation CGU est non valide" aria-invalid="false" aria-required="true"> Je reconnais avoir lu, compris, et accept&eacute;, sans limitation ni r&eacute;serve, les conditions g&eacute;n&eacute;rales d&rsquo;utilisation de la plateforme de L&rsquo;Eau d&rsquo;&Icirc;le-de-France et de notre charte sur la protection des donn&eacute;es &agrave; caract&egrave;re personnel. * </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="frm_field_102_container" class="frm_form_field form-field  frm12 frm_first">
+                            <div class="frm_submit frm_flex">
+                              <button class="frm_button_submit frm_final_submit" type="submit">Envoyer</button>
+                            </div>
+                          </div>
+                          <div class="frm_info">Les informations recueillies par L&rsquo;Eau d&rsquo;&Icirc;le-de-France font l&rsquo;objet d&rsquo;un traitement informatique et les donn&eacute;es personnelles collect&eacute;es sont conserv&eacute;es pendant une dur&eacute;e de 5 ans sur nos serveurs dans un fichier destin&eacute; &agrave; communiquer sur nos programmes d&rsquo;animations en milieu scolaire. Les destinataires des donn&eacute;es sont les partenaires pour lesquels nous organisons ces interventions. Conform&eacute;ment au R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es entr&eacute; en vigueur le 25/05/18, vous pouvez &agrave; tout moment demander de ne plus recevoir nos informations, ou bien demander l&rsquo;acc&egrave;s, la rectification ou l&rsquo;effacement de vos coordonn&eacute;es, en contactant le D&eacute;l&eacute;gu&eacute; &agrave; la protection des donn&eacute;es, &agrave; l&rsquo;adresse : <a href="mailto:rgpd.leaudidf@veolia.com" target="_blank">rgpd.leaudidf@veolia.com</a></div>
+                          <div class="frm__6808076d70e15">
+                            <label for="frm_email_9"> Si vous &ecirc;tes un humain, ne remplissez pas ce champ. </label>
+                            <input id="frm_email_9" type="text" class="frm_verify" name="frm__6808076d70e15" value="" autocomplete="off">
+                          </div>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </form>
+                </div>
+                <!-- WPForm -->
+              </div>
+              <!-- form -->
+
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+      </main>
+      <!-- main -->
+
+      <footer class="footer">
+        <div class="container max-w-1184">
+          <div class="footer-logo">
+            <img src="assets/img/logo-la-fabrique-de-leau.svg" alt="La fabrique de l'eau" width="148" height="66">
+          </div>
+          <nav class="footer-nav i1 d-flex flex-wrap justify-start align-start font-medium">
+            <ul>
+              <li><a href="#">Contenus p&eacute;dagogiques</a></li>
+              <li><a href="#">Animations</a></li>
+              <li><a href="#">Recrutement</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Nos actualit&eacute;s</a></li>
+              <li><a href="#">Nous conna&icirc;tre</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social font-semibold">
+            <span>Suivez-nous</span>
+            <ul class="d-flex justify-center align-center">
+              <li>
+                <a href="#" target="_blank" title="Facebook">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Instagram">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="TikTok">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#tiktok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Youtube">
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-toolbar hidden-xs hidden-sm">
+            <a class="footer-button d-inline-flex justify-center align-center font-semibold radius-24" href="#">
+              <span>Contactez-nous</span>
+              <svg width="9" height="14" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-link font-medium">
+            <ul class="d-flex flex-wrap justify-center align-center">
+              <li><a href="#">Politique des cookies</a></li>
+              <li><a href="#">Politique de confidentialit&eacute; des donn&eacute;es personnelles</a></li>
+              <li><a href="#">Mentions l&eacute;gales</a></li>
+              <li><a href="#">Cr&eacute;dits</a></li>
+            </ul>
+          </div>
+          <div class="footer-partner p-absolute">
+            <a class="d-flex justify-center align-center h-full" href="#">
+              <img src="assets/img/logo-sedif.svg" alt="SEDIF" width="70" height="60">
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </div>
+    <!-- wrapper -->
+
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- script -->
+
+  </body>
+
+</html>

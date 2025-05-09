@@ -154,12 +154,14 @@ const App = {
       media.forEach(item => {
         const button = item.querySelector('.media-button');
         const iframe = item.querySelector('.media-embed iframe');
-        button.addEventListener('click', (e) => {
-          iframe.setAttribute('src', iframe.getAttribute('data-src'));
-          iframe.removeAttribute('data-src');
-          item.classList.add('active');
-          e.preventDefault();
-        });
+        if (button && iframe) {
+          button.addEventListener('click', (e) => {
+            iframe.setAttribute('src', iframe.getAttribute('data-src'));
+            iframe.removeAttribute('data-src');
+            item.classList.add('active');
+            e.preventDefault();
+          });
+        }
       });
     }
   },
