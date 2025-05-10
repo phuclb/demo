@@ -74,7 +74,7 @@ const App = {
    * Splide
    */
   splide() {
-    const generalParams = {
+    const gParams = {
       gap: 24,
       perPage: 1,
       perMove: 1,
@@ -88,19 +88,12 @@ const App = {
         }
       }
     };
-    const generalSplide = document.querySelectorAll('.splide__general');
-    if (generalSplide.length) {
-      generalSplide.forEach(slider => {
-        new Splide(slider, generalParams).mount();
-      });
-    }
-
-    const carouselParams = {
+    const cParams = {
       gap: 24,
       perPage: 1,
       perMove: 1,
-      start: 1,
       mediaQuery: 'min',
+      start: 1,
       breakpoints: {
         768: {
           perPage: 2
@@ -112,10 +105,15 @@ const App = {
         }
       }
     };
-    const carouselSplide = document.querySelectorAll('.splide__carousel');
-    if (carouselSplide.length) {
-      carouselSplide.forEach(slider => {
-        new Splide(slider, carouselParams).mount();
+    const aSplides = document.querySelectorAll('.splide');
+    if (aSplides.length) {
+      aSplides.forEach(iSplide => {
+        const xParams = iSplide.classList.contains('splide__general') ? gParams : cParams;
+        const xSplide = new Splide(iSplide, xParams).on('ready resized', () => {
+          const isOverflow = xSplide.options.perPage === xSplide.length;
+          iSplide.classList.toggle('is-overflow', !isOverflow);
+        });
+        xSplide.mount();
       });
     }
   },
@@ -162,7 +160,6 @@ const App = {
       if (frmNewsletterField.length) {
         frmNewsletterField.forEach((field, index) => {
           field.classList.add('frm_nth_' + index);
-          console.log(field);
         });
       }
     }
