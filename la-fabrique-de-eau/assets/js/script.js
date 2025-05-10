@@ -139,9 +139,32 @@ const App = {
       frmOption.forEach(option => {
         const label = option.querySelector('label');
         if (label) {
-          label.insertAdjacentHTML('beforeend', '<span><svg width="17" height="11" aria-hidden="true" focusable="false"><use href="assets/img/sprites.svg#tick"></use></svg></span>');
+          label.insertAdjacentHTML('beforeend', '<span><svg width="17" height="11" aria-hidden="true" focusable="false"><use href="' + App.path() + '/sprites.svg#tick"></use></svg></span>');
         }
       });
+    }
+
+    const frmNux = document.querySelectorAll('.form-nux');
+    if (frmNux.length) {
+      frmNux.forEach(form => {
+        const frmNuxField = form.querySelectorAll('.frm_form_field');
+        if (frmNuxField.length) {
+          frmNuxField.forEach((field, index) => {
+            field.classList.add('frm_nth_' + index);
+          });
+        }
+      });
+    }
+
+    const frmNewsletter = document.querySelector('.form-newsletter');
+    if (frmNewsletter) {
+      const frmNewsletterField = frmNewsletter.querySelectorAll('.frm_form_field');
+      if (frmNewsletterField.length) {
+        frmNewsletterField.forEach((field, index) => {
+          field.classList.add('frm_nth_' + index);
+          console.log(field);
+        });
+      }
     }
   },
 
@@ -176,6 +199,19 @@ const App = {
       awaitOpenAnimation: true,
       awaitCloseAnimation: true
     });
+  },
+
+  /**
+   * Path
+   */
+  path() {
+    let path = 'assets/img';
+    const svg = document.querySelector('.header-svg');
+    if (svg) {
+      path = svg.getAttribute('src');
+      path = path.substring(0, path.lastIndexOf('/'));
+    }
+    return path;
   }
 };
 
