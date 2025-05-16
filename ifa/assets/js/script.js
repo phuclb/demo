@@ -7,6 +7,7 @@ const App = {
   init() {
     App.match();
     App.toggle();
+    App.splide();
   },
 
   /**
@@ -56,6 +57,38 @@ const App = {
             activeToggle.setAttribute('aria-expanded', false);
           }
         }
+      });
+    }
+  },
+
+  /**
+   * Splide
+   */
+  splide() {
+    const gParams = {
+      gap: 20,
+      perPage: 1,
+      perMove: 1,
+      pagination: false,
+      mediaQuery: 'min',
+      breakpoints: {
+        768: {
+          gap: 30,
+          perPage: 2
+        },
+        1280: {
+          perPage: 3
+        }
+      }
+    };
+    const sCourse = document.querySelectorAll('.splide__course');
+    if (sCourse.length) {
+      sCourse.forEach(iSplide => {
+        const xSplide = new Splide(iSplide, gParams).on('ready resized', () => {
+          const isOverflow = xSplide.options.perPage === xSplide.length;
+          iSplide.classList.toggle('is-overflow', !isOverflow);
+        });
+        xSplide.mount();
       });
     }
   },
