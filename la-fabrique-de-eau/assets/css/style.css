@@ -10897,6 +10897,13 @@ textarea {
   margin-top: var(--g-15);
   line-height: 1.25;
 }
+.listing-activity--link {
+  text-decoration: none;
+  color: currentColor;
+}
+.listing-activity--link:hover {
+  text-decoration: underline;
+}
 .listing-activity--body {
   padding-top: var(--g-12);
   padding-bottom: var(--g-21);
@@ -11518,6 +11525,13 @@ textarea {
   margin-top: var(--g-9);
   font-size: 14px;
   line-height: 18px;
+}
+.activity-card--link {
+  text-decoration: none;
+  color: currentColor;
+}
+.activity-card--link:hover {
+  text-decoration: underline;
 }
 .activity-card--body {
   padding-top: var(--g-12);
