@@ -81,9 +81,9 @@ const App = {
         }
       }
     };
-    const sCourse = document.querySelectorAll('.splide__course');
-    if (sCourse.length) {
-      sCourse.forEach(iSplide => {
+    const sGeneral = document.querySelectorAll('.splide__general');
+    if (sGeneral.length) {
+      sGeneral.forEach(iSplide => {
         const xSplide = new Splide(iSplide, gParams).on('ready resized', () => {
           const isOverflow = xSplide.options.perPage === xSplide.length;
           iSplide.classList.toggle('is-overflow', !isOverflow);
