@@ -946,7 +946,7 @@ textarea {
   border: 0;
 }
 .splide__arrow:disabled {
-  opacity: 0.5;
+  opacity: 0.25;
   pointer-events: none;
   cursor: default;
 }
@@ -1732,14 +1732,9 @@ textarea {
   height: 1px;
   background-color: var(--c-dove-gray);
 }
-.ifa-cta,
-.ifa-about,
-.ifa-figure,
-.ifa-quality {
-  line-height: 1.2;
-}
 .ifa-cta {
   padding-block: var(--ifa-cta-py);
+  line-height: 1.2;
 }
 .ifa-cta--info {
   font-size: var(--ifa-cta-info-fs);
@@ -1775,6 +1770,7 @@ textarea {
 }
 .ifa-about--title {
   font-size: var(--ifa-about-title-fs);
+  line-height: 1.2;
 }
 .ifa-about--image {
   margin-top: var(--ifa-about-image-mt);
@@ -1783,20 +1779,6 @@ textarea {
 }
 .ifa-about--summary {
   margin-top: var(--ifa-about-summary-mt);
-  font-size: 15px;
-}
-.ifa-about--summary h3:not(:first-child),
-.ifa-about--summary p:not(:first-child) {
-  margin-top: var(--g-20);
-}
-.ifa-about--summary h3 {
-  font-size: 20px;
-}
-.ifa-about--summary a {
-  color: currentColor;
-}
-.ifa-about--summary a:hover {
-  color: var(--c-orange);
 }
 .ifa-about--button {
   padding: 12px var(--g-30);
@@ -1816,6 +1798,7 @@ textarea {
 }
 .ifa-figure {
   padding-block: var(--ifa-figure-py);
+  line-height: 1.2;
 }
 .ifa-figure span {
   font-size: var(--ifa-figure-fs);
@@ -1840,6 +1823,7 @@ textarea {
 }
 .ifa-quality--title {
   font-size: var(--ifa-quality-title-fs);
+  line-height: 1.2;
 }
 .ifa-quality--image {
   width: var(--ifa-quality-image-w);
@@ -1848,7 +1832,6 @@ textarea {
 .ifa-quality--summary {
   width: var(--ifa-quality-summary-w);
   margin-top: var(--ifa-quality-summary-mt);
-  font-size: 15px;
 }
 
 /* mobile - tablet */
@@ -1986,41 +1969,29 @@ textarea {
   FAQ
 --------------------------------------------------
 **/
-.faq-card {
-  line-height: 1.2;
-}
 .faq-card--title {
   font-size: 20px;
+  line-height: 1.2;
   color: var(--c-orange);
 }
-.faq-card--editux,
-.faq-card--toggle {
-  font-size: 15px;
-}
-.faq-card--editux {
-  margin-top: var(--g-15);
-}
-.faq-card--editux a {
-  color: currentColor;
-}
-.faq-card--editux a:hover {
-  color: var(--c-orange);
-}
-.faq-card--editux p:not(:first-child) {
+.faq-card--summary,
+.faq-card--description {
   margin-top: var(--g-15);
 }
 .faq-card--toggle {
   margin-top: var(--g-25);
+  font-size: 15px;
+  line-height: 1.2;
 }
 .faq-card--toggle a {
   text-decoration: none;
   color: currentColor;
 }
 .faq-card--toggle a:hover {
-  text-decoration: underline;
+  color: var(--c-orange);
 }
 .faq-card--toggle svg {
-  margin-left: var(--g-15);
+  margin-left: var(--g-10);
   color: var(--c-orange);
 }
 .faq-card--summary {
@@ -2093,7 +2064,7 @@ textarea {
   color: var(--c-orange);
 }
 .faq-toolbar svg {
-  margin-right: var(--g-25);
+  margin-right: var(--g-20);
 }
 
 /* mobile - tablet */
@@ -2308,6 +2279,96 @@ textarea {
 
 /**
 --------------------------------------------------
+  Editux
+--------------------------------------------------
+**/
+.editux-text {
+  font-size: 15px;
+  line-height: 1.2;
+}
+.editux-text h1:not(:first-child),
+.editux-text h2:not(:first-child),
+.editux-text h3:not(:first-child),
+.editux-text h4:not(:first-child),
+.editux-text h5:not(:first-child),
+.editux-text h6:not(:first-child),
+.editux-text p:not(:first-child),
+.editux-text ul:not(:first-child),
+.editux-text ol:not(:first-child),
+.editux-text figure:not(:first-child),
+.editux-text blockquote:not(:first-child) {
+  margin-top: var(--g-20);
+}
+.editux-text h1,
+.editux-text h2,
+.editux-text h3,
+.editux-text h4,
+.editux-text h5,
+.editux-text h6 {
+  font-weight: var(--fw-bold);
+  line-height: calc(1em + 6px);
+}
+.editux-text h1,
+.editux-text h2 {
+  font-size: 1.6em;
+}
+.editux-text h3 {
+  font-size: 1.4em;
+}
+.editux-text h4 {
+  font-size: 1.2em;
+}
+.editux-text h5,
+.editux-text h6 {
+  font-size: 1em;
+}
+.editux-text ul,
+.editux-text ol {
+  margin-left: 1em;
+}
+.editux-text ul {
+  list-style: disc;
+}
+.editux-text ol {
+  list-style: decimal;
+}
+.editux-text li:not(:first-child) {
+  margin-top: var(--g-5);
+}
+.editux-text a {
+  color: currentColor;
+}
+.editux-text a:hover {
+  color: var(--c-orange);
+}
+.editux-text img {
+  max-width: 100%;
+  height: auto;
+}
+.editux-text blockquote {
+  max-width: 640px;
+  margin-inline: auto;
+  padding: var(--g-30) var(--gap);
+}
+.editux-text blockquote p,
+.editux-text blockquote cite {
+  line-height: calc(1em + 6px);
+}
+.editux-text blockquote p {
+  font-size: 1.6em;
+  font-weight: var(--fw-bold);
+}
+.editux-text blockquote cite {
+  display: block;
+  margin-top: var(--g-15);
+  font-size: 1.2em;
+  font-weight: var(--fw-medium);
+}
+
+/* mobile */
+/* tablet - desktop */
+/**
+--------------------------------------------------
   Article
 --------------------------------------------------
 **/
@@ -2332,10 +2393,10 @@ textarea {
   color: currentColor;
 }
 .article-card--toolbar a:hover {
-  text-decoration: underline;
+  color: var(--c-orange);
 }
 .article-card--toolbar svg {
-  margin-left: var(--g-15);
+  margin-left: var(--g-10);
   color: var(--c-orange);
 }
 .article-card--body {
