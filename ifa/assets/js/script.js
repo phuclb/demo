@@ -8,6 +8,7 @@ const App = {
     App.match();
     App.toggle();
     App.splide();
+    App.masonry();
   },
 
   /**
@@ -94,9 +95,18 @@ const App = {
   },
 
   /**
-   * Placeholder for a function
+   * Masonry
    */
-  fN() {
+  masonry() {
+    const courseGrid = document.querySelector('.course-grid');
+    if (courseGrid) {
+      new Masonry(courseGrid, {
+        itemSelector: '.course-item',
+        percentPosition: true,
+        horizontalOrder: false,
+        transitionDuration: '0.25s'
+      });
+    }
   }
 };
 
