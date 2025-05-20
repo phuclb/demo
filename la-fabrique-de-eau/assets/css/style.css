@@ -10536,6 +10536,7 @@ textarea {
   padding: var(--article-card-button-py) var(--g-15);
   text-decoration: none;
   background-color: var(--article-theme);
+  border: var(--article-theme) solid 1px;
   color: var(--c-white);
 }
 .article-card--button:hover {
@@ -10946,6 +10947,7 @@ textarea {
   padding: var(--g-6) var(--g-15);
   text-decoration: none;
   background-color: var(--listing-theme);
+  border: var(--listing-theme) solid 1px;
   color: var(--c-white);
 }
 .listing-article--button:hover {
@@ -11011,10 +11013,7 @@ textarea {
     --listing-article-px: var(--g-18);
     --listing-article-py: var(--g-48);
   }
-  .listing-header.d-flex .listing-title {
-    width: 100%;
-  }
-  .listing-header.d-flex .listing-toolbar {
+  .listing-toolbar {
     margin-top: var(--g-30);
   }
   .listing-education--image,
@@ -11099,11 +11098,13 @@ textarea {
     --listing-article-px: var(--g-15);
     --listing-article-py: var(--g-48);
   }
-  .listing-header.d-flex .listing-title {
-    max-width: 592px;
+  .listing-header.has-toolbar {
+    padding-right: 340px;
   }
-  .listing-header.d-flex .listing-toolbar {
-    margin-left: var(--g-30);
+  .listing-toolbar {
+    position: absolute;
+    top: 2px;
+    right: var(--gap);
   }
   .listing-education--image {
     width: var(--listing-education-image-w);
