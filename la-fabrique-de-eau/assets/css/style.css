@@ -8210,62 +8210,50 @@ textarea {
 }
 @-webkit-keyframes slideIn {
   from {
-    -webkit-transform: translateY(15%);
-            transform: translateY(15%);
+    translate: 0 15%;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: 0 0;
   }
 }
 @keyframes slideIn {
   from {
-    -webkit-transform: translateY(15%);
-            transform: translateY(15%);
+    translate: 0 15%;
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: 0 0;
   }
 }
 @-webkit-keyframes slideOut {
   from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: 0 0;
   }
   to {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    translate: 0 -10%;
   }
 }
 @keyframes slideOut {
   from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    translate: 0 0;
   }
   to {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    translate: 0 -10%;
   }
 }
 @-webkit-keyframes loading {
   from {
-    -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    rotate: z 0deg;
   }
   to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    rotate: z 360deg;
   }
 }
 @keyframes loading {
   from {
-    -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    rotate: z 0deg;
   }
   to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    rotate: z 360deg;
   }
 }
 
@@ -8531,9 +8519,7 @@ textarea {
 .header-partner,
 .header-profile {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  translate: 0 -50%;
 }
 .header-toggle {
   right: var(--header-toggle-x);
@@ -8838,9 +8824,7 @@ textarea {
   .header-search {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    translate: 0 -50%;
   }
   .header-nav {
     max-width: 50%;
@@ -9069,9 +9053,7 @@ textarea {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    translate: 0 -50%;
     width: var(--footer-link-g);
     text-align: center;
     content: "-";
@@ -9422,9 +9404,7 @@ textarea {
 .form-nux .frm_forms.with_frm_style .frm_form_field.lfdle_form_checkbox_1line .frm_checkbox span {
   top: 50%;
   right: var(--g-18);
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  translate: 0 -50%;
 }
 .form-nux .frm_forms.with_frm_style .frm_form_field.lfdle_form_checkbox_1line .frm_radio label,
 .form-nux .frm_forms.with_frm_style .frm_form_field.lfdle_form_checkbox_1line .frm_checkbox label {
@@ -9468,9 +9448,7 @@ textarea {
 .form-nux .frm_forms.with_frm_style .frm_form_field.frm_two_col .frm_checkbox span {
   top: 50%;
   right: var(--g-15);
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  translate: 0 -50%;
 }
 .form-nux .frm_forms.with_frm_style .frm_form_field.frm_two_col .frm_radio label,
 .form-nux .frm_forms.with_frm_style .frm_form_field.frm_two_col .frm_checkbox label {
@@ -9962,9 +9940,7 @@ textarea {
   .banner-shape {
     top: 0;
     left: 50%;
-    -webkit-transform: var(--banner-shape-t);
-        -ms-transform: var(--banner-shape-t);
-            transform: var(--banner-shape-t);
+    translate: var(--banner-shape-t);
     min-width: var(--banner-shape-min-w);
   }
   .banner-content {
@@ -9975,14 +9951,14 @@ textarea {
     background-color: var(--banner-theme);
   }
   .banner.primary {
-    --banner-shape-t: translate(-52%, -38%);
+    --banner-shape-t: -52% -38%;
     --banner-shape-w: 280%;
     --banner-shape-min-w: 1260;
     --banner-content-g: calc(var(--g-24) * -2);
   }
   .banner.secondary {
     --banner-content-g: calc(var(--g-24) * -3);
-    --banner-shape-t: translate(-36%, -4%);
+    --banner-shape-t: -36% -4%;
     --banner-shape-w: 340%;
     --banner-shape-min-w: 1534px;
   }
@@ -10489,9 +10465,7 @@ textarea {
   bottom: 0;
   left: 50%;
   z-index: -1;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  translate: -50% 0;
   width: 100vw;
   pointer-events: none;
   content: "";
@@ -10749,9 +10723,7 @@ textarea {
   color: var(--c-prussian-blue);
 }
 .listing-filter--toggle svg {
-  -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-          transform: scaleY(1);
+  scale: 1;
   margin-left: var(--g-12);
   color: var(--c-pelorous-blue);
 }
@@ -10768,9 +10740,7 @@ textarea {
   border-radius: 15px 15px 0 0;
 }
 .listing-filter--toggle.active svg {
-  -webkit-transform: scaleY(-1);
-      -ms-transform: scaleY(-1);
-          transform: scaleY(-1);
+  scale: -1;
 }
 .listing-filter--refresh {
   padding: 0;
@@ -11424,15 +11394,11 @@ textarea {
   .splide__slide .carousel-card--button {
     -webkit-transition-duration: 0.25s;
             transition-duration: 0.25s;
-    -webkit-transition-property: opacity, visibility, -webkit-transform;
-            transition-property: opacity, visibility, -webkit-transform;
-            transition-property: transform, opacity, visibility;
-            transition-property: transform, opacity, visibility, -webkit-transform;
+    -webkit-transition-property: scale, opacity, visibility;
+            transition-property: scale, opacity, visibility;
   }
   .splide__slide:not(.is-active) .carousel-card {
-    -webkit-transform: scaleY(0.85);
-        -ms-transform: scaleY(0.85);
-            transform: scaleY(0.85);
+    scale: 0.85;
   }
   .splide__slide:not(.is-active) .carousel-card--body,
   .splide__slide:not(.is-active) .carousel-card--button {
@@ -11440,9 +11406,7 @@ textarea {
     visibility: hidden;
   }
   .splide__slide.is-active .carousel-card {
-    -webkit-transform: scaleY(1);
-        -ms-transform: scaleY(1);
-            transform: scaleY(1);
+    scale: 1;
   }
   .splide__slide.is-active .carousel-card--body,
   .splide__slide.is-active .carousel-card--button {
@@ -12310,9 +12274,7 @@ textarea {
 .newsletter-shape {
   top: var(--newsletter-shape-t);
   left: 50%;
-  -webkit-transform: translateX(-68%);
-      -ms-transform: translateX(-68%);
-          transform: translateX(-68%);
+  translate: -68% 0;
   z-index: 1;
   width: var(--newsletter-shape-w);
   pointer-events: none;
