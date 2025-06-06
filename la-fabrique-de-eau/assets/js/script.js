@@ -24,12 +24,16 @@ const App = {
         if (target) {
           toggle.addEventListener('click', (e) => {
             const isActive = toggle.classList.contains('active');
-            const activeToggle = document.querySelector('.toggle.active');
-            if (!isActive && activeToggle) {
-              const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
-              activeTarget.classList.remove('active');
-              activeToggle.classList.remove('active');
-              activeToggle.setAttribute('aria-expanded', isActive);
+            const activeToggles = document.querySelectorAll('.toggle.active');
+            if (!isActive && activeToggles.length) {
+              activeToggles.forEach(activeToggle => {
+                const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
+                if (!activeTarget.contains(toggle)) {
+                  activeTarget.classList.remove('active');
+                  activeToggle.classList.remove('active');
+                  activeToggle.setAttribute('aria-expanded', isActive);
+                }
+              });
             }
             target.classList.toggle('active');
             toggle.classList.toggle('active');
@@ -42,12 +46,14 @@ const App = {
       document.addEventListener('click', (e) => {
         const target = e.target;
         if (!target.closest('.active')) {
-          const activeToggle = document.querySelector('.toggle.active');
-          if (activeToggle) {
-            const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
-            activeTarget.classList.remove('active');
-            activeToggle.classList.remove('active');
-            activeToggle.setAttribute('aria-expanded', false);
+          const activeToggles = document.querySelectorAll('.toggle.active');
+          if (activeToggles.length) {
+            activeToggles.forEach(activeToggle => {
+              const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
+              activeTarget.classList.remove('active');
+              activeToggle.classList.remove('active');
+              activeToggle.setAttribute('aria-expanded', false);
+            });
           }
         }
       });
@@ -57,12 +63,14 @@ const App = {
     if (closes.length) {
       closes.forEach(close => {
         close.addEventListener('click', (e) => {
-          const activeToggle = document.querySelector('.toggle.active');
-          if (activeToggle) {
-            const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
-            activeTarget.classList.remove('active');
-            activeToggle.classList.remove('active');
-            activeToggle.setAttribute('aria-expanded', false);
+          const activeToggles = document.querySelectorAll('.toggle.active');
+          if (activeToggles.length) {
+            activeToggles.forEach(activeToggle => {
+              const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
+              activeTarget.classList.remove('active');
+              activeToggle.classList.remove('active');
+              activeToggle.setAttribute('aria-expanded', false);
+            });
           }
           e.preventDefault();
         });
