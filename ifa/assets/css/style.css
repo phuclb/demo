@@ -8508,16 +8508,12 @@ textarea {
 .header-nav > ul > li > button > svg {
   scale: 1;
 }
+.header-nav > ul > li > a.active > svg,
+.header-nav > ul > li > button.active > svg {
+  scale: -1;
+}
 .header-nav > ul > li > ul {
   background-color: var(--header-nav-bg);
-}
-.header-nav > ul > li:hover > a,
-.header-nav > ul > li:hover > button {
-  text-decoration: underline;
-}
-.header-nav > ul > li:hover > a > svg,
-.header-nav > ul > li:hover > button > svg {
-  scale: -1;
 }
 .header-nav > ul > li:nth-child(1) {
   --header-nav-bg: var(--c-green);
@@ -8660,7 +8656,7 @@ textarea {
     font-size: var(--header-subnav-fs);
     line-height: var(--header-subnav-lh);
   }
-  .header-nav > ul > li:hover > ul {
+  .header-nav > ul > li > ul.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8774,7 +8770,7 @@ textarea {
   .header-nav > ul > li > ul::before {
     right: 100%;
   }
-  .header-nav > ul > li:hover > ul {
+  .header-nav > ul > li > ul.active {
     opacity: 1;
     visibility: visible;
   }
