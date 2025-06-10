@@ -4512,12 +4512,11 @@ textarea {
   Search
 --------------------------------------------------
 **/
-.search {
+.search-group {
   --search-input-h: 44px;
   --search-input-px: var(--g-21);
   --search-input-py: var(--g-6);
   --search-input-bw: 1px;
-  padding-bottom: var(--search-pb);
 }
 .search-form {
   margin-top: var(--g-15);
@@ -4589,27 +4588,29 @@ textarea {
 
 /* mobile - tablet */
 @media (max-width: 1279px) {
-  .search {
-    --search-pb: var(--g-48);
-    --search-item-px: var(--g-24);
-    --search-item-py: var(--g-36);
+  .search-card {
     --search-card-title-fs: 32px;
     --search-card-title-lh: 38px;
     --search-card-summary-fs: 18px;
     --search-card-summary-lh: 24px;
   }
+  .search-item {
+    --search-item-px: var(--g-24);
+    --search-item-py: var(--g-36);
+  }
 }
 
 /* desktop */
 @media (min-width: 1280px) {
-  .search {
-    --search-pb: calc(var(--g-24) * 3);
-    --search-item-px: var(--g-48);
-    --search-item-py: var(--g-48);
+  .search-card {
     --search-card-title-fs: 36px;
     --search-card-title-lh: 42px;
     --search-card-summary-fs: 20px;
     --search-card-summary-lh: 1.2;
+  }
+  .search-item {
+    --search-item-px: var(--g-48);
+    --search-item-py: var(--g-48);
   }
 }
 
