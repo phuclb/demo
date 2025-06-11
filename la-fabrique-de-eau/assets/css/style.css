@@ -2589,7 +2589,8 @@ textarea {
 **/
 .editux-grid:not(:first-child),
 .editux-text:not(:first-child),
-.editux-media:not(:first-child) {
+.editux-media:not(:first-child),
+.editux-slider:not(:first-child) {
   margin-top: var(--editux-block-mt);
 }
 .editux-grid {
@@ -2680,6 +2681,7 @@ textarea {
 .editux-text img {
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 .editux-text blockquote {
   max-width: 640px;

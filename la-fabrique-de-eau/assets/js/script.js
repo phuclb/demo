@@ -107,9 +107,8 @@ const App = {
           perPage: 2
         },
         1280: {
-          gap: 48,
           perPage: 1,
-          padding: '216px'
+          padding: '192px'
         }
       }
     };
