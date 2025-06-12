@@ -2702,6 +2702,10 @@ textarea {
   font-size: 1.25em;
   font-weight: var(--fw-medium);
 }
+.editux-text .wp-block-columns:not(:first-child),
+.editux-text .wp-block-gallery:not(:first-child) {
+  margin-top: var(--editux-block-mt);
+}
 .editux-item {
   width: var(--editux-item-w);
   margin-bottom: calc(var(--editux-item-g) * 2);
