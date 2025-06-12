@@ -2845,6 +2845,10 @@ textarea {
   Editux
 --------------------------------------------------
 **/
+.editux-text:not(:first-child),
+.editux-grid:not(:first-child) {
+  margin-top: var(--g-30);
+}
 .editux-text {
   font-size: 15px;
   line-height: 20px;
@@ -2930,6 +2934,10 @@ textarea {
   font-weight: var(--fw-medium);
   line-height: 22px;
 }
+.editux-text .wp-block-columns:not(:first-child),
+.editux-text .wp-block-gallery:not(:first-child) {
+  margin-top: var(--g-30);
+}
 .editux-image {
   max-height: var(--editux-image-h);
 }
@@ -2941,7 +2949,6 @@ textarea {
 .editux-grid {
   margin-bottom: calc(var(--g-30) * -1);
   margin-inline: calc(var(--gap) * -1);
-  padding-block: var(--g-30);
 }
 
 /* mobile - tablet */
