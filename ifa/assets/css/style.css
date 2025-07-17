@@ -1973,11 +1973,11 @@ textarea {
 .ifa-value--body li {
   width: var(--ifa-value-item-w);
   margin-bottom: var(--g-30);
-  padding-inline: var(--gap);
+  padding-inline: var(--ifa-value-item-g);
 }
 .ifa-value--body ul {
   margin-bottom: calc(var(--g-30) * -1);
-  margin-inline: calc(var(--gap) * -1);
+  margin-inline: calc(var(--ifa-value-item-g) * -1);
 }
 .ifa-value--subtitle {
   font-size: 15px;
@@ -2182,6 +2182,7 @@ textarea {
 @media (max-width: 767px) {
   .ifa-value {
     --ifa-value-item-w: 100%;
+    --ifa-value-item-g: var(--gap);
   }
 }
 
@@ -2189,6 +2190,7 @@ textarea {
 @media (min-width: 768px) and (max-width: 1023px) {
   .ifa-value {
     --ifa-value-item-w: 50%;
+    --ifa-value-item-g: var(--gap);
   }
 }
 
@@ -2299,6 +2301,7 @@ textarea {
   .ifa-value {
     --ifa-value-title-fs: 25px;
     --ifa-value-item-w: 25%;
+    --ifa-value-item-g: var(--g-30);
   }
   .ifa-image {
     --ifa-image-h: 350px;
@@ -2716,7 +2719,8 @@ textarea {
   line-height: 1.2;
   color: var(--c-orange);
 }
-.course-detail--editor,
+.course-detail--summary,
+.course-detail--description,
 .course-detail--toolbar {
   margin-top: var(--g-20);
 }
@@ -2731,9 +2735,23 @@ textarea {
   margin-left: var(--g-15);
   color: var(--c-orange);
 }
+.course-detail--more {
+  display: block;
+}
+.course-detail--less,
+.course-detail--description {
+  display: none;
+}
 .course-detail--item {
   padding-block: var(--g-30);
   border-bottom: var(--c-orange) solid 1px;
+}
+.course-detail--item.active .course-detail--more {
+  display: none;
+}
+.course-detail--item.active .course-detail--less,
+.course-detail--item.active .course-detail--description {
+  display: block;
 }
 
 /* mobile - tablet */
@@ -2803,21 +2821,21 @@ textarea {
   .course-section {
     --course-section-py: var(--g-50);
     --course-section-title-fs: 30px;
-    --course-section-toolbar-w: 450px;
-    --course-section-toolbar-g: var(--g-40);
+    --course-section-toolbar-w: 325px;
+    --course-section-toolbar-g: var(--g-30);
   }
-  .course-section--title {
+  .course-section--body {
+    margin-top: var(--g-40);
+  }
+  .course-section.has-toolbar .course-section--title {
     margin-right: calc(var(--course-section-toolbar-w) + var(--course-section-toolbar-g));
   }
-  .course-section--toolbar {
+  .course-section.has-toolbar .course-section--toolbar {
     position: absolute;
     top: 6px;
     right: var(--gap);
     max-width: var(--course-section-toolbar-w);
     text-align: right;
-  }
-  .course-section--body {
-    margin-top: var(--g-40);
   }
   .course-grid {
     --course-item-w: 33.333333%;
@@ -3042,6 +3060,23 @@ textarea {
   opacity: 1;
   visibility: visible;
 }
+.filter-list a,
+.filter-list button {
+  color: inherit;
+  text-decoration: none;
+}
+.filter-list a:hover,
+.filter-list button:hover {
+  color: var(--c-orange);
+}
+.filter-list a {
+  text-decoration: none;
+}
+.filter-list button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
 .filter-grid {
   margin-top: var(--g-20);
   margin-bottom: calc(var(--g-15) * -1);
@@ -3107,6 +3142,15 @@ textarea {
   Article
 --------------------------------------------------
 **/
+.article-card--image a,
+.article-card--title a {
+  color: inherit;
+  text-decoration: none;
+}
+.article-card--image a:hover,
+.article-card--title a:hover {
+  color: var(--c-orange);
+}
 .article-card--image {
   height: 240px;
 }
@@ -3161,11 +3205,10 @@ textarea {
 }
 .article-section--toolbar a {
   text-decoration: none;
-  color: var(--c-orange);
+  color: inherit;
 }
 .article-section--toolbar a:hover {
   text-decoration: underline;
-  color: var(--c-black);
 }
 .article-section--toolbar svg {
   margin-left: var(--g-15);
@@ -3235,14 +3278,18 @@ textarea {
   .article-section {
     --article-section-py: var(--g-80);
     --article-section-title-fs: 30px;
+    --article-section-toolbar-w: 215px;
+    --article-section-toolbar-g: var(--g-30);
   }
-  .article-section--title.has-toolbar {
-    padding-right: 300px;
+  .article-section.has-toolbar .article-section--title {
+    margin-right: calc(var(--article-section-toolbar-w) + var(--article-section-toolbar-g));
   }
-  .article-section--toolbar {
+  .article-section.has-toolbar .article-section--toolbar {
     position: absolute;
     top: 8px;
     right: var(--gap);
+    max-width: var(--article-section-toolbar-w);
+    text-align: right;
   }
   .article-listing {
     --article-listing-py: var(--g-50);
