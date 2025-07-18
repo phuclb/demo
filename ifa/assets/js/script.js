@@ -7,8 +7,10 @@ const App = {
   init() {
     App.match();
     App.toggle();
+    App.filter();
     App.splide();
     App.masonry();
+    App.datepicker();
   },
 
   /**
@@ -18,6 +20,15 @@ const App = {
     document.body.matchHeight({
       property: 'min-height',
       attributeName: 'data-mh'
+    });
+  },
+
+  /**
+   * Datepicker
+   */
+  datepicker() {
+    new AirDatepicker('#adp', {
+      inline: true
     });
   },
 
@@ -54,15 +65,65 @@ const App = {
       document.addEventListener('click', (e) => {
         const target = e.target;
         if (!target.closest('.active')) {
-          const activeToggles = document.querySelectorAll('.toggle.active');
-          if (activeToggles.length) {
-            activeToggles.forEach(activeToggle => {
-              const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
-              activeTarget.classList.remove('active');
-              activeToggle.classList.remove('active');
-              activeToggle.setAttribute('aria-expanded', false);
-            });
+          App.toggleOff();
+        }
+      });
+    }
+  },
+  toggleOff() {
+    const activeToggles = document.querySelectorAll('.toggle.active');
+    if (activeToggles.length) {
+      activeToggles.forEach(activeToggle => {
+        const activeTarget = document.getElementById(activeToggle.getAttribute('aria-controls'));
+        activeTarget.classList.remove('active');
+        activeToggle.classList.remove('active');
+        activeToggle.setAttribute('aria-expanded', false);
+      });
+    }
+  },
+
+  /**
+   * Filter
+   */
+  filter() {
+    const dropdownA = document.querySelectorAll('.filter-dropdown');
+    if (dropdownA.length) {
+      dropdownA.forEach(dropdownB => {
+        const valueB = dropdownB.querySelector('.filter-value');
+        const optionB = dropdownB.querySelectorAll('.filter-option');
+        if (optionB.length) {
+
+          // Init
+          const selectedOptionB = dropdownB.querySelector('.filter-option.selected');
+          if (selectedOptionB) {
+            const selectedOutputB = selectedOptionB.getAttribute('data-value');
+            valueB.innerHTML = selectedOutputB;
+            valueB.classList.add('selected');
+          } else {
+            valueB.value = '';
+            valueB.classList.remove('selected');
           }
+
+          // Handle
+          optionB.forEach(optionX => {
+            optionX.addEventListener('click', (e) => {
+              const isSelected = optionX.classList.contains('selected');
+              if (!isSelected) {
+                valueB.innerHTML = optionX.getAttribute('data-value');
+                optionB.forEach(optionY => {
+                  if (optionY !== optionX) {
+                    optionY.classList.toggle('selected', false);
+                  }
+                });
+              } else {
+                valueB.innerHTML = valueB.getAttribute('data-placeholder');
+              }
+              valueB.classList.toggle('selected', !isSelected);
+              optionX.classList.toggle('selected', !isSelected);
+              App.toggleOff();
+              e.preventDefault();
+            });
+          });
         }
       });
     }
