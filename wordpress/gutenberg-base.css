@@ -1,0 +1,92 @@
+/* gutenberg-base.css */
+/* ------------------------------------------------------
+   Styles de base pour la compatibilité avec Gutenberg
+   ------------------------------------------------------ */
+
+/* Bloc générique */
+.wp-block {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Alignements */
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.alignwide {
+  max-width: 1200px; /* Ajustez selon votre design */
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignfull {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Images */
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Colonnes */
+.wp-block-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+}
+.wp-block-column {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Listes */
+.wp-block-list {
+  padding-left: 1.5em;
+}
+
+/* Citations */
+.wp-block-quote {
+  border-left: 4px solid #ccc;
+  margin: 1.5em 0;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+/* Titres */
+.wp-block-heading {
+  margin: 1.5em 0 0.5em;
+  font-weight: bold;
+}
+
+/* Boutons */
+.wp-block-button__link {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  background: #0073aa;
+  color: #fff;
+  text-decoration: none;
+}
+.wp-block-button__link:hover {
+  background: #005177;
+}
+
+/* Groupes */
+.wp-block-group {
+  margin-bottom: 1.5em;
+}
