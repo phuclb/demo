@@ -5,7 +5,28 @@ const App = {
    * Initialize the application
    */
   init() {
-    App.fN();
+    App.splide();
+  },
+
+  /**
+   * Splide
+   */
+  splide() {
+    let heroClass = '.hero-splide', heroSplide = document.querySelector(heroClass);
+    if (heroSplide) {
+      heroSplide = new Splide(heroClass, {
+        type: 'slide',
+        speed: 750,
+        gap: 0,
+        arrows: false,
+        autoplay: true,
+        interval: 5000,
+        reducedMotion: {
+          speed: 0,
+          autoplay: false
+        }
+      }).mount();
+    }
   },
 
   /**

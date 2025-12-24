@@ -205,12 +205,6 @@ template {
   --c-concrete: #f2f2f2;
   --c-gallery: #ebebeb;
   --c-silver-chalice: #a0a0a0;
-  --g-16: 16px;
-  --g-20: 20px;
-  --g-26: 26px;
-  --g-48: 48px;
-  --g-68: 68px;
-  --g-88: 88px;
 }
 
 /**
@@ -348,7 +342,7 @@ textarea {
 
 .container {
   margin-inline: auto;
-  padding-inline: var(--g-20);
+  padding-inline: 20px;
 }
 
 /**
@@ -506,6 +500,9 @@ textarea {
 
 .max-w-full {
   max-width: 100%;
+}
+.max-w-672 {
+  max-width: 672px;
 }
 .max-w-966 {
   max-width: 966px;
@@ -738,6 +735,7 @@ textarea {
 --------------------------------------------------
 **/
 .modal {
+  --m-gutter: 20px;
   --m-overlay-bg: var(--c-black);
   --m-container-bg: var(--c-white);
   --m-container-min-w: 640px;
@@ -772,7 +770,7 @@ textarea {
 .modal__container {
   max-width: var(--m-container-min-w);
   max-height: var(--m-container-max-h);
-  padding: var(--gutter);
+  padding: var(--m-gutter);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: var(--m-container-bg);
@@ -867,6 +865,10 @@ textarea {
   flex-shrink: 0;
 }
 .splide__pagination {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  left: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -876,6 +878,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   pointer-events: none;
+  gap: 12px;
 }
 .splide__pagination li {
   display: inline-block;
@@ -883,23 +886,32 @@ textarea {
   pointer-events: auto;
 }
 .splide__pagination button {
-  width: 10px;
-  height: 10px;
+  display: block;
+  width: 12px;
+  height: 12px;
   padding: 0;
-  background-color: var(--c-black);
+  background-color: var(--c-white);
   border: 0;
   border-radius: 50%;
 }
 .splide__pagination button.is-active {
-  background-color: var(--c-white);
+  background-color: var(--c-turbo);
 }
 .splide__arrow {
+  width: 36px;
+  height: 36px;
   padding: 0;
-  background-color: var(--c-black);
+  background-color: var(--c-turbo);
   border: 0;
+  border-radius: 50%;
+  color: var(--c-catalina-blue);
+}
+.splide__arrow:hover {
+  color: var(--c-stratos);
 }
 .splide__arrow:disabled {
-  opacity: 0.5;
+  background-color: var(--c-concrete);
+  color: var(--c-silver-chalice);
   pointer-events: none;
   cursor: default;
 }
@@ -957,7 +969,7 @@ textarea {
   left: 0;
 }
 .header-nav ul {
-  gap: var(--g-26);
+  gap: 28px;
 }
 .header-toolbox {
   right: 0;
@@ -974,8 +986,8 @@ textarea {
 }
 .header-button.i1 {
   padding-block: 20px;
-  padding-right: var(--g-26);
-  padding-left: var(--g-20);
+  padding-right: 28px;
+  padding-left: 20px;
   background-color: var(--c-white);
   border-radius: 0 30px 30px 0;
   color: var(--c-catalina-blue);
@@ -1009,8 +1021,8 @@ textarea {
 }
 .header-button.i4,
 .header-button.i5 {
-  padding-right: var(--g-20);
-  padding-left: var(--g-26);
+  padding-right: 20px;
+  padding-left: 28px;
   background-color: var(--c-turbo);
   border-radius: 30px 0 0 30px;
   color: var(--c-catalina-blue);
@@ -1067,7 +1079,7 @@ textarea {
   color: var(--c-stratos);
 }
 .footer-info ul {
-  gap: var(--g-20);
+  gap: 20px;
 }
 .footer-grid {
   padding-top: 60px;
@@ -1078,7 +1090,7 @@ textarea {
 }
 .footer-item.i2 {
   width: 264px;
-  margin-left: var(--g-48);
+  margin-left: 40px;
 }
 .footer-branch {
   margin-top: 20px;
@@ -1089,8 +1101,8 @@ textarea {
 }
 .footer-branch a {
   position: relative;
-  margin-top: 48px;
-  padding: 16px 36px;
+  margin-top: 50px;
+  padding: 16px 28px;
   line-height: 1.25;
   text-decoration: none;
   background-color: var(--c-turbo);
@@ -1125,12 +1137,12 @@ textarea {
   color: var(--c-stratos);
 }
 .footer-link h3 {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   font-size: 20px;
   line-height: 1.2;
 }
 .footer-link h3:not(:first-child) {
-  margin-top: 26px;
+  margin-top: 30px;
 }
 .footer-link ul {
   font-size: 14px;
@@ -1146,7 +1158,7 @@ textarea {
 }
 .footer-partner,
 .footer-quality {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 .footer-partner ul {
   gap: 20px;
@@ -1178,7 +1190,7 @@ textarea {
   margin-top: 48px;
 }
 .hero-button {
-  padding: 16px var(--g-26);
+  padding: 16px 28px;
   line-height: 1.25;
   text-decoration: none;
   background-color: var(--c-turbo);
@@ -1207,4 +1219,22 @@ textarea {
   position: relative;
   z-index: 2;
   max-width: 640px;
+}
+
+/**
+--------------------------------------------------
+  Banner
+--------------------------------------------------
+**/
+.banner-icon {
+  margin-bottom: 15px;
+  color: var(--c-turbo);
+}
+.banner-title {
+  font-size: 26px;
+  line-height: 32px;
+}
+.banner-summary {
+  margin-top: 15px;
+  line-height: 1.5;
 }
