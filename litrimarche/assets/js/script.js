@@ -12,13 +12,29 @@ const App = {
    * Splide
    */
   splide() {
-    let heroClass = '.hero-splide', heroSplide = document.querySelector(heroClass);
+    let heroClass = '.splide-hero', heroSplide = document.querySelector(heroClass);
     if (heroSplide) {
       heroSplide = new Splide(heroClass, {
         type: 'slide',
         speed: 750,
         gap: 0,
         arrows: false,
+        autoplay: true,
+        interval: 5000,
+        reducedMotion: {
+          speed: 0,
+          autoplay: false
+        }
+      }).mount();
+    }
+
+    let reviewClass = '.splide-review', reviewSplide = document.querySelector(reviewClass);
+    if (reviewSplide) {
+      reviewSplide = new Splide(reviewClass, {
+        type: 'fade',
+        speed: 750,
+        gap: 0,
+        pagination: false,
         autoplay: true,
         interval: 5000,
         reducedMotion: {
