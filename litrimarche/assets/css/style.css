@@ -1582,43 +1582,6 @@ textarea {
   Banner
 --------------------------------------------------
 **/
-.banner-container {
-  position: relative;
-  height: 500px;
-}
-.banner-title {
-  font-size: 38px;
-  line-height: 48px;
-  color: var(--c-white);
-  text-shadow: 0 2px 0 var(--c-black-a-50);
-}
-.banner-button {
-  padding: 16px 28px;
-  line-height: 1.25;
-  text-decoration: none;
-  background-color: var(--c-yellow);
-  color: var(--c-cerulean-blue);
-}
-.banner-button svg {
-  margin-right: 8px;
-}
-.banner-button em {
-  display: none;
-  font-style: normal;
-}
-.banner-button span {
-  display: block;
-}
-.banner-button:hover {
-  background-color: var(--c-white);
-  color: var(--c-cerulean-blue);
-}
-.banner-button:hover em {
-  display: block;
-}
-.banner-button:hover span {
-  display: none;
-}
 .banner-image,
 .banner-mask,
 .banner-content {
@@ -1636,7 +1599,7 @@ textarea {
 }
 .banner-mask {
   z-index: 2;
-  height: 65%;
+  height: 75%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--c-black)));
   background-image: linear-gradient(to bottom, transparent 0%, var(--c-black) 100%);
   opacity: 0.4;
@@ -1644,6 +1607,71 @@ textarea {
 .banner-content {
   z-index: 3;
   padding: 28px 44px;
+}
+.banner-summary {
+  font-size: 14px;
+  line-height: 18px;
+}
+.banner-summary p:not(:first-child) {
+  margin-top: 18px;
+}
+.banner-button {
+  padding: 16px 28px;
+  line-height: 1.25;
+  text-decoration: none;
+  background-color: var(--c-yellow);
+  color: var(--c-cerulean-blue);
+}
+.banner-button svg {
+  margin-right: 8px;
+}
+.banner-button em {
+  font-style: normal;
+}
+.banner-button:hover {
+  background-color: var(--c-white);
+  color: var(--c-cerulean-blue);
+}
+.banner-primary .banner-container {
+  position: relative;
+  height: 500px;
+}
+.banner-primary .banner-title {
+  font-size: 38px;
+  line-height: 48px;
+  color: var(--c-white);
+  text-shadow: 0 2px 0 var(--c-black-a-50);
+}
+.banner-primary .banner-button em {
+  display: none;
+  font-style: normal;
+}
+.banner-primary .banner-button span {
+  display: block;
+}
+.banner-primary .banner-button:hover em {
+  display: block;
+}
+.banner-primary .banner-button:hover span {
+  display: none;
+}
+.banner-secondary .banner-aside {
+  position: relative;
+  width: 400px;
+  height: 415px;
+  margin-left: 180px;
+}
+.banner-secondary .banner-body {
+  width: calc(100% - 580px);
+}
+.banner-secondary .banner-title,
+.banner-secondary .banner-subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.banner-secondary .banner-subtitle {
+  color: var(--c-white);
+  text-shadow: 0 2px 0 var(--c-black-a-50);
 }
 
 /**
@@ -2277,6 +2305,7 @@ textarea {
 .section-product--item {
   position: relative;
   width: 280px;
+  background-color: var(--c-white);
   border: var(--c-gallery) solid 1px;
 }
 .section-product--image {
