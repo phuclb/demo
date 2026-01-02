@@ -13,9 +13,9 @@ const App = {
    * Splide
    */
   splide() {
-    let heroClass = '.splide-hero', heroSplide = document.querySelector(heroClass);
+    let heroSplide = document.querySelector('.splide-hero');
     if (heroSplide) {
-      heroSplide = new Splide(heroClass, {
+      new Splide(heroSplide, {
         type: 'slide',
         speed: 750,
         gap: 0,
@@ -28,9 +28,9 @@ const App = {
       }).mount();
     }
 
-    let reviewClass = '.splide-review', reviewSplide = document.querySelector(reviewClass);
+    let reviewSplide = document.querySelector('.splide-review');
     if (reviewSplide) {
-      reviewSplide = new Splide(reviewClass, {
+      new Splide(reviewSplide, {
         type: 'fade',
         speed: 750,
         gap: 0,
@@ -38,21 +38,9 @@ const App = {
       }).mount();
     }
 
-    let productClass = '.splide-product', productSplide = document.querySelector(productClass);
-    if (productSplide) {
-      productSplide = new Splide(productClass, {
-        type: 'slide',
-        speed: 750,
-        gap: 26,
-        perPage: 4,
-        perMove: 1,
-        pagination: false
-      }).mount();
-    }
-
-    let priorityClass = '.splide-priority', prioritySplide = document.querySelector(priorityClass);
+    let prioritySplide = document.querySelector('.splide-priority');
     if (prioritySplide) {
-      prioritySplide = new Splide(priorityClass, {
+      new Splide(prioritySplide, {
         type: 'slide',
         speed: 750,
         gap: 16,
@@ -64,6 +52,20 @@ const App = {
           pagination: 'splide__pagination justify-start'
         }
       }).mount();
+    }
+
+    let productSplides = document.querySelectorAll('.splide-product');
+    if (productSplides.length) {
+      productSplides.forEach(productSplide => {
+        new Splide(productSplide, {
+          type: 'slide',
+          speed: 750,
+          gap: 26,
+          perPage: 4,
+          perMove: 1,
+          pagination: false
+        }).mount();
+      });
     }
   },
 
