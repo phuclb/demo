@@ -54,6 +54,18 @@ const App = {
       }).mount();
     }
 
+    let thumbSplide = document.querySelector('.splide-thumb');
+    if (thumbSplide) {
+      new Splide(thumbSplide, {
+        type: 'slide',
+        speed: 750,
+        gap: 12,
+        perPage: 4,
+        perMove: 1,
+        pagination: false
+      }).mount();
+    }
+
     let productSplides = document.querySelectorAll('.splide-product');
     if (productSplides.length) {
       productSplides.forEach(productSplide => {
