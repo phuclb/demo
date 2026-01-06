@@ -1671,14 +1671,19 @@ textarea {
 .banner-primary .banner-button:hover span {
   display: none;
 }
+.banner-secondary {
+  --banner-g: 88px;
+  --banner-aside-w: 416px;
+  --banner-aside-h: 415px;
+}
 .banner-secondary .banner-aside {
   position: relative;
-  width: 400px;
-  height: 415px;
-  margin-left: 180px;
+  width: var(--banner-aside-w);
+  height: var(--banner-aside-h);
+  margin-left: var(--banner-g);
 }
 .banner-secondary .banner-body {
-  width: calc(100% - 580px);
+  width: calc(100% - (var(--banner-g) + var(--banner-aside-w)));
 }
 .banner-secondary .banner-title,
 .banner-secondary .banner-subtitle {
@@ -1755,19 +1760,15 @@ textarea {
   border: var(--c-white) solid 1px;
 }
 .branch-rating em {
-  margin-bottom: 8px;
   font-size: 20px;
   font-style: normal;
   line-height: 1.2;
-}
-.branch-rating span {
-  margin-bottom: 12px;
 }
 .branch-rating svg {
   color: var(--c-yellow);
 }
 .branch-rating svg + svg {
-  margin-left: 5px;
+  margin-left: 6px;
 }
 .branch-button {
   padding: 16px;
@@ -1826,6 +1827,156 @@ textarea {
   right: -302px;
   bottom: 30px;
   width: 694px;
+}
+
+/**
+--------------------------------------------------
+  Store
+--------------------------------------------------
+**/
+.store-image.i1 {
+  height: 540px;
+}
+.store-image.i2 {
+  height: 92px;
+}
+.store-thumb {
+  padding-inline: 109px;
+}
+.store-thumb--prev,
+.store-thumb--next {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.store-thumb--prev {
+  left: -109px;
+}
+.store-thumb--next {
+  right: -109px;
+}
+.store-title {
+  font-size: 32px;
+  line-height: 1.25;
+}
+.store-subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.store-label {
+  font-size: 15px;
+  line-height: 1.2;
+}
+.store-button {
+  gap: 10px;
+  min-height: 36px;
+  padding: 7px 18px;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: var(--c-cerulean-blue);
+  color: var(--c-yellow);
+}
+.store-button:hover {
+  background-color: var(--c-navy-blue);
+}
+.store-review {
+  line-height: 1.25;
+  color: var(--c-navy-blue);
+}
+.store-review a,
+.store-review em {
+  display: block;
+}
+.store-review a {
+  margin-left: 18px;
+  color: inherit;
+}
+.store-review a:hover {
+  color: var(--c-cerulean-blue);
+}
+.store-review a + a {
+  margin-left: auto;
+}
+.store-review em {
+  font-style: normal;
+  margin-right: 18px;
+}
+.store-review svg {
+  color: var(--c-yellow);
+}
+.store-review svg + svg {
+  margin-left: 8px;
+}
+.store-grid.i1 {
+  gap: 10px;
+}
+.store-grid.i2 {
+  gap: 20px;
+}
+.store-social {
+  padding: 5px 10px;
+}
+.store-social a {
+  text-decoration: none;
+  color: var(--c-cerulean-blue);
+}
+.store-social a:hover {
+  color: var(--c-navy-blue);
+}
+.store-social svg {
+  width: auto;
+  height: 26px;
+}
+.store-toolbox {
+  --store-toolbox-g: 20px;
+}
+.store-toolbox ul {
+  gap: var(--store-toolbox-g);
+}
+.store-toolbox li:nth-child(1) {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: var(--c-gallery) solid 1px;
+}
+.store-toolbox li:nth-child(2),
+.store-toolbox li:nth-child(3) {
+  width: calc((100% - var(--store-toolbox-g)) / 2);
+}
+.store-location,
+.store-schedule {
+  line-height: 1.5;
+}
+.store-location {
+  position: relative;
+  padding-left: 19px;
+}
+.store-location svg {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 9px;
+  height: auto;
+}
+.store-location address {
+  font-style: normal;
+}
+.store-schedule {
+  padding: 12px 18px;
+  border: var(--c-gallery) solid 1px;
+}
+.store-container {
+  --store-g: 28px;
+  --store-content-w: 380px;
+}
+.store-gallery {
+  position: relative;
+  width: calc(100% - (var(--store-g) + var(--store-content-w)));
+}
+.store-content {
+  width: var(--store-content-w);
+  margin-left: var(--store-g);
 }
 
 /**
@@ -1937,10 +2088,6 @@ textarea {
 .product-tax {
   font-size: 10px;
   line-height: 1.2;
-}
-.product-bank {
-  padding-top: 10px;
-  border-top: var(--c-green) solid 1px;
 }
 .product-offer {
   position: relative;
@@ -2123,6 +2270,24 @@ textarea {
 .product-feature li + li {
   margin-top: 10px;
 }
+.product-payment {
+  padding-top: 10px;
+  padding-inline: 10px;
+  border-top: var(--c-green) solid 1px;
+  color: var(--c-green);
+}
+.product-payment em,
+.product-payment span {
+  display: block;
+}
+.product-payment em {
+  font-style: normal;
+  line-height: 1.25;
+}
+.product-payment span {
+  font-size: 12px;
+  line-height: 16px;
+}
 .product-card {
   position: relative;
   width: 280px;
@@ -2194,14 +2359,16 @@ textarea {
   right: 10px;
 }
 .product-container {
-  gap: 28px;
+  --product-g: 28px;
+  --product-content-w: 380px;
 }
 .product-gallery {
   position: relative;
-  width: 790px;
+  width: calc(100% - (var(--product-g) + var(--product-content-w)));
 }
 .product-content {
-  width: calc(100% - 818px);
+  width: var(--product-content-w);
+  margin-left: var(--product-g);
 }
 
 /**
@@ -2297,7 +2464,7 @@ textarea {
 }
 .section-title.i3 {
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
 }
 .section-title.i4 {
   font-size: 46px;
@@ -2509,14 +2676,17 @@ textarea {
   font-size: 24px;
 }
 .section-faq {
-  gap: 68px;
+  --section-faq-g: 68px;
+  --section-faq-banner-w: 380px;
+  --section-faq-banner-h: 324px;
 }
 .section-faq--banner {
-  width: 358px;
-  min-height: 324px;
+  width: var(--section-faq-banner-w);
+  min-height: var(--section-faq-banner-h);
+  margin-right: var(--section-faq-g);
 }
 .section-faq--content {
-  width: calc(100% - 426px);
+  width: calc(100% - (var(--section-faq-g) + var(--section-faq-banner-w)));
   margin-top: -15px;
 }
 .section-faq--item {
@@ -2565,9 +2735,9 @@ textarea {
   color: var(--c-cerulean-blue);
 }
 .section-blog--title {
-  min-height: 44px;
+  min-height: 48px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .section-blog--summary {
   font-size: 14px;
@@ -2598,14 +2768,17 @@ textarea {
           box-shadow: inset 0 0 0 1px var(--c-gallery);
 }
 .section-review {
-  gap: 48px;
+  --section-review-g: 48px;
+  --section-review-banner-h: 310px;
+  --section-review-content-w: 416px;
 }
 .section-review--banner {
-  width: calc(100% - 464px);
-  min-height: 310px;
+  width: calc(100% - (var(--section-review-g) + var(--section-review-content-w)));
+  min-height: var(--section-review-banner-h);
+  margin-right: var(--section-review-g);
 }
 .section-review--content {
-  width: 416px;
+  width: var(--section-review-content-w);
   -webkit-box-shadow: inset 0 0 0 1px var(--c-gallery);
           box-shadow: inset 0 0 0 1px var(--c-gallery);
 }
@@ -2617,15 +2790,15 @@ textarea {
   font-size: 20px;
   line-height: 1.2;
 }
+.section-review--rating em {
+  margin-right: 18px;
+  font-style: normal;
+}
 .section-review--rating svg {
   color: var(--c-yellow);
 }
 .section-review--rating svg + svg {
   margin-left: 8px;
-}
-.section-review--rating em {
-  margin-right: 16px;
-  font-style: normal;
 }
 .section-review--info,
 .section-review--summary {
@@ -2648,6 +2821,10 @@ textarea {
       -ms-transform: translateX(50%);
           transform: translateX(50%);
 }
+.section-benefit {
+  --section-benefit-aside-w: 280px;
+  --section-benefit-aside-h: 250px;
+}
 .section-benefit--title,
 .section-benefit--summary {
   line-height: 1.25;
@@ -2656,15 +2833,15 @@ textarea {
   font-size: 24px;
 }
 .section-benefit--content {
-  width: calc(100% - 280px);
+  width: calc(100% - var(--section-benefit-aside-w));
   padding: 32px 40px;
   background-color: var(--c-cerulean-blue);
   color: var(--c-white);
 }
 .section-benefit--aside {
   position: relative;
-  width: 280px;
-  height: 250px;
+  width: var(--section-benefit-aside-w);
+  height: var(--section-benefit-aside-h);
   background-color: var(--c-concrete);
 }
 .section-benefit--aside span {
@@ -2672,12 +2849,12 @@ textarea {
   top: 16px;
   right: 20px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .section-benefit--aside em {
   font-size: 30px;
   font-style: normal;
-  line-height: 36px;
+  line-height: 1.2;
 }
 .section-support ul {
   gap: 26px;
@@ -2731,7 +2908,7 @@ textarea {
 }
 .section-support--title {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
 }
 .section-support--summary {
   font-size: 14px;
@@ -3039,5 +3216,5 @@ textarea {
 }
 .section-product .section-slogan {
   font-size: 40px;
-  line-height: 1.25;
+  line-height: 1.2;
 }
