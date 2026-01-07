@@ -7,6 +7,7 @@ const App = {
   init() {
     App.splide();
     App.toggle();
+    App.reveal();
   },
 
   /**
@@ -17,7 +18,7 @@ const App = {
     if (heroSplide) {
       new Splide(heroSplide, {
         type: 'slide',
-        speed: 750,
+        speed: 1e3,
         gap: 0,
         arrows: false,
         autoplay: true,
@@ -28,11 +29,26 @@ const App = {
       }).mount();
     }
 
+    let brandSplide = document.querySelector('.splide-brand');
+    if (brandSplide) {
+      new Splide(brandSplide, {
+        type: 'loop',
+        speed: 1e3,
+        gap: 16,
+        autoWidth: true,
+        focus: 'center',
+        arrows: false,
+        pagination: false,
+        autoplay: true,
+        interval: 3000
+      }).mount();
+    }
+
     let reviewSplide = document.querySelector('.splide-review');
     if (reviewSplide) {
       new Splide(reviewSplide, {
         type: 'fade',
-        speed: 750,
+        speed: 1e3,
         gap: 0,
         pagination: false
       }).mount();
@@ -42,12 +58,12 @@ const App = {
     if (prioritySplide) {
       new Splide(prioritySplide, {
         type: 'slide',
-        speed: 750,
+        speed: 1e3,
         gap: 16,
         autoWidth: true,
         arrows: false,
         autoplay: true,
-        interval: 5000,
+        interval: 4000,
         classes: {
           pagination: 'splide__pagination justify-start'
         }
@@ -58,7 +74,7 @@ const App = {
     if (thumbSplide) {
       new Splide(thumbSplide, {
         type: 'slide',
-        speed: 750,
+        speed: 1e3,
         gap: 12,
         perPage: 4,
         perMove: 1,
@@ -71,13 +87,22 @@ const App = {
       productSplides.forEach(productSplide => {
         new Splide(productSplide, {
           type: 'slide',
-          speed: 750,
+          speed: 1e3,
           gap: 26,
           perPage: 4,
           perMove: 1,
           pagination: false
         }).mount();
       });
+    }
+
+    let presentationSplide = document.querySelector('.splide-presentation');
+    if (presentationSplide) {
+      new Splide(presentationSplide, {
+        type: 'fade',
+        speed: 1e3,
+        pagination: false
+      }).mount();
     }
   },
 
@@ -127,6 +152,22 @@ const App = {
         activeTarget.classList.remove('active');
         activeToggle.classList.remove('active');
         activeToggle.setAttribute('aria-expanded', false);
+      });
+    }
+  },
+
+  /**
+   * Reveal
+   */
+  reveal() {
+    const largeImage = document.querySelector('.large-image');
+    let thumbImages = document.querySelectorAll('.thumb-image');
+    if (thumbImages.length) {
+      thumbImages.forEach(thumbImage => {
+        thumbImage.addEventListener('click', (e) => {
+          largeImage.setAttribute('src', thumbImage.getAttribute('href'));
+          e.preventDefault();
+        });
       });
     }
   },
