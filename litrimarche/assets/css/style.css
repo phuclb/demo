@@ -516,6 +516,9 @@ textarea {
 .max-w-762 {
   max-width: 762px;
 }
+.max-w-798 {
+  max-width: 798px;
+}
 .max-w-872 {
   max-width: 872px;
 }
@@ -2682,6 +2685,14 @@ textarea {
   --article-gap-y: 60px;
   --article-body-px: 40px;
   gap: var(--article-gap-y) var(--article-gap-x);
+}
+.article-detail--title {
+  font-size: 32px;
+  line-height: 1.25;
+}
+.article-detail--info,
+.article-detail--summary {
+  line-height: 1.5;
 }
 
 /**
