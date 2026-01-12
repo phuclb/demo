@@ -1765,9 +1765,6 @@ textarea {
 .branch-summary li span:first-child {
   width: 88px;
 }
-.branch-summary address {
-  font-style: normal;
-}
 .branch-rating {
   padding: 20px 24px;
   font-size: 20px;
@@ -1939,9 +1936,6 @@ textarea {
   width: 9px;
   height: auto;
 }
-.store-location address {
-  font-style: normal;
-}
 .store-schedule {
   padding: 12px 18px;
   border: var(--c-gallery) solid 1px;
@@ -2024,7 +2018,6 @@ textarea {
 .product-badge em {
   z-index: 1;
   margin-left: -8px;
-  font-style: normal;
   color: var(--c-white);
 }
 .product-badge em.i1 {
@@ -2121,7 +2114,6 @@ textarea {
 }
 .product-offer--price em {
   font-size: 18px;
-  font-style: normal;
   line-height: 24px;
 }
 .product-offer--price strong {
@@ -2234,7 +2226,6 @@ textarea {
 }
 .product-option em {
   font-size: 12px;
-  font-style: normal;
   line-height: 16px;
 }
 .product-option span {
@@ -2291,7 +2282,6 @@ textarea {
   display: block;
 }
 .product-payment em {
-  font-style: normal;
   line-height: 1.25;
 }
 .product-payment span {
@@ -2832,7 +2822,6 @@ textarea {
 .section-bank em {
   display: block;
   font-size: 32px;
-  font-style: normal;
   line-height: 1.25;
 }
 .section-bank img {
@@ -2920,7 +2909,6 @@ textarea {
 }
 .section-offer--content em {
   font-size: 30px;
-  font-style: normal;
 }
 .section-offer--content span {
   font-size: 20px;
@@ -3142,7 +3130,6 @@ textarea {
 }
 .section-benefit--aside em {
   font-size: 30px;
-  font-style: normal;
   line-height: 1.2;
 }
 .section-support ul {
@@ -3272,9 +3259,9 @@ textarea {
   --section-category-g: 26px;
   --section-category-h: 180px;
 }
-.section-advantage em {
+.section-advantage em,
+.section-advantage span {
   display: block;
-  font-style: normal;
 }
 .section-advantage span {
   min-height: 46px;
@@ -3428,6 +3415,15 @@ textarea {
   padding: 28px 44px;
   color: var(--c-white);
 }
+.section-region ul {
+  gap: 20px 26px;
+}
+.section-region li {
+  width: 100%;
+  max-width: 382px;
+  padding: 10px 20px;
+  border: var(--c-concrete) solid 1px;
+}
 .section-intro.i1 {
   --section-intro-g: 26px;
   --section-intro-px: 20px;
@@ -3497,12 +3493,11 @@ textarea {
   bottom: 0;
   left: 0;
   z-index: 1;
-  height: 540px;
+  height: 150px;
 }
 .section-selection .section-wrapper {
   position: relative;
   z-index: 2;
-  padding-block: 0;
 }
 .section-quiz .section-grid {
   gap: 50px;
