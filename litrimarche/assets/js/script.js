@@ -8,6 +8,7 @@ const App = {
     App.splide();
     App.toggle();
     App.reveal();
+    App.accordion();
   },
 
   /**
@@ -168,6 +169,27 @@ const App = {
           largeImage.setAttribute('src', thumbImage.getAttribute('href'));
           e.preventDefault();
         });
+      });
+    }
+  },
+
+  /**
+   * Accordion
+   */
+  accordion() {
+    const accordions = document.querySelectorAll('.accordion');
+    if (accordions.length) {
+      accordions.forEach(accordion => {
+        const target = document.getElementById(accordion.getAttribute('aria-controls'));
+        if (target) {
+          accordion.addEventListener('click', (e) => {
+            const isActive = accordion.classList.contains('active');
+            target.classList.toggle('active');
+            accordion.classList.toggle('active');
+            accordion.setAttribute('aria-expanded', !isActive);
+            e.preventDefault();
+          });
+        }
       });
     }
   },

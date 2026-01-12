@@ -513,9 +513,6 @@ textarea {
 .max-w-full {
   max-width: 100%;
 }
-.max-w-762 {
-  max-width: 762px;
-}
 .max-w-798 {
   max-width: 798px;
 }
@@ -617,9 +614,6 @@ textarea {
 .mt-180 {
   margin-top: 180px;
 }
-.mt-268 {
-  margin-top: 268px;
-}
 
 .mb-4 {
   margin-bottom: 4px;
@@ -674,9 +668,6 @@ textarea {
 }
 .mb-180 {
   margin-bottom: 180px;
-}
-.mb-268 {
-  margin-bottom: 268px;
 }
 
 .pt-4 {
@@ -733,9 +724,6 @@ textarea {
 .pt-180 {
   padding-top: 180px;
 }
-.pt-268 {
-  padding-top: 268px;
-}
 
 .pb-4 {
   padding-bottom: 4px;
@@ -791,9 +779,6 @@ textarea {
 .pb-180 {
   padding-bottom: 180px;
 }
-.pb-268 {
-  padding-bottom: 268px;
-}
 
 .px-4 {
   padding-block: 4px;
@@ -848,9 +833,6 @@ textarea {
 }
 .px-180 {
   padding-block: 180px;
-}
-.px-268 {
-  padding-block: 268px;
 }
 
 .of-hidden {
@@ -981,17 +963,8 @@ textarea {
   border-radius: 40px;
 }
 
-.ratio-1x1 {
-  aspect-ratio: 1/1;
-}
-.ratio-4x3 {
-  aspect-ratio: 4/3;
-}
-.ratio-16x9 {
-  aspect-ratio: 16/9;
-}
-.ratio-21x9 {
-  aspect-ratio: 21/9;
+.rounded {
+  border-radius: 50%;
 }
 
 .obj-cover {
@@ -1974,8 +1947,8 @@ textarea {
   border: var(--c-gallery) solid 1px;
 }
 .store-container {
-  --store-g: 28px;
-  --store-content-w: 380px;
+  --store-g: 26px;
+  --store-content-w: 382px;
 }
 .store-gallery {
   position: relative;
@@ -2325,6 +2298,29 @@ textarea {
   font-size: 12px;
   line-height: 16px;
 }
+.product-box {
+  --product-box-image-w: 130px;
+  --product-box-image-h: 92px;
+  --product-box-image-g: 20px;
+}
+.product-box--image {
+  width: var(--product-box-image-w);
+  height: var(--product-box-image-h);
+  margin-right: var(--product-box-image-g);
+  border: var(--c-gallery) solid 1px;
+}
+.product-box--content {
+  width: calc(100% - (var(--product-box-image-w) + var(--product-box-image-g)));
+}
+.product-box--title {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.product-box--info,
+.product-box--summary {
+  font-size: 14px;
+  line-height: 18px;
+}
 .product-card {
   position: relative;
   width: 280px;
@@ -2396,8 +2392,8 @@ textarea {
   right: 10px;
 }
 .product-container {
-  --product-g: 28px;
-  --product-content-w: 380px;
+  --product-g: 26px;
+  --product-content-w: 382px;
 }
 .product-gallery {
   position: relative;
@@ -2550,15 +2546,16 @@ textarea {
   position: relative;
 }
 .rating-star span.back {
-  color: var(--c-white);
+  position: relative;
+  z-index: 1;
 }
 .rating-star span.front {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
   width: var(--rating-star-w);
-  color: var(--c-yellow);
 }
 .rating-star.half {
   --rating-star-w: 50%;
@@ -2588,11 +2585,12 @@ textarea {
 --------------------------------------------------
 **/
 .editor a {
-  text-decoration: underline;
-  color: var(#010658);
+  text-decoration: none;
+  color: inherit;
 }
 .editor a:hover {
-  color: var(#000);
+  text-decoration: underline;
+  color: var(--c-navy-blue);
 }
 .editor p:not(:first-child) {
   margin-top: 18px;
@@ -2621,6 +2619,7 @@ textarea {
 .article-icon svg.back {
   position: absolute;
   inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   color: var(--c-yellow);
@@ -2644,29 +2643,33 @@ textarea {
           transition-property:         transform;
           transition-property:         transform, -webkit-transform;
 }
-.article-title {
-  font-size: 20px;
+.article-title,
+.article-link {
   line-height: 1.25;
 }
-.article-info,
-.article-summary {
-  font-size: 14px;
-  line-height: 18px;
+.article-title a,
+.article-link a {
+  text-decoration: none;
+  color: var(--c-cerulean-blue);
+}
+.article-title a:hover,
+.article-link a:hover {
+  text-decoration: underline;
+  color: var(--c-navy-blue);
+}
+.article-title {
+  font-size: 20px;
 }
 .article-link {
   position: absolute;
   bottom: 0;
   right: var(--article-body-px);
   left: var(--article-body-px);
-  line-height: 1.25;
 }
-.article-link a {
-  text-decoration: none;
-  color: var(--c-cerulean-blue);
-}
-.article-link a:hover {
-  text-decoration: underline;
-  color: var(--c-navy-blue);
+.article-info,
+.article-summary {
+  font-size: 14px;
+  line-height: 18px;
 }
 .article-body {
   padding-inline: var(--article-body-px);
@@ -2746,6 +2749,7 @@ textarea {
   pointer-events: none;
 }
 .section-ribbon {
+  display: inline-block;
   min-width: 130px;
   padding-top: 15px;
   padding-inline: 10px;
@@ -2923,32 +2927,47 @@ textarea {
 }
 .section-faq {
   --section-faq-g: 68px;
-  --section-faq-banner-w: 380px;
+  --section-faq-banner-w: 382px;
   --section-faq-banner-h: 324px;
 }
 .section-faq--banner {
   width: var(--section-faq-banner-w);
-  min-height: var(--section-faq-banner-h);
+  height: var(--section-faq-banner-h);
   margin-right: var(--section-faq-g);
 }
 .section-faq--content {
   width: calc(100% - (var(--section-faq-g) + var(--section-faq-banner-w)));
-  margin-top: -15px;
-}
-.section-faq--item {
-  border-bottom: var(--c-navy-blue) solid 1px;
 }
 .section-faq--title {
-  padding-block: 20px;
+  gap: 12px;
   font-size: 18px;
   line-height: 24px;
-  cursor: pointer;
 }
-.section-faq--title svg {
-  margin-right: 12px;
-}
-.section-faq--title span {
+.section-faq--header {
+  padding-block: 19px;
   color: var(--c-navy-blue);
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: color;
+          transition-property: color;
+}
+.section-faq--header:hover,
+.section-faq--header.active {
+  color: var(--c-cerulean-blue);
+}
+.section-faq--body {
+  display: none;
+}
+.section-faq--body.active {
+  display: block;
+}
+.section-faq--item {
+  padding-right: var(--section-faq-g);
+  border-bottom: var(--c-navy-blue) solid 1px;
+}
+.section-faq--item:first-child .section-faq--header {
+  padding-top: 4px;
 }
 .section-article {
   padding-inline: 10px;
@@ -2956,26 +2975,32 @@ textarea {
 .section-article--item {
   position: relative;
 }
+.section-article--link a,
+.section-article--title a {
+  text-decoration: none;
+  color: var(--section-article-link-color);
+}
+.section-article--link a:hover,
+.section-article--title a:hover {
+  text-decoration: underline;
+  color: var(--section-article-link-hover);
+}
 .section-article--title {
   min-height: 48px;
   font-size: 18px;
   line-height: 24px;
 }
-.section-article--summary {
-  font-size: 14px;
-  line-height: 18px;
-}
 .section-article--link {
   position: absolute;
   line-height: 1.25;
 }
-.section-article--link a {
-  text-decoration: none;
-}
-.section-article--link a:hover {
-  text-decoration: underline;
+.section-article--summary {
+  font-size: 14px;
+  line-height: 18px;
 }
 .section-article.i1 .section-article--item {
+  --section-article-link-color: var(--c-cerulean-blue);
+  --section-article-link-hover: var(--c-navy-blue);
   position: relative;
   width: 50%;
   padding: 30px 170px 66px 30px;
@@ -2993,6 +3018,7 @@ textarea {
 .section-article.i1 .section-article--icon svg.back {
   position: absolute;
   inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   color: var(--c-yellow);
@@ -3007,13 +3033,9 @@ textarea {
   bottom: 30px;
   left: 30px;
 }
-.section-article.i1 .section-article--link a {
-  color: var(--c-cerulean-blue);
-}
-.section-article.i1 .section-article--link a:hover {
-  color: var(--c-navy-blue);
-}
 .section-article.i2 .section-article--item {
+  --section-article-link-color: var(--c-yellow);
+  --section-article-link-hover: var(--c-white);
   width: 50%;
   padding: 25px 30px 61px;
 }
@@ -3024,12 +3046,6 @@ textarea {
   right: 30px;
   bottom: 25px;
   left: 30px;
-}
-.section-article.i2 .section-article--link a {
-  color: var(--c-yellow);
-}
-.section-article.i2 .section-article--link a:hover {
-  color: var(--c-white);
 }
 .section-brand {
   width: 280px;
@@ -3053,11 +3069,11 @@ textarea {
 .section-review {
   --section-review-g: 48px;
   --section-review-banner-h: 310px;
-  --section-review-content-w: 416px;
+  --section-review-content-w: 382px;
 }
 .section-review--banner {
   width: calc(100% - (var(--section-review-g) + var(--section-review-content-w)));
-  min-height: var(--section-review-banner-h);
+  height: var(--section-review-banner-h);
   margin-right: var(--section-review-g);
 }
 .section-review--content {
@@ -3288,7 +3304,7 @@ textarea {
 }
 .section-presentation {
   --section-presentation-g: 88px;
-  --section-presentation-aside-w: 380px;
+  --section-presentation-aside-w: 382px;
   --section-presentation-aside-y: 44px;
 }
 .section-presentation--image {
@@ -3366,21 +3382,73 @@ textarea {
 .section-priority--image {
   height: 480px;
 }
-.section-intro {
+.section-opinion {
+  --section-opinion-author-w: 140px;
+  --section-opinion-author-h: 140px;
+  --section-opinion-author-g: 48px;
+  --section-opinion-banner-w: 382px;
+  --section-opinion-banner-h: 340px;
+  --section-opinion-banner-g: 26px;
+}
+.section-opinion--author {
+  width: var(--section-opinion-author-w);
+  height: var(--section-opinion-author-h);
+  margin-right: var(--section-opinion-author-g);
+}
+.section-opinion--banner {
+  position: relative;
+  width: var(--section-opinion-banner-w);
+  height: var(--section-opinion-banner-h);
+  margin-left: var(--section-opinion-banner-g);
+}
+.section-opinion--content {
+  width: calc(100% - (var(--section-opinion-author-w) + var(--section-opinion-author-g) + var(--section-opinion-banner-w) + var(--section-opinion-banner-g)));
+}
+.section-opinion--image,
+.section-opinion--aside {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.section-opinion--image {
+  height: 100%;
+  z-index: 1;
+}
+.section-opinion--image::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background-color: var(--c-cerulean-blue);
+  opacity: 0.7;
+}
+.section-opinion--aside {
+  z-index: 2;
+  padding: 28px 44px;
+  color: var(--c-white);
+}
+.section-intro.i1 {
   --section-intro-g: 26px;
   --section-intro-px: 20px;
   --section-intro-content-w: 586px;
   gap: var(--section-intro-g);
 }
-.section-intro .section-body,
-.section-intro .section-banner {
+.section-intro.i1 .section-body,
+.section-intro.i1 .section-banner {
   width: calc((100% - (var(--section-intro-g))) / 2);
 }
-.section-intro .section-body {
+.section-intro.i1 .section-body {
   padding-right: var(--section-intro-px);
 }
-.section-intro .section-content {
+.section-intro.i1 .section-content {
   max-width: var(--section-intro-content-w);
+}
+.section-intro.i2 .section-banner {
+  border-radius: 0 0 10px 10px;
+}
+.section-intro.i2 .section-line {
+  height: 2px;
 }
 .section-sleep {
   position: relative;

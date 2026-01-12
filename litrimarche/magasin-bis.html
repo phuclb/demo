@@ -42,21 +42,21 @@
           <div class="header-toolbox">
             <ul class="d-flex justify-start align-center">
               <li>
-                <a class="header-button i3 d-flex justify-center align-center radius-20 toggle" href="#search" role="button" aria-expanded="false" aria-controls="search" aria-label="Rechercher">
+                <a class="header-button i3 d-flex justify-center align-center rounded toggle" href="#search" role="button" aria-expanded="false" aria-controls="search" aria-label="Rechercher">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#search"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="header-button i3 d-flex justify-center align-center radius-20" href="#" aria-label="Panier">
+                <a class="header-button i3 d-flex justify-center align-center rounded" href="#" aria-label="Panier">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#cart"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="header-button i3 d-flex justify-center align-center radius-20" href="#" aria-label="Contactez-moi">
+                <a class="header-button i3 d-flex justify-center align-center rounded" href="#" aria-label="Contactez-moi">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#user"></use>
                   </svg>
@@ -81,9 +81,9 @@
             </ul>
           </div>
           <div class="header-search d-flex justify-center align-center" id="search">
-            <label class="font-semibold" for="q">Recherche</label>
-            <input class="font-medium" type="text" id="q" name="q">
-            <button class="d-flex justify-center align-center radius-20" type="submit" aria-label="Rechercher">
+            <label class="flex-none font-semibold" for="q">Recherche</label>
+            <input class="flex-auto font-medium" type="text" id="q" name="q">
+            <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
               <svg width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
@@ -172,26 +172,12 @@
                     <ul class="rating-list d-flex justify-start align-center">
                       <li>
                         <div class="rating-star full">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
-                            <svg width="19" height="18" aria-hidden="true" focusable="false">
-                              <use href="assets/img/sprites.svg#rating"></use>
-                            </svg>
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="rating-star full">
-                          <span class="back">
-                            <svg width="19" height="18" aria-hidden="true" focusable="false">
-                              <use href="assets/img/sprites.svg#rating"></use>
-                            </svg>
-                          </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -200,12 +186,12 @@
                       </li>
                       <li>
                         <div class="rating-star full">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -214,12 +200,26 @@
                       </li>
                       <li>
                         <div class="rating-star full">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
+                            <svg width="19" height="18" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#rating"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="rating-star full">
+                          <span class="back c-concrete">
+                            <svg width="19" height="18" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#rating"></use>
+                            </svg>
+                          </span>
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -228,12 +228,12 @@
                       </li>
                       <li>
                         <div class="rating-star half">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -353,7 +353,7 @@
 
             <div class="section-presentation d-flex justify-center align-end">
               <div class="section-presentation--content px-44">
-                <h2 class="section-title i4 d-inline-block font-semibold">La pr&eacute;sentation de l'&eacute;quipe</h2>
+                <h2 class="section-title i4 font-semibold">La pr&eacute;sentation de l'&eacute;quipe</h2>
                 <div class="section-editor editor i2 mt-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero risus, tristique nec mauris eu, lobortis bibendum urna. Nam imperdiet, metus eu mollis pretium, nunc enim vehicula massa, ac maximus ex mi non Leo. Mauris sit amet accumsan velit. Nunc efficitur sem et metus feugiat, quis egestas mi posuere. Aliquam id tincidunt arcu, et interdum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nulla lorem, congue in tellus in, convallis cursus arcu. Curabitur pellentesque quis nisi suscipit porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
               </div>
               <div class="section-presentation--aside">
@@ -429,9 +429,9 @@
 
         <section class="section-wrapper of-hidden mt-112">
           <div class="container max-w-1238">
-            <header class="section-header max-w-986 mx-auto text-center">
-              <h2 class="section-title i4 section-ribbon d-inline-block font-semibold">Les marques de literie distribu&eacute;es chez Litrimarch&eacute; Persan</h2>
-              <div class="section-summary mt-16 font-medium">Chez Litrimarch&eacute;, notre priorit&eacute; c&rsquo;est votre bien-&ecirc;tre. En vous proposant les plus grandes marques de literie,<br>vos plus belles nuits ne sont plus qu&rsquo;&agrave; quelques clics !</div>
+            <header class="section-header max-w-872 mx-auto text-center">
+              <h2 class="section-title i4 section-ribbon font-semibold">Les marques de literie distribu&eacute;es chez Litrimarch&eacute; Persan</h2>
+              <div class="section-summary mt-16 font-medium">Chez Litrimarch&eacute;, notre priorit&eacute; c&rsquo;est votre bien-&ecirc;tre. En vous proposant les plus grandes marques de literie, vos plus belles nuits ne sont plus qu&rsquo;&agrave; quelques clics !</div>
             </header>
             <div class="section-body mt-64">
 
@@ -491,7 +491,7 @@
         <section class="section-product of-hidden mt-80">
           <div class="container max-w-1238">
             <header class="section-header max-w-872 mx-auto text-center">
-              <h2 class="section-title i4 section-ribbon d-inline-block font-semibold">La s&eacute;lection de votre expert Litrimarch&eacute;</h2>
+              <h2 class="section-title i4 section-ribbon font-semibold">La s&eacute;lection de votre expert Litrimarch&eacute;</h2>
             </header>
             <div class="section-body mt-64">
               <div class="splide splide-product" role="group" aria-label="Product">
@@ -829,7 +829,7 @@
 
         <div class="section-general mt-112 px-80 bg-alabaster">
 
-          <section class="section-intro d-flex justify-center align-start">
+          <section class="section-intro i1 d-flex justify-center align-start">
             <div class="section-banner bg-white">
               <img class="w-full h-full obj-cover" src="assets/img/banner-4.jpg" alt="Image" width="946" height="482">
             </div>
@@ -884,8 +884,8 @@
 
         <section class="section-wrapper mt-112">
           <div class="container max-w-1238">
-            <header class="section-header max-w-986 mx-auto text-center">
-              <h2 class="section-title i4 section-ribbon d-inline-block font-semibold">L&rsquo;offre du moment !</h2>
+            <header class="section-header max-w-872 mx-auto text-center">
+              <h2 class="section-title i4 section-ribbon font-semibold">L&rsquo;offre du moment !</h2>
             </header>
           </div>
           <div class="container max-w-1760 mt-32">
@@ -913,14 +913,18 @@
 
               <div class="section-article i2 d-flex justify-start align-stretch">
                 <article class="section-article--item">
-                  <h3 class="section-article--title font-bold text-uppercase">Journ&eacute;e portes ouvertes<br>Litrimarch&eacute; Persan 8 Mai 2025</h3>
+                  <h3 class="section-article--title font-bold text-uppercase">
+                    <a href="#">Journ&eacute;e portes ouvertes<br>Litrimarch&eacute; Persan 8 Mai 2025</a>
+                  </h3>
                   <div class="section-article--summary mt-8 line-clamp-3">Venez d&eacute;couvrir notre univers literie et profitez d&rsquo;avantages exclusifs !</div>
                   <div class="section-article--link mt-16 font-bold text-uppercase">
                     <a href="#">Lire la suite</a>
                   </div>
                 </article>
                 <article class="section-article--item">
-                  <h3 class="section-article--title font-bold text-uppercase">Venez nous rencontrer &agrave; la foire de B&eacute;ziers du 1 au 4 Juin 2025</h3>
+                  <h3 class="section-article--title font-bold text-uppercase">
+                    <a href="#">Venez nous rencontrer &agrave; la foire de B&eacute;ziers du 1 au 4 Juin 2025</a>
+                  </h3>
                   <div class="section-article--summary mt-8 line-clamp-3">D&eacute;couvrez une s&eacute;lection de produits et essayez nos matelas</div>
                   <div class="section-article--link mt-16 font-bold text-uppercase">
                     <a href="#">Lire la suite</a>
@@ -941,8 +945,8 @@
 
         <section class="section-wrapper mt-112">
           <div class="container max-w-1238">
-            <header class="section-header max-w-762 mx-auto text-center">
-              <h2 class="section-title i4 section-ribbon d-inline-block font-semibold">Guides & conseils Litrimarch&eacute; Persan</h2>
+            <header class="section-header max-w-872 mx-auto text-center">
+              <h2 class="section-title i4 section-ribbon font-semibold">Guides & conseils Litrimarch&eacute; Persan</h2>
             </header>
             <div class="section-body mt-64">
 
@@ -1000,14 +1004,14 @@
 
         <section class="section-wrapper mt-150">
           <div class="container max-w-1238">
-            <header class="section-header max-w-762 mx-auto text-center">
-              <h2 class="section-title i4 section-ribbon d-inline-block font-semibold">Avis de nos clients</h2>
+            <header class="section-header max-w-872 mx-auto text-center">
+              <h2 class="section-title i4 section-ribbon font-semibold">Avis de nos clients</h2>
             </header>
             <div class="section-body mt-64">
 
               <div class="section-review d-flex flex-wrap justify-start align-stretch">
                 <div class="section-review--banner of-hidden bg-alabaster radius-10">
-                  <img class="w-full h-full obj-cover" src="assets/img/review.jpg" alt="Image" width="734" height="310">
+                  <img class="w-full h-full obj-cover" src="assets/img/review.jpg" alt="Image" width="768" height="324">
                 </div>
                 <div class="section-review--content bg-alabaster radius-10">
                   <div class="splide splide-review" role="group" aria-label="Review">
@@ -1021,26 +1025,12 @@
                                 <ul class="rating-list d-flex justify-start align-center">
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
-                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
-                                          <use href="assets/img/sprites.svg#rating"></use>
-                                        </svg>
-                                      </span>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="rating-star full">
-                                      <span class="back">
-                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
-                                          <use href="assets/img/sprites.svg#rating"></use>
-                                        </svg>
-                                      </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1049,12 +1039,12 @@
                                   </li>
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1063,12 +1053,26 @@
                                   </li>
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
+                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
+                                          <use href="assets/img/sprites.svg#rating"></use>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="rating-star full">
+                                      <span class="back c-concrete">
+                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
+                                          <use href="assets/img/sprites.svg#rating"></use>
+                                        </svg>
+                                      </span>
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1077,12 +1081,12 @@
                                   </li>
                                   <li>
                                     <div class="rating-star half">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1106,26 +1110,12 @@
                                 <ul class="rating-list d-flex justify-start align-center">
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
-                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
-                                          <use href="assets/img/sprites.svg#rating"></use>
-                                        </svg>
-                                      </span>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="rating-star full">
-                                      <span class="back">
-                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
-                                          <use href="assets/img/sprites.svg#rating"></use>
-                                        </svg>
-                                      </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1134,12 +1124,12 @@
                                   </li>
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1148,12 +1138,26 @@
                                   </li>
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
+                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
+                                          <use href="assets/img/sprites.svg#rating"></use>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="rating-star full">
+                                      <span class="back c-concrete">
+                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
+                                          <use href="assets/img/sprites.svg#rating"></use>
+                                        </svg>
+                                      </span>
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1162,12 +1166,12 @@
                                   </li>
                                   <li>
                                     <div class="rating-star half">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1191,26 +1195,12 @@
                                 <ul class="rating-list d-flex justify-start align-center">
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
-                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
-                                          <use href="assets/img/sprites.svg#rating"></use>
-                                        </svg>
-                                      </span>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="rating-star full">
-                                      <span class="back">
-                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
-                                          <use href="assets/img/sprites.svg#rating"></use>
-                                        </svg>
-                                      </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1219,12 +1209,12 @@
                                   </li>
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1233,12 +1223,26 @@
                                   </li>
                                   <li>
                                     <div class="rating-star full">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
+                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
+                                          <use href="assets/img/sprites.svg#rating"></use>
+                                        </svg>
+                                      </span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="rating-star full">
+                                      <span class="back c-concrete">
+                                        <svg width="25" height="24" aria-hidden="true" focusable="false">
+                                          <use href="assets/img/sprites.svg#rating"></use>
+                                        </svg>
+                                      </span>
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1247,12 +1251,12 @@
                                   </li>
                                   <li>
                                     <div class="rating-star half">
-                                      <span class="back">
+                                      <span class="back c-concrete">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
                                       </span>
-                                      <span class="front of-hidden">
+                                      <span class="front of-hidden c-yellow">
                                         <svg width="25" height="24" aria-hidden="true" focusable="false">
                                           <use href="assets/img/sprites.svg#rating"></use>
                                         </svg>
@@ -1325,7 +1329,7 @@
             <div class="section-priority">
               <div class="section-priority--slogan font-semibold">Chez LITRIMARCH&Eacute;<sup>&reg;</sup>, <span class="font-bold">notre priorit&eacute; c&rsquo;est vous !</span></div>
               <div class="section-priority--content">
-                <h2 class="section-title i4 d-inline-block font-semibold">100% satisfaction client</h2>
+                <h2 class="section-title i4 font-semibold">100% satisfaction client</h2>
                 <div class="section-editor editor i2 mt-16">Avec plus de 110 magasins en France, LITRIMARCH&Eacute;<sup>&reg;</sup> est avant tout une ensigne bas&eacute;e sur le savoir-faire et les ann&eacute;es d&rsquo;exp&eacute;rience d&rsquo;hommes et de femmes de terrain qui savent &eacute;couter et r&eacute;pondre aux attentes des consommateurs pour leur proposer des produits en ad&eacute;quation avec leurs envies et leur budget. LITRIMARCH&Eacute;<sup>&reg;</sup> est ainsi devenu la r&eacute;f&eacute;rence sur le march&eacute; de la literie et est aujourd&rsquo;hui un des leaders fran&ccedil;ais du secteur.</div>
                 <div class="section-toolbar mt-44 font-bold text-uppercase">
                   <a class="section-button i1 w2 d-inline-block text-center radius-30" href="#">Devenez franchis&eacute; LITRIMARCH&Eacute;</a>
@@ -1366,8 +1370,8 @@
         </section>
         <!-- section-wrapper -->
 
-        <section class="section-wrapper mt-64 text-center">
-          <div class="container max-w-762">
+        <section class="section-wrapper mt-112 text-center">
+          <div class="container max-w-1238">
             <div class="section-icon mb-16 c-yellow">
               <svg width="84" height="48" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#building"></use>

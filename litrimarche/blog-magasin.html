@@ -42,21 +42,21 @@
           <div class="header-toolbox">
             <ul class="d-flex justify-start align-center">
               <li>
-                <a class="header-button i3 d-flex justify-center align-center radius-20 toggle" href="#search" role="button" aria-expanded="false" aria-controls="search" aria-label="Rechercher">
+                <a class="header-button i3 d-flex justify-center align-center rounded toggle" href="#search" role="button" aria-expanded="false" aria-controls="search" aria-label="Rechercher">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#search"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="header-button i3 d-flex justify-center align-center radius-20" href="#" aria-label="Panier">
+                <a class="header-button i3 d-flex justify-center align-center rounded" href="#" aria-label="Panier">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#cart"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a class="header-button i3 d-flex justify-center align-center radius-20" href="#" aria-label="Contactez-moi">
+                <a class="header-button i3 d-flex justify-center align-center rounded" href="#" aria-label="Contactez-moi">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#user"></use>
                   </svg>
@@ -81,9 +81,9 @@
             </ul>
           </div>
           <div class="header-search d-flex justify-center align-center" id="search">
-            <label class="font-semibold" for="q">Recherche</label>
-            <input class="font-medium" type="text" id="q" name="q">
-            <button class="d-flex justify-center align-center radius-20" type="submit" aria-label="Rechercher">
+            <label class="flex-none font-semibold" for="q">Recherche</label>
+            <input class="flex-auto font-medium" type="text" id="q" name="q">
+            <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
               <svg width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
@@ -172,26 +172,12 @@
                     <ul class="rating-list d-flex justify-start align-center">
                       <li>
                         <div class="rating-star full">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
-                            <svg width="19" height="18" aria-hidden="true" focusable="false">
-                              <use href="assets/img/sprites.svg#rating"></use>
-                            </svg>
-                          </span>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="rating-star full">
-                          <span class="back">
-                            <svg width="19" height="18" aria-hidden="true" focusable="false">
-                              <use href="assets/img/sprites.svg#rating"></use>
-                            </svg>
-                          </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -200,12 +186,12 @@
                       </li>
                       <li>
                         <div class="rating-star full">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -214,12 +200,26 @@
                       </li>
                       <li>
                         <div class="rating-star full">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
+                            <svg width="19" height="18" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#rating"></use>
+                            </svg>
+                          </span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="rating-star full">
+                          <span class="back c-concrete">
+                            <svg width="19" height="18" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#rating"></use>
+                            </svg>
+                          </span>
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -228,12 +228,12 @@
                       </li>
                       <li>
                         <div class="rating-star half">
-                          <span class="back">
+                          <span class="back c-concrete">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
                           </span>
-                          <span class="front of-hidden">
+                          <span class="front of-hidden c-yellow">
                             <svg width="19" height="18" aria-hidden="true" focusable="false">
                               <use href="assets/img/sprites.svg#rating"></use>
                             </svg>
@@ -403,7 +403,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Faire du sport pour mieux dormir</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Faire du sport pour mieux dormir</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">Quel est le meilleur moment pour que le sport devienne un facteur d&rsquo;am&eacute;lioration du sommeil ?</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -424,7 +426,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Le bruit perturbe votre sommeil !</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Le bruit perturbe votre sommeil !</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">M&ecirc;me de faible intensit&eacute;, le bruit a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -445,7 +449,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Le bruit perturbe votre sommeil !</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Le bruit perturbe votre sommeil !</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">M&ecirc;me de faible intensit&eacute;, le bruit a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -466,7 +472,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Faire du sport pour mieux dormir</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Faire du sport pour mieux dormir</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">Quel est le meilleur moment pour que le sport devienne un facteur d&rsquo;am&eacute;lioration du sommeil ?</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -487,7 +495,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Faire du sport pour mieux dormir</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Faire du sport pour mieux dormir</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">Quel est le meilleur moment pour que le sport devienne un facteur d&rsquo;am&eacute;lioration du sommeil ?</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -508,7 +518,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Le bruit perturbe votre sommeil !</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Le bruit perturbe votre sommeil !</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">M&ecirc;me de faible intensit&eacute;, le bruit a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -529,7 +541,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Le bruit perturbe votre sommeil !</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Le bruit perturbe votre sommeil !</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">M&ecirc;me de faible intensit&eacute;, le bruit a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -550,7 +564,9 @@
                   </div>
                   <div class="article-body mt-20 text-center">
                     <div class="article-info mb-8 font-medium">01.05.2025</div>
-                    <h3 class="article-title font-bold text-uppercase">Faire du sport pour mieux dormir</h3>
+                    <h3 class="article-title font-bold text-uppercase">
+                      <a href="#">Faire du sport pour mieux dormir</a>
+                    </h3>
                     <div class="article-summary mt-8 line-clamp-3">Quel est le meilleur moment pour que le sport devienne un facteur d&rsquo;am&eacute;lioration du sommeil ?</div>
                     <div class="article-link mt-20 font-bold text-uppercase">
                       <a href="#">Lire la suite</a>
@@ -582,8 +598,8 @@
         </section>
         <!-- section-product -->
 
-        <section class="section-wrapper mt-64 text-center">
-          <div class="container max-w-762">
+        <section class="section-wrapper mt-112 text-center">
+          <div class="container max-w-1238">
             <div class="section-icon mb-16 c-yellow">
               <svg width="84" height="48" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#building"></use>
