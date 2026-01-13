@@ -77,8 +77,7 @@ const App = {
         type: 'slide',
         speed: 1e3,
         gap: 12,
-        perPage: 4,
-        perMove: 1,
+        autoWidth: true,
         pagination: false
       }).mount();
     }
@@ -90,8 +89,7 @@ const App = {
           type: 'slide',
           speed: 1e3,
           gap: 26,
-          perPage: 4,
-          perMove: 1,
+          autoWidth: true,
           pagination: false
         }).mount();
       });
