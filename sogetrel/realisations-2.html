@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sogetrel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="header p-rel">
+        <div class="header-container header-holder p-fixed bg-mask c-white" data-mh="header-holder">
+          <div class="container p-rel max-w-1280 mx-auto">
+            <h2 class="header-title sr-only">Sogetrel</h2>
+            <div class="header-logo">
+              <a class="d-inline-block" href="#" aria-label="Sogetrel">
+                <svg width="176" height="38" aria-hidden="true">
+                  <use xlink:href="assets/img/sprites.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header-toolbar p-abs d-flex justify-end items-center hidden-md hidden-lg hidden-print">
+              <div class="header-icon d-flex justify-end items-center">
+                <a class="header-linkedin d-block" href="#" target="_blank" aria-label="LinkedIn">
+                  <svg width="30" height="30" aria-hidden="true">
+                    <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                  </svg>
+                </a>
+                <button class="header-magnifier no-padding no-text no-background no-border js-toggler" type="button" data-target="#hSearch" aria-label="Rechercher">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+                <a class="header-switch d-flex justify-center items-center js-menu-panel" href="#mP1" role="button" data-target="#hMenu" aria-label="Menu">
+                  <span class="on">
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </span>
+                  <span class="off">
+                    <svg width="30" height="30" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#menu"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="header-toolbar p-abs d-flex justify-end items-center hidden-xs hidden-sm hidden-print">
+              <div class="header-nav font-bold">
+                <ul class="d-flex flex-wrap justify-center items-start">
+                  <li><a class="d-block js-menu-panel" href="#mP2" data-target="#hMenu">Nos activit&eacute;s</a></li>
+                  <li><a class="d-block js-menu-panel" href="#mP3" data-target="#hMenu">Nos march&eacute;s</a></li>
+                  <li><a class="d-block js-menu-panel" href="#mP4" data-target="#hMenu">D&eacute;couvrir Sogetrel</a></li>
+                  <li><a class="d-block" href="#">Nos actualit&eacute;s</a></li>
+                  <li><a class="d-block js-menu-panel" href="#mP5" data-target="#hMenu">Nous rejoindre</a></li>
+                </ul>
+              </div>
+              <div class="header-social">
+                <ul class="d-flex justify-center items-center">
+                  <li>
+                    <a class="d-block" href="#" target="_blank" aria-label="LinkedIn">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block" href="#" target="_blank" aria-label="X">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#x"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block" href="#" target="_blank" aria-label="Facebook">
+                      <svg width="20" height="20" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-lang p-rel font-medium text-center js-rollover">
+                <span class="d-block">FR</span>
+                <ul class="p-abs js-propagation">
+                  <li><a class="d-block" href="#">EN</a></li>
+                </ul>
+              </div>
+              <div class="header-line"></div>
+              <div class="header-icon d-flex justify-end items-center">
+                <button class="no-padding no-text no-background no-border js-toggler" type="button" data-target="#hSearch" aria-label="Rechercher">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-holder hidden-print" data-mh="header-holder"></div>
+        <div class="header-mask p-fixed bg-gradient-black opacity-70 hidden-print" data-mh="header-holder"></div>
+        <div class="header-menu header-modal p-fixed h-screen bg-bold-blue c-white hidden-print" id="hMenu">
+          <div class="container max-w-1080 mx-auto">
+            <div class="menu-panel d-flex flex-wrap justify-end items-stretch hidden-md hidden-lg" id="mP1">
+              <div class="menu-panel--item flex-none hidden-md hidden-lg">
+                <div class="menu-toolbar menu-search bg-light-blue">
+
+                  <div class="search-form i4 p-rel">
+                    <input class="w-full no-background no-border js-field" type="text" placeholder="Rechercher" aria-label="Rechercher">
+                    <button class="p-abs no-padding no-text no-background no-border js-reset" type="reset" aria-label="Supprimer">
+                      <svg width="18" height="18" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#close"></use>
+                      </svg>
+                    </button>
+                    <button class="p-abs no-padding no-text no-background no-border" type="submit" aria-label="Rechercher">
+                      <svg width="18" height="18" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#search"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- search-form -->
+
+                </div>
+              </div>
+              <div class="menu-panel--item flex-auto">
+                <div class="menu-link font-bold text-uppercase">
+                  <ul>
+                    <li>
+                      <a class="p-rel d-block js-menu-panel" href="#mP2" data-target="#hMenu">
+                        <span>Nos activit&eacute;s</span>
+                        <svg width="10" height="18" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="p-rel d-block js-menu-panel" href="#mP3" data-target="#hMenu">
+                        <span>Nos march&eacute;s</span>
+                        <svg width="10" height="18" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="p-rel d-block js-menu-panel" href="#mP4" data-target="#hMenu">
+                        <span>D&eacute;couvrir Sogetrel</span>
+                        <svg width="10" height="18" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="p-rel d-block" href="#">
+                        <span>Nos actualit&eacute;s</span>
+                        <svg width="10" height="18" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="p-rel d-block js-menu-panel" href="#mP5" data-target="#hMenu">
+                        <span>Nous rejoindre</span>
+                        <svg width="10" height="18" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#right"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-panel--item flex-none">
+                <div class="menu-button text-right">
+                  <a class="button button-rounded button-icon button-push button-type-1 d-inline-flex justify-between items-center max-w-320 min-w-210 w-full font-extrabold" href="#">
+                    <span>Contactez-nous</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="assets/img/sprites.svg#next"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="menu-group d-flex justify-between items-center">
+                  <div class="menu-lang p-rel font-medium js-rollover">
+                    <div class="d-flex justify-between items-center">
+                      <span class="d-block">FR</span>
+                      <svg width="10" height="6" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#up"></use>
+                      </svg>
+                    </div>
+                    <ul class="p-abs js-propagation">
+                      <li><a class="d-block" href="#">EN</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-social">
+                    <ul class="d-flex justify-center items-center">
+                      <li class="hidden">
+                        <a class="d-block" href="#" target="_blank" aria-label="LinkedIn">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-block" href="#" target="_blank" aria-label="X">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#x"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-block" href="#" target="_blank" aria-label="Facebook">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-panel d-flex flex-wrap justify-end items-stretch hidden" id="mP2">
+              <div class="menu-panel--item flex-none hidden-md hidden-lg">
+                <div class="menu-toolbar menu-back bg-light-blue">
+                  <a class="d-flex justify-start items-center font-bold text-uppercase js-menu-panel" href="#mP1" data-target="#hMenu">
+                    <svg width="18" height="10" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#up"></use>
+                    </svg>
+                    <span>Retour</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu-panel--item i4 flex-auto">
+                <div class="menu-flex d-flex flex-wrap justify-start items-stretch">
+                  <div class="menu-flex--item i1 menu-accordion--item active">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold"><a href="#">Connecter</a></h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">R&eacute;seaux et solutions de communications fixes</a></li>
+                          <li><a class="d-inline-block" href="#">R&eacute;seaux et solutions de communications mobiles</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-flex--item i1 menu-accordion--item">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold"><a href="#">Int&eacute;grer</a></h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">Solutions smart</a></li>
+                          <li><a class="d-inline-block" href="#">Infrastructures de recharge pour v&eacute;hicules &eacute;lectriques</a></li>
+                          <li><a class="d-inline-block" href="#">Solutions de s&ucirc;ret&eacute; et cybers&eacute;curit&eacute;</a></li>
+                          <li><a class="d-inline-block" href="#">Solutions informatiques et digitales</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-flex--item i1 menu-accordion--item">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold"><a href="#">Exploiter</a></h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">Assistance utilisateurs</a></li>
+                          <li><a class="d-inline-block" href="#">Interventions multitechniques de proximit&eacute;</a></li>
+                          <li><a class="d-inline-block" href="#">Maintenance des r&eacute;seaux t&eacute;l&eacute;coms fixes et mobiles</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-panel--item i3 flex-none">
+                <div class="menu-card i1 p-rel d-flex flex-wrap justify-start items-center bg-blue c-white">
+                  <div class="menu-card--image p-abs bg-light-gray">
+                    <a href="#">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/8.jpg" alt="" width="800" height="540">
+                    </a>
+                  </div>
+                  <div class="menu-card--body p-rel">
+                    <h3 class="menu-card--title font-bold hidden-xs hidden-sm">
+                      <a href="#">D&eacute;couvrir le Lab&rsquo; Territoires connect&eacute;s et durables de Sogetrel</a>
+                    </h3>
+                    <h3 class="menu-card--title font-bold hidden-md hidden-lg">
+                      <a href="#">D&eacute;couvrir le Lab&rsquo; de Sogetrel</a>
+                    </h3>
+                    <div class="menu-card--arrow p-abs d-flex justify-center items-center hidden-md hidden-lg">
+                      <svg width="18" height="10" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#up"></use>
+                      </svg>
+                    </div>
+                    <div class="menu-card--button p-abs text-right hidden-xs hidden-sm">
+                      <a class="button button-rounded button-icon button-push button-type-3 d-inline-flex justify-between items-center min-w-210 font-extrabold" href="#">
+                        <span>En savoir plus</span>
+                        <svg width="25" height="25" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-panel d-flex flex-wrap justify-end items-stretch hidden" id="mP3">
+              <div class="menu-panel--item flex-none hidden-md hidden-lg">
+                <div class="menu-toolbar menu-back bg-light-blue">
+                  <a class="d-flex justify-start items-center font-bold text-uppercase js-menu-panel" href="#mP1" data-target="#hMenu">
+                    <svg width="18" height="10" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#up"></use>
+                    </svg>
+                    <span>Retour</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu-panel--item i2 flex-auto">
+                <div class="menu-flex d-flex flex-wrap justify-start items-stretch">
+                  <div class="menu-flex--item i2 menu-accordion--item active">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold">D&eacute;couvrir nos march&eacute;s</h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">T&eacute;l&eacute;coms</a></li>
+                          <li><a class="d-inline-block" href="#">Transport</a></li>
+                          <li><a class="d-inline-block" href="#">Public et collectivit&eacute;s</a></li>
+                          <li><a class="d-inline-block" href="#">IT</a></li>
+                          <li><a class="d-inline-block" href="#">Distribution et restauration</a></li>
+                          <li><a class="d-inline-block" href="#">Industrie et services</a></li>
+                          <li><a class="d-inline-block" href="#">&Eacute;nergie et eau</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-panel--item i1 flex-none">
+                <div class="menu-card i2 p-rel d-flex flex-wrap justify-start items-center bg-green c-white">
+                  <div class="menu-card--image p-abs bg-light-gray">
+                    <a href="#">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/9.jpg" alt="" width="1024" height="540">
+                    </a>
+                  </div>
+                  <div class="menu-card--body p-rel">
+                    <h3 class="menu-card--title font-bold">
+                      <a href="#">Nos r&eacute;alisations</a>
+                    </h3>
+                    <div class="menu-card--arrow p-abs d-flex justify-center items-center hidden-md hidden-lg">
+                      <svg width="18" height="10" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#up"></use>
+                      </svg>
+                    </div>
+                    <div class="menu-card--button p-abs text-right hidden-xs hidden-sm">
+                      <a class="button button-rounded button-icon button-push button-type-7 d-inline-flex justify-between items-center min-w-210 font-extrabold" href="#">
+                        <span>D&eacute;couvrir</span>
+                        <svg width="25" height="25" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-panel d-flex flex-wrap justify-end items-stretch hidden" id="mP4">
+              <div class="menu-panel--item flex-none hidden-md hidden-lg">
+                <div class="menu-toolbar menu-back bg-light-blue">
+                  <a class="d-flex justify-start items-center font-bold text-uppercase js-menu-panel" href="#mP1" data-target="#hMenu">
+                    <svg width="18" height="10" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#up"></use>
+                    </svg>
+                    <span>Retour</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu-panel--item i4 flex-auto">
+                <div class="menu-flex d-flex flex-wrap justify-start items-stretch">
+                  <div class="menu-flex--item i1 menu-accordion--item active">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold">En bref</h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">Qui sommes-nous ?</a></li>
+                          <li><a class="d-inline-block" href="#">Notre histoire</a></li>
+                          <li><a class="d-inline-block" href="#">Chiffres cl&eacute;s</a></li>
+                          <li><a class="d-inline-block" href="#">Gouvernance</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-flex--item i1 menu-accordion--item">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold">Notre &eacute;cosyst&egrave;me</h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">Nos implantations en France</a></li>
+                          <li><a class="d-inline-block" href="#">Sogetrel &agrave; l&rsquo;&eacute;tranger</a></li>
+                          <li><a class="d-inline-block" href="#">Nos marques</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-flex--item i1 menu-accordion--item">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold">Nos engagements</h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">D&eacute;veloppement durable</a></li>
+                          <li><a class="d-inline-block" href="#">Engagement partenaire</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-panel d-flex flex-wrap justify-end items-stretch hidden" id="mP5">
+              <div class="menu-panel--item flex-none hidden-md hidden-lg">
+                <div class="menu-toolbar menu-back bg-light-blue">
+                  <a class="d-flex justify-start items-center font-bold text-uppercase js-menu-panel" href="#mP1" data-target="#hMenu">
+                    <svg width="18" height="10" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#up"></use>
+                    </svg>
+                    <span>Retour</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu-panel--item i2 flex-auto">
+                <div class="menu-flex d-flex flex-wrap justify-start items-stretch">
+                  <div class="menu-flex--item i2 menu-accordion--item active">
+                    <div class="menu-accordion--header d-flex justify-between items-center">
+                      <h2 class="menu-accordion--label menu-label font-bold">Nous rejoindre</h2>
+                      <div class="menu-accordion--arrow d-flex justify-center items-center js-menu-accordion hidden-md hidden-lg">
+                        <svg width="18" height="10" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#up"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="menu-accordion--body">
+                      <div class="menu-sublink font-medium">
+                        <ul>
+                          <li><a class="d-inline-block" href="#">L&rsquo;esprit Sogetrel</a></li>
+                          <li><a class="d-inline-block" href="#">Travailler chez Sogetrel</a></li>
+                          <li><a class="d-inline-block" href="#">&Eacute;tudiants</a></li>
+                          <li><a class="d-inline-block" href="#">Nos offres</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-panel--item i1 flex-none">
+                <div class="menu-card i2 p-rel d-flex flex-wrap justify-start items-center bg-blue-green c-white">
+                  <div class="menu-card--image p-abs bg-light-gray">
+                    <a href="#">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/10.jpg" alt="" width="1024" height="550">
+                    </a>
+                  </div>
+                  <div class="menu-card--body p-rel">
+                    <h3 class="menu-card--title font-bold">
+                      <a href="#">Nos offres</a>
+                    </h3>
+                    <div class="menu-card--arrow p-abs d-flex justify-center items-center hidden-md hidden-lg">
+                      <svg width="18" height="10" aria-hidden="true">
+                        <use xlink:href="assets/img/sprites.svg#up"></use>
+                      </svg>
+                    </div>
+                    <div class="menu-card--button p-abs text-right hidden-xs hidden-sm">
+                      <a class="button button-rounded button-icon button-push button-type-8 d-inline-flex justify-between items-center min-w-210 font-extrabold" href="#">
+                        <span>D&eacute;couvrir</span>
+                        <svg width="25" height="25" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#next"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- menu -->
+          </div>
+        </div>
+        <div class="header-search header-modal p-fixed bg-bold-blue c-white hidden-print" id="hSearch">
+          <div class="container max-w-1080 mx-auto">
+
+            <div class="search-form i1 p-rel">
+              <label class="d-block font-bold" for="sI1">Rechercher</label>
+              <input class="w-full no-background no-border js-field" type="text" name="sI1" id="sI1" placeholder="Rechercher">
+              <button class="p-abs no-padding no-text no-background no-border js-reset" type="reset" aria-label="Supprimer">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="assets/img/sprites.svg#close"></use>
+                </svg>
+              </button>
+              <button class="p-abs no-padding no-text no-background no-border" type="submit" aria-label="Rechercher">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="assets/img/sprites.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- search-form -->
+
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+
+      <main class="main">
+
+        <div class="banner banner-article banner-abs p-abs h-screen of-hidden bg-black hidden-print">
+          <div class="banner-image h-full">
+            <img class="w-full h-full obj-cover obj-center hidden-sm hidden-md hidden-lg" src="assets/img/misc/17a.jpg" alt="" width="986" height="1024">
+            <img class="w-full h-full obj-cover obj-center hidden-xs" src="assets/img/misc/17b.jpg" alt="" width="1600" height="900">
+          </div>
+          <div class="banner-mask i1 p-abs bg-bold-gray opacity-70 mix-blend-multiply"></div>
+          <div class="banner-mask i2 p-abs bg-gradient-black"></div>
+        </div>
+        <!-- banner -->
+
+        <div class="breadcrumb p-rel c-white hidden-xs hidden-print" aria-label="breadcrumb">
+          <div class="container max-w-1280 mx-auto">
+            <a href="#">Nos r&eacute;alisations</a> - <a href="#">R&eacute;seaux</a> - <strong aria-current="page">Plan fibre SNCF</strong>
+          </div>
+        </div>
+        <!-- breadcrumb -->
+
+        <section class="section section-article section-pt-6 section-pb-2 p-rel">
+          <div class="container max-w-1280 mx-auto">
+            <header class="section-header max-w-660 mx-auto">
+              <h1 class="section-title medium font-bold c-white">250 km de fibre optique d&eacute;ploy&eacute; dans le cadre du Plan Fibre de la SNCF</h1>
+            </header>
+            <div class="section-body max-w-830 mx-auto bg-white">
+
+              <div class="toolbar bg-blue c-white">
+                <div class="container max-w-830 mx-auto">
+                  <div class="toolbar-flex d-flex justify-between items-center">
+                    <div class="toolbar-item d-flex flex-wrap justify-start items-center">
+                      <div class="toolbar-category font-bold">
+                        <a href="#">Transport et logistique</a>, <a href="#">Lorem</a>, <a href="#">Ipsum dolor</a>
+                      </div>
+                      <div class="toolbar-tag">#SmartCity #S&ucirc;ret&eacute;-IP</div>
+                    </div>
+                    <div class="toolbar-item d-flex justify-end items-center hidden-print">
+                      <button class="toolbar-button no-padding no-border d-flex justify-center items-center" type="button" aria-label="Imprimer">
+                        <svg width="16" height="16" aria-hidden="true">
+                          <use xlink:href="assets/img/sprites.svg#print"></use>
+                        </svg>
+                      </button>
+                      <div class="toolbar-share p-rel js-rollover">
+                        <div class="toolbar-share--icon d-flex justify-center items-center">
+                          <svg width="16" height="16" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#share"></use>
+                          </svg>
+                        </div>
+                        <div class="toolbar-share--list p-abs js-propagation">
+                          <ul>
+                            <li>
+                              <a class="p-rel d-block" href="#">
+                                <span class="p-abs d-flex justify-center items-center">
+                                  <img src="assets/img/icon/facebook.svg" alt="" width="16" height="32">
+                                </span>
+                                <em>Partager par Facebook</em>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="p-rel d-block" href="#">
+                                <span class="p-abs d-flex justify-center items-center">
+                                  <img src="assets/img/icon/linkedin.svg" alt="" width="32" height="32">
+                                </span>
+                                <em>Partager par Linkedin</em>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="p-rel d-block" href="#">
+                                <span class="p-abs d-flex justify-center items-center">
+                                  <img src="assets/img/icon/x.svg" alt="" width="40" height="32">
+                                </span>
+                                <em>Partager par X</em>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="p-rel d-block" href="#">
+                                <span class="p-abs d-flex justify-center items-center">
+                                  <svg width="20" height="16" aria-hidden="true">
+                                    <use xlink:href="assets/img/sprites.svg#email"></use>
+                                  </svg>
+                                </span>
+                                <em>Partager par mail</em>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="p-rel d-block" href="#">
+                                <span class="p-abs d-flex justify-center items-center">
+                                  <svg width="20" height="10" aria-hidden="true">
+                                    <use xlink:href="assets/img/sprites.svg#link"></use>
+                                  </svg>
+                                </span>
+                                <em>Copier le lien</em>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- toolbar -->
+
+              <div class="article-intro bg-light-gray">
+                <div class="container max-w-740 mx-auto">
+
+                  <div class="editor-text medium">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales ultricies nunc at viverra. Nullam at odio non nunc vehicula sollicitudin eget sit amet metus. Morbi bibendum purus a erat sollicitudin maximus. Sed sodales dolor magna, nec pellentesque metus condimentum eu. Vivamus ullamcorper, dolor non mattis sodales, dui neque commodo neque, ac venenatis mi neque non libero. Vestibulum ultricies vulputate consectetur.</p>
+                  </div>
+                  <!-- editor-text -->
+
+                </div>
+              </div>
+              <!-- article-intro -->
+
+              <div class="article-detail article-edge bg-white">
+                <div class="container max-w-740 mx-auto">
+                  <div class="article-detail--body">
+
+                    <div class="editor-text small">
+                      <h2>Aliquam tristique nisi vulputate efficitur convallis</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a suscipit lectus. Donec mollis libero cursus neque porttitor efficitur. Mauris dapibus felis ac sapien tincidunt tincidunt. Praesent posuere at purus non pulvinar. Quisque suscipit rhoncus ultrices. Pellentesque id pellentesque quam. Nam vitae mollis lorem.</p>
+                      <p><strong>Fusce a ante vitae diam dignissim efficitur eget vitae odio</strong>. <em>Donec accumsan consequat magna</em>, <a href="#">ultrices eleifend ipsum</a> aliquet non. Fusce mollis, sem ut venenatis dapibus, orci risus maximus libero, sed laoreet justo massa et purus. Phasellus gravida leo ut laoreet vestibulum. Mauris eu dolor nec ligula congue dictum. Etiam dapibus, sem quis scelerisque auctor, augue libero fermentum magna, quis posuere mauris nunc quis nibh. Fusce interdum molestie sem, vel mattis sapien venenatis vel.</p>
+                    </div>
+                    <!-- editor-text -->
+
+                    <div class="editor-figure editor-mt-3 bg-blue c-white">
+                      <div class="editor-figure--flex i1 d-flex flex-wrap justify-start items-center">
+                        <div class="editor-figure--item i1">
+                          <div class="editor-figure--icon text-center">
+                            <img src="assets/img/fiber-optic.svg" alt="" width="90" height="90">
+                          </div>
+                        </div>
+                        <div class="editor-figure--item i2">
+                          <div class="editor-figure--number font-bold">250 km</div>
+                          <div class="editor-figure--label font-semibold">de fibre optique</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+                    <div class="editor-figure editor-mt-3 bg-green c-white">
+                      <div class="editor-figure--flex i1 d-flex flex-wrap justify-start items-center">
+                        <div class="editor-figure--item i1">
+                          <div class="editor-figure--icon text-center">
+                            <img src="assets/img/fiber-optic.svg" alt="" width="90" height="90">
+                          </div>
+                        </div>
+                        <div class="editor-figure--item i2">
+                          <div class="editor-figure--number font-bold">250 km</div>
+                          <div class="editor-figure--label font-semibold">de fibre optique</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+                    <div class="editor-figure editor-mt-3 bg-blue-green c-white">
+                      <div class="editor-figure--flex i1 d-flex flex-wrap justify-start items-center">
+                        <div class="editor-figure--item i1">
+                          <div class="editor-figure--icon text-center">
+                            <img src="assets/img/fiber-optic.svg" alt="" width="90" height="90">
+                          </div>
+                        </div>
+                        <div class="editor-figure--item i2">
+                          <div class="editor-figure--number font-bold">250 km</div>
+                          <div class="editor-figure--label font-semibold">de fibre optique</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+
+                    <div class="editor-text small editor-mt-3">
+                      <img src="assets/img/misc/18.jpg" alt="" width="1280" height="720">
+                    </div>
+                    <!-- editor-text -->
+
+                    <div class="editor-figure editor-mt-3 bg-light-gray c-bold-blue">
+                      <div class="editor-figure--slider slick-slider i2 dot-rel dot-center dot-gray-bold-blue hidden-sm hidden-md hidden-lg hidden-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-light-blue">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-light-blue">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                      <div class="editor-figure--flex i2 d-flex flex-wrap justify-start items-stretch hidden-xs shown-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-light-blue">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-light-blue">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+                    <div class="editor-figure editor-mt-3 bg-light-gray c-bold-blue">
+                      <div class="editor-figure--slider slick-slider i2 dot-rel dot-center dot-gray-bold-blue hidden-sm hidden-md hidden-lg hidden-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-green">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-blue-green">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                      <div class="editor-figure--flex i2 d-flex flex-wrap justify-start items-stretch hidden-xs shown-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-green">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold c-blue-green">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+                    <div class="editor-figure editor-mt-3 bg-blue c-white">
+                      <div class="editor-figure--slider slick-slider i2 dot-rel dot-center dot-gray-bold-blue hidden-sm hidden-md hidden-lg hidden-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                      <div class="editor-figure--flex i2 d-flex flex-wrap justify-start items-stretch hidden-xs shown-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+                    <div class="editor-figure editor-mt-3 bg-green c-white">
+                      <div class="editor-figure--slider slick-slider i2 dot-rel dot-center dot-gray-bold-blue hidden-sm hidden-md hidden-lg hidden-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                      <div class="editor-figure--flex i2 d-flex flex-wrap justify-start items-stretch hidden-xs shown-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+                    <div class="editor-figure editor-mt-3 bg-blue-green c-white">
+                      <div class="editor-figure--slider slick-slider i2 dot-rel dot-center dot-gray-bold-blue hidden-sm hidden-md hidden-lg hidden-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                      <div class="editor-figure--flex i2 d-flex flex-wrap justify-start items-stretch hidden-xs shown-print">
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">20 000</div>
+                          <div class="editor-figure--label font-semibold">poses de bo&icirc;tiers optiques</div>
+                        </div>
+                        <div class="editor-figure--item">
+                          <div class="editor-figure--number font-bold">80 000</div>
+                          <div class="editor-figure--label font-semibold">nouvelles prises</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- editor-figure -->
+
+                    <div class="editor-text small editor-mt-5">
+                      <h2>Praesent ac augue sapien</h2>
+                      <p>Curabitur posuere placerat maximus. Etiam vehicula gravida libero, vel pulvinar augue feugiat nec. Vestibulum id elit bibendum, porttitor ex vel, ultricies ligula. Duis auctor posuere accumsan. Ut sit amet leo at erat tempus eleifend. Etiam porttitor tempor leo, vitae ultrices velit consectetur vehicula. Maecenas odio orci, cursus vel nisi quis, bibendum placerat lacus.</p>
+                      <h3>Maecenas pharetra malesuada lectus in rhoncus</h3>
+                      <p>Fusce justo nisl, semper ac ipsum sed, ultrices pretium neque. Nam malesuada elit ex, quis sagittis tortor condimentum sed. In eget ex nisl. Quisque elit risus, placerat non lacus rutrum, gravida molestie sapien. In rhoncus tellus in orci ultricies, in posuere est bibendum. Praesent vel nulla quis leo fermentum fermentum nec eu lectus. Suspendisse sodales nulla ac enim sollicitudin, at posuere justo lobortis. Curabitur ornare iaculis ornare.</p>
+                    </div>
+                    <!-- editor-text -->
+
+                    <div class="editor-interview editor-mt-5">
+                      <h2 class="editor-interview--title font-medium text-uppercase">Interview</h2>
+                      <div class="editor-interview--summary">
+                        <div class="editor-interview--name font-bold">Carole Desnost</div>
+                        <div class="editor-interview--info font-medium">Directrice Technologies, Innovation et Projets Groupe SNCF</div>
+                      </div>
+                      <div class="editor-interview--body">
+
+                        <div class="editor-text small">
+                          <figure>
+                            <img src="assets/img/misc/19.jpg" alt="" width="660" height="344">
+                            <figcaption>Fercius as dollitiunt delibus molestiore atempora nossectur, ut vitiae doluptati dolorrum Am qui cuscia non re volupid et labo.</figcaption>
+                          </figure>
+                        </div>
+                        <!-- editor-text -->
+
+                        <div class="editor-text small editor-mt-5">
+                          <h2>Vivamus tempus vulputate efficitur</h2>
+                          <p>Duis at ligula leo. Proin id pellentesque velit. Nunc convallis sed eros id placerat. Suspendisse posuere turpis ut posuere suscipit. Pellentesque lacinia metus a facilisis vehicula. Nullam luctus ex augue, vitae tristique nibh auctor sed. Proin feugiat, velit nec consectetur finibus, felis felis pharetra sem, at rhoncus turpis nisi et elit. Integer id nisl non dolor faucibus posuere non vel dolor. Cras vulputate bibendum arcu, vitae lacinia arcu consequat quis.</p>
+                        </div>
+                        <!-- editor-text -->
+
+                        <div class="editor-text small editor-mt-5">
+                          <h2>Nullam erat urna, molestie pretium massa ac</h2>
+                          <p>Etiam dictum massa blandit, suscipit tellus eu, molestie nisi. Proin consequat porta justo. Phasellus hendrerit diam interdum odio mollis, eu faucibus ex sodales. Integer maximus nibh et neque posuere imperdiet. Fusce pellentesque augue tortor, vel tincidunt dolor scelerisque at. Sed posuere sollicitudin augue, a consequat orci. Etiam enim diam, imperdiet quis arcu at, iaculis condimentum diam. Nulla sit amet consequat lectus, sed varius arcu. Aliquam convallis maximus tortor, vitae euismod nunc mattis quis. Ut id magna ligula. Cras ullamcorper sit amet arcu eu interdum.</p>
+                        </div>
+                        <!-- editor-text -->
+
+                        <div class="editor-text small editor-mt-5">
+                          <h2>Nullam sed lacus quis est gravida fringilla</h2>
+                          <p>In ligula justo, tempus at tristique lacinia, fringilla vitae odio. Donec non tempus neque. Nulla eu tortor quis turpis luctus pellentesque et eu lorem. Etiam tristique urna ut odio malesuada, tempor euismod justo lobortis. Vivamus nisl nunc, dictum ac euismod vitae, elementum ac tellus. Donec eget mauris et purus ullamcorper venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis condimentum libero eu tincidunt. Aliquam est lorem, posuere ut ex in, ultricies rutrum purus. Suspendisse non nisi sit amet massa porttitor aliquam in vitae felis. Fusce pharetra velit felis, vel dignissim magna facilisis nec. Phasellus egestas pharetra tortor id auctor. Donec feugiat elit ex, elementum dapibus est tincidunt eu. Nullam porttitor nulla enim, at interdum nisl vulputate dignissim.</p>
+                          <blockquote>
+                            <p>&laquo; Cras libero leo, consectetur vitae sapien nec, iaculis hendrerit nibh. In eget euismod lectus. Pellentesque sollicitudin tincidunt maximus. Morbi et cursus mi. Cras sagittis at lorem quis. &raquo;</p>
+                            <footer>
+                              <strong>Xavier Vignon</strong><br>
+                              <span>Pr&eacute;sident CEO - SOGETREL</span>
+                            </footer>
+                          </blockquote>
+                          <h3>Mauris et feugiat orci. Aliquam ultrices purus ut laoreet tristique</h3>
+                          <p>Nam fringilla fringilla interdum. Etiam ultricies tristique erat ut consequat. Duis interdum porttitor odio, eu tempor massa porta eu. Quisque id scelerisque felis, ac interdum diam. Mauris ut tempor quam. Suspendisse rutrum vulputate sem. Nunc aliquam eros ut nisi viverra dignissim. Aenean eget efficitur nibh, at hendrerit ipsum. Suspendisse sem lectus, laoreet nec libero quis, ullamcorper scelerisque mauris. Maecenas eu urna ipsum. Ut et mi molestie nisl pulvinar consectetur ac in lacus. Aliquam euismod nibh massa, quis tincidunt quam dapibus nec. Nunc erat ligula, efficitur a molestie sit amet, volutpat in erat. Nullam porta nisi a ipsum laoreet, vitae cursus mauris auctor.</p>
+                        </div>
+                        <!-- editor-text -->
+
+                      </div>
+                    </div>
+                    <!-- editor-interview -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- article-detail -->
+
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+        <section class="card-section bg-light-gray hidden-print">
+          <div class="container max-w-1280 mx-auto">
+            <header class="card-section--header max-w-660 mx-auto text-center">
+              <h2 class="card-section--title font-medium text-uppercase">Pour aller plus loin</h2>
+            </header>
+            <div class="card-section--body max-w-1080 mx-auto">
+              <div class="card-slider slick-slider i2 dot-rel dot-center dot-gray-bold-blue hidden-sm hidden-md hidden-lg">
+                <div class="card-slider--item">
+                  <article class="card-item i3 p-rel h-full d-flex flex-row-reverse flex-wrap justify-start items-stretch">
+                    <div class="card-item--image flex-none bg-medium-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/20.jpg" alt="" width="960" height="640">
+                    </div>
+                    <div class="card-item--body flex-equal bg-white">
+                      <div class="card-item--group">
+                        <div class="card-item--category font-bold text-uppercase c-blue"><a href="#">Telecoms</a></div>
+                        <div class="card-item--tag">#SmartCity #S&ucirc;ret&eacute;-iP</div>
+                      </div>
+                      <h3 class="card-item--title font-bold c-blue"><a href="#">Le haut d&eacute;bit s&rsquo;installe avec d&eacute;j&agrave; 40 000 Km de r&eacute;seaux optiques d&eacute;ploy&eacute;s</a></h3>
+                      <div class="card-item--button p-abs">
+                        <a class="d-block no-text" href="#" aria-label="Lire la suite">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#forward"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="card-slider--item">
+                  <article class="card-item i3 p-rel h-full d-flex flex-row-reverse flex-wrap justify-start items-stretch">
+                    <div class="card-item--image flex-none bg-medium-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/21.jpg" alt="" width="780" height="520">
+                    </div>
+                    <div class="card-item--body flex-equal bg-white">
+                      <div class="card-item--group">
+                        <div class="card-item--category font-bold text-uppercase c-blue"><a href="#">&Eacute;nergie</a></div>
+                        <div class="card-item--tag">#SmartCity #S&ucirc;ret&eacute;-iP</div>
+                      </div>
+                      <h3 class="card-item--title font-bold c-blue"><a href="#">1,3 millions de compteurs Linky &agrave; remplacer dans 10 r&eacute;gions</a></h3>
+                      <div class="card-item--button p-abs">
+                        <a class="d-block no-text" href="#" aria-label="Lire la suite">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#forward"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="card-flex d-flex flex-wrap justify-between items-stretch hidden-xs">
+                <div class="card-flex--item">
+                  <article class="card-item i3 p-rel h-full d-flex flex-row-reverse flex-wrap justify-start items-stretch">
+                    <div class="card-item--image flex-none bg-medium-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/20.jpg" alt="" width="960" height="640">
+                    </div>
+                    <div class="card-item--body flex-equal bg-white">
+                      <div class="card-item--group">
+                        <div class="card-item--category font-bold text-uppercase c-blue"><a href="#">Telecoms</a></div>
+                        <div class="card-item--tag">#SmartCity #S&ucirc;ret&eacute;-iP</div>
+                      </div>
+                      <h3 class="card-item--title font-bold c-blue"><a href="#">Le haut d&eacute;bit s&rsquo;installe avec d&eacute;j&agrave; 40 000 Km de r&eacute;seaux optiques d&eacute;ploy&eacute;s</a></h3>
+                      <div class="card-item--button p-abs">
+                        <a class="d-block no-text" href="#" aria-label="Lire la suite">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#forward"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="card-flex--item">
+                  <article class="card-item i3 p-rel h-full d-flex flex-row-reverse flex-wrap justify-start items-stretch">
+                    <div class="card-item--image flex-none bg-medium-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/21.jpg" alt="" width="780" height="520">
+                    </div>
+                    <div class="card-item--body flex-equal bg-white">
+                      <div class="card-item--group">
+                        <div class="card-item--category font-bold text-uppercase c-blue"><a href="#">&Eacute;nergie</a></div>
+                        <div class="card-item--tag">#SmartCity #S&ucirc;ret&eacute;-iP</div>
+                      </div>
+                      <h3 class="card-item--title font-bold c-blue"><a href="#">1,3 millions de compteurs Linky &agrave; remplacer dans 10 r&eacute;gions</a></h3>
+                      <div class="card-item--button p-abs">
+                        <a class="d-block no-text" href="#" aria-label="Lire la suite">
+                          <svg width="30" height="30" aria-hidden="true">
+                            <use xlink:href="assets/img/sprites.svg#forward"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- card -->
+
+        <div class="toolbox bg-white hidden-print">
+          <div class="container max-w-1280 mx-auto">
+            <div class="toolbox-flex d-flex flex-wrap justify-center items-center">
+              <div class="toolbox-button text-center">
+                <a class="button button-rounded button-icon button-push button-type-2 d-inline-flex justify-between items-center max-w-320 w-full font-extrabold" href="#">
+                  <span>Devenir partenaire</span>
+                  <svg width="25" height="25" aria-hidden="true">
+                    <use xlink:href="assets/img/sprites.svg#next"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="toolbox-group">
+                <div class="toolbox-branch mx-auto font-extrabold text-center c-bold-blue">D&eacute;couvrez les sites<br>des marques du Groupe</div>
+              </div>
+              <div class="toolbox-logo text-center">
+                <ul class="d-flex flex-wrap justify-center items-start">
+                  <li>
+                    <a class="d-inline-block" href="#" target="_blank">
+                      <img class="max-w-full w-auto obj-contain" src="assets/img/logo/eryma.png" alt="Eryma" width="780" height="270">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-inline-block" href="#" target="_blank">
+                      <img class="max-w-full w-auto obj-contain" src="assets/img/logo/groupe-interway.png" alt="Groupe Interway" width="1440" height="270">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- toolbox -->
+
+      </main>
+      <!-- main -->
+
+      <footer class="footer bg-bold-blue c-white hidden-print">
+        <div class="container max-w-1280 mx-auto">
+          <div class="footer-flex d-flex flex-wrap justify-center items-center">
+            <div class="footer-logo">
+              <svg width="176" height="38" aria-hidden="true">
+                <use xlink:href="assets/img/sprites.svg#logo"></use>
+              </svg>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li><a class="d-inline-block" href="#">Nos conditions g&eacute;n&eacute;rales</a></li>
+                <li><a class="d-inline-block" href="#">Politique de confidentialit&eacute;</a></li>
+                <li><a class="d-inline-block" href="#">Politique d&rsquo;utilisation des cookies</a></li>
+              </ul>
+            </div>
+            <div class="footer-link">
+              <ul>
+                <li><a class="d-inline-block" href="#">Plan du site</a></li>
+                <li><a class="d-inline-block" href="#">Mentions l&eacute;gales</a></li>
+                <li><a class="d-inline-block" href="#">Glossaire</a></li>
+              </ul>
+            </div>
+            <div class="footer-button">
+              <ul>
+                <li>
+                  <a class="button button-rounded button-icon button-push button-type-1 d-inline-flex justify-between items-center max-w-320 min-w-250 w-full font-extrabold" href="#">
+                    <span>Devenir partenaire</span>
+                    <svg width="25" height="25" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#next"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="button button-rounded button-icon button-push button-type-1 d-inline-flex justify-between items-center max-w-320 min-w-250 w-full font-extrabold" href="#">
+                    <span>Nous contacter</span>
+                    <svg width="25" height="25" aria-hidden="true">
+                      <use xlink:href="assets/img/sprites.svg#next"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </div>
+    <!-- wrapper -->
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- script -->
+
+  </body>
+
+</html>
