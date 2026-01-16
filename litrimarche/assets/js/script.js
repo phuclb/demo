@@ -142,6 +142,16 @@ const App = {
         }
       });
     }
+
+    const dismisses = document.querySelectorAll('.dismiss');
+    if (dismisses.length) {
+      dismisses.forEach(dismiss => {
+        dismiss.addEventListener('click', (e) => {
+          App.toggleOff();
+          e.preventDefault();
+        });
+      });
+    }
   },
   toggleOff() {
     const activeToggles = document.querySelectorAll('.toggle.active');

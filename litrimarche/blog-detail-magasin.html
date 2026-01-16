@@ -18,7 +18,7 @@
 
     <div class="wrapper">
 
-      <header class="header">
+      <header class="header bg-cerulean-blue c-white">
         <div class="container">
           <h1 class="header-title sr-only">Litrimarch&eacute;</h1>
           <div class="header-brand text-center">
@@ -63,7 +63,7 @@
                 </a>
               </li>
               <li>
-                <a class="header-button i5 d-flex justify-center align-center text-left" href="#">
+                <a class="header-button i5 d-flex justify-start align-center toggle" href="#store" role="button" aria-expanded="false" aria-controls="store">
                   <svg class="i1" width="62" height="36" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#building"></use>
                   </svg>
@@ -88,6 +88,76 @@
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
             </button>
+          </div>
+          <div class="header-store bg-white c-cerulean-blue" id="store">
+            <button class="header-close dismiss" type="button" aria-label="Fermer">
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="header-body">
+              <div class="store-icon d-inline-block mb-20">
+                <svg width="84" height="48" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#building"></use>
+                </svg>
+              </div>
+              <h2 class="store-title i2 font-semibold">Toujours plus proche de vous !</h2>
+              <div class="store-summary mt-12">Pour trouver les meilleures offres et les disponibilit&eacute;s pr&egrave;s de chez vous, merci de renseigner votre code postal et de choisir votre magasin le plus proche.</div>
+              <div class="store-card mt-32 text-center" hidden>
+                <h3 class="store-title i2 font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
+                <div class="store-summary font-medium">Magasin de literie &agrave; Persan</div>
+                <div class="store-info editor i1 mt-4">
+                  <address class="font-normal">
+                    &agrave; c&ocirc;t&eacute; de O&rsquo;March&eacute; Frais, Av. Jacques Vogt<br>
+                    95340 Persan
+                  </address>
+                </div>
+                <div class="store-summary mt-4 font-bold c-green">Ouvert aujourd'hui de<br>10:00-12:30, 14:00-19:00</div>
+              </div>
+              <div class="store-body mt-32">
+                <h3 class="store-title i3 font-semibold">Choisissez un magasin</h3>
+                <div class="store-check mt-12">
+                  <input class="radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville">
+                  <button class="d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
+                    <svg width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="store-toolbar mt-20 font-bold">
+                  <a class="store-button i2 d-inline-flex justify-center align-center radius-30" href="#">
+                    <span>Me g&eacute;olocaliser</span>
+                    <svg class="flex-none c-yellow" width="18" height="24" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#location"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="store-list mt-32" hidden>
+                  <div class="store-item">
+                    <h4 class="store-title i4 font-semibold">Litrimarch&eacute; Persan</h4>
+                    <div class="store-info editor i1">
+                      <address class="font-normal">
+                        Av. Jacques Vogt 95340 Persan
+                      </address>
+                    </div>
+                    <div class="store-summary c-green">Ouvert aujourd'hui de 10:00-12:30, 14:00-19:00</div>
+                  </div>
+                  <div class="store-item">
+                    <h4 class="store-title i4 font-semibold">Litrimarch&eacute; Persan</h4>
+                    <div class="store-info editor i1">
+                      <address class="font-normal">
+                        Av. Jacques Vogt 95340 Persan
+                      </address>
+                    </div>
+                    <div class="store-summary c-red">Ferm&eacute; aujourd'hui </div>
+                  </div>
+                </div>
+                <div class="store-editor editor i2 mt-20 c-red" hidden>
+                  <p>Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</p>
+                  <p><a href="#">Voir les exclus web</a></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -182,8 +252,8 @@
                 </div>
               </div>
               <div class="store-content">
-                <h2 class="store-title font-semibold">Litrimarch&eacute; Persan</h2>
-                <h3 class="store-subtitle mt-8 font-semibold">Magasin de literie &agrave; Persan</h3>
+                <h2 class="store-title i1 font-semibold">Litrimarch&eacute; Persan</h2>
+                <h3 class="store-title i3 mt-8 font-semibold">Magasin de literie &agrave; Persan</h3>
                 <div class="store-rating mt-16">
                   <div class="rating d-flex flex-wrap justify-start align-center">
                     <div class="rating-score font-semibold">4.5 / 5</div>
