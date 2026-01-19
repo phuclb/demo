@@ -80,7 +80,7 @@
               </li>
             </ul>
           </div>
-          <div class="header-search d-flex justify-center align-center" id="search">
+          <div class="header-modal header-search d-flex justify-center align-center" id="search">
             <label class="flex-none font-semibold" for="q">Recherche</label>
             <input class="flex-auto font-medium" type="text" id="q" name="q">
             <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
@@ -89,7 +89,7 @@
               </svg>
             </button>
           </div>
-          <div class="header-store bg-white c-cerulean-blue" id="store">
+          <div class="header-modal header-store bg-white c-cerulean-blue" id="store">
             <button class="header-close dismiss" type="button" aria-label="Fermer">
               <svg width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#close"></use>
@@ -106,7 +106,7 @@
               <div class="store-card mt-32 text-center" hidden>
                 <h3 class="store-title i2 font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
                 <div class="store-summary font-medium">Magasin de literie &agrave; Persan</div>
-                <div class="store-info editor i1 mt-4">
+                <div class="store-info text-editor text-2xs mt-4">
                   <address class="font-normal">
                     &agrave; c&ocirc;t&eacute; de O&rsquo;March&eacute; Frais, Av. Jacques Vogt<br>
                     95340 Persan
@@ -124,8 +124,8 @@
                     </svg>
                   </button>
                 </div>
-                <div class="store-toolbar mt-20 font-bold">
-                  <a class="store-button i2 d-inline-flex justify-center align-center radius-30" href="#">
+                <div class="store-block mt-20 font-bold">
+                  <a class="button button-p2 button-i2 d-inline-flex justify-center align-center radius-30" href="#">
                     <span>Me g&eacute;olocaliser</span>
                     <svg class="flex-none c-yellow" width="18" height="24" aria-hidden="true" focusable="false">
                       <use href="assets/img/sprites.svg#location"></use>
@@ -135,7 +135,7 @@
                 <div class="store-list mt-32" hidden>
                   <div class="store-item">
                     <h4 class="store-title i4 font-semibold">Litrimarch&eacute; Persan</h4>
-                    <div class="store-info editor i1">
+                    <div class="store-info text-editor text-2xs">
                       <address class="font-normal">
                         Av. Jacques Vogt 95340 Persan
                       </address>
@@ -144,7 +144,7 @@
                   </div>
                   <div class="store-item">
                     <h4 class="store-title i4 font-semibold">Litrimarch&eacute; Persan</h4>
-                    <div class="store-info editor i1">
+                    <div class="store-info text-editor text-2xs">
                       <address class="font-normal">
                         Av. Jacques Vogt 95340 Persan
                       </address>
@@ -152,7 +152,7 @@
                     <div class="store-summary c-red">Ferm&eacute; aujourd'hui </div>
                   </div>
                 </div>
-                <div class="store-editor editor i2 mt-20 c-red" hidden>
+                <div class="store-editor text-editor text-xs mt-20 c-red" hidden>
                   <p>Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</p>
                   <p><a href="#">Voir les exclus web</a></p>
                 </div>
@@ -424,7 +424,7 @@
             <div class="section-presentation d-flex justify-center align-end">
               <div class="section-presentation--content px-44">
                 <h2 class="section-title i4 font-semibold">La pr&eacute;sentation de l'&eacute;quipe</h2>
-                <div class="section-editor editor i2 mt-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero risus, tristique nec mauris eu, lobortis bibendum urna. Nam imperdiet, metus eu mollis pretium, nunc enim vehicula massa, ac maximus ex mi non Leo. Mauris sit amet accumsan velit. Nunc efficitur sem et metus feugiat, quis egestas mi posuere. Aliquam id tincidunt arcu, et interdum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nulla lorem, congue in tellus in, convallis cursus arcu. Curabitur pellentesque quis nisi suscipit porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+                <div class="section-editor text-editor text-xs mt-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero risus, tristique nec mauris eu, lobortis bibendum urna. Nam imperdiet, metus eu mollis pretium, nunc enim vehicula massa, ac maximus ex mi non Leo. Mauris sit amet accumsan velit. Nunc efficitur sem et metus feugiat, quis egestas mi posuere. Aliquam id tincidunt arcu, et interdum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nulla lorem, congue in tellus in, convallis cursus arcu. Curabitur pellentesque quis nisi suscipit porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
               </div>
               <div class="section-presentation--aside">
                 <div class="splide splide-presentation" role="group" aria-label="Presentation">
@@ -548,10 +548,10 @@
               </div>
               <!-- section-brand -->
 
-              <div class="section-toolbar mt-64 font-bold text-center text-uppercase">
-                <a class="section-button i1 d-inline-block radius-30" href="#">Toutes nos marques</a>
+              <div class="section-block mt-64 font-bold text-center text-uppercase">
+                <a class="button button-p1 button-i2 d-inline-block radius-30" href="#">Toutes nos marques</a>
               </div>
-              <!-- section-toolbar -->
+              <!-- section-block -->
 
             </div>
           </div>
@@ -600,7 +600,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -640,7 +640,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -683,7 +683,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -722,7 +722,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -763,7 +763,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -803,7 +803,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -846,7 +846,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -885,7 +885,7 @@
                             <img class="max-w-full h-auto" src="assets/img/card-oney.png" alt="Oney" width="100" height="21">
                           </div>
                           <div class="product-toolbar mt-12 font-bold text-uppercase">
-                            <a class="product-button d-block text-center radius-30" href="#">Acheter</a>
+                            <a class="button button-p1 button-i2 d-block text-center radius-30" href="#">Acheter</a>
                           </div>
 
                         </div>
@@ -922,7 +922,7 @@
             <div class="section-body">
               <div class="section-content">
                 <h2 class="section-title i4 font-semibold">L&rsquo;univers literie Litrimarch&eacute; Persan</h2>
-                <div class="section-editor editor i2 mt-32">
+                <div class="section-editor text-editor text-xs mt-32">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elementum erat. Sed eget sagittis tortor, et gravida mauris. Aliquam fermentum tortor ac tincidunt pharetra. Aliquam convallis mi vitae laoreet maximus. Aenean pellentesque eros turpis, eget vehicula est vulputate nec. Quisque auctor, nibh in finibus tristique, libero mi maximus risus, eu laoreet elit metus eu lacus. In luctus erat purus, sed blandit velit egestas ut. Donec felis tortor, maximus bibendum dui in, semper porttitor massa.</p>
                   <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet lorem sit amet facilisis dignissim. Ut vestibulum vitae dui vel molestie. Suspendisse semper scelerisque lectus et consequat. Donec lacinia commodo ultricies. Mauris ut posuere sem. In ullamcorper, purus at hendrerit egestas, est metus ultrices risus, vitae blandit nibh massa vitae massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur semper eleifend velit auctor scelerisque.</p>
                 </div>
@@ -982,8 +982,8 @@
           <div class="container max-w-1238 mt-32">
             <div class="section-body text-center">
               <div class="section-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elementum erat. Sed eget sagittis tortor, et gravida mauris. Aliquam fermentum tortor ac tincidunt pharetra. Aliquam convallis mi vitae laoreet maximus. Aenean pellentesque eros turpis, eget vehicula est vulputate nec. Quisque auctor, nibh in finibus tristique, libero mi maximus risus, eu laoreet elit metus eu lacus. In luctus erat purus, sed blandit velit egestas ut. Donec felis tortor, maximus bibendum dui in, semper porttitor massa.</div>
-              <div class="section-toolbar mt-32 font-bold text-uppercase">
-                <a class="section-button i1 w1 d-inline-block text-center radius-30" href="#">D&eacute;couvrir l&rsquo;offre</a>
+              <div class="section-block mt-32 font-bold text-uppercase">
+                <a class="button button-p1 button-i2 button-w1 d-inline-block text-center radius-30" href="#">D&eacute;couvrir l&rsquo;offre</a>
               </div>
             </div>
           </div>
@@ -1019,10 +1019,10 @@
               </div>
               <!-- section-article -->
 
-              <div class="section-toolbar mt-64 font-bold text-center text-uppercase">
-                <a class="section-button i3 w2 d-inline-block text-center radius-30" href="#">Voir toutes les actualit&eacute;s</a>
+              <div class="section-block mt-64 font-bold text-center text-uppercase">
+                <a class="button button-p1 button-i3 button-w2 d-inline-block text-center radius-30" href="#">Voir toutes les actualit&eacute;s</a>
               </div>
-              <!-- section-toolbar -->
+              <!-- section-block -->
 
             </div>
           </div>
@@ -1078,10 +1078,10 @@
               </div>
               <!-- section-support -->
 
-              <div class="section-toolbar mt-26 font-bold text-center text-uppercase">
-                <a class="section-button i1 w2 d-inline-block radius-30" href="#">Voir tous les guides et conseils</a>
+              <div class="section-block mt-26 font-bold text-center text-uppercase">
+                <a class="button button-p1 button-i2 button-w2 d-inline-block radius-30" href="#">Voir tous les guides et conseils</a>
               </div>
-              <!-- section-toolbar -->
+              <!-- section-block -->
 
             </div>
           </div>
@@ -1392,8 +1392,8 @@
                   </svg>
                 </div>
                 <h2 class="banner-title font-semibold">Venez nous rencontrer pr&egrave;s de chez vous !</h2>
-                <div class="banner-toolbar mt-32 font-bold text-uppercase">
-                  <a class="banner-button d-inline-flex justify-center align-center radius-30" href="#">
+                <div class="banner-block mt-32 font-bold text-uppercase">
+                  <a class="button button-p1 button-i1 d-inline-flex justify-center align-center radius-30" href="#">
                     <svg class="flex-none" width="15" height="20" aria-hidden="true" focusable="false">
                       <use href="assets/img/sprites.svg#location"></use>
                     </svg>
@@ -1416,9 +1416,9 @@
               <div class="section-priority--slogan font-semibold">Chez LITRIMARCH&Eacute;<sup>&reg;</sup>, <span class="font-bold">notre priorit&eacute; c&rsquo;est vous !</span></div>
               <div class="section-priority--content">
                 <h2 class="section-title i4 font-semibold">100% satisfaction client</h2>
-                <div class="section-editor editor i2 mt-16">Avec plus de 110 magasins en France, LITRIMARCH&Eacute;<sup>&reg;</sup> est avant tout une ensigne bas&eacute;e sur le savoir-faire et les ann&eacute;es d&rsquo;exp&eacute;rience d&rsquo;hommes et de femmes de terrain qui savent &eacute;couter et r&eacute;pondre aux attentes des consommateurs pour leur proposer des produits en ad&eacute;quation avec leurs envies et leur budget. LITRIMARCH&Eacute;<sup>&reg;</sup> est ainsi devenu la r&eacute;f&eacute;rence sur le march&eacute; de la literie et est aujourd&rsquo;hui un des leaders fran&ccedil;ais du secteur.</div>
-                <div class="section-toolbar mt-44 font-bold text-uppercase">
-                  <a class="section-button i1 w2 d-inline-block text-center radius-30" href="#">Devenez franchis&eacute; LITRIMARCH&Eacute;</a>
+                <div class="section-editor text-editor text-xs mt-16">Avec plus de 110 magasins en France, LITRIMARCH&Eacute;<sup>&reg;</sup> est avant tout une ensigne bas&eacute;e sur le savoir-faire et les ann&eacute;es d&rsquo;exp&eacute;rience d&rsquo;hommes et de femmes de terrain qui savent &eacute;couter et r&eacute;pondre aux attentes des consommateurs pour leur proposer des produits en ad&eacute;quation avec leurs envies et leur budget. LITRIMARCH&Eacute;<sup>&reg;</sup> est ainsi devenu la r&eacute;f&eacute;rence sur le march&eacute; de la literie et est aujourd&rsquo;hui un des leaders fran&ccedil;ais du secteur.</div>
+                <div class="section-block mt-44 font-bold text-uppercase">
+                  <a class="button button-p1 button-i2 button-w2 d-inline-block text-center radius-30" href="#">Devenez franchis&eacute; LITRIMARCH&Eacute;</a>
                 </div>
               </div>
               <div class="section-priority--banner">
