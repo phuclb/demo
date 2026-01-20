@@ -56,11 +56,11 @@
                 </a>
               </li>
               <li>
-                <a class="header-button i5 d-flex justify-center align-center rounded" href="#" aria-label="Contactez-moi">
+                <button class="header-button i5 d-flex justify-center align-center rounded" type="button" aria-label="Contactez-moi" data-micromodal-trigger="contact">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#user"></use>
                   </svg>
-                </a>
+                </button>
               </li>
               <li>
                 <a class="header-button i4 d-flex justify-start align-center toggle" href="#store" role="button" aria-expanded="false" aria-controls="store">
@@ -106,7 +106,7 @@
               <div class="store-card mt-32 text-center" hidden>
                 <h3 class="store-title text-lg font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
                 <div class="store-summary text-xs font-medium">Magasin de literie &agrave; Persan</div>
-                <div class="store-info text-editor text-2xs mt-4">
+                <div class="store-info mt-4 text-editor text-2xs">
                   <address class="font-normal">
                     &agrave; c&ocirc;t&eacute; de O&rsquo;March&eacute; Frais, Av. Jacques Vogt<br>
                     95340 Persan
@@ -117,7 +117,7 @@
               <div class="store-body mt-32">
                 <h3 class="store-title text-md font-semibold">Choisissez un magasin</h3>
                 <div class="store-check mt-12">
-                  <input class="radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville">
+                  <input class="w-full radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville">
                   <button class="d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
                     <svg width="20" height="20" aria-hidden="true" focusable="false">
                       <use href="assets/img/sprites.svg#search"></use>
@@ -152,7 +152,7 @@
                     <div class="store-summary text-xs c-red">Ferm&eacute; aujourd'hui </div>
                   </div>
                 </div>
-                <div class="store-editor text-editor text-xs mt-20 c-red" hidden>
+                <div class="store-editor mt-20 text-editor text-xs c-red" hidden>
                   <p>Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</p>
                   <p><a href="#">Voir les exclus web</a></p>
                 </div>
@@ -235,7 +235,7 @@
               </div>
               <div class="store-content">
                 <h2 class="store-title text-2xl font-semibold">Litrimarch&eacute; Persan</h2>
-                <h3 class="store-title text-md mt-8 font-semibold">Magasin de literie &agrave; Persan</h3>
+                <h3 class="store-title mt-8 text-md font-semibold">Magasin de literie &agrave; Persan</h3>
                 <div class="store-rating mt-16">
                   <div class="rating d-flex flex-wrap justify-start align-center">
                     <div class="rating-score font-semibold">4.5 / 5</div>
@@ -361,12 +361,12 @@
                   </ul>
                 </div>
                 <div class="store-toolbox mt-20 text-center">
-                  <ul class="d-flex flex-wrap justify-center align-center">
+                  <ul class="d-flex flex-wrap justify-center align-start">
                     <li>
                       <div class="store-label d-block font-medium">Nous contacter :</div>
-                      <div class="store-grid i2 d-flex justify-center align-center mt-10">
-                        <a class="store-button d-flex justify-center align-center text-2xs font-semibold radius-10 flex-equal" href="#">01 39 37 08 84</a>
-                        <a class="store-button d-flex justify-center align-center text-2xs font-semibold radius-10 flex-equal" href="#">
+                      <div class="store-grid i2 d-flex justify-center align-center mt-10 text-2xs font-semibold">
+                        <a class="store-button d-flex justify-center align-center radius-10 flex-equal" href="#">01 39 37 08 84</a>
+                        <a class="store-button d-flex justify-center align-center radius-10 flex-equal" href="#">
                           <svg class="flex-none" width="22" height="22" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#whatsapp"></use>
                           </svg>
@@ -376,35 +376,35 @@
                     </li>
                     <li>
                       <div class="store-label d-block font-medium">Se rendre en magasin :</div>
-                      <div class="store-block mt-10">
-                        <a class="store-button d-flex justify-center align-center text-2xs font-semibold radius-10" href="#">J&rsquo;y vais</a>
+                      <div class="store-block mt-10 text-2xs font-semibold">
+                        <a class="store-button d-flex justify-center align-center radius-10" href="#">J&rsquo;y vais</a>
                       </div>
                     </li>
                     <li>
                       <div class="store-label d-block font-medium">Nous suivre :</div>
-                      <div class="store-grid store-social i1 d-flex justify-center align-center mt-10">
-                        <a href="#" target="_blank" aria-label="Facebook">
-                          <svg width="16" height="36" aria-hidden="true" focusable="false">
+                      <div class="store-grid i1 d-flex justify-center align-center mt-10 text-2xs font-semibold">
+                        <a class="store-social d-block" href="#" target="_blank" aria-label="Facebook">
+                          <svg width="12" height="26" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#facebook"></use>
                           </svg>
                         </a>
-                        <a href="#" target="_blank" aria-label="Instagram">
-                          <svg width="36" height="36" aria-hidden="true" focusable="false">
+                        <a class="store-social d-block" href="#" target="_blank" aria-label="Instagram">
+                          <svg width="26" height="26" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#instagram"></use>
                           </svg>
                         </a>
-                        <a href="#" target="_blank" aria-label="LinkedIn">
-                          <svg width="36" height="36" aria-hidden="true" focusable="false">
+                        <a class="store-social d-block" href="#" target="_blank" aria-label="LinkedIn">
+                          <svg width="26" height="26" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#linkedin"></use>
                           </svg>
                         </a>
-                        <a href="#" target="_blank" aria-label="X">
-                          <svg width="36" height="36" aria-hidden="true" focusable="false">
+                        <a class="store-social d-block" href="#" target="_blank" aria-label="X">
+                          <svg width="26" height="26" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#x"></use>
                           </svg>
                         </a>
-                        <a href="#" target="_blank" aria-label="Tiktok">
-                          <svg width="36" height="36" aria-hidden="true" focusable="false">
+                        <a class="store-social d-block" href="#" target="_blank" aria-label="Tiktok">
+                          <svg width="26" height="26" aria-hidden="true" focusable="false">
                             <use href="assets/img/sprites.svg#tiktok"></use>
                           </svg>
                         </a>
@@ -424,7 +424,7 @@
             <div class="section-presentation d-flex justify-center align-end">
               <div class="section-presentation--content px-44">
                 <h2 class="section-title text-2xl font-semibold">La pr&eacute;sentation de l'&eacute;quipe</h2>
-                <div class="section-editor text-editor text-xs mt-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero risus, tristique nec mauris eu, lobortis bibendum urna. Nam imperdiet, metus eu mollis pretium, nunc enim vehicula massa, ac maximus ex mi non Leo. Mauris sit amet accumsan velit. Nunc efficitur sem et metus feugiat, quis egestas mi posuere. Aliquam id tincidunt arcu, et interdum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nulla lorem, congue in tellus in, convallis cursus arcu. Curabitur pellentesque quis nisi suscipit porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+                <div class="section-editor mt-32 text-editor text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero risus, tristique nec mauris eu, lobortis bibendum urna. Nam imperdiet, metus eu mollis pretium, nunc enim vehicula massa, ac maximus ex mi non Leo. Mauris sit amet accumsan velit. Nunc efficitur sem et metus feugiat, quis egestas mi posuere. Aliquam id tincidunt arcu, et interdum massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nulla lorem, congue in tellus in, convallis cursus arcu. Curabitur pellentesque quis nisi suscipit porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
               </div>
               <div class="section-presentation--aside">
                 <div class="splide splide-presentation" role="group" aria-label="Presentation">
@@ -922,7 +922,7 @@
             <div class="section-body">
               <div class="section-content">
                 <h2 class="section-title text-2xl font-semibold">L&rsquo;univers literie Litrimarch&eacute; Persan</h2>
-                <div class="section-editor text-editor text-xs mt-32">
+                <div class="section-editor mt-32 text-editor text-xs">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elementum erat. Sed eget sagittis tortor, et gravida mauris. Aliquam fermentum tortor ac tincidunt pharetra. Aliquam convallis mi vitae laoreet maximus. Aenean pellentesque eros turpis, eget vehicula est vulputate nec. Quisque auctor, nibh in finibus tristique, libero mi maximus risus, eu laoreet elit metus eu lacus. In luctus erat purus, sed blandit velit egestas ut. Donec felis tortor, maximus bibendum dui in, semper porttitor massa.</p>
                   <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet lorem sit amet facilisis dignissim. Ut vestibulum vitae dui vel molestie. Suspendisse semper scelerisque lectus et consequat. Donec lacinia commodo ultricies. Mauris ut posuere sem. In ullamcorper, purus at hendrerit egestas, est metus ultrices risus, vitae blandit nibh massa vitae massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur semper eleifend velit auctor scelerisque.</p>
                 </div>
@@ -1002,8 +1002,8 @@
                   <h3 class="section-article--title text-sm font-bold text-uppercase">
                     <a href="#">Journ&eacute;e portes ouvertes<br>Litrimarch&eacute; Persan 8 Mai 2025</a>
                   </h3>
-                  <div class="section-article--summary text-2xs mt-8 line-clamp-3">Venez d&eacute;couvrir notre univers literie et profitez d&rsquo;avantages exclusifs !</div>
-                  <div class="section-article--link mt-16 font-bold text-uppercase">
+                  <div class="section-article--summary mt-8 text-2xs line-clamp-3">Venez d&eacute;couvrir notre univers literie et profitez d&rsquo;avantages exclusifs !</div>
+                  <div class="section-article--link mt-16 text-xs font-bold text-uppercase">
                     <a href="#">Lire la suite</a>
                   </div>
                 </article>
@@ -1011,8 +1011,8 @@
                   <h3 class="section-article--title text-sm font-bold text-uppercase">
                     <a href="#">Venez nous rencontrer &agrave; la foire de B&eacute;ziers du 1 au 4 Juin 2025</a>
                   </h3>
-                  <div class="section-article--summary text-2xs mt-8 line-clamp-3">D&eacute;couvrez une s&eacute;lection de produits et essayez nos matelas</div>
-                  <div class="section-article--link mt-16 font-bold text-uppercase">
+                  <div class="section-article--summary mt-8 text-2xs line-clamp-3">D&eacute;couvrez une s&eacute;lection de produits et essayez nos matelas</div>
+                  <div class="section-article--link mt-16 text-xs font-bold text-uppercase">
                     <a href="#">Lire la suite</a>
                   </div>
                 </article>
@@ -1416,7 +1416,7 @@
               <div class="section-priority--slogan text-2xl font-semibold">Chez LITRIMARCH&Eacute;<sup>&reg;</sup>, <span class="font-bold">notre priorit&eacute; c&rsquo;est vous !</span></div>
               <div class="section-priority--content">
                 <h2 class="section-title text-2xl font-semibold">100% satisfaction client</h2>
-                <div class="section-editor text-editor text-xs mt-16">Avec plus de 110 magasins en France, LITRIMARCH&Eacute;<sup>&reg;</sup> est avant tout une ensigne bas&eacute;e sur le savoir-faire et les ann&eacute;es d&rsquo;exp&eacute;rience d&rsquo;hommes et de femmes de terrain qui savent &eacute;couter et r&eacute;pondre aux attentes des consommateurs pour leur proposer des produits en ad&eacute;quation avec leurs envies et leur budget. LITRIMARCH&Eacute;<sup>&reg;</sup> est ainsi devenu la r&eacute;f&eacute;rence sur le march&eacute; de la literie et est aujourd&rsquo;hui un des leaders fran&ccedil;ais du secteur.</div>
+                <div class="section-editor mt-16 text-editor text-xs">Avec plus de 110 magasins en France, LITRIMARCH&Eacute;<sup>&reg;</sup> est avant tout une ensigne bas&eacute;e sur le savoir-faire et les ann&eacute;es d&rsquo;exp&eacute;rience d&rsquo;hommes et de femmes de terrain qui savent &eacute;couter et r&eacute;pondre aux attentes des consommateurs pour leur proposer des produits en ad&eacute;quation avec leurs envies et leur budget. LITRIMARCH&Eacute;<sup>&reg;</sup> est ainsi devenu la r&eacute;f&eacute;rence sur le march&eacute; de la literie et est aujourd&rsquo;hui un des leaders fran&ccedil;ais du secteur.</div>
                 <div class="section-block mt-44 font-bold text-uppercase">
                   <a class="button button-p1 button-i2 d-inline-block text-center radius-30" href="#">Devenez franchis&eacute; LITRIMARCH&Eacute;</a>
                 </div>
@@ -1598,6 +1598,60 @@
 
     </div>
     <!-- wrapper -->
+
+    <div class="modal" id="contact" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container radius-10" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+          <button class="modal__close" aria-label="Fermer" data-micromodal-close>
+            <svg width="20" height="20" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#close"></use>
+            </svg>
+          </button>
+          <header class="modal__header text-center">
+            <h2 class="modal-title text-lg font-semibold" id="contact-title">Contactez-moi</h2>
+          </header>
+          <div class="modal__body mt-20">
+            <div class="form-summary text-xs">
+              <p>Vous avez une question sur nos produits ou leur utilisation ?</p>
+              <p>Compl&eacute;tez le formulaire, un conseiller vous contactera par t&eacute;l&eacute;phone dans les meilleurs d&eacute;lais.</p>
+            </div>
+            <div class="form-grid d-flex flex-wrap justify-start align-start mt-20">
+              <div class="form-group">
+                <label class="form-label d-block mb-8 text-md font-semibold" for="cFI1">Nom*</label>
+                <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre nom" id="cFI1" name="cFI1" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label d-block mb-8 text-md font-semibold" for="cFI2">Pr&eacute;nom*</label>
+                <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre pr&eacute;nom" id="cFI2" name="cFI2" required>
+              </div>
+            </div>
+            <div class="form-group mt-20">
+              <label class="form-label d-block mb-8 text-md font-semibold" for="cFI3">T&eacute;l&eacute;phone*</label>
+              <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre num&eacute;ro de t&eacute;l&eacute;phone" id="cFI3" name="cFI4" required>
+            </div>
+            <div class="form-group mt-20">
+              <label class="form-label d-block mb-8 text-md font-semibold" for="cFI4">Sujet de l'appel*</label>
+              <div class="form-select">
+                <select class="w-full radius-30" placeholder="S&eacute;lectionner un sujet" id="cFI4" name="cFI4" required>
+                  <option>S&eacute;lectionner un sujet</option>
+                  <option>Commande en cours</option>
+                  <option>Demande de renseignement</option>
+                  <option>SAV</option>
+                  <option>Autre</option>
+                </select>
+                <svg width="24" height="24" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#next"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-block mt-20 text-center">
+              <button class="button button-p1 button-i2 font-bold radius-30" type="submit">Envoyer ma demande</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal.contact -->
 
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/script.js"></script>

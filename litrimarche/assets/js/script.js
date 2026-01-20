@@ -5,6 +5,7 @@ const App = {
    * Initialize the application
    */
   init() {
+    App.modal();
     App.splide();
     App.toggle();
     App.reveal();
@@ -203,9 +204,16 @@ const App = {
   },
 
   /**
-   * Placeholder for a function
+   * Modal
    */
-  fN() {
+  modal() {
+    MicroModal.init({
+      disableScroll: true,
+      disableFocus: true,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true,
+      debugMode: false
+    });
   }
 };
 
