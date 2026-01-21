@@ -1345,6 +1345,76 @@ textarea {
 
 /**
 --------------------------------------------------
+  Form
+--------------------------------------------------
+**/
+.form-input {
+  height: 44px;
+  padding: 8px 20px;
+  border: var(--c-gainsboro) solid 1px;
+  color: var(--c-cerulean-blue);
+  background-color: var(--c-white);
+}
+.form-input:focus {
+  border-color: var(--c-cerulean-blue);
+}
+.form-input.error {
+  border-color: var(--c-red);
+}
+.form-select {
+  position: relative;
+}
+.form-select svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  pointer-events: none;
+  color: var(--c-cerulean-blue);
+}
+.form-select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 44px;
+  padding-block: 8px;
+  padding-right: 40px;
+  padding-left: 20px;
+  border: var(--c-gainsboro) solid 1px;
+  color: var(--c-cerulean-blue);
+  background-color: var(--c-concrete);
+}
+.form-select select:focus {
+  border-color: var(--c-cerulean-blue);
+}
+.form-select select.error {
+  border-color: var(--c-red);
+}
+.form-grid {
+  gap: 20px;
+}
+.form-grid .form-group {
+  width: calc((100% - 20px) / 2);
+}
+.form-filter {
+  line-height: 1.25;
+}
+.form-filter ul {
+  gap: 20px;
+}
+.form-filter label {
+  padding: 15px 25px;
+  gap: 10px;
+  background-color: var(--c-concrete);
+}
+.form-filter input:checked + label {
+  background-color: var(--c-yellow);
+}
+
+/**
+--------------------------------------------------
   Text
 --------------------------------------------------
 **/
@@ -1458,26 +1528,6 @@ textarea {
 }
 .button[class*=flex] {
   gap: 10px;
-}
-
-/**
---------------------------------------------------
-  Filter
---------------------------------------------------
-**/
-.filter-list {
-  line-height: 1.25;
-}
-.filter-list ul {
-  gap: 20px;
-}
-.filter-list label {
-  padding: 15px 25px;
-  gap: 10px;
-  background-color: var(--c-concrete);
-}
-.filter-list input:checked + label {
-  background-color: var(--c-yellow);
 }
 
 /**
@@ -1729,8 +1779,10 @@ textarea {
   color: var(--c-yellow);
 }
 .header-search input:focus {
-  outline: 0;
   border-bottom-color: var(--c-yellow);
+}
+.header-search input.error {
+  border-bottom-color: var(--c-red);
 }
 .header-search button {
   width: 40px;
@@ -2011,50 +2063,6 @@ textarea {
 
 /**
 --------------------------------------------------
-  Form
---------------------------------------------------
-**/
-.form-input {
-  height: 44px;
-  padding: 8px 20px;
-  border: var(--c-gainsboro) solid 1px;
-  color: var(--c-cerulean-blue);
-  background-color: var(--c-white);
-}
-.form-select {
-  position: relative;
-}
-.form-select svg {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  -webkit-transform: translateY(-50%) rotate(90deg);
-      -ms-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
-  pointer-events: none;
-  color: var(--c-cerulean-blue);
-}
-.form-select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  height: 44px;
-  padding-block: 8px;
-  padding-right: 40px;
-  padding-left: 20px;
-  border: var(--c-gainsboro) solid 1px;
-  color: var(--c-cerulean-blue);
-  background-color: var(--c-concrete);
-}
-.form-grid {
-  gap: 20px;
-}
-.form-grid .form-group {
-  width: calc((100% - 20px) / 2);
-}
-
-/**
---------------------------------------------------
   Store
 --------------------------------------------------
 **/
@@ -2212,6 +2220,12 @@ textarea {
   border: var(--c-gainsboro) solid 1px;
   color: var(--c-cerulean-blue);
 }
+.store-check input:focus {
+  border-color: var(--c-cerulean-blue);
+}
+.store-check input.error {
+  border-color: var(--c-red);
+}
 .store-check button {
   position: absolute;
   top: 2px;
@@ -2237,6 +2251,12 @@ textarea {
   background-color: var(--c-concrete);
   border: var(--c-silver-chalice) solid 1px;
   color: var(--c-cerulean-blue);
+}
+.store-search input:focus {
+  border-color: var(--c-cerulean-blue);
+}
+.store-search input.error {
+  border-color: var(--c-red);
 }
 .store-search button {
   position: absolute;
@@ -2469,13 +2489,12 @@ textarea {
 }
 .product-size span,
 .product-size select {
-  line-height: 1.25;
   background-color: var(--c-white);
   border: var(--c-gallery) solid 1px;
 }
 .product-size span {
-  max-width: 280px;
-  padding: 8px 20px;
+  max-width: 320px;
+  padding: 9px 20px;
 }
 .product-size select {
   -webkit-appearance: none;
@@ -2486,6 +2505,12 @@ textarea {
   padding-right: 60px;
   padding-left: 20px;
   color: var(--c-cerulean-blue);
+}
+.product-size select:focus {
+  border-color: var(--c-cerulean-blue);
+}
+.product-size select.error {
+  border-color: var(--c-red);
 }
 .product-alma {
   border: var(--c-gallery) solid 1px;
@@ -2764,13 +2789,6 @@ textarea {
   text-decoration: underline;
   color: var(--c-navy-blue);
 }
-.article-link {
-  position: absolute;
-  bottom: 0;
-  right: var(--article-body-px);
-  left: var(--article-body-px);
-  line-height: 1.25;
-}
 .article-body {
   padding-inline: var(--article-body-px);
 }
@@ -2959,10 +2977,8 @@ textarea {
 .section-faq--content {
   width: calc(100% - (var(--section-faq-g) + var(--section-faq-banner-w)));
 }
-.section-faq--title {
-  gap: 12px;
-}
 .section-faq--header {
+  gap: 12px;
   padding-block: 19px;
   color: var(--c-navy-blue);
   cursor: pointer;
@@ -2971,9 +2987,17 @@ textarea {
   -webkit-transition-property: color;
           transition-property: color;
 }
-.section-faq--header:hover,
 .section-faq--header.active {
+  gap: 24px;
   color: var(--c-cerulean-blue);
+}
+.section-faq--header.active .section-faq--arrow {
+  -webkit-transform: rotate(90deg) translate(6px, 0);
+      -ms-transform: rotate(90deg) translate(6px, 0);
+          transform: rotate(90deg) translate(6px, 0);
+  -webkit-transform-origin: 12px 11px;
+      -ms-transform-origin: 12px 11px;
+          transform-origin: 12px 11px;
 }
 .section-faq--body {
   display: none;
@@ -2991,31 +3015,24 @@ textarea {
 .section-article {
   padding-inline: 10px;
 }
-.section-article--item {
-  position: relative;
-}
 .section-article--link a,
 .section-article--title a {
   text-decoration: none;
-  color: var(--section-article-link-color);
+  color: var(--section-article-link);
 }
 .section-article--link a:hover,
 .section-article--title a:hover {
   text-decoration: underline;
-  color: var(--section-article-link-hover);
 }
-.section-article--title {
-  min-height: 48px;
-}
-.section-article--link {
-  position: absolute;
+.section-article.i1 {
+  --section-article-link: var(--c-cerulean-blue);
 }
 .section-article.i1 .section-article--item {
-  --section-article-link-color: var(--c-cerulean-blue);
-  --section-article-link-hover: var(--c-navy-blue);
   position: relative;
   width: 50%;
-  padding: 30px 170px 66px 30px;
+  padding-block: 25px;
+  padding-right: 170px;
+  padding-left: 30px;
 }
 .section-article.i1 .section-article--item:nth-child(2n) {
   border-left: var(--c-cerulean-blue) solid 1px;
@@ -3040,24 +3057,15 @@ textarea {
   z-index: 2;
   color: var(--c-cerulean-blue);
 }
-.section-article.i1 .section-article--link {
-  right: 170px;
-  bottom: 30px;
-  left: 30px;
+.section-article.i2 {
+  --section-article-link: var(--c-yellow);
 }
 .section-article.i2 .section-article--item {
-  --section-article-link-color: var(--c-yellow);
-  --section-article-link-hover: var(--c-white);
   width: 50%;
-  padding: 25px 30px 61px;
+  padding: 25px 30px;
 }
 .section-article.i2 .section-article--item:nth-child(2n) {
   border-left: var(--c-white) solid 1px;
-}
-.section-article.i2 .section-article--link {
-  right: 30px;
-  bottom: 25px;
-  left: 30px;
 }
 .section-brand {
   width: 280px;

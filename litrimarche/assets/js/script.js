@@ -5,17 +5,17 @@ const App = {
    * Initialize the application
    */
   init() {
-    App.modal();
-    App.splide();
+    App.misc();
+    App.slide();
     App.toggle();
     App.reveal();
     App.accordion();
   },
 
   /**
-   * Splide
+   * Slide
    */
-  splide() {
+  slide() {
     let heroSplide = document.querySelector('.splide-hero');
     if (heroSplide) {
       new Splide(heroSplide, {
@@ -204,15 +204,27 @@ const App = {
   },
 
   /**
-   * Modal
+   * Misc
    */
-  modal() {
+  misc() {
+
+    // Modal
     MicroModal.init({
       disableScroll: true,
       disableFocus: true,
       awaitOpenAnimation: true,
       awaitCloseAnimation: true,
       debugMode: false
+    });
+
+    // matchHeight
+    document.body.matchHeight({
+      elements: null,
+      byRow: true,
+      property: 'min-height',
+      attributeName: 'data-mh',
+      events: true,
+      throttle: 80
     });
   }
 };

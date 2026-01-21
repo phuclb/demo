@@ -103,7 +103,7 @@
               </div>
               <h2 class="store-title text-lg font-semibold">Toujours plus proche de vous !</h2>
               <div class="store-summary mt-12 text-xs">Pour trouver les meilleures offres et les disponibilit&eacute;s pr&egrave;s de chez vous, merci de renseigner votre code postal et de choisir votre magasin le plus proche.</div>
-              <div class="store-card mt-32 text-center" hidden>
+              <div class="store-card mt-32 text-center">
                 <h3 class="store-title text-lg font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
                 <div class="store-summary text-xs font-medium">Magasin de literie &agrave; Persan</div>
                 <div class="store-info mt-4 text-editor text-2xs">
@@ -132,7 +132,7 @@
                     </svg>
                   </a>
                 </div>
-                <div class="store-list mt-32" hidden>
+                <div class="store-list mt-32">
                   <div class="store-item">
                     <h4 class="store-title text-xs font-semibold">Litrimarch&eacute; Persan</h4>
                     <div class="store-info text-editor text-2xs">
@@ -152,7 +152,7 @@
                     <div class="store-summary text-xs c-red">Ferm&eacute; aujourd'hui </div>
                   </div>
                 </div>
-                <div class="store-editor mt-20 text-editor text-xs c-red" hidden>
+                <div class="store-editor mt-20 text-editor text-xs c-red">
                   <p>Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</p>
                   <p><a href="#">Voir les exclus web</a></p>
                 </div>
@@ -175,7 +175,7 @@
               <div class="section-editor mt-16 text-editor text-xs">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elementum erat. Sed eget sagittis tortor, et gravida mauris. Aliquam fermentum tortor ac tincidunt pharetra. Aliquam convallis mi vitae laoreet maximus. Aenean pellentesque eros turpis. Quisque auctor, nibh in finibus tristique, libero mi maximus risus, eu laoreet elit metus eu lacus.</p>
               </div>
-              <div class="section-link mt-32 text-xs font-bold text-right">
+              <div class="section-editor mt-32 text-editor text-xs font-bold text-right">
                 <a href="#">Lire la suite</a>
               </div>
             </div>
@@ -886,10 +886,10 @@
                       <use href="assets/img/sprites.svg#chat"></use>
                     </svg>
                   </div>
-                  <h3 class="section-article--title text-sm font-bold text-uppercase">
+                  <h3 class="section-article--title text-sm font-bold text-uppercase" data-mh="section-article--title">
                     <a href="#">Le bruit perturbe votre sommeil !</a>
                   </h3>
-                  <div class="section-article--summary mt-8 text-2xs line-clamp-3">M&ecirc;me de faible intensit&eacute;, le bruit a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
+                  <div class="section-article--summary mt-8 text-2xs line-clamp-3" data-mh="section-article--summary">M&ecirc;me de faible intensit&eacute;, le bruit a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
                   <div class="section-article--link mt-16 font-bold text-uppercase">
                     <a href="#">Lire la suite</a>
                   </div>
@@ -903,10 +903,10 @@
                       <use href="assets/img/sprites.svg#chat"></use>
                     </svg>
                   </div>
-                  <h3 class="section-article--title text-sm font-bold text-uppercase">
+                  <h3 class="section-article--title text-sm font-bold text-uppercase" data-mh="section-article--title">
                     <a href="#">Ouverture de votre magasin litrimarch&eacute; b&eacute;ziers</a>
                   </h3>
-                  <div class="section-article--summary mt-8 text-2xs line-clamp-3">Pascal et son &eacute;quipe sot heureux de vous accueillir pour vous pr&eacute;senter toute la gamme Litrimarch&eacute;</div>
+                  <div class="section-article--summary mt-8 text-2xs line-clamp-3" data-mh="section-article--summary">Pascal et son &eacute;quipe sot heureux de vous accueillir pour vous pr&eacute;senter toute la gamme Litrimarch&eacute;</div>
                   <div class="section-article--link mt-16 font-bold text-uppercase">
                     <a href="#">Lire la suite</a>
                   </div>
@@ -999,57 +999,47 @@
                 </div>
                 <div class="section-faq--content">
                   <div class="section-faq--item">
-                    <div class="section-faq--header accordion" role="button" aria-expanded="false" aria-controls="faq1">
-                      <h3 class="section-faq--title text-sm d-flex justify-start align-center font-medium">
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                        <span>Comment puis-je r&eacute;gler mes achats ?</span>
-                      </h3>
+                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq1">
+                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#toggle"></use>
+                      </svg>
+                      <h3 class="section-faq--title text-sm font-medium">Comment puis-je r&eacute;gler mes achats ?</h3>
                     </div>
                     <div class="section-faq--body text-editor text-2xs pb-20" id="faq1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed eros consectetur, lobortis orci nec, imperdiet nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fermentum est, id mollis purus. Aliquam erat volutpat. In hac habitasse platea dictumst. Donec auctor imperdiet nisl eget porta. Donec malesuada at massa vitae scelerisque. Aliquam dictum sem id mauris lobortis, accumsan aliquet nisi hendrerit. Suspendisse tempus enim ipsum, vitae efficitur neque lacinia non. Nunc imperdiet porttitor sem, in molestie ex blandit semper.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header accordion" role="button" aria-expanded="false" aria-controls="faq2">
-                      <h3 class="section-faq--title text-sm d-flex justify-start align-center font-medium">
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                        <span>Je souhaite essayer ma literie avant de m&rsquo;engager d&eacute;finitivement :<br>est-ce possible ?</span>
-                      </h3>
+                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq2">
+                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#toggle"></use>
+                      </svg>
+                      <h3 class="section-faq--title text-sm font-medium">Je souhaite essayer ma literie avant de m&rsquo;engager d&eacute;finitivement :<br>est-ce possible ?</h3>
                     </div>
                     <div class="section-faq--body text-editor text-2xs pb-20" id="faq2">Maecenas felis mi, dapibus nec consequat eget, egestas ac sapien. Sed ut fringilla justo. Praesent lobortis, eros eget pretium placerat, est odio bibendum odio, sit amet maximus elit ipsum eget mi. Suspendisse vel metus eget mi luctus auctor. Aenean gravida dapibus suscipit. Maecenas faucibus odio ut elit fringilla commodo. Praesent id tortor ac libero pellentesque elementum. Mauris eu enim libero.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header accordion" role="button" aria-expanded="false" aria-controls="faq3">
-                      <h3 class="section-faq--title text-sm d-flex justify-start align-center font-medium">
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                        <span>Comment se passe la livraison ?</span>
-                      </h3>
+                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq3">
+                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#toggle"></use>
+                      </svg>
+                      <h3 class="section-faq--title text-sm font-medium">Comment se passe la livraison ?</h3>
                     </div>
                     <div class="section-faq--body text-editor text-2xs pb-20" id="faq3">Duis id facilisis velit. Ut quis lacinia eros. Vivamus justo est, elementum vitae iaculis at, vulputate ac sem. Aliquam a risus a nulla pulvinar sollicitudin. Integer convallis non turpis finibus gravida. Maecenas ultrices aliquet dui, vitae sollicitudin est convallis ut. Aliquam sed urna vel ante dapibus luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet velit egestas, viverra enim eu, imperdiet massa.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header accordion" role="button" aria-expanded="false" aria-controls="faq4">
-                      <h3 class="section-faq--title text-sm d-flex justify-start align-center font-medium">
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                        <span>Reprenez-vous mon ancien matelas ?</span>
-                      </h3>
+                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq4">
+                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#toggle"></use>
+                      </svg>
+                      <h3 class="section-faq--title text-sm font-medium">Reprenez-vous mon ancien matelas ?</h3>
                     </div>
                     <div class="section-faq--body text-editor text-2xs pb-20" id="faq4">Vivamus gravida enim in lectus viverra cursus. Suspendisse quam lacus, vehicula non magna eget, mattis tempus diam. Ut in ullamcorper nisl. Nulla facilisis a magna a facilisis. Morbi porttitor magna at enim elementum, non ornare lacus convallis. Nunc suscipit enim eu elit porttitor sagittis. Sed tristique mauris sit amet viverra elementum. Aenean quis lectus ex. Nullam ac sodales eros. Cras sodales ullamcorper vestibulum.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header accordion" role="button" aria-expanded="false" aria-controls="faq5">
-                      <h3 class="section-faq--title text-sm d-flex justify-start align-center font-medium">
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                        <span>Les matelas repris sont-ils recycl&eacute;s ?</span>
-                      </h3>
+                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq5">
+                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#toggle"></use>
+                      </svg>
+                      <h3 class="section-faq--title text-sm font-medium">Les matelas repris sont-ils recycl&eacute;s ?</h3>
                     </div>
                     <div class="section-faq--body text-editor text-2xs pb-20" id="faq5">Maecenas efficitur eros sed finibus posuere. Integer vitae porttitor turpis. Proin nec neque luctus, accumsan metus ac, vehicula nisi. Pellentesque dictum enim a molestie cursus. Ut a urna quis nibh dapibus porttitor quis ut lectus. Cras eget augue in odio ultrices aliquet. Mauris aliquet vulputate leo vitae condimentum. Aenean sit amet tellus arcu.</div>
                   </div>
