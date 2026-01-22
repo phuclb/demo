@@ -208,7 +208,7 @@ const App = {
    */
   misc() {
 
-    // Modal
+    // modal
     MicroModal.init({
       disableScroll: true,
       disableFocus: true,
@@ -226,6 +226,30 @@ const App = {
       events: true,
       throttle: 80
     });
+
+    // quantity
+    let quantity = document.querySelectorAll('.quantity');
+    if (quantity.length) {
+      quantity.forEach(quantity => {
+        const number = quantity.querySelector('.number');
+        const decrease = quantity.querySelector('.decrease');
+        const increase = quantity.querySelector('.increase');
+        decrease.addEventListener('click', (e) => {
+          const limit = parseInt(decrease.getAttribute('data-limit'));
+          let value = parseInt(number.innerHTML);
+          value = (value > limit) ? (value - 1) : limit;
+          number.innerHTML = value;
+          e.preventDefault();
+        });
+        increase.addEventListener('click', (e) => {
+          const limit = parseInt(increase.getAttribute('data-limit'));
+          let value = parseInt(number.innerHTML);
+          value = (value < limit) ? (value + 1) : limit;
+          number.innerHTML = value;
+          e.preventDefault();
+        });
+      });
+    }
   }
 };
 
