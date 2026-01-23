@@ -1418,6 +1418,85 @@ textarea {
 
 /**
 --------------------------------------------------
+  Text
+--------------------------------------------------
+**/
+.text-10 {
+  font-size: 10px;
+  line-height: 1.2;
+}
+.text-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.text-13 {
+  font-size: 13px;
+  line-height: 16px;
+}
+.text-14 {
+  font-size: 14px;
+  line-height: 18px;
+}
+.text-15 {
+  font-size: 15px;
+  line-height: 1.2;
+}
+.text-16 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.text-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+.text-20 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.text-24 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+.text-30 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.text-32 {
+  font-size: 32px;
+  line-height: 1.25;
+}
+.text-40 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.text-editor a {
+  text-decoration: underline;
+  color: inherit;
+}
+.text-editor a:hover {
+  color: var(--c-navy-blue);
+}
+.text-editor p:not(:first-child),
+.text-editor ul:not(:first-child),
+.text-editor ol:not(:first-child) {
+  margin-top: 20px;
+}
+.text-editor ul,
+.text-editor ol {
+  margin-left: 1em;
+}
+.text-editor ul {
+  list-style-type: disc;
+}
+.text-editor ol {
+  list-style-type: decimal;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+/**
+--------------------------------------------------
   Cart
 --------------------------------------------------
 **/
@@ -1921,85 +2000,6 @@ textarea {
 
 /**
 --------------------------------------------------
-  Text
---------------------------------------------------
-**/
-.text-10 {
-  font-size: 10px;
-  line-height: 1.2;
-}
-.text-12 {
-  font-size: 12px;
-  line-height: 16px;
-}
-.text-13 {
-  font-size: 13px;
-  line-height: 16px;
-}
-.text-14 {
-  font-size: 14px;
-  line-height: 18px;
-}
-.text-15 {
-  font-size: 15px;
-  line-height: 1.2;
-}
-.text-16 {
-  font-size: 16px;
-  line-height: 1.5;
-}
-.text-18 {
-  font-size: 18px;
-  line-height: 24px;
-}
-.text-20 {
-  font-size: 20px;
-  line-height: 1.2;
-}
-.text-24 {
-  font-size: 24px;
-  line-height: 1.25;
-}
-.text-30 {
-  font-size: 30px;
-  line-height: 1.2;
-}
-.text-32 {
-  font-size: 32px;
-  line-height: 1.25;
-}
-.text-40 {
-  font-size: 40px;
-  line-height: 1.2;
-}
-.text-editor a {
-  text-decoration: underline;
-  color: inherit;
-}
-.text-editor a:hover {
-  color: var(--c-navy-blue);
-}
-.text-editor p:not(:first-child),
-.text-editor ul:not(:first-child),
-.text-editor ol:not(:first-child) {
-  margin-top: 20px;
-}
-.text-editor ul,
-.text-editor ol {
-  margin-left: 1em;
-}
-.text-editor ul {
-  list-style-type: disc;
-}
-.text-editor ol {
-  list-style-type: decimal;
-}
-.text-underline {
-  text-decoration: underline;
-}
-
-/**
---------------------------------------------------
   Button
 --------------------------------------------------
 **/
@@ -2442,23 +2442,6 @@ textarea {
   position: relative;
   z-index: 2;
   max-width: 640px;
-}
-
-/**
---------------------------------------------------
-  Intro
---------------------------------------------------
-**/
-.intro-banner {
-  height: 252px;
-}
-.intro-grid {
-  gap: 88px;
-}
-.intro-item {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
-      flex: 1 1 0;
 }
 
 /**
@@ -4042,4 +4025,15 @@ textarea {
 }
 .section-product .section-banner {
   border-radius: 0 0 10px 10px;
+}
+.section-about .section-banner {
+  height: 252px;
+}
+.section-about .section-grid {
+  gap: 88px;
+}
+.section-about .section-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
 }
