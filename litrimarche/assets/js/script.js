@@ -78,8 +78,10 @@ const App = {
         type: 'slide',
         speed: 1e3,
         gap: 12,
+        focus: 0,
         autoWidth: true,
-        pagination: false
+        pagination: false,
+        omitEnd: true
       }).mount();
     }
 
@@ -90,8 +92,10 @@ const App = {
           type: 'slide',
           speed: 1e3,
           gap: 26,
+          focus: 0,
           autoWidth: true,
-          pagination: false
+          pagination: false,
+          omitEnd: true
         }).mount();
       });
     }

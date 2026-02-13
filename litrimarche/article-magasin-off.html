@@ -95,10 +95,10 @@
               </div>
               <h2 class="store-title text-24 font-semibold">Toujours plus proche de vous !</h2>
               <div class="store-summary mt-12 text-16">Pour trouver les meilleures offres et les disponibilit&eacute;s pr&egrave;s de chez vous, merci de renseigner votre code postal et de choisir votre magasin le plus proche.</div>
-              <div class="store-card mt-32 text-center">
+              <div class="store-card mt-32">
                 <h3 class="store-title text-24 font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
                 <div class="store-summary text-16 font-medium">Magasin de literie &agrave; Persan</div>
-                <div class="store-info mt-4 text-editor text-14">
+                <div class="store-info mt-20 text-editor text-14">
                   <address class="font-normal">
                     &agrave; c&ocirc;t&eacute; de O&rsquo;March&eacute; Frais, Av. Jacques Vogt<br>
                     95340 Persan
@@ -132,7 +132,10 @@
                         Av. Jacques Vogt 95340 Persan
                       </address>
                     </div>
-                    <div class="store-summary text-16 c-green">Ouvert aujourd'hui de 10:00-12:30, 14:00-19:00</div>
+                    <div class="store-summary mt-20 text-16 c-green">Ouvert aujourd'hui de 10:00-12:30, 14:00-19:00</div>
+                    <div class="store-block mt-12">
+                      <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Valider ce magasin</button>
+                    </div>
                   </div>
                   <div class="store-item">
                     <h4 class="store-title text-16 font-semibold">Litrimarch&eacute; Persan</h4>
@@ -141,12 +144,15 @@
                         Av. Jacques Vogt 95340 Persan
                       </address>
                     </div>
-                    <div class="store-summary text-16 c-red">Ferm&eacute; aujourd'hui </div>
+                    <div class="store-summary mt-20 text-16 c-red">Ferm&eacute; aujourd'hui </div>
+                    <div class="store-block mt-12">
+                      <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Valider ce magasin</button>
+                    </div>
                   </div>
                 </div>
-                <div class="store-editor mt-20 text-editor text-16 c-red">
-                  <p>Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</p>
-                  <p><a href="#">Voir les exclus web</a></p>
+                <div class="store-editor mt-20 text-16 c-red">Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</div>
+                <div class="store-editor mt-20 text-editor text-16 font-bold">
+                  <a href="#">Voir les exclus web</a>
                 </div>
               </div>
             </div>
@@ -275,33 +281,16 @@
                 </div>
                 <div class="product-block mt-20">
                   <div class="product-label text-14">Couleur :</div>
-                  <div class="product-color mt-12">
-                    <ul class="d-flex justify-start align-center">
-                      <li>
-                        <input class="sr-only" type="radio" id="color-1" name="color">
-                        <label class="rounded" for="color-1" style="--product-color: #F4F4F4;">
-                          <span class="sr-only">#F4F4F4</span>
-                        </label>
-                      </li>
-                      <li>
-                        <input class="sr-only" type="radio" id="color-2" name="color" checked>
-                        <label class="rounded" for="color-2" style="--product-color: #0C3183;">
-                          <span class="sr-only">#0C3183</span>
-                        </label>
-                      </li>
-                      <li>
-                        <input class="sr-only" type="radio" id="color-3" name="color">
-                        <label class="rounded" for="color-3" style="--product-color: rgba(255,238,0,0.3);">
-                          <span class="sr-only">rgba(255,238,0,0.3)</span>
-                        </label>
-                      </li>
-                      <li>
-                        <input class="sr-only" type="radio" id="color-4" name="color">
-                        <label class="rounded" for="color-4" style="--product-color: rgba(128,186,38,0.3);">
-                          <span class="sr-only">rgba(128,186,38,0.3)</span>
-                        </label>
-                      </li>
-                    </ul>
+                  <div class="product-size mt-10">
+                    <select class="w-full font-bold radius-30">
+                      <option>BLANC</option>
+                      <option>ROSE</option>
+                      <option>BLEU</option>
+                      <option>GRIS</option>
+                    </select>
+                    <svg class="rounded" width="30" height="30" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#next"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="product-block mt-26">
@@ -359,51 +348,51 @@
               <div class="section-specification text-14 font-medium text-center">
                 <ul class="d-flex flex-wrap justify-center align-stretch">
                   <li>
-                    <img src="assets/img/spec-1.png" alt="Marque" width="80" height="80">
+                    <img src="assets/img/spec-marque.png" alt="Marque" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">LITRINIGHT</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-2.png" alt="Type de Matelas" width="80" height="80">
+                    <img src="assets/img/spec-type-matelas.png" alt="Type de Matelas" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Mousse</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-3.png" alt="Technologie" width="80" height="80">
+                    <img src="assets/img/spec-technologie.png" alt="Technologie" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Mousse polyur&eacute;thane<br>Haute Densit&eacute;</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-4.png" alt="&Acirc;me" width="80" height="80">
+                    <img src="assets/img/spec-ame.png" alt="&Acirc;me" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">&Acirc;me 14 cm<br>100 % polyur&eacute;thane<br>Haute Densit&eacute; 25 kg/m³</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-5.png" alt="Zones de confort" width="80" height="80">
+                    <img src="assets/img/spec-zones-confort.png" alt="Zones de confort" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Soutien<br>homog&egrave;ne</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-6.png" alt="Face B" width="80" height="80">
+                    <img src="assets/img/spec-face-b.png" alt="Face B" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">400 g/m² de ouate<br>hypoallerg&eacute;nique<br>100 % polyester</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-7.png" alt="Coutil" width="80" height="80">
+                    <img src="assets/img/spec-coutil.png" alt="Coutil" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Coutil stretch<br>100% polyester</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-8.png" alt="Traitement" width="80" height="80">
+                    <img src="assets/img/spec-traitement.png" alt="Traitement" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Pas de traitement biocide</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-9.png" alt="Epaisseur" width="80" height="80">
+                    <img src="assets/img/spec-epaisseur.png" alt="Epaisseur" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">18 cm</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-10.png" alt="Garantie" width="80" height="80">
+                    <img src="assets/img/spec-garantie.png" alt="Garantie" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">5 ans</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-11.png" alt="Sommier compatible" width="80" height="80">
+                    <img src="assets/img/spec-sommier-compatible.png" alt="Sommier compatible" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Lattes passives<br>ou lattes actives</span>
                   </li>
                   <li>
-                    <img src="assets/img/spec-12.png" alt="Fabrication" width="80" height="80">
+                    <img src="assets/img/spec-fabrication.png" alt="Fabrication" width="456" height="456">
                     <span class="d-flex flex-col justify-center align-stretch">Fabriqu&eacute;<br>en France</span>
                   </li>
                 </ul>
