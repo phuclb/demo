@@ -63,7 +63,7 @@
                 </button>
               </li>
               <li>
-                <a class="header-button i4 d-flex justify-start align-center toggle" href="#store" role="button" aria-expanded="false" aria-controls="store">
+                <button class="header-button i4 d-flex justify-start align-center text-left" type="button" data-micromodal-trigger="store">
                   <svg class="i1" width="62" height="36" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#building"></use>
                   </svg>
@@ -76,11 +76,11 @@
                       </svg>
                     </span>
                   </span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
-          <div class="header-modal header-search d-flex justify-center align-center" id="search">
+          <div class="header-modal header-search d-flex justify-center align-center bg-cerulean-blue" id="search">
             <label class="flex-none font-semibold" for="q">Recherche</label>
             <input class="flex-auto font-medium" type="text" id="q" name="q">
             <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
@@ -88,82 +88,6 @@
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
             </button>
-          </div>
-          <div class="header-modal header-store bg-white c-cerulean-blue" id="store">
-            <button class="header-close dismiss" type="button" aria-label="Fermer">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="assets/img/sprites.svg#close"></use>
-              </svg>
-            </button>
-            <div class="header-body">
-              <div class="store-icon d-inline-block mb-20">
-                <svg width="84" height="48" aria-hidden="true" focusable="false">
-                  <use href="assets/img/sprites.svg#building"></use>
-                </svg>
-              </div>
-              <h2 class="store-title text-24 font-semibold">Toujours plus proche de vous !</h2>
-              <div class="store-summary mt-12 text-16">Pour trouver les meilleures offres et les disponibilit&eacute;s pr&egrave;s de chez vous, merci de renseigner votre code postal et de choisir votre magasin le plus proche.</div>
-              <div class="store-card mt-32">
-                <h3 class="store-title text-24 font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
-                <div class="store-summary text-16 font-medium">Magasin de literie &agrave; Persan</div>
-                <div class="store-info mt-20 text-editor text-14">
-                  <address class="font-normal">
-                    &agrave; c&ocirc;t&eacute; de O&rsquo;March&eacute; Frais, Av. Jacques Vogt<br>
-                    95340 Persan
-                  </address>
-                </div>
-                <div class="store-summary mt-4 text-16 font-bold c-green">Ouvert aujourd'hui de<br>10:00-12:30, 14:00-19:00</div>
-              </div>
-              <div class="store-body mt-32">
-                <h3 class="store-title text-20 font-semibold">Choisissez un magasin</h3>
-                <div class="store-check mt-12">
-                  <input class="w-full radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville">
-                  <button class="d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
-                    <svg width="20" height="20" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#search"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="store-block mt-20 font-bold">
-                  <a class="button button-p2 button-i2 d-inline-flex justify-center align-center radius-30" href="#">
-                    <span>Me g&eacute;olocaliser</span>
-                    <svg class="flex-none c-yellow" width="18" height="24" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#location"></use>
-                    </svg>
-                  </a>
-                </div>
-                <div class="store-list mt-32">
-                  <div class="store-item">
-                    <h4 class="store-title text-16 font-semibold">Litrimarch&eacute; Persan</h4>
-                    <div class="store-info text-editor text-14">
-                      <address class="font-normal">
-                        Av. Jacques Vogt 95340 Persan
-                      </address>
-                    </div>
-                    <div class="store-summary mt-20 text-16 c-green">Ouvert aujourd'hui de 10:00-12:30, 14:00-19:00</div>
-                    <div class="store-block mt-12">
-                      <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Valider ce magasin</button>
-                    </div>
-                  </div>
-                  <div class="store-item">
-                    <h4 class="store-title text-16 font-semibold">Litrimarch&eacute; Persan</h4>
-                    <div class="store-info text-editor text-14">
-                      <address class="font-normal">
-                        Av. Jacques Vogt 95340 Persan
-                      </address>
-                    </div>
-                    <div class="store-summary mt-20 text-16 c-red">Ferm&eacute; aujourd'hui </div>
-                    <div class="store-block mt-12">
-                      <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Valider ce magasin</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="store-editor mt-20 text-16 c-red">Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;. Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</div>
-                <div class="store-editor mt-20 text-editor text-16 font-bold">
-                  <a href="#">Voir les exclus web</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </header>
@@ -1374,49 +1298,59 @@
                 </div>
                 <div class="section-faq--content">
                   <div class="section-faq--item">
-                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq1">
-                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                        <use href="assets/img/sprites.svg#toggle"></use>
-                      </svg>
-                      <h3 class="section-faq--title text-18 font-medium">Comment puis-je r&eacute;gler mes achats ?</h3>
+                    <div class="section-faq--container max-w-748 mx-auto">
+                      <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq1">
+                        <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                        <h3 class="section-faq--title flex-auto text-18 font-medium">Comment puis-je r&eacute;gler mes achats ?</h3>
+                      </div>
+                      <div class="section-faq--body text-editor text-14 pb-20" id="faq1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed eros consectetur, lobortis orci nec, imperdiet nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fermentum est, id mollis purus. Aliquam erat volutpat. In hac habitasse platea dictumst. Donec auctor imperdiet nisl eget porta. Donec malesuada at massa vitae scelerisque. Aliquam dictum sem id mauris lobortis, accumsan aliquet nisi hendrerit. Suspendisse tempus enim ipsum, vitae efficitur neque lacinia non. Nunc imperdiet porttitor sem, in molestie ex blandit semper.</div>
                     </div>
-                    <div class="section-faq--body text-editor text-14 pb-20" id="faq1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed eros consectetur, lobortis orci nec, imperdiet nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac fermentum est, id mollis purus. Aliquam erat volutpat. In hac habitasse platea dictumst. Donec auctor imperdiet nisl eget porta. Donec malesuada at massa vitae scelerisque. Aliquam dictum sem id mauris lobortis, accumsan aliquet nisi hendrerit. Suspendisse tempus enim ipsum, vitae efficitur neque lacinia non. Nunc imperdiet porttitor sem, in molestie ex blandit semper.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq2">
-                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                        <use href="assets/img/sprites.svg#toggle"></use>
-                      </svg>
-                      <h3 class="section-faq--title text-18 font-medium">Je souhaite essayer ma literie avant de m&rsquo;engager d&eacute;finitivement :<br>est-ce possible ?</h3>
+                    <div class="section-faq--container max-w-748 mx-auto">
+                      <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq2">
+                        <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                        <h3 class="section-faq--title flex-auto text-18 font-medium">Je souhaite essayer ma literie avant de m&rsquo;engager d&eacute;finitivement :<br>est-ce possible ?</h3>
+                      </div>
+                      <div class="section-faq--body text-editor text-14 pb-20" id="faq2">Maecenas felis mi, dapibus nec consequat eget, egestas ac sapien. Sed ut fringilla justo. Praesent lobortis, eros eget pretium placerat, est odio bibendum odio, sit amet maximus elit ipsum eget mi. Suspendisse vel metus eget mi luctus auctor. Aenean gravida dapibus suscipit. Maecenas faucibus odio ut elit fringilla commodo. Praesent id tortor ac libero pellentesque elementum. Mauris eu enim libero.</div>
                     </div>
-                    <div class="section-faq--body text-editor text-14 pb-20" id="faq2">Maecenas felis mi, dapibus nec consequat eget, egestas ac sapien. Sed ut fringilla justo. Praesent lobortis, eros eget pretium placerat, est odio bibendum odio, sit amet maximus elit ipsum eget mi. Suspendisse vel metus eget mi luctus auctor. Aenean gravida dapibus suscipit. Maecenas faucibus odio ut elit fringilla commodo. Praesent id tortor ac libero pellentesque elementum. Mauris eu enim libero.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq3">
-                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                        <use href="assets/img/sprites.svg#toggle"></use>
-                      </svg>
-                      <h3 class="section-faq--title text-18 font-medium">Comment se passe la livraison ?</h3>
+                    <div class="section-faq--container max-w-748 mx-auto">
+                      <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq3">
+                        <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                        <h3 class="section-faq--title flex-auto text-18 font-medium">Comment se passe la livraison ?</h3>
+                      </div>
+                      <div class="section-faq--body text-editor text-14 pb-20" id="faq3">Duis id facilisis velit. Ut quis lacinia eros. Vivamus justo est, elementum vitae iaculis at, vulputate ac sem. Aliquam a risus a nulla pulvinar sollicitudin. Integer convallis non turpis finibus gravida. Maecenas ultrices aliquet dui, vitae sollicitudin est convallis ut. Aliquam sed urna vel ante dapibus luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet velit egestas, viverra enim eu, imperdiet massa.</div>
                     </div>
-                    <div class="section-faq--body text-editor text-14 pb-20" id="faq3">Duis id facilisis velit. Ut quis lacinia eros. Vivamus justo est, elementum vitae iaculis at, vulputate ac sem. Aliquam a risus a nulla pulvinar sollicitudin. Integer convallis non turpis finibus gravida. Maecenas ultrices aliquet dui, vitae sollicitudin est convallis ut. Aliquam sed urna vel ante dapibus luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet velit egestas, viverra enim eu, imperdiet massa.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq4">
-                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                        <use href="assets/img/sprites.svg#toggle"></use>
-                      </svg>
-                      <h3 class="section-faq--title text-18 font-medium">Reprenez-vous mon ancien matelas ?</h3>
+                    <div class="section-faq--container max-w-748 mx-auto">
+                      <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq4">
+                        <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                        <h3 class="section-faq--title flex-auto text-18 font-medium">Reprenez-vous mon ancien matelas ?</h3>
+                      </div>
+                      <div class="section-faq--body text-editor text-14 pb-20" id="faq4">Vivamus gravida enim in lectus viverra cursus. Suspendisse quam lacus, vehicula non magna eget, mattis tempus diam. Ut in ullamcorper nisl. Nulla facilisis a magna a facilisis. Morbi porttitor magna at enim elementum, non ornare lacus convallis. Nunc suscipit enim eu elit porttitor sagittis. Sed tristique mauris sit amet viverra elementum. Aenean quis lectus ex. Nullam ac sodales eros. Cras sodales ullamcorper vestibulum.</div>
                     </div>
-                    <div class="section-faq--body text-editor text-14 pb-20" id="faq4">Vivamus gravida enim in lectus viverra cursus. Suspendisse quam lacus, vehicula non magna eget, mattis tempus diam. Ut in ullamcorper nisl. Nulla facilisis a magna a facilisis. Morbi porttitor magna at enim elementum, non ornare lacus convallis. Nunc suscipit enim eu elit porttitor sagittis. Sed tristique mauris sit amet viverra elementum. Aenean quis lectus ex. Nullam ac sodales eros. Cras sodales ullamcorper vestibulum.</div>
                   </div>
                   <div class="section-faq--item">
-                    <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq5">
-                      <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                        <use href="assets/img/sprites.svg#toggle"></use>
-                      </svg>
-                      <h3 class="section-faq--title text-18 font-medium">Les matelas repris sont-ils recycl&eacute;s ?</h3>
+                    <div class="section-faq--container max-w-748 mx-auto">
+                      <div class="section-faq--header d-flex justify-start align-center accordion" role="button" aria-expanded="false" aria-controls="faq5">
+                        <svg class="section-faq--arrow flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                        <h3 class="section-faq--title flex-auto text-18 font-medium">Les matelas repris sont-ils recycl&eacute;s ?</h3>
+                      </div>
+                      <div class="section-faq--body text-editor text-14 pb-20" id="faq5">Maecenas efficitur eros sed finibus posuere. Integer vitae porttitor turpis. Proin nec neque luctus, accumsan metus ac, vehicula nisi. Pellentesque dictum enim a molestie cursus. Ut a urna quis nibh dapibus porttitor quis ut lectus. Cras eget augue in odio ultrices aliquet. Mauris aliquet vulputate leo vitae condimentum. Aenean sit amet tellus arcu.</div>
                     </div>
-                    <div class="section-faq--body text-editor text-14 pb-20" id="faq5">Maecenas efficitur eros sed finibus posuere. Integer vitae porttitor turpis. Proin nec neque luctus, accumsan metus ac, vehicula nisi. Pellentesque dictum enim a molestie cursus. Ut a urna quis nibh dapibus porttitor quis ut lectus. Cras eget augue in odio ultrices aliquet. Mauris aliquet vulputate leo vitae condimentum. Aenean sit amet tellus arcu.</div>
                   </div>
                 </div>
               </div>
@@ -1575,9 +1509,95 @@
     </div>
     <!-- wrapper -->
 
-    <div class="modal" id="contact" aria-hidden="true">
-      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-        <div class="modal__container radius-10" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+    <div class="modal modal__store" id="store" aria-hidden="true">
+      <div class="modal__overlay d-flex justify-end align-start" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+          <button class="modal__close" aria-label="Fermer" data-micromodal-close>
+            <svg width="20" height="20" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#close"></use>
+            </svg>
+          </button>
+          <div class="store-icon d-inline-block mb-20">
+            <svg width="84" height="48" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#building"></use>
+            </svg>
+          </div>
+          <h2 class="store-title text-24 font-semibold">Toujours plus proche de vous !</h2>
+          <div class="store-summary mt-12 text-16">Pour trouver les meilleures offres et les disponibilit&eacute;s pr&egrave;s de chez vous, merci de renseigner votre code postal et de choisir votre magasin le plus proche.</div>
+          <div class="store-card mt-24">
+            <h3 class="store-title text-24 font-semibold">Mon magasin<br>Litrimarch&eacute; Persan</h3>
+            <div class="store-summary text-16 font-medium">Magasin de literie &agrave; Persan</div>
+            <div class="store-info mt-20 text-editor text-14">
+              <address class="font-normal">
+                &agrave; c&ocirc;t&eacute; de O&rsquo;March&eacute; Frais, Av. Jacques Vogt<br>
+                95340 Persan
+              </address>
+            </div>
+            <div class="store-summary mt-4 text-16 font-bold c-green">Ouvert aujourd'hui de<br>10:00-12:30, 14:00-19:00</div>
+          </div>
+          <div class="store-body mt-32">
+            <h3 class="store-title text-20 font-semibold">Choisissez un magasin</h3>
+            <div class="store-check mt-12">
+              <input class="w-full radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville">
+              <button class="d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
+                <svg width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="store-block mt-20 font-bold">
+              <a class="button button-p2 button-i2 d-inline-flex justify-center align-center radius-30" href="#">
+                <span>Me g&eacute;olocaliser</span>
+                <svg class="flex-none c-yellow" width="18" height="24" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#location"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="store-list mt-24">
+              <div class="store-item">
+                <h4 class="store-title text-16 font-semibold">Litrimarch&eacute; Persan</h4>
+                <div class="store-info text-editor text-14">
+                  <address class="font-normal">
+                    Av. Jacques Vogt 95340 Persan
+                  </address>
+                </div>
+                <div class="store-summary text-16 c-green">Ouvert aujourd'hui de 10:00-12:30, 14:00-19:00</div>
+                <div class="store-block mt-12">
+                  <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Valider ce magasin</button>
+                </div>
+              </div>
+              <div class="store-item">
+                <h4 class="store-title text-16 font-semibold">Litrimarch&eacute; Persan</h4>
+                <div class="store-info text-editor text-14">
+                  <address class="font-normal">
+                    ZAC Les Bouchardes,<br>
+                    672 Rue de Bourgogne,<br>
+                    71570 Chaintr&eacute;
+                  </address>
+                </div>
+                <div class="store-summary text-16 c-red">Ferm&eacute; aujourd'hui </div>
+                <div class="store-block mt-12">
+                  <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Valider ce magasin</button>
+                </div>
+              </div>
+            </div>
+            <div class="store-block mt-24">
+              <div class="store-editor text-editor text-16 c-red">
+                <p>Il n&rsquo;y a aucun magasin disponible pour le code postal renseign&eacute;.</p>
+                <p><strong>Profiter de nos exclusivit&eacute;s web et b&eacute;n&eacute;ficier du service et de la qualit&eacute; Litrimarch&eacute;.</strong></p>
+              </div>
+              <div class="store-block mt-24">
+                <button class="button button-p1 button-i1 font-bold text-uppercase radius-30" type="button">Exclusivit&eacute;s web</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal.contact -->
+    <div class="modal modal__contact" id="contact" aria-hidden="true">
+      <div class="modal__overlay d-flex justify-center align-center" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="contact-title">
           <button class="modal__close" aria-label="Fermer" data-micromodal-close>
             <svg width="20" height="20" aria-hidden="true" focusable="false">
               <use href="assets/img/sprites.svg#close"></use>
@@ -1593,27 +1613,27 @@
             </div>
             <div class="form-grid d-flex flex-wrap justify-start align-start mt-24">
               <div class="form-group">
-                <label class="form-label d-block mb-8 text-20 font-semibold" for="cFI1">Nom*</label>
+                <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI1">Nom*</label>
                 <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre nom" id="cFI1" name="cFI1" required>
               </div>
               <div class="form-group">
-                <label class="form-label d-block mb-8 text-20 font-semibold" for="cFI2">Pr&eacute;nom*</label>
+                <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI2">Pr&eacute;nom*</label>
                 <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre pr&eacute;nom" id="cFI2" name="cFI2" required>
               </div>
             </div>
             <div class="form-group mt-24">
-              <label class="form-label d-block mb-8 text-20 font-semibold" for="cFI3">T&eacute;l&eacute;phone*</label>
+              <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI3">T&eacute;l&eacute;phone*</label>
               <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre num&eacute;ro de t&eacute;l&eacute;phone" id="cFI3" name="cFI4" required>
             </div>
             <div class="form-group mt-24">
-              <label class="form-label d-block mb-8 text-20 font-semibold" for="cFI4">Sujet de l'appel*</label>
+              <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI4">Sujet de l'appel*</label>
               <div class="form-select">
-                <select class="w-full radius-30" id="cFI4" name="cFI4">
-                  <option>S&eacute;lectionner un sujet</option>
-                  <option>Commande en cours</option>
-                  <option>Demande de renseignement</option>
-                  <option>SAV</option>
-                  <option>Autre</option>
+                <select class="w-full radius-30" id="cFI4" name="cFI4" required>
+                  <option value="">S&eacute;lectionner un sujet</option>
+                  <option value="1">Commande en cours</option>
+                  <option value="2">Demande de renseignement</option>
+                  <option value="3">SAV</option>
+                  <option value="4">Autre</option>
                 </select>
                 <svg width="24" height="24" aria-hidden="true" focusable="false">
                   <use href="assets/img/sprites.svg#next"></use>
@@ -1623,6 +1643,8 @@
             <div class="form-block mt-24 text-center">
               <button class="button button-p1 button-i2 font-bold radius-30" type="submit">Envoyer ma demande</button>
             </div>
+            <div class="form-require mt-20 text-16">* Champs obligatoire</div>
+            <div class="form-summary mt-12 text-editor text-16">Litrimarch&eacute; traite les donn&eacute;es recueillies de ce questionnaire afin de r&eacute;pondre &agrave; votre demande au service client.<br>Pour en savoir plus sur la gestion de vos donn&eacute;es personnelles et pour exercer vos droits, <a href="#">cliquez ici</a>.</div>
           </div>
         </div>
       </div>
