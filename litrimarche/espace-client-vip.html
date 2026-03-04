@@ -57,12 +57,29 @@
                 </a>
               </li>
               <li>
-                <a class="header-button i5 d-flex justify-center align-center rounded" href="#" aria-label="Client">
+                <a class="header-button i5 d-flex justify-center align-center rounded toggle" href="#profile" aria-expanded="false" aria-controls="profile" aria-label="profile">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#user"></use>
                   </svg>
                   <span class="header-status bg-green rounded"></span>
                 </a>
+                <div class="header-profile text-16 bg-white" id="profile">
+                  <ul>
+                    <li><a class="d-block font-bold" href="#">Mon compte</a></li>
+                    <li><a class="d-block font-semibold" href="#">Mes informations personnelles</a></li>
+                    <li><a class="d-block font-semibold" href="#">Fid&eacute;lit&eacute; VIP CLUB</a></li>
+                    <li><a class="d-block font-semibold" href="#">Mes commandes</a></li>
+                    <li><a class="d-block font-semibold" href="#">Mes pr&eacute;f&eacute;rences de communication</a></li>
+                    <li>
+                      <a class="d-flex justify-start align-center font-semibold" href="#">
+                        <span>Se d&eacute;connecter</span>
+                        <svg width="26" height="24" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#external"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <button class="header-button i4 d-flex justify-start align-center text-left" type="button" data-micromodal-trigger="store">
@@ -82,7 +99,7 @@
               </li>
             </ul>
           </div>
-          <div class="header-modal header-search d-flex justify-center align-center bg-cerulean-blue" id="search">
+          <div class="header-search d-flex justify-center align-center bg-cerulean-blue" id="search">
             <label class="flex-none font-semibold" for="q">Recherche</label>
             <input class="flex-auto font-medium" type="text" id="q" name="q">
             <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
@@ -97,9 +114,9 @@
 
       <main class="main">
 
-        <section class="client mt-80">
+        <section class="profile mt-80">
           <div class="container max-w-1238">
-            <aside class="client-aside text-16">
+            <aside class="profile-aside text-16">
               <ul>
                 <li><a class="d-inline-block font-semibold" href="#">Mon compte</a></li>
                 <li><a class="d-inline-block font-semibold" href="#">Mes informations personnelles</a></li>
@@ -116,17 +133,17 @@
                 </li>
               </ul>
             </aside>
-            <div class="client-body">
-              <h2 class="client-title text-32 font-semibold">Fid&eacute;lit&eacute; VIP CLUB</h2>
-              <div class="client-block max-w-468 mt-40">
-                <h3 class="client-title text-20 font-bold">Programme Fid&eacute;lit&eacute;</h3>
-                <div class="client-summary mt-32 text-16">Carte fid&eacute;lit&eacute; CLUB VIP</div>
-                <div class="client-program d-flex justify-start align-center mt-24">
-                  <div class="client-program--image">
+            <div class="profile-body">
+              <h2 class="profile-title text-32 font-semibold">Fid&eacute;lit&eacute; VIP CLUB</h2>
+              <div class="profile-block max-w-468 mt-40">
+                <h3 class="profile-title text-20 font-bold">Programme Fid&eacute;lit&eacute;</h3>
+                <div class="profile-summary mt-32 text-16">Carte fid&eacute;lit&eacute; CLUB VIP</div>
+                <div class="profile-program d-flex justify-start align-center mt-24">
+                  <div class="profile-program--image">
                     <img class="w-full h-auto" src="assets/img/card-vipclub.png" alt="VIP Club" width="108" height="72">
                   </div>
-                  <div class="client-program--body">
-                    <div class="client-program--summary text-16">
+                  <div class="profile-program--body">
+                    <div class="profile-program--summary text-16">
                       <ul>
                         <li>Date adh&eacute;sion : 11-09-2025</li>
                         <li>Validit&eacute; 12 mois</li>
@@ -136,7 +153,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="client-button mt-32 font-bold">
+                <div class="profile-button mt-32 font-bold">
                   <a class="button button-p1 button-i2 d-inline-flex justify-center align-center radius-30" href="#">
                     <span>T&eacute;l&eacute;charger ma carte</span>
                     <svg class="flex-none c-yellow" width="24" height="24" aria-hidden="true" focusable="false">
@@ -145,14 +162,14 @@
                   </a>
                 </div>
               </div>
-              <div class="client-block max-w-468 mt-64">
-                <h3 class="client-title text-20 font-bold">Avantages</h3>
-                <div class="client-summary mt-12 text-16">Pour vous r&eacute;compenser de votre fid&eacute;lit&eacute;, Litrimarch&eacute; vous offre, d&egrave;s votre adh&eacute;sion, des r&eacute;ductions de prix significatives sur une large s&eacute;lection de matelas, sommiers etc... pour seulement 5 &euro; par an, valable sur le site litrimarche.fr mais aussi dans votre magasin Litrimarch&eacute; !</div>
+              <div class="profile-block max-w-468 mt-64">
+                <h3 class="profile-title text-20 font-bold">Avantages</h3>
+                <div class="profile-summary mt-12 text-16">Pour vous r&eacute;compenser de votre fid&eacute;lit&eacute;, Litrimarch&eacute; vous offre, d&egrave;s votre adh&eacute;sion, des r&eacute;ductions de prix significatives sur une large s&eacute;lection de matelas, sommiers etc... pour seulement 5 &euro; par an, valable sur le site litrimarche.fr mais aussi dans votre magasin Litrimarch&eacute; !</div>
               </div>
             </div>
           </div>
         </section>
-        <!-- client -->
+        <!-- profile -->
 
       </main>
       <!-- main -->
@@ -242,10 +259,10 @@
                   </li>
                 </ul>
               </div>
-              <div class="footer-quality of-hidden radius-10">
+              <div class="footer-quality mt-20 of-hidden radius-10">
                 <img class="d-block w-full h-auto" src="assets/img/societe-des-avis-garantis.jpg" alt="Soci&eacute;t&eacute; des Avis Garantis" width="698" height="318">
               </div>
-              <div class="footer-partner">
+              <div class="footer-partner mt-16">
                 <ul class="d-flex flex-wrap justify-center align-center">
                   <li>
                     <a href="#" target="_blank">
@@ -264,6 +281,15 @@
                   </li>
                 </ul>
               </div>
+              <div class="footer-button mt-20 font-semibold text-uppercase">
+                <a class="button button-p2 button-i5 d-flex justify-center align-center radius-30" href="#">
+                  <svg width="15" height="20" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#lock"></use>
+                  </svg>
+                  <span>Acc&egrave;s espace priv&eacute;</span>
+                </a>
+              </div>
+
             </div>
           </div>
           <div class="footer-info d-flex flex-wrap justify-start align-center text-14 font-semibold">
