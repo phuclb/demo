@@ -24,7 +24,7 @@
           <div class="header-brand text-center">
             <img class="header-logo w-auto h-full" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
           </div>
-          <nav class="header-nav">
+          <nav class="header-nav hidden-mobile hidden-tablet">
             <ul class="d-flex justify-start align-center">
               <li>
                 <a class="header-button i1 d-flex justify-center align-center font-semibold" href="#">
@@ -39,6 +39,11 @@
               <li><a class="header-button i2 d-block font-semibold" href="#">Nos magasins</a></li>
             </ul>
           </nav>
+          <button class="header-menu hidden-desktop" type="button" aria-label="Menu">
+            <svg width="24" height="18" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#menu"></use>
+            </svg>
+          </button>
           <div class="header-toolbox">
             <ul class="d-flex justify-start align-center">
               <li>
@@ -53,7 +58,7 @@
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#cart"></use>
                   </svg>
-                  <span class="header-cart font-semibold text-10 text-center bg-red c-white rounded">3</span>
+                  <span class="header-cart font-semibold text-10 text-center bg-red c-white rounded">1</span>
                 </a>
               </li>
               <li>
@@ -61,7 +66,7 @@
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#user"></use>
                   </svg>
-                  <span class="header-status bg-green rounded"></span>
+                  <span class="header-status bg-green rounded ratio-1x1"></span>
                 </a>
                 <div class="header-profile text-16 bg-white" id="profile">
                   <ul>
@@ -73,7 +78,7 @@
                     <li>
                       <a class="d-flex justify-start align-center font-semibold" href="#">
                         <span>Se d&eacute;connecter</span>
-                        <svg width="26" height="24" aria-hidden="true" focusable="false">
+                        <svg class="flex-none w-auto" width="26" height="24" aria-hidden="true" focusable="false">
                           <use href="assets/img/sprites.svg#external"></use>
                         </svg>
                       </a>
@@ -81,7 +86,7 @@
                   </ul>
                 </div>
               </li>
-              <li>
+              <li class="hidden-mobile hidden-tablet">
                 <button class="header-button i4 d-flex justify-start align-center text-left" type="button" data-micromodal-trigger="store">
                   <svg class="i1" width="62" height="36" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#building"></use>
@@ -99,10 +104,10 @@
               </li>
             </ul>
           </div>
-          <div class="header-search d-flex justify-center align-center bg-cerulean-blue" id="search">
-            <label class="flex-none font-semibold" for="q">Recherche</label>
-            <input class="flex-auto font-medium" type="text" id="q" name="q">
-            <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
+          <div class="header-search d-flex justify-center align-center bg-cerulean-blue c-white" id="search">
+            <label class="font-semibold" for="q">Recherche</label>
+            <input class="w-full font-medium" type="text" id="q" name="q">
+            <button class="d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
               <svg width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
@@ -288,7 +293,7 @@
               </div>
               <div class="footer-button mt-20 font-semibold text-uppercase">
                 <a class="button button-p2 button-i5 d-flex justify-center align-center radius-30" href="#">
-                  <svg width="15" height="20" aria-hidden="true" focusable="false">
+                  <svg class="flex-none" width="15" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#lock"></use>
                   </svg>
                   <span>Acc&egrave;s espace priv&eacute;</span>
