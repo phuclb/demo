@@ -517,6 +517,9 @@ textarea {
 .max-w-full {
   max-width: 100%;
 }
+.max-w-420 {
+  max-width: 420px;
+}
 .max-w-468 {
   max-width: 468px;
 }
@@ -1643,51 +1646,6 @@ textarea {
 .cart-step a:hover {
   color: var(--c-navy-blue);
 }
-.cart-user {
-  margin-right: -32px;
-}
-.cart-user--item {
-  width: 50%;
-  padding: 32px;
-}
-.cart-user--item:nth-child(2n+1) {
-  border-right: var(--c-concrete) solid 1px;
-}
-.cart-user--button {
-  gap: 16px;
-  padding: 9px 20px;
-  text-decoration: none;
-}
-.cart-user--button svg,
-.cart-user--button img {
-  max-height: 24px;
-}
-.cart-user--button span {
-  width: 26px;
-  height: 24px;
-}
-.cart-user--button:not(:first-child) {
-  margin-top: 12px;
-}
-.cart-user--button.i1 {
-  background-color: transparent;
-  border: var(--c-gainsboro) solid 1px;
-  color: var(--c-cerulean-blue);
-}
-.cart-user--button.i1:hover {
-  background-color: var(--c-cerulean-blue);
-  border-color: var(--c-cerulean-blue);
-  color: var(--c-white);
-}
-.cart-user--button.i2 {
-  background-color: var(--c-facebook);
-  border: var(--c-facebook) solid 1px;
-  color: var(--c-white);
-}
-.cart-user--button.i2:hover {
-  background-color: var(--c-cerulean-blue);
-  border-color: var(--c-cerulean-blue);
-}
 .cart-address li {
   padding-block: 6px;
   border-bottom: var(--c-concrete) solid 1px;
@@ -1722,7 +1680,7 @@ textarea {
 .cart-address label::after {
   width: 12px;
   height: 12px;
-  background-color: var(--c-cerulean-blue);
+  background-color: var(--c-dodger-blue);
   opacity: 0;
   visibility: hidden;
 }
@@ -1944,7 +1902,7 @@ textarea {
 .cart-delivery--label::after {
   width: 18px;
   height: 18px;
-  background-color: var(--c-cerulean-blue);
+  background-color: var(--c-dodger-blue);
   opacity: 0;
   visibility: hidden;
 }
@@ -1982,7 +1940,7 @@ textarea {
 .cart-method label::after {
   width: 12px;
   height: 12px;
-  background-color: var(--c-cerulean-blue);
+  background-color: var(--c-dodger-blue);
   opacity: 0;
   visibility: hidden;
 }
@@ -1996,12 +1954,6 @@ textarea {
 }
 .cart-method span {
   gap: 12px;
-}
-.cart-inscription ul {
-  gap: 48px;
-}
-.cart-inscription li {
-  width: 160px;
 }
 .cart-account {
   padding-block: 24px;
@@ -2019,8 +1971,18 @@ textarea {
   margin-top: 10px;
   padding-block: 12px;
 }
+.cart-user {
+  margin-right: calc(-1 * var(--cart-body-g));
+}
+.cart-user--item {
+  width: 320px;
+}
+.cart-user--line {
+  width: 1px;
+  margin-inline: 32px;
+}
 .cart-body {
-  --cart-body-g: 44px;
+  --cart-body-g: 48px;
   --cart-aside-w: 420px;
   gap: var(--cart-body-g);
 }
@@ -2079,7 +2041,7 @@ textarea {
   border-color: var(--c-red);
 }
 .form-grid {
-  --form-grid-g: 20px;
+  --form-grid-g: 24px;
   gap: var(--form-grid-g);
 }
 .form-grid .form-group {
@@ -2111,7 +2073,7 @@ textarea {
 .form-radio label::after {
   width: 12px;
   height: 12px;
-  background-color: var(--c-cerulean-blue);
+  background-color: var(--c-dodger-blue);
   opacity: 0;
   visibility: hidden;
 }
@@ -2192,11 +2154,11 @@ textarea {
   opacity: 1;
   visibility: visible;
 }
-.form-note a {
+.form-password a {
   text-decoration: none;
   color: var(--c-dove-gray);
 }
-.form-note a:hover {
+.form-password a:hover {
   text-decoration: underline;
   color: var(--c-cerulean-blue);
 }
@@ -2213,16 +2175,16 @@ textarea {
   border: 0;
 }
 .button-p1 {
-  padding: 15px 28px;
+  padding: 15px 30px;
 }
 .button-p2 {
-  padding: 10px 28px;
+  padding: 10px 30px;
 }
 .button-p3 {
   padding: 15px 16px;
 }
 .button-p4 {
-  padding: 7px 18px;
+  padding: 7px 20px;
 }
 .button-i1 {
   background-color: var(--c-yellow);
@@ -2745,7 +2707,7 @@ textarea {
 }
 .banner-content {
   z-index: 2;
-  padding: 28px 44px;
+  padding: 32px 48px;
   color: var(--c-white);
 }
 .banner-title {
@@ -4035,7 +3997,7 @@ textarea {
 }
 .section-opinion--aside {
   z-index: 2;
-  padding: 28px 44px;
+  padding: 32px 48px;
   color: var(--c-white);
 }
 .section-region ul {
@@ -4419,4 +4381,74 @@ textarea {
 .client-delivery {
   min-width: 186px;
   padding: 4px 8px;
+}
+
+/**
+--------------------------------------------------
+  Account
+--------------------------------------------------
+**/
+.account-button {
+  min-height: 44px;
+  gap: 16px;
+  padding: 9px 20px;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.account-button.i1 {
+  background-color: transparent;
+  border: var(--c-gainsboro) solid 1px;
+  color: var(--c-cerulean-blue);
+}
+.account-button.i1:hover {
+  background-color: var(--c-cerulean-blue);
+  border-color: var(--c-cerulean-blue);
+  color: var(--c-white);
+}
+.account-button.i2 {
+  background-color: var(--c-facebook);
+  border: var(--c-facebook) solid 1px;
+  color: var(--c-white);
+}
+.account-button.i2:hover {
+  background-color: var(--c-cerulean-blue);
+  border-color: var(--c-cerulean-blue);
+}
+.account-inscription ul {
+  gap: 48px;
+}
+.account-inscription li {
+  width: 160px;
+}
+.account-line {
+  width: 1px;
+}
+.account-grid.i1 .account-item {
+  width: 410px;
+}
+.account-grid.i1 .account-line {
+  margin-inline: 96px;
+}
+.account-grid.i2 .account-item.i1 {
+  width: 330px;
+}
+.account-grid.i2 .account-item.i2 {
+  width: 420px;
+  margin-left: 32px;
+}
+.account-grid.i2 .account-line {
+  margin-inline: 32px;
+}
+.account-grid.i3 .account-item.i1 {
+  width: 520px;
+}
+.account-grid.i3 .account-item.i2 {
+  width: 600px;
+}
+.account-grid.i4 .account-item.i1 {
+  width: 696px;
+  padding-inline: 48px;
+}
+.account-grid.i4 .account-item.i2 {
+  width: 420px;
 }
