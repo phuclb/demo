@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <header class="header bg-cerulean-blue c-white">
+      <header class="header bg-cerulean-blue">
         <div class="container">
           <h1 class="header-title sr-only">Litrimarch&eacute;</h1>
           <div class="header-brand text-center">
@@ -39,16 +39,16 @@
           <nav class="header-nav hidden-mobile hidden-tablet">
             <ul class="d-flex justify-start align-center">
               <li>
-                <a class="header-button i1 d-flex justify-center align-center font-semibold" href="#">
+                <button class="header-button i1 d-flex justify-center align-center font-semibold toggle" type="button" aria-expanded="false" aria-controls="mProduct">
                   <svg width="16" height="12" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#menu"></use>
                   </svg>
                   <span>Nos produits</span>
-                </a>
+                </button>
               </li>
-              <li><a class="header-button i2 d-block font-semibold" href="#">Nos marques</a></li>
-              <li><a class="header-button i2 d-block font-semibold" href="#">Nos conseils</a></li>
-              <li><a class="header-button i2 d-block font-semibold" href="#">Nos magasins</a></li>
+              <li><button class="header-button i2 d-block font-semibold toggle" type="button" aria-expanded="false" aria-controls="mBrand">Nos marques</a></li>
+              <li><button class="header-button i2 d-block font-semibold toggle" type="button" aria-expanded="false" aria-controls="mSupport">Nos conseils</a></li>
+              <li><button class="header-button i2 d-block font-semibold toggle" type="button" aria-expanded="false" aria-controls="mStore">Nos magasins</a></li>
             </ul>
           </nav>
           <div class="header-toolbox">
@@ -119,6 +119,437 @@
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
             </button>
+          </div>
+          <div class="menu bg-alabaster" id="mProduct">
+            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos produits</h2>
+            <button class="menu-close dismiss" type="button" aria-label="Fermer">
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="menu-body d-flex justify-start align-start mt-16">
+              <div class="menu-aside">
+                <div class="menu-list text-16 font-medium">
+                  <ul>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20 active" href="#mProduct1">
+                        <span>Matelas</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Sommiers</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Sommiers et matelas</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#mProduct4">
+                        <span>Lits &eacute;lectriques</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Lits banquettes</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Oreillers</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Couettes</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Linge de lit</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Surmatelas</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-flex justify-between align-center radius-20" href="#">
+                        <span>Accessoires</span>
+                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                          <use href="assets/img/sprites.svg#toggle"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu-link i1 mt-8 text-16 font-semibold">
+                  <a href="#">Voir tous nos produits</a>
+                </div>
+                <div class="menu-banner mt-40 of-hidden bg-white radius-10">
+                  <img class="w-full h-full obj-cover" src="assets/img/product-1.jpg" alt="Image" width="280" height="220">
+                </div>
+              </div>
+              <div class="menu-content">
+                <div class="menu-grid i1 d-flex flex-wrap justify-start align-start" id="mProduct1">
+                  <div class="menu-item">
+                    <h3 class="menu-title text-20 font-semibold">Types de matelas</h3>
+                    <div class="menu-link i2 mt-16 text-16 font-medium">
+                      <ul>
+                        <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                        <li><a href="#">Matelas latex</a></li>
+                        <li><a href="#">Matelas mousse</a></li>
+                        <li><a href="#">Matelas hybride</a></li>
+                        <li><a href="#">Matelas ressorts</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <h3 class="menu-title text-20 font-semibold">Par taille</h3>
+                    <div class="menu-link i2 mt-16 text-16 font-medium">
+                      <ul>
+                        <li><a href="#">1 personne</a></li>
+                        <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                        <li><a href="#">2 personnes</a></li>
+                        <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                        <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                        <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                        <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                        <li><a href="#">Autres dimensions</a></li>
+                        <li><a href="#">Queen size</a></li>
+                        <li><a href="#">King size</a></li>
+                        <li><a href="#">King size XL</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <h3 class="menu-title text-20 font-semibold">Par marque</h3>
+                    <div class="menu-link i2 mt-16 text-16 font-medium">
+                      <ul>
+                        <li><a href="#">Black Line</a></li>
+                        <li><a href="#">Je Dors Bien</a></li>
+                        <li><a href="#">Butex</a></li>
+                        <li><a href="#">Dolux</a></li>
+                        <li><a href="#">Dunlopillo</a></li>
+                        <li><a href="#">Epeda</a></li>
+                        <li><a href="#">Grand Hotel</a></li>
+                        <li><a href="#">Le Matelas Cocorico</a></li>
+                        <li><a href="#">Litrinight</a></li>
+                        <li><a href="#">M&eacute;rinos</a></li>
+                        <li><a href="#">Milly</a></li>
+                        <li><a href="#">Vipur</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <h3 class="menu-title text-20 font-semibold">Par confort</h3>
+                    <div class="menu-link i2 mt-16 text-16 font-medium">
+                      <ul>
+                        <li><a href="#">Matelas m&oelig;lleux</a></li>
+                        <li><a href="#">Matelas ferme</a></li>
+                        <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <h3 class="menu-title text-20 font-semibold">Par prix</h3>
+                    <div class="menu-link i2 mt-16 text-16 font-medium">
+                      <ul>
+                        <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                        <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                        <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                        <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                        <li><a href="#">1000&euro; et +</a></li>
+                        <li><a href="#">Pas cher</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <h3 class="menu-title text-20 font-semibold">Matelas sp&eacute;cifiques</h3>
+                    <div class="menu-link i2 mt-16 text-16 font-medium">
+                      <ul>
+                        <li><a href="#">Matelas mal de dos</a></li>
+                        <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                        <li><a href="#">Matelas enfant</a></li>
+                        <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                        <li><a href="#">Matelas couple</a></li>
+                        <li><a href="#">Matelas grandes tailles</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu bg-alabaster" id="mBrand">
+            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos marques</h2>
+            <button class="menu-close dismiss" type="button" aria-label="Fermer">
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="menu-body mt-44">
+              <div class="menu-brand">
+                <ul class="d-flex flex-wrap justify-center align-center">
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-dunlopillo.png" alt="Dunlopillo" width="358" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-bultex.png" alt="Bultex" width="220" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-epeda.png" alt="Epeda" width="100" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrinight.png" alt="Litrinight" width="468" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-vipur.png" alt="VIPur" width="150" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-dolux.png" alt="Dolux" width="182" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-merinos.png" alt="Merinos" width="100" height="100">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
+                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-link i1 mt-24 text-16 font-semibold text-center">
+                <a href="#">Voir tous nos produits</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu bg-alabaster" id="mSupport">
+            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos conseils</h2>
+            <button class="menu-close dismiss" type="button" aria-label="Fermer">
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="menu-body mt-24">
+              <div class="menu-grid i3 d-flex flex-wrap justify-start align-start">
+                <div class="menu-item i1">
+
+                  <div class="section-support text-center">
+                    <a class="d-block of-hidden bg-alabaster radius-10" href="#">
+                      <div class="section-support--image">
+                        <img class="w-full h-full obj-cover" src="assets/img/support-1.jpg" alt="Comment choisir son matelas ?" width="384" height="370">
+                      </div>
+                      <div class="section-support--content">
+                        <h3 class="section-support--title text-18 font-bold text-uppercase">Comment choisir<br>son matelas ?</h3>
+                        <div class="section-support--summary mt-8 text-14">M&oelig;ulleux ou ferme, il a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
+                        <div class="section-support--button mt-16 font-bold text-uppercase radius-30">Lire la suite</div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- section-support -->
+
+                </div>
+                <div class="menu-item i2">
+                  <div class="menu-link i3 text-20 font-semibold">
+                    <ul>
+                      <li><a href="#">Guide d&rsquo;achat</a></li>
+                      <li><a href="#">Guide mieux dormir</a></li>
+                      <li><a href="#">Entretenir sa literie</a></li>
+                      <li><a href="#">Quel matelas choisir ?</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="menu-item i2">
+                  <div class="menu-link i3 text-20 font-semibold">
+                    <ul>
+                      <li><a href="#">Quel oreiller choisir ?</a></li>
+                      <li><a href="#">Comment choisir sa couette ?</a></li>
+                      <li><a href="#">Quel lit &eacute;lectrique choisir ?</a></li>
+                      <li><a href="#">Quel surmatelas choisir ?</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="menu-item i2">
+                  <div class="menu-icon text-center">
+                    <svg width="120" height="50" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#sleep"></use>
+                    </svg>
+                  </div>
+                  <div class="menu-button mt-40 font-bold text-center text-uppercase">
+                    <a class="d-block button button-p1 button-i2 radius-30" href="#">Le blog du sommeil</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu bg-alabaster" id="mStore">
+            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos magasins</h2>
+            <button class="menu-close dismiss" type="button" aria-label="Fermer">
+              <svg width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="menu-body mt-24">
+              <div class="menu-grid i3 d-flex flex-wrap justify-start align-start">
+                <div class="menu-item i1">
+
+                  <section class="banner i3">
+                    <div class="banner-container of-hidden bg-alabaster radius-10">
+                      <div class="banner-content text-center">
+                        <div class="banner-icon mb-20">
+                          <svg width="100" height="130" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#location"></use>
+                          </svg>
+                        </div>
+                        <h2 class="banner-title text-20 font-semibold">Venez nous rencontrer<br>près de chez vous !</h2>
+                        <div class="banner-block mt-20 font-bold text-center text-uppercase">
+                          <a class="button button-p1 button-i1 d-inline-flex justify-center align-center radius-30" href="#">
+                            <svg class="flex-none" width="15" height="20" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#location"></use>
+                            </svg>
+                            <span>Trouver mon magasin</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="banner-image i2">
+                        <img class="w-full h-full obj-cover" src="assets/img/banner-5.jpg" alt="Image" width="1198" height="500">
+                      </div>
+                    </div>
+                  </section>
+                  <!-- banner -->
+
+                </div>
+                <div class="menu-item i2">
+                  <div class="menu-link i3 text-20 font-semibold">
+                    <ul>
+                      <li><a href="#">Qui sommes-nous ?</a></li>
+                      <li><a href="#">Nos offres d&rsquo;emploi</a></li>
+                      <li><a href="#">Carte de fid&eacute;lit&eacute; V.I.P Club</a></li>
+                      <li><a href="#">Payer en plusieurs fois</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="menu-item i2">
+                  <div class="menu-link i3 text-20 font-semibold">
+                    <ul>
+                      <li><a href="#">L&rsquo;&eacute;co-participation, c&rsquo;est quoi ?</a></li>
+                      <li><a href="#">Nos services</a></li>
+                      <li><a href="#">Nos avantages</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -765,37 +1196,37 @@
                 <div class="splide__track splide__visible">
                   <ul class="splide__list">
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-dunlopillo.png" alt="Dunlopillo" width="358" height="100">
                       </a>
                     </li>
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-bultex.png" alt="Bultex" width="220" height="100">
                       </a>
                     </li>
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-epeda.png" alt="Epeda" width="100" height="100">
                       </a>
                     </li>
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrinight.png" alt="Litrinight" width="468" height="100">
                       </a>
                     </li>
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-vipur.png" alt="VIPur" width="150" height="100">
                       </a>
                     </li>
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-dolux.png" alt="Dolux" width="182" height="100">
                       </a>
                     </li>
                     <li class="splide__slide">
-                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#" target="_blank">
+                      <a class="section-brand d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
                         <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-merinos.png" alt="Merinos" width="100" height="100">
                       </a>
                     </li>
