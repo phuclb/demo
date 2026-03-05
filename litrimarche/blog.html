@@ -24,6 +24,11 @@
           <div class="header-brand text-center">
             <img class="header-logo w-auto h-full" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
           </div>
+          <button class="header-menu hidden-desktop" type="button" aria-label="Menu">
+            <svg width="24" height="18" aria-hidden="true" focusable="false">
+              <use href="assets/img/sprites.svg#menu"></use>
+            </svg>
+          </button>
           <nav class="header-nav hidden-mobile hidden-tablet">
             <ul class="d-flex justify-start align-center">
               <li>
@@ -39,11 +44,6 @@
               <li><a class="header-button i2 d-block font-semibold" href="#">Nos magasins</a></li>
             </ul>
           </nav>
-          <button class="header-menu hidden-desktop" type="button" aria-label="Menu">
-            <svg width="24" height="18" aria-hidden="true" focusable="false">
-              <use href="assets/img/sprites.svg#menu"></use>
-            </svg>
-          </button>
           <div class="header-toolbox">
             <ul class="d-flex justify-start align-center">
               <li>
@@ -396,13 +396,13 @@
 
       <footer class="footer mt-112 bg-alabaster">
         <div class="container max-w-1238">
-          <div class="footer-grid d-flex flex-wrap justify-start align-start">
+          <div class="footer-grid d-flex flex-wrap justify-center align-start">
             <div class="footer-item i1">
-              <div class="footer-brand">
+              <div class="footer-brand mx-auto text-center">
                 <img class="footer-logo w-full h-full" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
               </div>
-              <div class="footer-branch text-center">
-                <strong class="d-block font-semibold">Plus de 110 magasins en France !</strong>
+              <div class="footer-branch mt-20 mx-auto text-center">
+                <strong class="d-block font-semibold">Plus de 110 magasins<br>en France !</strong>
                 <a class="d-block font-semibold text-uppercase radius-40" href="#">
                   <svg width="15" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#location"></use>
@@ -437,7 +437,7 @@
             <div class="footer-item i2">
               <div class="footer-link">
                 <h3 class="footer-link--title text-20 font-semibold">Retrouvez toutes vos marques de literie chez Litrimarch&eacute;</h3>
-                <ul class="footer-link--list text-14">
+                <ul class="footer-link--list footer-column text-14">
                   <li><a href="#">Dolux</a></li>
                   <li><a href="#">Litrinight</a></li>
                   <li><a href="#">Vipur</a></li>
@@ -452,7 +452,7 @@
               </div>
 
             </div>
-            <div class="footer-item i1 ml-auto">
+            <div class="footer-item i3">
               <div class="footer-social text-center">
                 <h3 class="footer-social--title text-16 font-semibold">Suivez-nous sur les r&eacute;seaux !</h3>
                 <ul class="footer-social--list text-14 d-flex flex-wrap justify-center align-center">
@@ -479,7 +479,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="footer-quality mt-20 of-hidden radius-10">
+              <div class="footer-quality mt-20 mx-auto of-hidden radius-10">
                 <img class="d-block w-full h-auto" src="assets/img/societe-des-avis-garantis.jpg" alt="Soci&eacute;t&eacute; des Avis Garantis" width="698" height="318">
               </div>
               <div class="footer-partner mt-16">
@@ -501,7 +501,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="footer-button mt-20 font-semibold text-uppercase">
+              <div class="footer-client mt-20 mx-auto font-semibold text-uppercase">
                 <a class="button button-p2 button-i5 d-flex justify-center align-center radius-30" href="#">
                   <svg class="flex-none" width="15" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#lock"></use>
@@ -512,13 +512,13 @@
 
             </div>
           </div>
-          <div class="footer-info d-flex flex-wrap justify-start align-center text-14 font-semibold">
-            <ul class="d-flex justify-start align-center">
+          <div class="footer-info d-flex flex-wrap justify-between align-center text-14 font-semibold text-center">
+            <ul class="d-flex flex-wrap justify-start align-center">
               <li><a href="#">CGV</a></li>
               <li><a href="#">Mentions l&eacute;gales</a></li>
               <li><a href="#">Politique de confidentialit&eacute;</a></li>
             </ul>
-            <p class="ml-auto">&copy; 2026 Litrimarch&eacute;, tous droits r&eacute;serv&eacute;s.</p>
+            <p>&copy; 2026 Litrimarch&eacute;, tous droits r&eacute;serv&eacute;s.</p>
           </div>
         </div>
       </footer>
