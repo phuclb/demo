@@ -1393,13 +1393,8 @@ textarea {
 .splide__pagination {
   position: absolute;
   right: 20px;
-  bottom: 16px;
+  bottom: var(--splide-pagination-y);
   left: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   pointer-events: none;
   gap: 12px;
 }
@@ -1413,12 +1408,22 @@ textarea {
   width: 12px;
   height: 12px;
   padding: 0;
-  background-color: var(--c-white);
+  background-color: var(--splide-page-bg-1);
   border: 0;
   border-radius: 50%;
 }
 .splide__pagination button.is-active {
-  background-color: var(--c-yellow);
+  background-color: var(--splide-page-bg-2);
+}
+.splide__pagination.i1 {
+  --splide-pagination-y: 16px;
+  --splide-page-bg-1: var(--c-white);
+  --splide-page-bg-2: var(--c-yellow);
+}
+.splide__pagination.i2 {
+  --splide-pagination-y: -24px;
+  --splide-page-bg-1: var(--c-silver-chalice);
+  --splide-page-bg-2: var(--c-cerulean-blue);
 }
 .splide__arrow {
   position: absolute;
@@ -3265,6 +3270,7 @@ textarea {
     border-radius: 0 0 10px 10px;
     -webkit-box-shadow: 0 5px 30px var(--c-black-a-15);
             box-shadow: 0 5px 30px var(--c-black-a-15);
+    pointer-events: none;
     opacity: 0;
     visibility: hidden;
     -webkit-transition-duration: 0.25s;
@@ -3273,6 +3279,7 @@ textarea {
             transition-property: opacity, visibility;
   }
   .nav-section.active {
+    pointer-events: auto;
     opacity: 1;
     visibility: visible;
   }
