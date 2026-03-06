@@ -31,37 +31,1351 @@
           <div class="header-brand text-center">
             <img class="header-logo w-auto h-full" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
           </div>
-          <button class="header-menu hidden-desktop" type="button" aria-label="Menu">
+          <button class="header-nav toggle hidden-desktop" type="button" aria-label="Navigation" aria-expanded="false" aria-controls="nWrapper">
             <svg width="24" height="18" aria-hidden="true" focusable="false">
               <use href="assets/img/sprites.svg#menu"></use>
             </svg>
           </button>
-          <nav class="header-nav hidden-mobile hidden-tablet">
-            <ul class="d-flex justify-start align-center">
-              <li>
-                <button class="header-button i1 d-flex justify-center align-center font-semibold toggle" type="button" aria-expanded="false" aria-controls="mProduct">
-                  <svg width="16" height="12" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#menu"></use>
-                  </svg>
-                  <span>Nos produits</span>
-                </button>
-              </li>
-              <li><button class="header-button i2 d-block font-semibold toggle" type="button" aria-expanded="false" aria-controls="mBrand">Nos marques</a></li>
-              <li><button class="header-button i2 d-block font-semibold toggle" type="button" aria-expanded="false" aria-controls="mSupport">Nos conseils</a></li>
-              <li><button class="header-button i2 d-block font-semibold toggle" type="button" aria-expanded="false" aria-controls="mStore">Nos magasins</a></li>
-            </ul>
+
+          <nav class="nav-wrapper d-flex flex-wrap justify-start align-center" id="nWrapper">
+            <div class="nav-block">
+              <button class="nav-toggle i1 d-flex justify-between align-center w-full font-semibold" aria-expanded="false" aria-controls="nProduct">
+                <svg class="flex-none hidden-mobile hidden-tablet" width="16" height="12" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#menu"></use>
+                </svg>
+                <span>Nos produits</span>
+                <svg class="collapsed flex-none hidden-desktop" width="10" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#toggle"></use>
+                </svg>
+                <svg class="expanded flex-none hidden-desktop" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#close"></use>
+                </svg>
+              </button>
+              <div class="nav-section" id="nProduct">
+                <div class="nav-header hidden-mobile hidden-tablet">
+                  <h2 class="nav-title font-semibold text-uppercase">Nos produits</h2>
+                  <button class="nav-close dismiss" type="button" aria-label="Fermer">
+                    <svg width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="nav-body d-flex justify-start align-start">
+                  <div class="nav-aside flex-none">
+                    <div class="nav-list font-medium">
+                      <ul>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct1">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Matelas</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct2">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Sommiers</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct3">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Ensembles literie</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct4">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Lits &eacute;lectriques</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct5">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Banquettes</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct6">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Oreillers</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct7">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Couettes</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="nav-subtoggle" role="button" aria-expanded="false" aria-controls="nProduct8">
+                            <a class="nav-sublink d-flex justify-between align-center" href="#">
+                              <span>Accessoires</span>
+                              <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#toggle"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="nav-link i1 font-semibold">
+                      <a href="#">Voir tous nos produits</a>
+                    </div>
+                  </div>
+                  <div class="nav-content flex-auto">
+                    <div class="nav-product" id="nProduct1">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Matelas</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos matelas</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-1.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct2">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Sommiers</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos sommiers</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-2.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct3">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Ensembles literie</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos ensembles literie</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-3.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct4">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Lits &eacute;lectriques</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos lits &eacute;lectriques</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par technologie de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas ressorts ensach&eacute;s</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par type de sommiers</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Sommier &agrave; lattes </a></li>
+                              <li><a href="#">Sommier &agrave; ressorts</a></li>
+                              <li><a href="#">Sommier tapissier</a></li>
+                              <li><a href="#">Sommier avec plots</a></li>
+                              <li><a href="#">Sommier en fibre de verre</a></li>
+                              <li><a href="#">Sommier r&eacute;glable</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">1 personne : 90 x 200 cm</a></li>
+                              <li><a href="#">1 personne : 120 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 2 x 70 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 2 x 80 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 2 x 90 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Sommiers de relaxation</a></li>
+                              <li><a href="#">Matelas de relaxation</a></li>
+                              <li><a href="#">Ensembles de relaxation</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Lits &Eacute;lectriques sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Lits avec t&eacute;l&eacute;commande filaire</a></li>
+                              <li><a href="#">Lits avec t&eacute;l&eacute;commande sans fil (radio)</a></li>
+                              <li><a href="#">Lits avec &eacute;clairage d&rsquo;appoint</a></li>
+                              <li><a href="#">Lits avec t&ecirc;te de lit assortie</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-4.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct5">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Banquettes</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos banquettes</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-5.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct6">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Oreillers</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos oreillers</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-6.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct7">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Couettes</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos couettes</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-7.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                    <div class="nav-product" id="nProduct8">
+                      <div class="nav-group hidden-desktop">
+                        <div class="nav-header text-center">
+                          <h3 class="nav-title font-semibold">Accessoires</h3>
+                          <button class="nav-back" type="button" aria-label="Retour">
+                            <svg width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="nav-link i1 font-semibold text-center">
+                          <a href="#">Voir tous nos accessoires</a>
+                        </div>
+                      </div>
+                      <div class="nav-grid d-flex flex-wrap justify-start align-start">
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Types de matelas</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&eacute;moire de forme</a></li>
+                              <li><a href="#">Matelas latex</a></li>
+                              <li><a href="#">Matelas mousse</a></li>
+                              <li><a href="#">Matelas hybride</a></li>
+                              <li><a href="#">Matelas ressorts</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par taille</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">1 personne</a></li>
+                              <li><a href="#">1 personne : 90 x 190 cm</a></li>
+                              <li><a href="#">2 personnes</a></li>
+                              <li><a href="#">2 personnes : 140 x 190 cm</a></li>
+                              <li><a href="#">2 personnes : 160 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 180 x 200 cm</a></li>
+                              <li><a href="#">2 personnes : 200 x 200 cm</a></li>
+                              <li><a href="#">Autres dimensions</a></li>
+                              <li><a href="#">Queen size</a></li>
+                              <li><a href="#">King size</a></li>
+                              <li><a href="#">King size XL</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par marque</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Black Line</a></li>
+                              <li><a href="#">Je Dors Bien</a></li>
+                              <li><a href="#">Butex</a></li>
+                              <li><a href="#">Dolux</a></li>
+                              <li><a href="#">Dunlopillo</a></li>
+                              <li><a href="#">Epeda</a></li>
+                              <li><a href="#">Grand Hotel</a></li>
+                              <li><a href="#">Le Matelas Cocorico</a></li>
+                              <li><a href="#">Litrinight</a></li>
+                              <li><a href="#">M&eacute;rinos</a></li>
+                              <li><a href="#">Milly</a></li>
+                              <li><a href="#">Vipur</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par confort</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas m&oelig;lleux</a></li>
+                              <li><a href="#">Matelas ferme</a></li>
+                              <li><a href="#">Matelas tr&egrave;s ferme</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Par prix</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
+                              <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
+                              <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
+                              <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
+                              <li><a href="#">1000&euro; et +</a></li>
+                              <li><a href="#">Pas cher</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="nav-item">
+                          <h3 class="nav-title font-semibold">Matelas sp&eacute;cifiques</h3>
+                          <div class="nav-link i2 mt-16 font-medium">
+                            <ul>
+                              <li><a href="#">Matelas mal de dos</a></li>
+                              <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
+                              <li><a href="#">Matelas enfant</a></li>
+                              <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
+                              <li><a href="#">Matelas couple</a></li>
+                              <li><a href="#">Matelas grandes tailles</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav-banner of-hidden bg-white radius-10">
+                        <img class="w-full h-full obj-cover" src="assets/img/product-8.jpg" alt="Image" width="280" height="220">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-block">
+              <button class="nav-toggle i2 d-flex justify-between align-center w-full font-semibold" aria-expanded="false" aria-controls="nBrand">
+                <span>Nos marques</span>
+                <svg class="collapsed flex-none hidden-desktop" width="10" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#toggle"></use>
+                </svg>
+                <svg class="expanded flex-none hidden-desktop" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#close"></use>
+                </svg>
+              </button>
+              <div class="nav-section" id="nBrand">
+                <div class="nav-header hidden-mobile hidden-tablet">
+                  <h2 class="nav-title font-semibold text-uppercase">Nos marques</h2>
+                  <button class="nav-close dismiss" type="button" aria-label="Fermer">
+                    <svg width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="nav-body">
+                  <div class="nav-brand">
+                    <div class="nav-sublist font-medium">
+                      <ul class="d-flex flex-wrap justify-center align-center">
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-dunlopillo.png" alt="Dunlopillo" width="358" height="100">
+                            <span class="hidden-desktop">Dunlopillo</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-bultex.png" alt="Bultex" width="220" height="100">
+                            <span class="hidden-desktop">Bultex</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-epeda.png" alt="Epeda" width="100" height="100">
+                            <span class="hidden-desktop">Epeda</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-litrinight.png" alt="Litrinight" width="468" height="100">
+                            <span class="hidden-desktop">Litrinight</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-vipur.png" alt="VIPur" width="150" height="100">
+                            <span class="hidden-desktop">VIPur</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-dolux.png" alt="Dolux" width="182" height="100">
+                            <span class="hidden-desktop">Dolux</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="i1 d-flex justify-between align-center" href="#">
+                            <img class="max-w-full max-h-full w-auto h-auto obj-contain hidden-mobile hidden-tablet" src="assets/img/logo-merinos.png" alt="Merinos" width="100" height="100">
+                            <span class="hidden-desktop">Merinos</span>
+                            <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                              <use href="assets/img/sprites.svg#toggle"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="nav-link i1 font-semibold">
+                      <a href="#">Voir tous nos marques</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-block">
+              <button class="nav-toggle i2 d-flex justify-between align-center w-full font-semibold" aria-expanded="false" aria-controls="nSupport">
+                <span>Nos conseils</span>
+                <svg class="collapsed flex-none hidden-desktop" width="10" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#toggle"></use>
+                </svg>
+                <svg class="expanded flex-none hidden-desktop" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#close"></use>
+                </svg>
+              </button>
+              <div class="nav-section" id="nSupport">
+                <div class="nav-header hidden-mobile hidden-tablet">
+                  <h2 class="nav-title font-semibold text-uppercase">Nos conseils</h2>
+                  <button class="nav-close dismiss" type="button" aria-label="Fermer">
+                    <svg width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="nav-body">
+                  <div class="nav-support d-flex justify-start align-center">
+                    <div class="nav-support--aside flex-none hidden-mobile hidden-tablet">
+                      <div class="section-support text-center">
+                        <a class="d-block of-hidden bg-alabaster radius-10" href="#">
+                          <div class="section-support--image">
+                            <img class="w-full h-full obj-cover" src="assets/img/support-1.jpg" alt="Comment choisir son matelas ?" width="384" height="370">
+                          </div>
+                          <div class="section-support--content">
+                            <h3 class="section-support--title text-18 font-bold text-uppercase">Comment choisir<br>son matelas ?</h3>
+                            <div class="section-support--summary mt-8 text-14">M&oelig;ulleux ou ferme, il a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
+                            <div class="section-support--button mt-16 font-bold text-uppercase radius-30">Lire la suite</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="nav-support--grid flex-auto d-flex flex-wrap justify-start align-start">
+                      <div class="nav-support--item">
+                        <div class="nav-sublist font-medium">
+                          <ul>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Guide d&rsquo;achat</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Guide mieux dormir</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Entretenir sa literie</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Quel matelas choisir ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="nav-support--item">
+                        <div class="nav-sublist font-medium">
+                          <ul>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Quel oreiller choisir ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Comment choisir sa couette ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Quel lit &eacute;lectrique choisir ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Quel surmatelas choisir ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="nav-sublist font-bold hidden-desktop">
+                          <ul>
+                            <li>
+                              <a class="i2 d-flex justify-between align-center" href="#">
+                                <span>Le blog du sommeil</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="nav-support--item hidden-mobile hidden-tablet">
+                        <div class="nav-icon text-center">
+                          <svg width="120" height="50" aria-hidden="true" focusable="false">
+                            <use href="assets/img/sprites.svg#sleep"></use>
+                          </svg>
+                        </div>
+                        <div class="nav-button mt-40 font-bold text-center text-uppercase">
+                          <a class="d-block button button-p1 button-i2 radius-30" href="#">Le blog du sommeil</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-block">
+              <button class="nav-toggle i2 d-flex justify-between align-center w-full font-semibold" aria-expanded="false" aria-controls="nStore">
+                <span>Nos magasins</span>
+                <svg class="collapsed flex-none hidden-desktop" width="10" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#toggle"></use>
+                </svg>
+                <svg class="expanded flex-none hidden-desktop" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#close"></use>
+                </svg>
+              </button>
+              <div class="nav-section" id="nStore">
+                <div class="nav-header hidden-mobile hidden-tablet">
+                  <h2 class="nav-title font-semibold text-uppercase">Nos magasins</h2>
+                  <button class="nav-close dismiss" type="button" aria-label="Fermer">
+                    <svg width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="nav-body">
+                  <div class="nav-store d-flex justify-start align-center">
+                    <div class="nav-store--aside flex-none hidden-mobile hidden-tablet">
+                      <section class="banner i3">
+                        <div class="banner-container of-hidden bg-alabaster radius-10">
+                          <div class="banner-content text-center">
+                            <div class="banner-icon mb-20">
+                              <svg width="100" height="130" aria-hidden="true" focusable="false">
+                                <use href="assets/img/sprites.svg#location"></use>
+                              </svg>
+                            </div>
+                            <h2 class="banner-title text-20 font-semibold">Venez nous rencontrer<br>près de chez vous !</h2>
+                            <div class="banner-block mt-20 font-bold text-center text-uppercase">
+                              <a class="button button-p1 button-i1 d-inline-flex justify-center align-center radius-30" href="#">
+                                <svg class="flex-none" width="15" height="20" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#location"></use>
+                                </svg>
+                                <span>Trouver mon magasin</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="banner-image i2">
+                            <img class="w-full h-full obj-cover" src="assets/img/banner-5.jpg" alt="Image" width="1198" height="500">
+                          </div>
+                        </div>
+                      </section>
+                      <!-- banner -->
+                    </div>
+                    <div class="nav-store--grid flex-auto d-flex flex-wrap justify-start align-start">
+                      <div class="nav-store--item">
+                        <div class="nav-sublist font-bold hidden-desktop">
+                          <ul>
+                            <li>
+                              <a class="i2 d-flex justify-between align-center" href="#">
+                                <span>Trouver un magasin</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="nav-sublist font-medium">
+                          <ul>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Qui sommes-nous ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Nos offres d&rsquo;emploi</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Carte de fid&eacute;lit&eacute; V.I.P Club</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Payer en plusieurs fois</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="nav-store--item">
+                        <div class="nav-sublist font-medium">
+                          <ul>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>L&rsquo;&eacute;co-participation, c&rsquo;est quoi ?</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Nos services</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="i1 d-flex justify-between align-center" href="#">
+                                <span>Nos avantages</span>
+                                <svg class="flex-none hidden-desktop" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use href="assets/img/sprites.svg#toggle"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </nav>
+          <!-- nav-wrapper -->
+
           <div class="header-toolbox">
             <ul class="d-flex justify-start align-center">
               <li>
-                <a class="header-button i5 d-flex justify-center align-center rounded toggle" href="#search" role="button" aria-expanded="false" aria-controls="search" aria-label="Rechercher">
+                <button class="header-button i1 d-flex justify-center align-center rounded toggle" aria-label="Rechercher" aria-expanded="false" aria-controls="search">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#search"></use>
                   </svg>
-                </a>
+                </button>
               </li>
               <li>
-                <a class="header-button i5 d-flex justify-center align-center rounded" href="#" aria-label="Panier">
+                <a class="header-button i1 d-flex justify-center align-center rounded" href="#" aria-label="Panier">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#cart"></use>
                   </svg>
@@ -69,13 +1383,13 @@
                 </a>
               </li>
               <li>
-                <a class="header-button i5 d-flex justify-center align-center rounded toggle" href="#profile" aria-expanded="false" aria-controls="profile" aria-label="profile">
+                <button class="header-button i1 d-flex justify-center align-center rounded toggle" aria-label="Profile" aria-expanded="false" aria-controls="mProfile">
                   <svg width="20" height="20" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#user"></use>
                   </svg>
                   <span class="header-status bg-green rounded ratio-1x1"></span>
-                </a>
-                <div class="header-profile text-16 bg-white" id="profile">
+                </button>
+                <div class="header-profile text-16 bg-white" id="mProfile">
                   <ul>
                     <li><a class="d-block font-bold" href="#">Mon compte</a></li>
                     <li><a class="d-block font-semibold" href="#">Mes informations personnelles</a></li>
@@ -94,7 +1408,7 @@
                 </div>
               </li>
               <li class="hidden-mobile hidden-tablet">
-                <button class="header-button i4 d-flex justify-start align-center text-left" type="button" data-micromodal-trigger="store">
+                <button class="header-button i3 d-flex justify-start align-center text-left" type="button" data-micromodal-trigger="store">
                   <svg class="i1" width="62" height="36" aria-hidden="true" focusable="false">
                     <use href="assets/img/sprites.svg#building"></use>
                   </svg>
@@ -102,8 +1416,8 @@
                     <em class="d-block text-10 font-normal font-bold">Mon magasin</em>
                     <span class="d-flex justify-start align-center">
                       <strong class="d-block text-14 font-bold text-uppercase">Litrimarch&eacute; Persan</strong>
-                      <svg class="i2" width="8" height="14" aria-hidden="true" focusable="false">
-                        <use href="assets/img/sprites.svg#right"></use>
+                      <svg class="i2" width="12" height="22" aria-hidden="true" focusable="false">
+                        <use href="assets/img/sprites.svg#toggle"></use>
                       </svg>
                     </span>
                   </span>
@@ -112,444 +1426,13 @@
             </ul>
           </div>
           <div class="header-search d-flex justify-center align-center bg-cerulean-blue c-white" id="search">
-            <label class="font-semibold" for="q">Recherche</label>
-            <input class="w-full font-medium" type="text" id="q" name="q">
-            <button class="d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
+            <label class="flex-none font-semibold" for="q">Recherche</label>
+            <input class="flex-auto max-w-872 w-full font-medium" type="text" id="q" name="q">
+            <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
               <svg width="20" height="20" aria-hidden="true" focusable="false">
                 <use href="assets/img/sprites.svg#search"></use>
               </svg>
             </button>
-          </div>
-          <div class="menu bg-alabaster" id="mProduct">
-            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos produits</h2>
-            <button class="menu-close dismiss" type="button" aria-label="Fermer">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="assets/img/sprites.svg#close"></use>
-              </svg>
-            </button>
-            <div class="menu-body d-flex justify-start align-start mt-16">
-              <div class="menu-aside">
-                <div class="menu-list text-16 font-medium">
-                  <ul>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20 active" href="#mProduct1">
-                        <span>Matelas</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Sommiers</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Sommiers et matelas</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#mProduct4">
-                        <span>Lits &eacute;lectriques</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Lits banquettes</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Oreillers</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Couettes</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Linge de lit</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Surmatelas</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="d-flex justify-between align-center radius-20" href="#">
-                        <span>Accessoires</span>
-                        <svg class="flex-none" width="12" height="22" aria-hidden="true" focusable="false">
-                          <use href="assets/img/sprites.svg#toggle"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu-link i1 mt-8 text-16 font-semibold">
-                  <a href="#">Voir tous nos produits</a>
-                </div>
-                <div class="menu-banner mt-40 of-hidden bg-white radius-10">
-                  <img class="w-full h-full obj-cover" src="assets/img/product-1.jpg" alt="Image" width="280" height="220">
-                </div>
-              </div>
-              <div class="menu-content">
-                <div class="menu-grid i1 d-flex flex-wrap justify-start align-start" id="mProduct1">
-                  <div class="menu-item">
-                    <h3 class="menu-title text-20 font-semibold">Types de matelas</h3>
-                    <div class="menu-link i2 mt-16 text-16 font-medium">
-                      <ul>
-                        <li><a href="#">Matelas m&eacute;moire de forme</a></li>
-                        <li><a href="#">Matelas latex</a></li>
-                        <li><a href="#">Matelas mousse</a></li>
-                        <li><a href="#">Matelas hybride</a></li>
-                        <li><a href="#">Matelas ressorts</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <h3 class="menu-title text-20 font-semibold">Par taille</h3>
-                    <div class="menu-link i2 mt-16 text-16 font-medium">
-                      <ul>
-                        <li><a href="#">1 personne</a></li>
-                        <li><a href="#">1 personne : 90 x 190 cm</a></li>
-                        <li><a href="#">2 personnes</a></li>
-                        <li><a href="#">2 personnes : 140 x 190 cm</a></li>
-                        <li><a href="#">2 personnes : 160 x 200 cm</a></li>
-                        <li><a href="#">2 personnes : 180 x 200 cm</a></li>
-                        <li><a href="#">2 personnes : 200 x 200 cm</a></li>
-                        <li><a href="#">Autres dimensions</a></li>
-                        <li><a href="#">Queen size</a></li>
-                        <li><a href="#">King size</a></li>
-                        <li><a href="#">King size XL</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <h3 class="menu-title text-20 font-semibold">Par marque</h3>
-                    <div class="menu-link i2 mt-16 text-16 font-medium">
-                      <ul>
-                        <li><a href="#">Black Line</a></li>
-                        <li><a href="#">Je Dors Bien</a></li>
-                        <li><a href="#">Butex</a></li>
-                        <li><a href="#">Dolux</a></li>
-                        <li><a href="#">Dunlopillo</a></li>
-                        <li><a href="#">Epeda</a></li>
-                        <li><a href="#">Grand Hotel</a></li>
-                        <li><a href="#">Le Matelas Cocorico</a></li>
-                        <li><a href="#">Litrinight</a></li>
-                        <li><a href="#">M&eacute;rinos</a></li>
-                        <li><a href="#">Milly</a></li>
-                        <li><a href="#">Vipur</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <h3 class="menu-title text-20 font-semibold">Par confort</h3>
-                    <div class="menu-link i2 mt-16 text-16 font-medium">
-                      <ul>
-                        <li><a href="#">Matelas m&oelig;lleux</a></li>
-                        <li><a href="#">Matelas ferme</a></li>
-                        <li><a href="#">Matelas tr&egrave;s ferme</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <h3 class="menu-title text-20 font-semibold">Par prix</h3>
-                    <div class="menu-link i2 mt-16 text-16 font-medium">
-                      <ul>
-                        <li><a href="#">Jusqu&rsquo;&agrave; 150&euro;</a></li>
-                        <li><a href="#">De 150&euro; &agrave; 300&euro;</a></li>
-                        <li><a href="#">De 300&euro; &agrave; 500&euro;</a></li>
-                        <li><a href="#">De 500&euro; &agrave; 1000&euro;</a></li>
-                        <li><a href="#">1000&euro; et +</a></li>
-                        <li><a href="#">Pas cher</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="menu-item">
-                    <h3 class="menu-title text-20 font-semibold">Matelas sp&eacute;cifiques</h3>
-                    <div class="menu-link i2 mt-16 text-16 font-medium">
-                      <ul>
-                        <li><a href="#">Matelas mal de dos</a></li>
-                        <li><a href="#">Matelas b&eacute;b&eacute;</a></li>
-                        <li><a href="#">Matelas enfant</a></li>
-                        <li><a href="#">Matelas pour lit &eacute;lectrique</a></li>
-                        <li><a href="#">Matelas couple</a></li>
-                        <li><a href="#">Matelas grandes tailles</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="menu bg-alabaster" id="mBrand">
-            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos marques</h2>
-            <button class="menu-close dismiss" type="button" aria-label="Fermer">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="assets/img/sprites.svg#close"></use>
-              </svg>
-            </button>
-            <div class="menu-body mt-44">
-              <div class="menu-brand">
-                <ul class="d-flex flex-wrap justify-center align-center">
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-dunlopillo.png" alt="Dunlopillo" width="358" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-bultex.png" alt="Bultex" width="220" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-epeda.png" alt="Epeda" width="100" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrinight.png" alt="Litrinight" width="468" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-vipur.png" alt="VIPur" width="150" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-dolux.png" alt="Dolux" width="182" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-merinos.png" alt="Merinos" width="100" height="100">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="d-flex justify-center align-center of-hidden bg-white radius-10" href="#">
-                      <img class="max-w-full max-h-full w-auto h-auto obj-contain" src="assets/img/logo-litrimarche.png" alt="Litrimarch&eacute;" width="981" height="180">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu-link i1 mt-24 text-16 font-semibold text-center">
-                <a href="#">Voir tous nos produits</a>
-              </div>
-            </div>
-          </div>
-          <div class="menu bg-alabaster" id="mSupport">
-            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos conseils</h2>
-            <button class="menu-close dismiss" type="button" aria-label="Fermer">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="assets/img/sprites.svg#close"></use>
-              </svg>
-            </button>
-            <div class="menu-body mt-24">
-              <div class="menu-grid i3 d-flex flex-wrap justify-start align-start">
-                <div class="menu-item i1">
-
-                  <div class="section-support text-center">
-                    <a class="d-block of-hidden bg-alabaster radius-10" href="#">
-                      <div class="section-support--image">
-                        <img class="w-full h-full obj-cover" src="assets/img/support-1.jpg" alt="Comment choisir son matelas ?" width="384" height="370">
-                      </div>
-                      <div class="section-support--content">
-                        <h3 class="section-support--title text-18 font-bold text-uppercase">Comment choisir<br>son matelas ?</h3>
-                        <div class="section-support--summary mt-8 text-14">M&oelig;ulleux ou ferme, il a une r&eacute;elle incidence sur la qualit&eacute; de votre sommeil</div>
-                        <div class="section-support--button mt-16 font-bold text-uppercase radius-30">Lire la suite</div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- section-support -->
-
-                </div>
-                <div class="menu-item i2">
-                  <div class="menu-link i3 text-20 font-semibold">
-                    <ul>
-                      <li><a href="#">Guide d&rsquo;achat</a></li>
-                      <li><a href="#">Guide mieux dormir</a></li>
-                      <li><a href="#">Entretenir sa literie</a></li>
-                      <li><a href="#">Quel matelas choisir ?</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="menu-item i2">
-                  <div class="menu-link i3 text-20 font-semibold">
-                    <ul>
-                      <li><a href="#">Quel oreiller choisir ?</a></li>
-                      <li><a href="#">Comment choisir sa couette ?</a></li>
-                      <li><a href="#">Quel lit &eacute;lectrique choisir ?</a></li>
-                      <li><a href="#">Quel surmatelas choisir ?</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="menu-item i2">
-                  <div class="menu-icon text-center">
-                    <svg width="120" height="50" aria-hidden="true" focusable="false">
-                      <use href="assets/img/sprites.svg#sleep"></use>
-                    </svg>
-                  </div>
-                  <div class="menu-button mt-40 font-bold text-center text-uppercase">
-                    <a class="d-block button button-p1 button-i2 radius-30" href="#">Le blog du sommeil</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="menu bg-alabaster" id="mStore">
-            <h2 class="menu-title text-20 font-semibold text-uppercase">Nos magasins</h2>
-            <button class="menu-close dismiss" type="button" aria-label="Fermer">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="assets/img/sprites.svg#close"></use>
-              </svg>
-            </button>
-            <div class="menu-body mt-24">
-              <div class="menu-grid i3 d-flex flex-wrap justify-start align-start">
-                <div class="menu-item i1">
-
-                  <section class="banner i3">
-                    <div class="banner-container of-hidden bg-alabaster radius-10">
-                      <div class="banner-content text-center">
-                        <div class="banner-icon mb-20">
-                          <svg width="100" height="130" aria-hidden="true" focusable="false">
-                            <use href="assets/img/sprites.svg#location"></use>
-                          </svg>
-                        </div>
-                        <h2 class="banner-title text-20 font-semibold">Venez nous rencontrer<br>près de chez vous !</h2>
-                        <div class="banner-block mt-20 font-bold text-center text-uppercase">
-                          <a class="button button-p1 button-i1 d-inline-flex justify-center align-center radius-30" href="#">
-                            <svg class="flex-none" width="15" height="20" aria-hidden="true" focusable="false">
-                              <use href="assets/img/sprites.svg#location"></use>
-                            </svg>
-                            <span>Trouver mon magasin</span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="banner-image i2">
-                        <img class="w-full h-full obj-cover" src="assets/img/banner-5.jpg" alt="Image" width="1198" height="500">
-                      </div>
-                    </div>
-                  </section>
-                  <!-- banner -->
-
-                </div>
-                <div class="menu-item i2">
-                  <div class="menu-link i3 text-20 font-semibold">
-                    <ul>
-                      <li><a href="#">Qui sommes-nous ?</a></li>
-                      <li><a href="#">Nos offres d&rsquo;emploi</a></li>
-                      <li><a href="#">Carte de fid&eacute;lit&eacute; V.I.P Club</a></li>
-                      <li><a href="#">Payer en plusieurs fois</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="menu-item i2">
-                  <div class="menu-link i3 text-20 font-semibold">
-                    <ul>
-                      <li><a href="#">L&rsquo;&eacute;co-participation, c&rsquo;est quoi ?</a></li>
-                      <li><a href="#">Nos services</a></li>
-                      <li><a href="#">Nos avantages</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </header>
