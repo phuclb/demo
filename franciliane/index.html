@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Le journal de l&rsquo;eau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/img/favicon.png" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="header container">
+        <h1 class="header-title sr-only">Le journal de l&rsquo;eau</h1>
+        <div class="header-brand text-right">
+          <a href="https://www.leaudiledefrance.fr/" target="_blank" aria-label="L&rsquo;eau d&rsquo;ile de France">
+            <img src="assets/img/logo-l'eau-d'ile-de-france.svg" alt="L&rsquo;eau d&rsquo;ile de France" width="118" height="66">
+          </a>
+        </div>
+        <div class="header-logo">
+          <img class="w-full h-auto" src="assets/img/logo-le-journal-de-l'eau.svg" alt="Le journal de l&rsquo;eau" width="366" height="128">
+        </div>
+        <div class="header-icon text-right">
+          <img src="assets/img/water.svg" alt="" width="118" height="110">
+        </div>
+      </header>
+      <!-- header -->
+
+      <main class="main">
+
+        <section class="intro container">
+          <header class="intro-header text-center">
+            <h2 class="intro-title font-black">Jeu-concours 2026 !</h2>
+            <div class="intro-summary">Chaque jour les 17, 19, 20 et 21 mars, trouvez le mot myst&egrave;re dans les pages<br>du journal Le Parisien et tentez de remporter l&rsquo;un de nos nombreux lots !</div>
+          </header>
+          <div class="intro-body">
+            <picture class="intro-banner">
+              <source media="(orientation: portrait)" srcset="assets/img/banner-portrait.webp">
+              <source media="(orientation: landscape)" srcset="assets/img/banner-landscape.webp">
+              <img class="w-full h-auto" src="assets/img/banner-portrait.webp" alt="Jeu-concours 2026 !" width="720" height="1286">
+            </picture>
+          </div>
+        </section>
+        <!-- intro -->
+
+        <section class="form container">
+          <header class="form-header text-center">
+            <h2 class="form-title font-black">Vous avez trouv&eacute; le <em class="font-normal">mot myst&egrave;re</em> du jour ?<br>Remplissez le formulaire ci-dessous pour participer.</h2>
+            <div class="form-summary">Avant de commencer, v&eacute;rifiez que votre commune fait bien partie<br>du territoire du Syndicat des Eaux d&rsquo;&Icirc;le-de-France :</div>
+          </header>
+          <div class="form-body">
+            <form id="mForm" novalidate>
+              <div class="form-control form-pristine">
+                <label class="sr-only" for="mI1">J&rsquo;habite la commune de* :</label>
+                <select class="w-full" id="mI1" name="mI1" required data-pristine-required-message="Ce champ est obligatoire.">
+                  <option value="" disabled selected hidden>J&rsquo;habite la commune de* :</option>
+                  <option value="Ablon/Seine">Ablon/Seine</option>
+                  <option value="Alfortville">Alfortville</option>
+                  <option value="Andilly">Andilly</option>
+                  <option value="Antony">Antony</option>
+                  <option value="Argenteuil">Argenteuil</option>
+                  <option value="Aubervilliers">Aubervilliers</option>
+                  <option value="Aulnay-sous-Bois">Aulnay-sous-Bois</option>
+                  <option value="Auvers/Oise">Auvers/Oise</option>
+                  <option value="Bagneux">Bagneux</option>
+                  <option value="Beauchamp">Beauchamp</option>
+                  <option value="Bessancourt">Bessancourt</option>
+                  <option value="B&eacute;themont-la-For&ecirc;t">B&eacute;themont-la-For&ecirc;t</option>
+                  <option value="Bezons">Bezons</option>
+                  <option value="Bi&egrave;vres">Bi&egrave;vres</option>
+                  <option value="Boulogne-Billancourt">Boulogne-Billancourt</option>
+                  <option value="Bourg-la-Reine">Bourg-la-Reine</option>
+                  <option value="Brou/Chantereine">Brou/Chantereine</option>
+                  <option value="Bry/Marne">Bry/Marne</option>
+                  <option value="Butry/Oise">Butry/Oise</option>
+                  <option value="Champigny/Marne">Champigny/Marne</option>
+                  <option value="Charenton-le-Pont">Charenton-le-Pont</option>
+                  <option value="Ch&acirc;tenay-Malabry">Ch&acirc;tenay-Malabry</option>
+                  <option value="Ch&acirc;tillon">Ch&acirc;tillon</option>
+                  <option value="Chauvry">Chauvry</option>
+                  <option value="Chaville">Chaville</option>
+                  <option value="Chelles">Chelles</option>
+                  <option value="Chennevi&egrave;res/Marne">Chennevi&egrave;res/Marne</option>
+                  <option value="Choisy-le-Roi">Choisy-le-Roi</option>
+                  <option value="Clamart">Clamart</option>
+                  <option value="Clichy-la-Garenne">Clichy-la-Garenne</option>
+                  <option value="Clichy-sous-Bois">Clichy-sous-Bois</option>
+                  <option value="Cormeilles-en-Parisis">Cormeilles-en-Parisis</option>
+                  <option value="Coubron">Coubron</option>
+                  <option value="Deuil-la-Barre">Deuil-la-Barre</option>
+                  <option value="Domont">Domont</option>
+                  <option value="Drancy">Drancy</option>
+                  <option value="Dugny">Dugny</option>
+                  <option value="Eaubonne">Eaubonne</option>
+                  <option value="Ecouen">Ecouen</option>
+                  <option value="Enghien-les-Bains">Enghien-les-Bains</option>
+                  <option value="Epinay/Seine">Epinay/Seine</option>
+                  <option value="Ermont">Ermont</option>
+                  <option value="Fontenay-aux-Roses">Fontenay-aux-Roses</option>
+                  <option value="Fontenay-sous-Bois">Fontenay-sous-Bois</option>
+                  <option value="Franconville">Franconville</option>
+                  <option value="Fr&eacute;pillon">Fr&eacute;pillon</option>
+                  <option value="Gagny">Gagny</option>
+                  <option value="Gournay/Marne">Gournay/Marne</option>
+                  <option value="Groslay">Groslay</option>
+                  <option value="Herblay">Herblay</option>
+                  <option value="Houilles">Houilles</option>
+                  <option value="Igny">Igny</option>
+                  <option value="Issy-les-Moulineaux">Issy-les-Moulineaux</option>
+                  <option value="Joinville-le-Pont">Joinville-le-Pont</option>
+                  <option value="Jouy-en-Josas">Jouy-en-Josas</option>
+                  <option value="Juvisy/Orge">Juvisy/Orge</option>
+                  <option value="La Courneuve">La Courneuve</option>
+                  <option value="La Frette/Seine">La Frette/Seine</option>
+                  <option value="Le Bourget">Le Bourget</option>
+                  <option value="Le Mesnil-le-Roi">Le Mesnil-le-Roi</option>
+                  <option value="Le Perreux/Marne">Le Perreux/Marne</option>
+                  <option value="Le Plessis-Bouchard">Le Plessis-Bouchard</option>
+                  <option value="Le Plessis-Robinson">Le Plessis-Robinson</option>
+                  <option value="Le Raincy">Le Raincy</option>
+                  <option value="Les Loges-en-Josas">Les Loges-en-Josas</option>
+                  <option value="Les Pavillons-sous-Bois">Les Pavillons-sous-Bois</option>
+                  <option value="Levallois-Perret">Levallois-Perret</option>
+                  <option value="L'Ha&yuml;-les-Roses">L'Ha&yuml;-les-Roses</option>
+                  <option value="L'&Icirc;le-Saint-Denis">L'&Icirc;le-Saint-Denis</option>
+                  <option value="Livry-Gargan">Livry-Gargan</option>
+                  <option value="Maisons-Alfort">Maisons-Alfort</option>
+                  <option value="Malakoff">Malakoff</option>
+                  <option value="Margency">Margency</option>
+                  <option value="Massy">Massy</option>
+                  <option value="M&eacute;riel">M&eacute;riel</option>
+                  <option value="M&eacute;ry/Oise">M&eacute;ry/Oise</option>
+                  <option value="Meudon">Meudon</option>
+                  <option value="Montfermeil">Montfermeil</option>
+                  <option value="Montigny-les-Cormeilles">Montigny-les-Cormeilles</option>
+                  <option value="Montlignon">Montlignon</option>
+                  <option value="Montmagny">Montmagny</option>
+                  <option value="Montmorency">Montmorency</option>
+                  <option value="Montrouge">Montrouge</option>
+                  <option value="Neuilly-Plaisance">Neuilly-Plaisance</option>
+                  <option value="Neuilly/Marne">Neuilly/Marne</option>
+                  <option value="Neuilly/Seine">Neuilly/Seine</option>
+                  <option value="Nogent/Marne">Nogent/Marne</option>
+                  <option value="Noisy-le-Grand">Noisy-le-Grand</option>
+                  <option value="Palaiseau">Palaiseau</option>
+                  <option value="Pierrelaye">Pierrelaye</option>
+                  <option value="Piscop">Piscop</option>
+                  <option value="Puteaux">Puteaux</option>
+                  <option value="Rosny-sous-Bois">Rosny-sous-Bois</option>
+                  <option value="Rungis">Rungis</option>
+                  <option value="Saint-Brice-sous-For&ecirc;t">Saint-Brice-sous-For&ecirc;t</option>
+                  <option value="Saint-Denis">Saint-Denis</option>
+                  <option value="Saint-Gratien">Saint-Gratien</option>
+                  <option value="Saint-Leu-la-For&ecirc;t">Saint-Leu-la-For&ecirc;t</option>
+                  <option value="Saint-Mand&eacute;">Saint-Mand&eacute;</option>
+                  <option value="Saint-Maur-des-Foss&eacute;s">Saint-Maur-des-Foss&eacute;s</option>
+                  <option value="Saint-Maurice">Saint-Maurice</option>
+                  <option value="Saint-Ouen">Saint-Ouen</option>
+                  <option value="Saint-Prix">Saint-Prix</option>
+                  <option value="Sannois">Sannois</option>
+                  <option value="Sarcelles">Sarcelles</option>
+                  <option value="Sartrouville">Sartrouville</option>
+                  <option value="Sceaux">Sceaux</option>
+                  <option value="Seine-Port">Seine-Port</option>
+                  <option value="Sevran">Sevran</option>
+                  <option value="S&egrave;vres">S&egrave;vres</option>
+                  <option value="Soisy-sous-Montmorency">Soisy-sous-Montmorency</option>
+                  <option value="Stains">Stains</option>
+                  <option value="Taverny">Taverny</option>
+                  <option value="Thiais">Thiais</option>
+                  <option value="Vaires/Marne">Vaires/Marne</option>
+                  <option value="Valenton">Valenton</option>
+                  <option value="Valmondois">Valmondois</option>
+                  <option value="Vanves">Vanves</option>
+                  <option value="Vaujours">Vaujours</option>
+                  <option value="V&eacute;lizy-Villacoublay">V&eacute;lizy-Villacoublay</option>
+                  <option value="Verri&egrave;res-le-Buisson">Verri&egrave;res-le-Buisson</option>
+                  <option value="Villemomble">Villemomble</option>
+                  <option value="Villeneuve-le-Roi">Villeneuve-le-Roi</option>
+                  <option value="Villeparisis">Villeparisis</option>
+                  <option value="Villetaneuse">Villetaneuse</option>
+                  <option value="Villiers-Adam">Villiers-Adam</option>
+                  <option value="Villiers-le-Bel">Villiers-le-Bel</option>
+                  <option value="Villiers/Marne">Villiers/Marne</option>
+                  <option value="Vincennes">Vincennes</option>
+                  <option value="Viroflay">Viroflay</option>
+                  <option value="Wissous">Wissous</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" width="14" height="8" aria-hidden="true" focusable="false">
+                  <path d="M6.86 8L0 1.05.69.35 6.85 6.6 13.31 0l.69.69L6.86 8z"></path>
+                </svg>
+              </div>
+              <div class="form-control form-pristine">
+                <label class="sr-only" for="mI2">Mot myst&egrave;re* :</label>
+                <input class="w-full" type="text" id="mI2" name="mI2" placeholder="Mot myst&egrave;re* :" required data-pristine-required-message="Ce champ est obligatoire.">
+              </div>
+              <div class="form-control form-pristine">
+                <label class="sr-only" for="mI3">Nom* :</label>
+                <input class="w-full" type="text" id="mI3" name="mI3" placeholder="Nom* :" required data-pristine-required-message="Ce champ est obligatoire.">
+              </div>
+              <div class="form-control form-pristine">
+                <label class="sr-only" for="mI4">Pr&eacute;nom* :</label>
+                <input class="w-full" type="text" id="mI4" name="mI4" placeholder="Pr&eacute;nom* :" required data-pristine-required-message="Ce champ est obligatoire.">
+              </div>
+              <div class="form-control form-pristine">
+                <label class="sr-only" for="mI5">Adresse postale* :</label>
+                <input class="w-full" type="text" id="mI5" name="mI5" placeholder="Adresse postale* :" required data-pristine-required-message="Ce champ est obligatoire.">
+              </div>
+              <div class="form-control form-pristine">
+                <label class="sr-only" for="mI6">Adresse e-mail* :</label>
+                <input class="w-full" type="email" id="mI6" name="mI6" placeholder="Adresse e-mail* :" required data-pristine-required-message="Ce champ est obligatoire." data-pristine-email-message="Ce champ n&eacute;cessite une adresse e-mail valide.">
+              </div>
+              <div class="form-required font-bold">* Champs obligatoires</div>
+              <div class="form-toolbox d-flex flex-wrap justify-center align-center">
+                <div class="form-download">
+                  <a href="assets/file/Reglement_jeu_concours_Journal_de_l_Eau_2026" target="_blank">R&egrave;glement du jeu-concours</a>
+                </div>
+                <div class="form-checkbox form-pristine">
+                  <input class="sr-only" type="checkbox" id="mI7" name="mI7" required data-pristine-required-message="Pour jouer, vous devez accepter ces conditions.">
+                  <label class="font-bold" for="mI7">Je suis majeur, j&rsquo;ai lu et j&rsquo;accepte le r&egrave;glement</label>
+                </div>
+                <div class="form-button text-center">
+                  <button class="form-submit font-bold text-uppercase" type="submit">Valider</button>
+                </div>
+              </div>
+              <div class="form-confirm text-center">
+                <p><strong>Merci pour votre participation !</strong></p>
+                <p>Le tirage au sort sera effectu&eacute; prochainement et les gagnants seront contact&eacute;s par e-mail.</p>
+                <p>Bonne chance !</p>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- form -->
+
+      </main>
+      <!-- main -->
+
+      <footer class="footer container">
+        <div class="footer-newsletter font-bold text-center text-uppercase">
+          <a class="footer-button d-block" href="https://www.leaudiledefrance.fr/inscription-newsletter" target="_blank">S&rsquo;inscrire &agrave; la newsletter de L&rsquo;Eau d&rsquo;&Icirc;le-de-France</a>
+        </div>
+        <div class="footer-nav d-flex flex-wrap justify-between align-start font-italic font-semibold">
+          <p class="footer-info">&copy; Parc Asterix Sylvain Cambon, Aquarium de Paris, <span>Compagnie des Bateaux Mouches, Freepik</span></p>
+          <div class="footer-link">
+            <ul class="d-flex justify-between align-start">
+              <li><a href="#">Gestion des cookies</a></li>
+              <li><a href="assets/file/Mentions_legales_Journal_de_l_Eau_2026.png" target="_blank">Mentions l&eacute;gales</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <ul class="d-flex justify-center align-center">
+            <li>
+              <a href="https://www.facebook.com/LEAUDIDF/" target="_blank" aria-label="Facebook">
+                <img src="assets/img/facebook.svg" alt="Facebook" loading="lazy" width="36" height="36">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/leaudidf/" target="_blank" aria-label="Instagram">
+                <img src="assets/img/instagram.svg" alt="Instagram" loading="lazy" width="36" height="36">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@leaudidf" target="_blank" aria-label="Tiktok">
+                <img src="assets/img/tiktok.svg" alt="Tiktok" loading="lazy" width="36" height="36">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@leaudidf" target="_blank" aria-label="Youtube">
+                <img src="assets/img/youtube.svg" alt="Youtube" loading="lazy" width="36" height="36">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-brand">
+          <a href="https://www.sedif.com/" target="_blank" aria-label="Sedif">
+            <img src="assets/img/logo-sedif.svg" alt="Sedif" loading="lazy" width="74" height="64">
+          </a>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </div>
+    <!-- wrapper -->
+
+    <script src="assets/js/plugins.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <!-- script -->
+
+  </body>
+
+</html>
