@@ -170,7 +170,7 @@ const App = {
 
     createSplide('.splide-hero', {
       type: 'slide',
-      gap: 0,
+      gap: 20,
       speed: 1000,
       arrows: false,
       autoplay: true,
@@ -192,13 +192,20 @@ const App = {
       interval: 3000
     });
 
-    createSplide('.splide-support', {
+    createSplide('.splide-mobile', {
       type: 'slide',
-      gap: 0,
+      gap: 20,
       speed: 1000,
       arrows: false,
-      autoplay: true,
-      interval: 5000,
+      pagination: false,
+      autoWidth: true
+    });
+
+    createSplide('.splide-support', {
+      type: 'slide',
+      gap: 20,
+      speed: 1000,
+      arrows: false,
       classes: {
         pagination: 'splide__pagination i2 d-flex flex-wrap justify-center align-center'
       }
