@@ -35,13 +35,8 @@ const App = {
     };
 
     const resetNav = () => {
-      $$('.nav-block, .nav-section').forEach(el =>
-        el.classList.remove('active', 'inactive')
-      );
-
-      $$('.nav-toggle, .nav-subtoggle').forEach(toggle =>
-        deactivate(toggle, getTarget(toggle))
-      );
+      $$('.nav-block, .nav-section').forEach(el => el.classList.remove('active', 'inactive'));
+      $$('.nav-toggle, .nav-subtoggle').forEach(toggle => deactivate(toggle, getTarget(toggle)));
     };
     const initNav = () => {
       const active = $('.nav-subtoggle.active');
@@ -104,6 +99,9 @@ const App = {
     // L2 toggles
     const subtoggles = $$('.nav-subtoggle');
     const handleSubToggle = e => {
+      if (e.type === 'click') {
+        e.preventDefault();
+      }
       const toggle = e.currentTarget;
       const target = getTarget(toggle);
       if (!target) {
