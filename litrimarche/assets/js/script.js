@@ -412,6 +412,21 @@ const App = {
       events: true,
       throttle: 80
     });
+
+    // resetInput
+    const resetBtn = document.querySelectorAll('button[type="reset"]');
+    resetBtn.forEach(button => {
+      const input = button.parentElement.querySelector('input');
+
+      if (!input) {
+        return;
+      }
+
+      button.addEventListener('click', e => {
+        e.preventDefault();
+        input.value = '';
+      });
+    });
   }
 };
 

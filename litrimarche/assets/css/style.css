@@ -1551,12 +1551,12 @@ textarea {
   padding-block: var(--cart-address-px);
   border-bottom: var(--c-concrete) solid 1px;
 }
+.cart-address address {
+  margin-left: 12px;
+}
 .cart-address label,
 .cart-address button {
   margin-left: var(--cart-address-g);
-}
-.cart-address address {
-  margin-left: 12px;
 }
 .cart-address label {
   position: relative;
@@ -1597,7 +1597,13 @@ textarea {
   color: var(--c-cerulean-blue);
 }
 .cart-address button:hover {
-  color: var(--c-red);
+  color: var(--cart-hover);
+}
+.cart-address button.delete {
+  --cart-hover: var(--c-red);
+}
+.cart-address button.modify {
+  --cart-hover: var(--c-dodger-blue);
 }
 .cart-user {
   gap: var(--cart-user-g);
@@ -1697,7 +1703,8 @@ textarea {
   visibility: hidden;
 }
 .cart-checkbox label + em {
-  width: 150px;
+  font-size: var(--cart-checkbox-em-fs);
+  line-height: 1.25;
   color: var(--c-silver-chalice);
 }
 .cart-checkbox input:checked + label::after {
@@ -1718,34 +1725,43 @@ textarea {
   width: auto;
   height: 15px;
 }
-.cart-promo {
+.cart-form {
   position: relative;
+  display: none;
 }
-.cart-promo input {
-  height: 44px;
-  padding-block: 8px;
-  padding-right: 100px;
-  padding-left: 20px;
-  background-color: var(--c-white);
-  border: var(--c-gainsboro) solid 1px;
-  color: var(--c-cerulean-blue);
+.cart-form input {
+  padding-right: 120px;
 }
-.cart-promo input.error {
-  border-color: var(--c-red);
-}
-.cart-promo button {
+.cart-form button {
   position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  padding: 5px 15px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px 20px;
   background-color: transparent;
   border: 0;
   color: var(--c-cerulean-blue);
 }
-.cart-promo button:hover {
-  background-color: var(--c-gainsboro);
-  color: var(--c-navy-blue);
+.cart-form button:hover {
+  background-color: var(--c-cerulean-blue);
+  color: var(--c-yellow);
+}
+.cart-form.active {
+  display: block;
+}
+.cart-code {
+  gap: 4px;
+  padding: 0;
+  line-height: 1;
+  background-color: transparent;
+  border: 0;
+  color: var(--c-cerulean-blue);
+}
+.cart-code:hover {
+  color: var(--c-red);
+}
+.cart-promo {
+  gap: 12px;
 }
 .cart-summary li {
   gap: 20px;
@@ -1903,8 +1919,8 @@ textarea {
     height: 16px;
   }
   .cart-product--image {
-    width: 140px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
   }
   .cart-product--body {
     width: 100%;
@@ -1921,6 +1937,7 @@ textarea {
   }
   .cart-checkbox {
     --cart-checkbox-py: 2px;
+    --cart-checkbox-em-fs: 16px;
   }
   .cart-delivery {
     margin-inline: -20px;
@@ -2012,6 +2029,9 @@ textarea {
   .cart-product--price {
     width: 150px;
     font-size: 24px;
+  }
+  .cart-checkbox {
+    --cart-checkbox-em-fs: 24px;
   }
   .cart-delivery {
     padding: 24px;
@@ -3880,23 +3900,15 @@ textarea {
   max-width: 480px;
 }
 .store-check input {
-  height: 44px;
-  padding-block: 8px;
-  padding-right: 60px;
-  padding-left: 20px;
-  background-color: var(--c-white);
-  border: var(--c-gainsboro) solid 1px;
-  color: var(--c-cerulean-blue);
-}
-.store-check input.error {
-  border-color: var(--c-red);
+  padding-right: calc(var(--form-input-h) + 20px);
 }
 .store-check button {
   position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  width: 40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  line-height: 1;
   background-color: var(--c-yellow);
   border: 0;
   color: var(--c-cerulean-blue);
@@ -3909,26 +3921,18 @@ textarea {
   position: relative;
 }
 .store-search input {
-  height: 50px;
-  padding-block: 10px;
-  padding-right: 20px;
-  padding-left: 60px;
-  background-color: var(--c-concrete);
-  border: var(--c-silver-chalice) solid 1px;
-  color: var(--c-cerulean-blue);
-}
-.store-search input.error {
-  border-color: var(--c-red);
+  padding-left: calc(var(--form-input-h) + 20px);
 }
 .store-search button {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  width: 46px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  line-height: 1;
   background-color: transparent;
   border: 0;
-  color: var(--c-dove-gray);
+  color: var(--c-cerulean-blue);
 }
 .store-search button:hover {
   background-color: var(--c-cerulean-blue);
@@ -4052,7 +4056,6 @@ textarea {
 }
 .product-badge em {
   z-index: 1;
-  margin-left: -8px;
   color: var(--c-white);
 }
 .product-badge em.i1 {
@@ -4063,6 +4066,7 @@ textarea {
 }
 .product-badge span {
   z-index: 2;
+  margin-right: -8px;
   background-color: var(--c-yellow);
 }
 .product-category {
@@ -4174,20 +4178,18 @@ textarea {
 }
 .product-select span {
   max-width: 320px;
-  padding: 9px 20px;
+  padding: 10px 20px;
 }
 .product-select select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  height: 50px;
+  height: var(--product-select-h);
   padding-block: 12px;
   padding-right: 60px;
   padding-left: 20px;
+  font-size: var(--product-select-fs);
   color: var(--c-cerulean-blue);
-}
-.product-select select.error {
-  border-color: var(--c-red);
 }
 .product-alma {
   border: var(--c-gallery) solid 1px;
@@ -4237,7 +4239,7 @@ textarea {
   padding-block: 3px;
 }
 .product-payment {
-  gap: 10px;
+  gap: 8px;
   padding-top: 10px;
   padding-inline: 10px;
   border-top: var(--c-cerulean-blue) solid 1px;
@@ -4378,6 +4380,10 @@ textarea {
     --product-box-image-w: 160px;
     --product-box-image-h: 110px;
   }
+  .product-select {
+    --product-select-h: 44px;
+    --product-select-fs: 14px;
+  }
   .product-container {
     --product-container-g: 32px;
     --product-content-w: 100%;
@@ -4437,6 +4443,10 @@ textarea {
   .product-box {
     --product-box-image-w: 130px;
     --product-box-image-h: 110px;
+  }
+  .product-select {
+    --product-select-h: 50px;
+    --product-select-fs: 16px;
   }
   .product-container {
     --product-container-g: 26px;
@@ -5929,10 +5939,13 @@ textarea {
   color: var(--c-cerulean-blue);
 }
 .profile-address button:hover {
-  color: var(--c-red);
+  color: var(--profile-hover);
 }
-.profile-order {
-  padding-block: 32px;
+.profile-address button.delete {
+  --profile-hover: var(--c-red);
+}
+.profile-address button.modify {
+  --profile-hover: var(--c-dodger-blue);
 }
 .profile-order--header {
   position: relative;
@@ -5975,6 +5988,7 @@ textarea {
 }
 .profile-program--body {
   width: var(--profile-program-body-w);
+  max-width: var(--profile-program-body-max-w);
 }
 .profile-product {
   gap: var(--profile-product-g);
@@ -6030,8 +6044,9 @@ textarea {
   }
   .profile-program {
     --profile-program-g: 20px;
-    --profile-program-image-w: 180px;
+    --profile-program-image-w: 160px;
     --profile-program-body-w: 100%;
+    --profile-program-body-max-w: 260px;
   }
   .profile-product {
     --profile-product-g: 20px;
