@@ -6,12 +6,13 @@ const App = {
    */
   init() {
     App.nav();
+    App.form();
     App.misc();
     App.slide();
     App.toggle();
     App.reveal();
-    App.accordion();
     App.counter();
+    App.accordion();
   },
 
   /**
@@ -387,6 +388,75 @@ const App = {
         update(1, { min: -Infinity, max });
       });
     });
+  },
+
+  /**
+   * Form
+   */
+  form() {
+    let fConfig = {
+      classTo: 'form-pristine',
+      errorClass: 'error',
+      successClass: 'success',
+      errorTextParent: 'form-pristine',
+      errorTextTag: 'div',
+      errorTextClass: 'form-alert mt-4 text-14 c-red hidden'
+    };
+
+    // Search
+    const fSearch = document.getElementById('fSearch');
+    if (fSearch) {
+      const pSearch = new Pristine(fSearch, fConfig);
+      fSearch.addEventListener('submit', function(e) {
+        const valid = pSearch.validate();
+        console.log(valid);
+        e.preventDefault();
+      });
+    }
+
+    // Contact
+    const fContact = document.getElementById('fContact');
+    if (fContact) {
+      const pContact = new Pristine(fContact, fConfig);
+      fContact.addEventListener('submit', function(e) {
+        const valid = pContact.validate();
+        console.log(valid);
+        e.preventDefault();
+      });
+    }
+
+    // Account
+    const fAccount = document.getElementById('fAccount');
+    if (fAccount) {
+      const pAccount = new Pristine(fAccount, fConfig);
+      fAccount.addEventListener('submit', function(e) {
+        const valid = pAccount.validate();
+        console.log(valid);
+        e.preventDefault();
+      });
+    }
+
+    // Store
+    const fStore = document.getElementById('fStore');
+    if (fStore) {
+      const pStore = new Pristine(fStore, fConfig);
+      fStore.addEventListener('submit', function(e) {
+        const valid = pStore.validate();
+        console.log(valid);
+        e.preventDefault();
+      });
+    }
+
+    // Promo
+    const fPromo = document.getElementById('fPromo');
+    if (fPromo) {
+      const pPromo = new Pristine(fPromo, fConfig);
+      fPromo.addEventListener('submit', function(e) {
+        const valid = pPromo.validate();
+        console.log(valid);
+        e.preventDefault();
+      });
+    }
   },
 
   /**

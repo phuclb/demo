@@ -1438,15 +1438,17 @@
               </li>
             </ul>
           </div>
-          <div class="header-search d-flex justify-center align-center bg-cerulean-blue c-white" id="search">
-            <label class="flex-none font-semibold" for="q">Recherche</label>
-            <input class="flex-auto max-w-872 w-full font-medium" type="text" id="q" name="q">
-            <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
-              <svg width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="assets/img/sprites.svg#search"></use>
-              </svg>
-            </button>
-          </div>
+          <form id="fSearch" novalidate>
+            <div class="header-search d-flex justify-center align-center bg-cerulean-blue c-white form-pristine" id="search">
+              <label class="flex-none font-semibold" for="q">Recherche</label>
+              <input class="flex-auto max-w-872 w-full font-medium" type="text" id="q" name="q" required>
+              <button class="flex-none d-flex justify-center align-center rounded" type="submit" aria-label="Rechercher">
+                <svg width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="assets/img/sprites.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </header>
       <!-- header -->
@@ -1676,14 +1678,16 @@
             </div>
             <div class="store-group mt-32">
               <h3 class="store-title text-20 font-semibold">Choisissez un magasin</h3>
-              <div class="store-check mt-12">
-                <input class="form-input w-full radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville">
-                <button class="ratio-1x1 rounded" type="submit" aria-label="Rechercher">
-                  <svg width="20" height="20" aria-hidden="true" focusable="false">
-                    <use href="assets/img/sprites.svg#search"></use>
-                  </svg>
-                </button>
-              </div>
+              <form id="fStore" novalidate>
+                <div class="store-check mt-12 form-pristine">
+                  <input class="form-input w-full radius-30" type="text" placeholder="Saisissez un code postal ou une ville" aria-label="Saisissez un code postal ou une ville" required>
+                  <button class="ratio-1x1 rounded" type="submit" aria-label="Rechercher">
+                    <svg width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="assets/img/sprites.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
               <div class="store-block mt-20 font-bold">
                 <a class="button button-p2 button-i1 d-inline-flex justify-center align-center radius-30" href="#">
                   <span>Me g&eacute;olocaliser</span>
@@ -1747,44 +1751,46 @@
             <h2 class="modal-title text-24 font-semibold" id="contact-title">Contactez-moi</h2>
           </header>
           <div class="modal__body mt-20">
-            <div class="form-summary text-16">
-              <p>Vous avez une question sur nos produits ou leur utilisation ?</p>
-              <p>Compl&eacute;tez le formulaire, un conseiller vous contactera par t&eacute;l&eacute;phone dans les meilleurs d&eacute;lais.</p>
-            </div>
-            <div class="form-grid d-flex flex-wrap align-start mt-24">
-              <div class="form-group">
-                <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI1">Nom*</label>
-                <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre nom" id="cFI1" name="cFI1" required>
+            <form id="fContact" novalidate>
+              <div class="form-summary text-16">
+                <p>Vous avez une question sur nos produits ou leur utilisation ?</p>
+                <p>Compl&eacute;tez le formulaire, un conseiller vous contactera par t&eacute;l&eacute;phone dans les meilleurs d&eacute;lais.</p>
               </div>
-              <div class="form-group">
-                <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI2">Pr&eacute;nom*</label>
-                <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre pr&eacute;nom" id="cFI2" name="cFI2" required>
+              <div class="form-grid d-flex flex-wrap align-start mt-24">
+                <div class="form-group form-pristine">
+                  <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI1">Nom*</label>
+                  <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre nom" id="cFI1" name="cFI1" required>
+                </div>
+                <div class="form-group form-pristine">
+                  <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI2">Pr&eacute;nom*</label>
+                  <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre pr&eacute;nom" id="cFI2" name="cFI2" required>
+                </div>
               </div>
-            </div>
-            <div class="form-group mt-24">
-              <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI3">T&eacute;l&eacute;phone*</label>
-              <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre num&eacute;ro de t&eacute;l&eacute;phone" id="cFI3" name="cFI4" required>
-            </div>
-            <div class="form-group mt-24">
-              <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI4">Sujet de l'appel*</label>
-              <div class="form-select">
-                <select class="w-full radius-30" id="cFI4" name="cFI4" required>
-                  <option value="">S&eacute;lectionner un sujet</option>
-                  <option value="1">Commande en cours</option>
-                  <option value="2">Demande de renseignement</option>
-                  <option value="3">SAV</option>
-                  <option value="4">Autre</option>
-                </select>
-                <svg width="24" height="24" aria-hidden="true" focusable="false">
-                  <use href="assets/img/sprites.svg#next"></use>
-                </svg>
+              <div class="form-group form-pristine mt-24">
+                <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI3">T&eacute;l&eacute;phone*</label>
+                <input class="form-input w-full radius-30" type="text" placeholder="Saisir votre num&eacute;ro de t&eacute;l&eacute;phone" id="cFI3" name="cFI4" required>
               </div>
-            </div>
-            <div class="form-button mt-24 text-center">
-              <button class="button button-p1 button-i1 font-bold radius-30" type="submit">Envoyer ma demande</button>
-            </div>
-            <div class="form-require mt-20 text-14">* Champs obligatoire</div>
-            <div class="form-summary mt-12 text-editor text-14">Litrimarch&eacute; traite les donn&eacute;es recueillies de ce questionnaire afin de r&eacute;pondre &agrave; votre demande au service client.<br>Pour en savoir plus sur la gestion de vos donn&eacute;es personnelles et pour exercer vos droits, <a href="#">cliquez ici</a>.</div>
+              <div class="form-group form-pristine mt-24">
+                <label class="form-label d-inline-block mb-8 text-20 font-semibold" for="cFI4">Sujet de l'appel*</label>
+                <div class="form-select">
+                  <select class="w-full radius-30" id="cFI4" name="cFI4" required>
+                    <option value="" disabled hidden selected>S&eacute;lectionner un sujet</option>
+                    <option value="1">Commande en cours</option>
+                    <option value="2">Demande de renseignement</option>
+                    <option value="3">SAV</option>
+                    <option value="4">Autre</option>
+                  </select>
+                  <svg width="24" height="24" aria-hidden="true" focusable="false">
+                    <use href="assets/img/sprites.svg#next"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-button mt-24 text-center">
+                <button class="button button-p1 button-i1 font-bold radius-30" type="submit">Envoyer ma demande</button>
+              </div>
+              <div class="form-require mt-20 text-14">* Champs obligatoire</div>
+              <div class="form-summary mt-12 text-editor text-14">Litrimarch&eacute; traite les donn&eacute;es recueillies de ce questionnaire afin de r&eacute;pondre &agrave; votre demande au service client.<br>Pour en savoir plus sur la gestion de vos donn&eacute;es personnelles et pour exercer vos droits, <a href="#">cliquez ici</a>.</div>
+            </form>
           </div>
         </div>
       </div>
