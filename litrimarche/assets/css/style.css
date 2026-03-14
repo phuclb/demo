@@ -4879,11 +4879,11 @@ textarea {
 }
 .section-review--prev {
   left: 0;
-  translate: -50% 0;
+  translate: -50% -50%;
 }
 .section-review--next {
   right: 0;
-  translate: 50% 0;
+  translate: 50% -50%;
 }
 .section-benefit--card {
   max-width: 280px;
