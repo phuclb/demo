@@ -1470,14 +1470,16 @@
         <section class="cart mt-60">
           <div class="container max-w-1238">
             <header class="cart-header text-center">
-              <h2 class="cart-title text-32 font-semibold sr-only">Mon panier</h2>
-              <div class="cart-step text-32 font-semibold">
-                <ol class="d-flex flex-wrap justify-center align-center">
-                  <li>Mon panier</li>
-                  <li class="next">Connexion</li>
-                  <li class="next">Livraison</li>
-                  <li class="next">Paiement</li>
-                </ol>
+              <div class="cart-step font-semibold">
+                <h2 class="cart-step--title text-20 font-semibold hidden-tablet hidden-desktop"><span>1/4</span> <em class="font-normal">Mon panier</em></h2>
+                <div class="cart-step--list text-32 hidden-mobile">
+                  <ol class="d-flex flex-wrap justify-center align-center">
+                    <li>Mon panier</li>
+                    <li class="next">Connexion</li>
+                    <li class="next">Livraison</li>
+                    <li class="next">Paiement</li>
+                  </ol>
+                </div>
               </div>
               <div class="cart-summary mt-16 text-16">3 produits</div>
             </header>
@@ -1718,7 +1720,7 @@
                         <div class="product-card--image bg-alabaster">
                           <img class="w-full h-full obj-cover" src="assets/img/product-16.jpg" alt="Image" loading="lazy" width="280" height="180">
                         </div>
-                        <div class="product-badge i1 d-flex justify-end align-center font-semibold text-center text-uppercase">
+                        <div class="product-badge i1 d-flex flex-wrap justify-center align-center font-semibold text-center text-uppercase">
                           <em class="i1 font-normal radius-5">Exclusivit&eacute; Web</em>
                         </div>
                         <div class="product-card--content">
@@ -1726,17 +1728,17 @@
                           <div class="product-card--summary mt-4 text-14">Cadre &agrave; lattes</div>
                           <div class="product-card--info mt-4 font-bold">90 x 190 cm</div>
                         </div>
-                        <div class="product-card--update product-update d-flex flex-col justify-end">
+                        <div class="product-card--update product-update d-flex flex-col justify-end" data-mh="product-card--update">
                           <span class="text-14 font-semibold"><strong>1599,50&euro;</strong> sans la carte VIP</span>
                         </div>
                         <div class="product-card--toolbox mt-4">
                           <div class="product-offer i2 font-bold text-uppercase">
                             <div class="product-offer--price">
-                              <strong class="text-30">599<em class="text-18 font-normal">,50</em><sup>&euro;*</sup></strong>
+                              <strong>599<em class="font-normal">,50</em><sup>&euro;*</sup></strong>
                             </div>
                             <div class="product-offer--note text-10">Avec la carte VIP CLUB</div>
                             <div class="product-offer--card">
-                              <img class="max-w-full max-h-full h-auto obj-contain" src="assets/img/card-vipclub.png" alt="VIP Club" loading="lazy" width="180" height="120">
+                              <img class="max-w-full w-auto h-full obj-contain" src="assets/img/card-vipclub.png" alt="VIP Club" loading="lazy" width="180" height="120">
                             </div>
                           </div>
                           <div class="product-tax mt-4 text-10 font-semibold text-right">*dont 11,00&euro; d&rsquo;&eacute;co-part</div>
@@ -1760,7 +1762,7 @@
                         <div class="product-card--image bg-alabaster">
                           <img class="w-full h-full obj-cover" src="assets/img/product-17.jpg" alt="Image" loading="lazy" width="280" height="180">
                         </div>
-                        <div class="product-badge i1 d-flex justify-end align-center font-semibold text-center text-uppercase">
+                        <div class="product-badge i1 d-flex flex-wrap justify-center align-center font-semibold text-center text-uppercase">
                           <em class="i1 font-normal radius-5">Exclusivit&eacute; Web</em>
                         </div>
                         <div class="product-card--content">
@@ -1768,16 +1770,16 @@
                           <div class="product-card--summary mt-4 text-14">Surmatelas</div>
                           <div class="product-card--info mt-4 font-bold">140 x 190 cm</div>
                         </div>
-                        <div class="product-card--update product-update d-flex flex-col justify-end">
+                        <div class="product-card--update product-update d-flex flex-col justify-end" data-mh="product-card--update">
                         </div>
                         <div class="product-card--toolbox mt-4">
                           <div class="product-offer i3 font-bold text-uppercase">
                             <div class="product-offer--price">
-                              <strong class="text-30">599<em class="text-18 font-normal">,50</em><sup>&euro;*</sup></strong>
+                              <strong>599<em class="font-normal">,50</em><sup>&euro;*</sup></strong>
                             </div>
                             <div class="product-offer--note text-10"></div>
                             <div class="product-offer--card">
-                              <img class="max-w-full max-h-full h-auto obj-contain" src="assets/img/card-prixbas.png" alt="100% prix bas" loading="lazy" width="180" height="140">
+                              <img class="max-w-full w-auto h-full obj-contain" src="assets/img/card-prixbas.png" alt="100% prix bas" loading="lazy" width="180" height="140">
                             </div>
                           </div>
                           <div class="product-tax mt-4 text-10 font-semibold text-right">*dont 11,00&euro; d&rsquo;&eacute;co-part</div>
@@ -1801,7 +1803,7 @@
                         <div class="product-card--image bg-alabaster">
                           <img class="w-full h-full obj-cover" src="assets/img/product-18.jpg" alt="Image" loading="lazy" width="280" height="180">
                         </div>
-                        <div class="product-badge i1 d-flex justify-end align-center font-semibold text-center text-uppercase">
+                        <div class="product-badge i1 d-flex flex-wrap justify-center align-center font-semibold text-center text-uppercase">
                           <span class="radius-5">Soldes</span>
                           <em class="i2 font-normal radius-5">Offre du moment</em>
                         </div>
@@ -1810,18 +1812,18 @@
                           <div class="product-card--summary mt-4 text-14">Couette</div>
                           <div class="product-card--info mt-4 font-bold">240 x 220 cm</div>
                         </div>
-                        <div class="product-card--update product-update d-flex flex-col justify-end">
+                        <div class="product-card--update product-update d-flex flex-col justify-end" data-mh="product-card--update">
                           <span class="text-13 font-medium"><strong>1599,50&euro;</strong> sans la carte VIP</span>
                           <span class="mt-4 text-14 font-semibold"><del><strong>599,50&euro;</strong></del> avec la carte VIP</span>
                         </div>
                         <div class="product-card--toolbox mt-4">
                           <div class="product-offer i2 font-bold text-uppercase">
                             <div class="product-offer--price">
-                              <strong class="text-30">399<em class="text-18 font-normal">,50</em><sup>&euro;*</sup></strong>
+                              <strong>399<em class="font-normal">,50</em><sup>&euro;*</sup></strong>
                             </div>
                             <div class="product-offer--note text-10">Toutes remises incluses</div>
                             <div class="product-offer--card">
-                              <img class="max-w-full max-h-full h-auto obj-contain" src="assets/img/card-vipclub.png" alt="VIP Club" loading="lazy" width="180" height="120">
+                              <img class="max-w-full w-auto h-full obj-contain" src="assets/img/card-vipclub.png" alt="VIP Club" loading="lazy" width="180" height="120">
                             </div>
                           </div>
                           <div class="product-tax mt-4 text-10 font-semibold text-right">*dont 11,00&euro; d&rsquo;&eacute;co-part</div>
@@ -1845,7 +1847,7 @@
                         <div class="product-card--image bg-alabaster">
                           <img class="w-full h-full obj-cover" src="assets/img/product-19.jpg" alt="Image" loading="lazy" width="280" height="180">
                         </div>
-                        <div class="product-badge i1 d-flex justify-end align-center font-semibold text-center text-uppercase">
+                        <div class="product-badge i1 d-flex flex-wrap justify-center align-center font-semibold text-center text-uppercase">
                           <span class="radius-5">Soldes</span>
                           <em class="i1 font-normal radius-5">Exclusivit&eacute; Web</em>
                         </div>
@@ -1854,13 +1856,13 @@
                           <div class="product-card--summary mt-4 text-14">Oreiller</div>
                           <div class="product-card--info mt-4 font-bold">60 x 60 cm</div>
                         </div>
-                        <div class="product-card--update product-update d-flex flex-col justify-end">
+                        <div class="product-card--update product-update d-flex flex-col justify-end" data-mh="product-card--update">
                           <span class="text-14 font-semibold"><del><strong>599,50&euro;</strong></del></span>
                         </div>
                         <div class="product-card--toolbox mt-4">
                           <div class="product-offer i1 font-bold text-uppercase">
                             <div class="product-offer--price">
-                              <strong class="text-30">499<em class="text-18 font-normal">,50</em><sup>&euro;*</sup></strong>
+                              <strong>499<em class="font-normal">,50</em><sup>&euro;*</sup></strong>
                             </div>
                             <div class="product-offer--note text-10">Toutes remises incluses</div>
                           </div>
