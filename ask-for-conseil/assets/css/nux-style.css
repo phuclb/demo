@@ -1820,6 +1820,12 @@
   background-color: var(--nux-c-white);
   -webkit-box-shadow: 0 0 10px var(--nux-c-black);
           box-shadow: 0 0 10px var(--nux-c-black);
+  cursor: -webkit-grab;
+  cursor:         grab;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: translate, rotate;
+          transition-property: translate, rotate;
 }
 .nux-card__item___image {
   background-color: var(--nux-c-botticelli);
@@ -1839,6 +1845,51 @@
   margin-top: 20px;
   padding-inline: 17px;
 }
+.nux-card__item * {
+  pointer-events: none;
+}
+.nux-card__item.present {
+  rotate: 0deg;
+  translate: 0;
+}
+.nux-card__item.present.moving {
+  -webkit-transition: none;
+          transition: none;
+  cursor: -webkit-grabbing;
+  cursor:         grabbing;
+}
+.nux-card__item.future {
+  translate: 20px -20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  pointer-events: none;
+}
+.nux-card__item.future::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background-color: var(--nux-c-white);
+  opacity: 0.4;
+}
+.nux-card__item.past {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.nux-card__list,
+.nux-card__toolbox {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: opacity, visibility;
+          transition-property: opacity, visibility;
+}
+.nux-card--loaded .nux-card__list,
+.nux-card--loaded .nux-card__toolbox {
+  opacity: 1;
+  visibility: visible;
+}
 .nux-card__list {
   position: relative;
   margin-top: 50px;
@@ -1847,7 +1898,9 @@
 .nux-card__toolbox {
   margin-top: 30px;
 }
-.nux-card__toolbox button {
+.nux-card__back,
+.nux-card__reject,
+.nux-card__accept {
   width: var(--nux-card-button-w);
   padding: 0;
   line-height: 1;
@@ -1859,23 +1912,33 @@
           box-shadow: 0 0 10px var(--nux-c-black);
   color: var(--nux-c-big-stone);
 }
-.nux-card__toolbox button:hover {
+.nux-card__back:hover,
+.nux-card__reject:hover,
+.nux-card__accept:hover {
   background-color: var(--nux-card-button-bg);
   color: var(--nux-c-white);
 }
-.nux-card__toolbox button.i1 {
+.nux-card__back {
   margin-right: 34px;
   --nux-card-button-w: 40px;
   --nux-card-button-bg: var(--nux-c-black);
 }
-.nux-card__toolbox button.i2 {
+.nux-card__reject {
   --nux-card-button-w: 62px;
   --nux-card-button-bg: var(--nux-c-bittersweet);
 }
-.nux-card__toolbox button.i3 {
+.nux-card--reject .nux-card__reject {
+  background-color: var(--nux-card-button-bg);
+  color: var(--nux-c-white);
+}
+.nux-card__accept {
   margin-left: 12px;
   --nux-card-button-w: 62px;
   --nux-card-button-bg: var(--nux-c-portage);
+}
+.nux-card--accept .nux-card__accept {
+  background-color: var(--nux-card-button-bg);
+  color: var(--nux-c-white);
 }
 
 /* mobile */
