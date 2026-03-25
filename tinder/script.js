@@ -53,7 +53,7 @@ allCards.forEach((card) => {
 
     cardContainer.classList.remove('tinder--love', 'tinder--nope');
 
-    let moveOutW = document.body.clientWidth;
+    let moveOutW = document.body.clientWidth * 1.25;
     let keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
     let status = event.deltaX > 0 ? 'Love' : 'Nope';
 
@@ -87,7 +87,7 @@ const loveBtn = document.getElementById('love');
 const handleYN = (love) => {
   return (event) => {
     let presentCard = document.querySelector('.tinder--card.present');
-    let moveOutW = document.body.clientWidth;
+    let moveOutW = document.body.clientWidth * 1.25;
     let status = love ? 'Love' : 'Nope';
 
     if (presentCard) {
