@@ -111,9 +111,6 @@ const App = {
 
           if (presentCard) {
             let card = presentCard;
-            card.classList.add('past');
-            card.classList.remove('present');
-            card.setAttribute('data-card-status', status);
 
             if (yes) {
               card.style.rotate = '-30deg';
@@ -122,6 +119,9 @@ const App = {
               card.style.rotate = '30deg';
               card.style.translate = '-' + moveOutW + 'px 25%';
             }
+            card.classList.add('past');
+            card.classList.remove('present');
+            card.setAttribute('data-card-status', status);
 
             initCards();
           } else {
