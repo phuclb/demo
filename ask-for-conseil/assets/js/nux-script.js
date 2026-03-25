@@ -14,10 +14,10 @@ const App = {
    * Card
    */
   card() {
-    const cardContainer = document.querySelector('.nux-card');
+    const container = document.querySelector('.nux-card');
     const allCards = document.querySelectorAll('.nux-card__item');
 
-    if (allCards) {
+    if (container) {
 
       // zIndex
       allCards.forEach((card, index) => {
@@ -36,8 +36,8 @@ const App = {
           }
         });
 
-        if (!cardContainer.classList.contains('nux-card--loaded')) {
-          cardContainer.classList.add('nux-card--loaded');
+        if (!container.classList.contains('nux-card--loaded')) {
+          container.classList.add('nux-card--loaded');
         }
       };
       initCards();
@@ -56,8 +56,8 @@ const App = {
             return;
           }
 
-          cardContainer.classList.toggle('nux-card--accept', event.deltaX > 0);
-          cardContainer.classList.toggle('nux-card--reject', event.deltaX < 0);
+          container.classList.toggle('nux-card--accept', event.deltaX > 0);
+          container.classList.toggle('nux-card--reject', event.deltaX < 0);
 
           let xMulti = event.deltaX * 0.03;
           let yMulti = event.deltaY / 80;
@@ -70,7 +70,7 @@ const App = {
         hammer.on('panend', (event) => {
           card.classList.remove('moving');
 
-          cardContainer.classList.remove('nux-card--accept', 'nux-card--reject');
+          container.classList.remove('nux-card--accept', 'nux-card--reject');
 
           let moveOutW = document.body.clientWidth * 1.25;
           let keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
