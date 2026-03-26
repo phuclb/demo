@@ -570,6 +570,33 @@
 .nux-hero__banner {
   z-index: 2;
 }
+.nux-hero__banner::before,
+.nux-hero__banner::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+.nux-hero__banner::before {
+  top: 0;
+  right: 0;
+  rotate: 5deg;
+  translate: -20% 10%;
+  z-index: -1;
+  width: 25%;
+  height: 40%;
+  clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+  background-color: var(--nux-c-bluewood);
+}
+.nux-hero__banner::after {
+  right: 0;
+  bottom: 0;
+  translate: -10% 25%;
+  z-index: -2;
+  width: 75%;
+  aspect-ratio: 1/1;
+  background-color: var(--nux-c-portage);
+  border-radius: 50%;
+}
 .nux-hero__container {
   position: relative;
   background-color: var(--nux-c-bittersweet);
