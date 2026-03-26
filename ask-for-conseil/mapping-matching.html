@@ -31,12 +31,9 @@
           </div>
         </div>
         <div class="nux-hero__banner">
-          <picture class="nux-hero__picture">
-            <source media="(max-width: 1023px)" srcset="assets/img/hero-portrait.webp">
-            <source media="(min-width: 1024px)" srcset="assets/img/hero-landscape.webp">
-            <img class="nux-hero__image nux-w-auto nux-h-full" src="assets/img/hero-portrait.webp" alt="Hero" loading="eager" width="480" height="530">
-          </picture>
+          <img class="nux-w-full nux-h-auto" src="assets/img/hero.webp" alt="Hero" width="720" height="520">
         </div>
+        <div class="nux-hero__shape"></div>
       </div>
     </section>
     <!-- nux-hero -->
@@ -45,7 +42,7 @@
       <div class="nux-intro__container nux-container">
         <h2 class="nux-intro__title nux-font-mongoose nux-font-bold nux-text-uppercase">Explorez une grande vari&eacute;t&eacute; de m&eacute;tiers</h2>
         <div class="nux-intro__banner">
-          <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/1.webp" alt="Image" loading="lazy" width="600" height="600">
+          <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/1.webp" alt="Image" loading="lazy" width="600" height="600">
         </div>
         <div class="nux-intro__category nux-font-mongoose nux-font-bold nux-text-uppercase">
           <ul class="nux-d-flex">
@@ -72,16 +69,16 @@
 
     <section class="nux-search">
       <div class="nux-search__container nux-container">
-        <header class="nux-search__header">
+        <header class="nux-search__header" data-mh="nux-search__block">
           <h2 class="nux-search__title nux-font-mongoose nux-font-bold nux-text-uppercase">Recherchez parmi<br>les m&eacute;tiers</h2>
           <div class="nux-search__summary">Laissez-vous guider et inspirer.</div>
         </header>
-        <div class="nux-search__body">
+        <div class="nux-search__body" data-mh="nux-search__block">
           <div class="nux-search__form">
             <label class="nux-search__label" for="q">Utiliser le moteur de recherche :</label>
             <div class="nux-search__control nux-d-flex">
               <input type="text" id="q" name="q" placeholder="Saisissez..." required>
-              <button class="nux-d-flex nux-justify-center nux-align-center" type="submit" aria-label="Rechercher">
+              <button class="nux-of-hidden" type="submit" aria-label="Rechercher">
                 <svg width="20" height="20" aria-hidden="true" focusable="false">
                   <use href="assets/img/sprites.svg#magnifier"></use>
                 </svg>
@@ -288,7 +285,7 @@
                 <li class="splide__slide">
                   <article class="nux-service__card">
                     <div class="nux-service__card___image">
-                      <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
+                      <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
                     </div>
                     <div class="nux-service__card___body">
                       <h2 class="nux-service__card___title nux-font-bold">Strat&eacute;gie et management</h2>
@@ -306,7 +303,7 @@
                 <li class="splide__slide">
                   <article class="nux-service__card">
                     <div class="nux-service__card___image">
-                      <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/3.webp" alt="Image" loading="lazy" width="400" height="400">
+                      <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/3.webp" alt="Image" loading="lazy" width="400" height="400">
                     </div>
                     <div class="nux-service__card___body">
                       <h2 class="nux-service__card___title nux-font-bold">&Eacute;tudes marketing et sondages d&rsquo;opinion</h2>
@@ -324,7 +321,7 @@
                 <li class="splide__slide">
                   <article class="nux-service__card">
                     <div class="nux-service__card___image">
-                      <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/4.webp" alt="Image" loading="lazy" width="400" height="400">
+                      <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/4.webp" alt="Image" loading="lazy" width="400" height="400">
                     </div>
                     <div class="nux-service__card___body">
                       <h2 class="nux-service__card___title nux-font-bold">Recrutement</h2>
@@ -342,7 +339,7 @@
                 <li class="splide__slide">
                   <article class="nux-service__card">
                     <div class="nux-service__card___image">
-                      <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/5.webp" alt="Image" loading="lazy" width="400" height="400">
+                      <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/5.webp" alt="Image" loading="lazy" width="400" height="400">
                     </div>
                     <div class="nux-service__card___body">
                       <h2 class="nux-service__card___title nux-font-bold">Evolution professionnelle</h2>
@@ -360,7 +357,7 @@
                 <li class="splide__slide">
                   <article class="nux-service__card">
                     <div class="nux-service__card___image">
-                      <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/6.webp" alt="Image" loading="lazy" width="400" height="400">
+                      <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/6.webp" alt="Image" loading="lazy" width="400" height="400">
                     </div>
                     <div class="nux-service__card___body">
                       <h2 class="nux-service__card___title nux-font-bold">Communication</h2>
@@ -384,7 +381,7 @@
             <li>
               <article class="nux-service__card">
                 <div class="nux-service__card___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-service__card___body">
                   <h2 class="nux-service__card___title nux-font-bold">Strat&eacute;gie et management</h2>
@@ -402,7 +399,7 @@
             <li>
               <article class="nux-service__card">
                 <div class="nux-service__card___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/3.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/3.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-service__card___body">
                   <h2 class="nux-service__card___title nux-font-bold">&Eacute;tudes marketing et sondages d&rsquo;opinion</h2>
@@ -420,7 +417,7 @@
             <li>
               <article class="nux-service__card">
                 <div class="nux-service__card___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/4.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/4.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-service__card___body">
                   <h2 class="nux-service__card___title nux-font-bold">Recrutement</h2>
@@ -438,7 +435,7 @@
             <li>
               <article class="nux-service__card">
                 <div class="nux-service__card___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/5.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/5.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-service__card___body">
                   <h2 class="nux-service__card___title nux-font-bold">Evolution professionnelle</h2>
@@ -456,7 +453,7 @@
             <li>
               <article class="nux-service__card">
                 <div class="nux-service__card___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/6.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/6.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-service__card___body">
                   <h2 class="nux-service__card___title nux-font-bold">Communication</h2>
@@ -501,7 +498,7 @@
             <div class="nux-card__list">
               <div class="nux-card__item" data-card-id="1">
                 <div class="nux-card__item___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-card__item___body nux-of-hidden">
                   <h2 class="nux-card__item___title nux-font-bold">Conseiller en r&eacute;mun&eacute;ration</h2>
@@ -510,7 +507,7 @@
               </div>
               <div class="nux-card__item" data-card-id="2">
                 <div class="nux-card__item___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/3.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/3.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-card__item___body nux-of-hidden">
                   <h2 class="nux-card__item___title nux-font-bold">Conseil en QVT</h2>
@@ -519,7 +516,7 @@
               </div>
               <div class="nux-card__item" data-card-id="3">
                 <div class="nux-card__item___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/4.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/4.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-card__item___body nux-of-hidden">
                   <h2 class="nux-card__item___title nux-font-bold">Conseil RH et GEPP</h2>
@@ -528,7 +525,7 @@
               </div>
               <div class="nux-card__item" data-card-id="4">
                 <div class="nux-card__item___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/5.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/5.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-card__item___body nux-of-hidden">
                   <h2 class="nux-card__item___title nux-font-bold">Conseil en dialogue social</h2>
@@ -537,7 +534,7 @@
               </div>
               <div class="nux-card__item" data-card-id="5">
                 <div class="nux-card__item___image">
-                  <img class="nux-d-block nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
+                  <img class="nux-w-full nux-h-full nux-obj-cover" src="assets/img/2.webp" alt="Image" loading="lazy" width="400" height="400">
                 </div>
                 <div class="nux-card__item___body nux-of-hidden">
                   <h2 class="nux-card__item___title nux-font-bold">Conseil en dialogue social</h2>
