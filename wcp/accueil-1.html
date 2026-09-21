@@ -1,0 +1,1186 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WCP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="header p-fixed bg-white">
+        <div class="header-container">
+          <div class="container p-rel max-w-1280 mx-auto">
+            <h1 class="header-title hidden-visually">Weinberg Capital Partners</h1>
+            <div class="header-logo p-abs">
+              <a href="#">
+                <img class="w-auto" src="assets/img/logo.svg" alt="WCP" width="208" height="60">
+              </a>
+            </div>
+            <div class="header-toolbar d-flex justify-between items-start hidden-md hidden-lg hidden-print">
+              <div class="header-lang p-rel text-center js-rollover">
+                <span class="d-block">FR</span>
+                <ul class="p-abs">
+                  <li><a class="d-block" href="#">EN</a></li>
+                </ul>
+              </div>
+              <div class="header-icon text-right">
+                <button class="no-padding no-text no-background no-border js-toggler" type="button" data-target="#hMenu">
+                  <span class="on">
+                    <svg width="32" height="24">
+                      <use xlink:href="assets/img/sprites.svg#menu"></use>
+                    </svg>
+                  </span>
+                  <span class="off">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="header-toolbar hidden-xs hidden-sm hidden-print">
+              <div class="header-client d-flex justify-end items-start">
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase modal-private-wealth" href="#mPrivateWealth" data-micromodal-trigger="mPrivateWealth">Private Wealth</a>
+                <br>
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase" href="#" target="_blank">Espace investisseur</a>
+              </div>
+              <div class="header-group d-flex justify-end items-start">
+                <div class="header-nav">
+                  <ul class="d-flex flex-wrap justify-center items-start">
+                    <li>
+                      <a class="d-block js-toggler" href="#hMenu1" data-target="#hMenu1">&Agrave; propos</a>
+                      <div class="header-modal p-abs font-light bg-gray" id="hMenu1">
+                        <button class="p-abs no-text no-background no-border js-toggler" type="button" data-target="#hMenu1">
+                          <svg width="24" height="24">
+                            <use xlink:href="assets/img/sprites.svg#close"></use>
+                          </svg>
+                        </button>
+                        <ul>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Notre ADN</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Notre histoire</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Notre strategie</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">News</a></li>
+                        </ul>
+                      </div>
+                      <div class="header-gap"></div>
+                    </li>
+                    <li><a class="d-block" href="#">Engagements</a></li>
+                    <li><a class="d-block" href="#">&Eacute;quipe</a></li>
+                    <li>
+                      <a class="d-block js-toggler" href="#hMenu4" data-target="#hMenu4">Expertises</a>
+                      <div class="header-modal p-abs font-light bg-gray" id="hMenu4">
+                        <button class="p-abs no-text no-background no-border js-toggler" type="button" data-target="#hMenu4">
+                          <svg width="24" height="24">
+                            <use xlink:href="assets/img/sprites.svg#close"></use>
+                          </svg>
+                        </button>
+                        <ul>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">LBO</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Real Estate</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Impact</a></li>
+                          <li class="has-sublist of-hidden">
+                            <a class="d-flex justify-start items-center max-w-1280 mx-auto js-collapse" href="#hSubA" data-target="#hSubA">
+                              <span>D&eacute;fense &amp; S&eacute;curit&eacute;</span>
+                              <svg class="on" width="16" height="16">
+                                <use xlink:href="assets/img/sprites.svg#plus"></use>
+                              </svg>
+                              <svg class="off" width="16" height="16">
+                                <use xlink:href="assets/img/sprites.svg#minus"></use>
+                              </svg>
+                            </a>
+                            <div class="bg-white" id="hSubA">
+                              <ul>
+                                <li class="max-w-1200 mx-auto"><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Mid cap</a></li>
+                                <li class="max-w-1200 mx-auto"><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Small cap &amp; capital-d&eacute;veloppement</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Co-Investissement</a></li>
+                        </ul>
+                      </div>
+                      <div class="header-gap"></div>
+                    </li>
+                    <li><a class="d-block" href="#">Investissements</a></li>
+                  </ul>
+                </div>
+                <div class="header-social">
+                  <ul class="d-flex justify-start items-center">
+                    <li>
+                      <a class="d-block" href="https://www.linkedin.com/company/weinberg-capital-partners" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-block" href="#" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="assets/img/sprites.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header-lang p-rel text-center js-rollover">
+                  <span class="d-block">FR</span>
+                  <ul class="p-abs">
+                    <li><a class="d-block" href="#">EN</a></li>
+                  </ul>
+                </div>
+                <div class="header-line"></div>
+                <div class="header-icon text-right">
+                  <button class="no-padding no-text no-background no-border js-toggler" type="button" data-target="#hSearch">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprites.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-modal p-abs bg-gray hidden-md hidden-lg" id="hMenu">
+          <div class="header-flex d-flex flex-col justify-between items-stretch h-full">
+            <div class="header-flex--item">
+              <div class="header-search p-rel bg-purple c-white">
+                <input class="w-full no-padding no-background no-border font-light" type="text" placeholder="Rechercher">
+                <button class="no-background no-border p-abs" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="header-nav font-light">
+                <div class="header-subnav header-panel" id="hNav0">
+                  <ul>
+                    <li class="has-icon">
+                      <a class="d-block" href="#">&Agrave; propos</a>
+                      <div class="header-toggle p-abs">
+                        <button class="no-text no-background no-border js-switcher" type="button" data-target="#hNav1">
+                          <svg width="10" height="18">
+                            <use xlink:href="assets/img/sprites.svg#right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li><a class="d-block" href="#">Engagements</a></li>
+                    <li><a class="d-block" href="#">&Eacute;quipe</a></li>
+                    <li class="has-icon">
+                      <a class="d-block" href="#">Expertises</a>
+                      <div class="header-toggle p-abs">
+                        <button class="no-text no-background no-border js-switcher" type="button" data-target="#hNav4">
+                          <svg width="10" height="18">
+                            <use xlink:href="assets/img/sprites.svg#right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li><a class="d-block" href="#">Investissements</a></li>
+                  </ul>
+                </div>
+                <div class="header-subnav header-panel hidden" id="hNav1">
+                  <div class="header-back">
+                    <a class="d-flex justify-start items-center font-medium js-switcher" href="#hNav0" data-target="#hNav0">
+                      <svg width="10" height="18">
+                        <use xlink:href="assets/img/sprites.svg#right"></use>
+                      </svg>
+                      <span>Retour</span>
+                    </a>
+                  </div>
+                  <ul>
+                    <li><a class="d-block" href="#">Notre ADN</a></li>
+                    <li><a class="d-block" href="#">Notre histoire</a></li>
+                    <li><a class="d-block" href="#">Notre strategie</a></li>
+                    <li><a class="d-block" href="#">News</a></li>
+                  </ul>
+                </div>
+                <div class="header-subnav header-panel hidden" id="hNav4">
+                  <div class="header-back">
+                    <a class="d-flex justify-start items-center font-medium js-switcher" href="#hNav0" data-target="#hNav0">
+                      <svg width="10" height="18">
+                        <use xlink:href="assets/img/sprites.svg#right"></use>
+                      </svg>
+                      <span>Retour</span>
+                    </a>
+                  </div>
+                  <ul>
+                    <li><a class="d-block" href="#">LBO</a></li>
+                    <li><a class="d-block" href="#">Real Estate</a></li>
+                    <li><a class="d-block" href="#">Impact</a></li>
+                    <li class="has-sublist of-hidden">
+                      <a class="d-flex justify-between items-center max-w-1280 mx-auto js-collapse" href="#hSubB" data-target="#hSubB">
+                        <span>D&eacute;fense &amp; S&eacute;curit&eacute;</span>
+                        <svg class="on" width="16" height="16">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                        <svg class="off" width="16" height="16">
+                          <use xlink:href="assets/img/sprites.svg#minus"></use>
+                        </svg>
+                      </a>
+                      <div class="bg-white" id="hSubB">
+                        <ul>
+                          <li><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Mid cap</a></li>
+                          <li><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Small cap &amp; capital-d&eacute;veloppement</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a class="d-block" href="#">Co-Investissement</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-social">
+                <ul class="d-flex justify-start items-center">
+                  <li>
+                    <a class="d-block" href="https://www.linkedin.com/company/weinberg-capital-partners" target="_blank">
+                      <svg width="20" height="20">
+                        <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block" href="#" target="_blank">
+                      <svg width="20" height="20">
+                        <use xlink:href="assets/img/sprites.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-flex--item">
+              <div class="header-client max-w-420 mx-auto">
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase modal-private-wealth" href="#mPrivateWealth" data-micromodal-trigger="mPrivateWealth">Private Wealth</a>
+                <br>
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase" href="#" target="_blank">Espace investisseur</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-modal p-abs bg-gray hidden-xs hidden-sm" id="hSearch">
+          <div class="container max-w-1280 mx-auto">
+            <div class="search-container">
+              <div class="search-form p-rel">
+                <input class="w-full no-padding no-background no-border font-light js-field" type="text" placeholder="Rechercher" value="">
+                <button class="no-padding no-text no-background no-border p-abs js-reset" type="reset">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprites.svg#close"></use>
+                  </svg>
+                </button>
+                <button class="no-padding no-text no-background no-border p-abs" type="submit">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+
+      <main class="main">
+
+        <div class="banner slidedshow">
+          <div class="container p-rel max-w-1280 mx-auto">
+            <div class="banner-list p-rel of-hidden bg-blue">
+              <div class="banner-item p-abs active">
+                <div class="banner-image i1 p-abs">
+                  <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/18.jpg" alt="" width="720" height="480">
+                </div>
+                <div class="banner-image i2 p-abs">
+                  <img class="w-full h-full obj-cover obj-center" src="assets/img/team/11.jpg" alt="" width="960" height="960">
+                </div>
+                <div class="banner-button p-abs text-center hidden">
+                  <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center min-w-280 font-medium text-uppercase" href="#">
+                    <span>Lorem ipsum</span>
+                    <svg width="17" height="17">
+                      <use xlink:href="assets/img/sprites.svg#plus"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="banner-item p-abs hidden">
+                <div class="banner-image i1 p-abs">
+                  <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/6.jpg" alt="" width="1440" height="960">
+                </div>
+                <div class="banner-image i2 p-abs">
+                  <img class="w-full h-full obj-cover obj-center" src="assets/img/team/2.jpg" alt="" width="960" height="960">
+                </div>
+                <div class="banner-button p-abs text-center hidden">
+                  <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center min-w-280 font-medium text-uppercase" href="#">
+                    <span>Praesent sit amet</span>
+                    <svg width="17" height="17">
+                      <use xlink:href="assets/img/sprites.svg#plus"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="banner-item p-abs hidden">
+                <div class="banner-image i1 p-abs">
+                  <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/11.jpg" alt="" width="1440" height="960">
+                </div>
+                <div class="banner-image i2 p-abs">
+                  <img class="w-full h-full obj-cover obj-center" src="assets/img/team/8.jpg" alt="" width="960" height="960">
+                </div>
+                <div class="banner-button p-abs text-center hidden">
+                  <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center min-w-280 font-medium text-uppercase" href="#">
+                    <span>Duis facilisis ex</span>
+                    <svg width="17" height="17">
+                      <use xlink:href="assets/img/sprites.svg#plus"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="banner-slogan i1 p-abs text-right text-uppercase c-white hidden">The Right<br>Time</div>
+            <div class="banner-line p-abs bg-white"></div>
+            <div class="banner-slogan i2 p-abs text-left text-uppercase c-white hidden">The Right<br>Team*</div>
+            <div class="banner-info p-abs font-light text-right c-white hidden">* Le bon moment, le bon partenaire</div>
+            <div class="banner-dots d-flex justify-center items-center">
+            </div>
+          </div>
+        </div>
+        <!-- banner -->
+
+        <div class="section section-pt-2 section-pb-2">
+          <div class="max-w-880 mx-auto">
+
+            <div class="slickx-slider i5 dot-rel dot-center dot-purple">
+              <div class="slickx-slide">
+                <div class="container max-w-880 mx-auto">
+                  <div class="editor-text font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris metus dui, tempus ac commodo sit amet, lacinia a nisl. Sed lectus justo, luctus nec nulla nec, maximus fringilla arcu. Mauris ipsum erat, tincidunt non nisl in, dapibus consectetur lectus. Ut lacinia, orci vel condimentum ultrices, dolor metus egestas enim, vitae interdum quam erat nec tortor.</div>
+                  <div class="editor-button text-center">
+                    <a class="button medium edge-2 icon-right purple outline d-inline-flex justify-between items-center min-w-240 font-medium text-uppercase" href="#">
+                      <span>En savoir plus</span>
+                      <svg width="17" height="17">
+                        <use xlink:href="assets/img/sprites.svg#plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slickx-slide">
+                <div class="container max-w-880 mx-auto">
+                  <div class="editor-text font-light text-center">Pellentesque lectus neque, lacinia a efficitur id, euismod id metus. Morbi laoreet augue vel scelerisque efficitur. Etiam sodales posuere sapien, eu consectetur neque egestas eu. Vestibulum lacinia a risus eu tincidunt. Quisque luctus fermentum nisi, sed rutrum dui rhoncus et. Aenean sit amet ipsum convallis, interdum nisi at, dignissim elit.</div>
+                  <div class="editor-button text-center">
+                    <a class="button medium edge-2 icon-right purple outline d-inline-flex justify-between items-center min-w-240 font-medium text-uppercase" href="#">
+                      <span>En savoir plus</span>
+                      <svg width="17" height="17">
+                        <use xlink:href="assets/img/sprites.svg#plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slickx-slide">
+                <div class="container max-w-880 mx-auto">
+                  <div class="editor-text font-light text-center">Aliquam euismod nulla sit amet sem sagittis euismod sed sit amet felis. Aliquam erat volutpat. Nulla tristique tempus mauris sit amet commodo. Integer vehicula faucibus nunc, eget lacinia augue consectetur at. Aenean vitae convallis sem, consequat condimentum urna. Aliquam in erat sed mi faucibus rhoncus.</div>
+                  <div class="editor-button text-center">
+                    <a class="button medium edge-2 icon-right purple outline d-inline-flex justify-between items-center min-w-240 font-medium text-uppercase" href="#">
+                      <span>En savoir plus</span>
+                      <svg width="17" height="17">
+                        <use xlink:href="assets/img/sprites.svg#plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slickx-slide">
+                <div class="container max-w-880 mx-auto">
+                  <div class="editor-text font-light text-center">Proin vitae tellus nec nunc blandit facilisis blandit vitae dolor. Sed cursus sodales enim a consequat. Integer consequat gravida mollis. Donec risus massa, lobortis tincidunt facilisis nec, venenatis et dolor. Phasellus sodales, ante vitae consequat facilisis, purus libero malesuada velit, sit amet elementum lectus purus ut mi.</div>
+                  <div class="editor-button text-center">
+                    <a class="button medium edge-2 icon-right purple outline d-inline-flex justify-between items-center min-w-240 font-medium text-uppercase" href="#">
+                      <span>En savoir plus</span>
+                      <svg width="17" height="17">
+                        <use xlink:href="assets/img/sprites.svg#plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <section class="section section-pt-3 section-pb-3">
+          <div class="container max-w-1280 mx-auto">
+            <h2 class="section-title medium font-light text-center text-uppercase">Nos expertises</h2>
+            <div class="section-body section-mt-4">
+
+              <div class="mastery-slider slickx-slider i2 arrow-purple">
+                <div class="slickx-slide">
+                  <div class="mastery-item">
+                    <div class="mastery-item--image bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/3.jpg" alt="" width="1440" height="960">
+                    </div>
+                    <div class="mastery-item--body" data-mh="mh-item">
+                      <h3 class="mastery-item--title font-regular">LBO</h3>
+                      <div class="mastery-item--summary font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec enim eget nisl rutrum sagittis bibendum in dolor. Nunc tincidunt, augue eu consequat consectetur, magna elit accumsan lorem, eu iaculis sapien libero ac turpis.</div>
+                    </div>
+                    <div class="mastery-item--link">
+                      <ul>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>Investissements</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>&Eacute;quipe</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="mastery-item">
+                    <div class="mastery-item--image bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/4.jpg" alt="" width="720" height="480">
+                    </div>
+                    <div class="mastery-item--body" data-mh="mh-item">
+                      <h3 class="mastery-item--title font-regular">Real Estate</h3>
+                      <div class="mastery-item--summary font-light">Aenean eget luctus mauris, a tristique quam. Nunc nec nulla aliquet, rhoncus dui vitae, volutpat purus. Proin vel imperdiet lorem. Sed accumsan imperdiet magna in tincidunt. Sed non accumsan lacus.</div>
+                    </div>
+                    <div class="mastery-item--link">
+                      <ul>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>Actifs</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>&Eacute;quipe</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="mastery-item">
+                    <div class="mastery-item--image bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/26.jpg" alt="" width="840" height="480">
+                    </div>
+                    <div class="mastery-item--body" data-mh="mh-item">
+                      <h3 class="mastery-item--title font-regular">D&eacute;fense &amp; S&eacute;curit&eacute;</h3>
+                      <div class="mastery-item--summary font-light">Morbi efficitur turpis sed augue consequat, non accumsan est consectetur. Quisque mattis tincidunt odio. Curabitur ac mi lacinia, consectetur dui sed, venenatis nibh.</div>
+                    </div>
+                    <div class="mastery-item--link">
+                      <ul>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>Small cap &amp; cap Dev</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>Mid cap</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="mastery-item">
+                    <div class="mastery-item--image bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/27.jpg" alt="" width="640" height="540">
+                    </div>
+                    <div class="mastery-item--body" data-mh="mh-item">
+                      <h3 class="mastery-item--title font-regular">Eir&eacute;n&eacute; <small>- S&eacute;curit&eacute; et d&eacute;fense</small></h3>
+                      <div class="mastery-item--summary font-light">Eir&eacute;n&eacute; a pour objectif de soutenir et d&rsquo;acc&eacute;l&eacute;rer le d&eacute;veloppement des PME et des ETI fran&ccedil;aises du secteur strat&eacute;gique de la s&eacute;curit&eacute; et de la d&eacute;fense.</div>
+                    </div>
+                    <div class="mastery-item--link">
+                      <ul>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>Investissements</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>&Eacute;quipe</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="mastery-item">
+                    <div class="mastery-item--image bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/28.jpg" alt="" width="840" height="620">
+                    </div>
+                    <div class="mastery-item--body" data-mh="mh-item">
+                      <h3 class="mastery-item--title font-regular">WCP Co-Invest</h3>
+                      <div class="mastery-item--summary font-light">WCP Co-Invest est un v&eacute;hicule fran&ccedil;ais d&eacute;di&eacute; au co-investissement enti&egrave;rement souscrit par un groupe familial.</div>
+                    </div>
+                    <div class="mastery-item--link">
+                      <ul>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>Investissements</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex justify-between items-center font-medium text-uppercase" href="#">
+                            <span>&Eacute;quipe</span>
+                            <svg width="17" height="17">
+                              <use xlink:href="assets/img/sprites.svg#plus"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- mastery -->
+
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+        <section class="vision p-rel bg-blue c-white">
+          <div class="vision-image p-abs">
+            <img class="w-full h-full obj-cover obj-top hidden-sm hidden-md hidden-lg" src="assets/img/misc/9-a.jpg" alt="" width="800" height="1340">
+            <img class="w-full h-full obj-cover obj-right-top hidden-xs" src="assets/img/misc/9-b.jpg" alt="" width="4000" height="1340">
+          </div>
+          <div class="vision-container p-rel">
+            <div class="container max-w-1280 mx-auto">
+              <div class="vision-flex d-flex flex-col justify-between items-stretch">
+                <div class="vision-flex--item">
+                  <h2 class="vision-title d-inline-block font-regular text-right text-uppercase">
+                    <span class="d-inline-block">Une vision</span>
+                    <span class="vision-line d-inline-block">&nbsp;</span>
+                    <span class="d-block">partag&eacute;e</span>
+                  </h2>
+                </div>
+                <div class="vision-flex--item">
+                  <div class="vision-summary font-light">Nous mettons nos expertises au service des investisseurs internationaux, des investisseurs fran&ccedil;ais et des dirigeants dans un objectif partag&eacute; : la cr&eacute;ation de valeur. Nous partageons avec les dirigeants des entreprises que nous accompagnons un enjeu de performance et le respect de leur projet d&rsquo;entreprise.</div>
+                  <div class="vision-button">
+                    <a class="button medium edge-2 icon-right white outline d-flex justify-between items-center font-medium text-uppercase" href="#">
+                      <span>Notre vision</span>
+                      <svg width="11" height="19">
+                        <use xlink:href="assets/img/sprites.svg#right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- vision -->
+
+        <section class="figure p-rel bg-light-blue c-white hidden-print">
+          <div class="container max-w-1280 mx-auto">
+            <h2 class="figure-title p-abs font-regular text-right text-uppercase">
+              <span class="d-inline-block">En</span>
+              <span class="figure-line d-inline-block">&nbsp;</span>
+              <span class="d-block">chiffres</span>
+            </h2>
+            <div class="figure-container p-rel">
+              <div class="figure-slider slickx-slider i1 dot-abs dot-center dot-white hidden-sm hidden-md hidden-lg">
+                <div class="slickx-slide">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">1,5</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">tem osa adipisicing</div>
+                    <div class="figure-item--summary font-light hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="figure-item i1 h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">170</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">ra quis si cupidatat</div>
+                    <div class="figure-item--summary font-light hidden-xs">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">25<sup>%</sup></div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">dolorerro consequiam</div>
+                    <div class="figure-item--summary font-light hidden-xs">Nequi dolorerro consequiam, sitatem amusam ra quis si voluptat. Dolorerro consequiam, tem osa musam ra quis si voluptat proident</div>
+                  </div>
+                </div>
+              </div>
+              <div class="figure-flex d-flex justify-center items-stretch hidden-xs">
+                <div class="figure-flex--item flex-equal">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">1,5</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">tem osa adipisicing</div>
+                    <div class="figure-item--summary font-light hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                  </div>
+                </div>
+                <div class="figure-flex--item flex-equal">
+                  <div class="figure-item i1 h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">170</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">ra quis si cupidatat</div>
+                    <div class="figure-item--summary font-light hidden-xs">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
+                  </div>
+                </div>
+                <div class="figure-flex--item flex-equal">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">25<sup>%</sup></div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">dolorerro consequiam</div>
+                    <div class="figure-item--summary font-light hidden-xs">Nequi dolorerro consequiam, sitatem amusam ra quis si voluptat. Dolorerro consequiam, tem osa musam ra quis si voluptat proident</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- figure -->
+
+        <section class="figure p-rel bg-light-blue c-white hidden-print">
+          <div class="container max-w-1280 mx-auto">
+            <h2 class="figure-title p-abs font-regular text-right text-uppercase">
+              <span class="d-inline-block">En</span>
+              <span class="figure-line d-inline-block">&nbsp;</span>
+              <span class="d-block">chiffres</span>
+            </h2>
+            <div class="figure-container p-rel">
+              <div class="figure-slider slickx-slider i1 dot-abs dot-center dot-white hidden-sm hidden-md hidden-lg">
+                <div class="slickx-slide">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">1,5</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">tem osa adipisicing</div>
+                    <div class="figure-item--summary font-light hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="figure-item i1 h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">170</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">ra quis si cupidatat</div>
+                    <div class="figure-item--summary font-light hidden-xs">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
+                  </div>
+                </div>
+              </div>
+              <div class="figure-flex d-flex justify-center items-stretch hidden-xs">
+                <div class="figure-flex--item flex-equal">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">1,5</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">tem osa adipisicing</div>
+                    <div class="figure-item--summary font-light hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                  </div>
+                </div>
+                <div class="figure-flex--item flex-equal">
+                  <div class="figure-item i1 h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">170</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">ra quis si cupidatat</div>
+                    <div class="figure-item--summary font-light hidden-xs">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- figure -->
+
+        <section class="figure p-rel bg-light-blue c-white hidden-print">
+          <div class="container max-w-1280 mx-auto">
+            <h2 class="figure-title p-abs font-regular text-right text-uppercase">
+              <span class="d-inline-block">En</span>
+              <span class="figure-line d-inline-block">&nbsp;</span>
+              <span class="d-block">chiffres</span>
+            </h2>
+            <div class="figure-container p-rel">
+              <div class="figure-slider slickx-slider i1 dot-abs dot-center dot-white hidden-sm hidden-md hidden-lg">
+                <div class="slickx-slide">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">1,5</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">tem osa adipisicing</div>
+                    <div class="figure-item--summary font-light hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                  </div>
+                </div>
+              </div>
+              <div class="figure-flex d-flex justify-center items-stretch hidden-xs">
+                <div class="figure-flex--item flex-equal">
+                  <div class="figure-item i1 figure-mask h-full">
+                    <div class="figure-item--number font-light text-wordbreak c-brown">1,5</div>
+                    <div class="figure-item--caption font-light text-wordbreak c-brown">tem osa adipisicing</div>
+                    <div class="figure-item--summary font-light hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- figure -->
+
+        <section class="section section-pt-3 section-pb-3">
+          <div class="container max-w-1280 mx-auto">
+            <h2 class="section-title large font-light text-center text-uppercase">News</h2>
+            <div class="section-body">
+
+              <div class="article-slider slickx-slider i1 dot-rel dot-center dot-purple hidden-sm hidden-md hidden-lg">
+                <div class="slickx-slide">
+                  <article class="article-item has-button">
+                    <div class="article-item--image h3 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/1.jpg" alt="" width="1440" height="960">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Investissement</div>
+                    <h3 class="article-item--title font-medium"><a href="#">Lorem ipsum dolor sit met non tantrum sed etiam rosam et doloris</a></h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                    <div class="article-item--summary font-light">Nequi dolorerro consequiam, sitatem a nosamusam ra quis si volupequiam, sitatem a nosamusam ra quis si voluptat amusam uis si voluptat amu quis si voluptat amusam rNequi dolorerro consequiam, sitatem a nosamusam ra quis si volupeq</div>
+                    <div class="article-item--link">
+                      <a class="button small edge-1 icon-right purple outline d-inline-flex justify-between items-center min-w-150 font-medium text-uppercase" href="#">
+                        <span>En savoir plus</span>
+                        <svg width="15" height="15">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="slickx-slide">
+                  <article class="article-item has-button">
+                    <div class="article-item--category text-uppercase c-blue">Communiqu&eacute;</div>
+                    <h3 class="article-item--title font-medium"><a href="#">Lorem ipsum dolor sit met non tantrum sed etiam rosam et doloris</a></h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                    <div class="article-item--summary font-light">Nequi dolorerro consequiam, sitatem a nosamusam ra quis si volupequiam, sitate nosamusro consequiam, sitatem a nosamusam ra quis si sam ra quoluptat amusam ra quislorem equi dolo rerro consequiam, sitatem anosam usam ra quis si volupeuiam, sitate osamusro consequiam, sitatnsequiam, sitatem a nos</div>
+                    <div class="article-item--link">
+                      <a class="button small edge-1 icon-right blue outline d-inline-flex justify-between items-center min-w-150 font-medium text-uppercase" href="#">
+                        <span>T&eacute;l&eacute;charger</span>
+                        <svg width="15" height="15">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="slickx-slide">
+                  <article class="article-item has-button">
+                    <div class="article-item--image h1 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/2.jpg" alt="" width="500" height="500">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#LBO</div>
+                    <h3 class="article-item--title font-medium"><a href="#">Lorem ipsum dolor sit met non tantrum</a></h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                    <div class="article-item--summary font-light">Nequi dolorerro consequiam, sitatem a nosamusam ra quis si volupequiam, sitatem a nosamusro consequiam, sitatem a nosamusam ra quis si sam ra quis si voluptat amusam ra quisloremNequi dolorerro consequiam, sitatem a</div>
+                    <div class="article-item--link">
+                      <a class="button small edge-1 icon-right purple outline d-inline-flex justify-between items-center min-w-150 font-medium text-uppercase" href="#">
+                        <span>En savoir plus</span>
+                        <svg width="15" height="15">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- article-slider -->
+
+              <div class="article-flex i1 d-flex flex-wrap justify-start items-stretch hidden-xs">
+                <div class="article-flex--item i1">
+                  <article class="article-item has-button">
+                    <div class="article-item--image h3 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/1.jpg" alt="" width="1440" height="960">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Investissement</div>
+                    <h3 class="article-item--title font-medium"><a href="#">Lorem ipsum dolor sit met non tantrum sed etiam rosam et doloris</a></h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                    <div class="article-item--summary font-light">Nequi dolorerro consequiam, sitatem a nosamusam ra quis si volupequiam, sitatem a nosamusam ra quis si voluptat amusam uis si voluptat amu quis si voluptat amusam rNequi dolorerro consequiam, sitatem a nosamusam ra quis si volupeq</div>
+                    <div class="article-item--link">
+                      <a class="button small edge-1 icon-right purple outline d-inline-flex justify-between items-center min-w-150 font-medium text-uppercase" href="#">
+                        <span>En savoir plus</span>
+                        <svg width="15" height="15">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="article-flex--item i2">
+                  <article class="article-item has-button">
+                    <div class="article-item--category text-uppercase c-blue">Communiqu&eacute;</div>
+                    <h3 class="article-item--title font-medium"><a href="#">Lorem ipsum dolor sit met non tantrum sed etiam rosam et doloris</a></h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                    <div class="article-item--summary font-light">Nequi dolorerro consequiam, sitatem a nosamusam ra quis si volupequiam, sitate nosamusro consequiam, sitatem a nosamusam ra quis si sam ra quoluptat amusam ra quislorem equi dolo rerro consequiam, sitatem anosam usam ra quis si volupeuiam, sitate osamusro consequiam, sitatnsequiam, sitatem a nos</div>
+                    <div class="article-item--link">
+                      <a class="button small edge-1 icon-right blue outline d-inline-flex justify-between items-center min-w-150 font-medium text-uppercase" href="#">
+                        <span>T&eacute;l&eacute;charger</span>
+                        <svg width="15" height="15">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="article-flex--item i3">
+                  <article class="article-item has-button">
+                    <div class="article-item--image h1 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/2.jpg" alt="" width="500" height="500">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#LBO</div>
+                    <h3 class="article-item--title font-medium"><a href="#">Lorem ipsum dolor sit met non tantrum</a></h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                    <div class="article-item--summary font-light">Nequi dolorerro consequiam, sitatem a nosamusam ra quis si volupequiam, sitatem a nosamusro consequiam, sitatem a nosamusam ra quis si sam ra quis si voluptat amusam ra quisloremNequi dolorerro consequiam, sitatem a</div>
+                    <div class="article-item--link">
+                      <a class="button small edge-1 icon-right purple outline d-inline-flex justify-between items-center min-w-150 font-medium text-uppercase" href="#">
+                        <span>En savoir plus</span>
+                        <svg width="15" height="15">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- article-flex -->
+
+            </div>
+            <div class="section-button section-mt-5 text-center">
+              <a class="button medium edge-2 icon-right black outline d-inline-flex justify-between items-center max-w-420 w-full font-medium text-uppercase" href="#">
+                <span class="hidden-sm hidden-md hidden-lg">Toutes les informations</span>
+                <span class="hidden-xs">Retrouvez toutes les informations</span>
+                <svg width="17" height="17">
+                  <use xlink:href="assets/img/sprites.svg#plus"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+        <div class="section section-pt-3 section-pb-3 bg-brown c-white">
+          <div class="container max-w-1280 mx-auto">
+
+            <section class="partner-block i1">
+              <div class="partner-group">
+                <h2 class="partner-title d-inline-block font-regular text-right text-uppercase">
+                  <span class="d-inline-block">Histoire</span>
+                  <span class="partner-line d-inline-block">&nbsp;</span>
+                  <span class="d-block">partag&eacute;e</span>
+                </h2>
+              </div>
+              <div class="partner-slider slickx-slider i3 arrow-white">
+                <div class="slickx-slide">
+                  <div class="partner-item i1 p-rel d-flex flex-wrap justify-start items-end">
+                    <div class="partner-item--aside">
+                      <div class="partner-item--image p-rel h-full bg-gray">
+                        <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/6.jpg" alt="" width="1440" height="960">
+                        <div class="partner-item--logo p-abs d-flex justify-center items-center bg-white">
+                          <img class="w-full h-auto obj-fill obj-center" src="assets/img/logo/alliance-marine.svg" alt="" width="144" height="42">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="partner-item--body">
+                      <h3 class="partner-item--title font-light">Quand l&rsquo;expansion d&rsquo;un groupe se joue &agrave; l&rsquo;international par croissance externe.</h3>
+                      <div class="partner-item--summary font-light">Entretien avec Jean-Paul Roche, Pr&eacute;sident Directeur G&eacute;n&eacute;ral chez Alliance Marine et Lionel Mestre - Associ&eacute; (Membre du Comit&eacute; d&rsquo;Investissement des fonds de LBO et du comit&eacute; ESG.</div>
+                      <div class="partner-item--link">
+                        <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center max-w-360 w-full font-medium text-uppercase" href="#">
+                          <span>En savoir plus</span>
+                          <svg width="17" height="17">
+                            <use xlink:href="assets/img/sprites.svg#plus"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="partner-item i1 p-rel d-flex flex-wrap justify-start items-end">
+                    <div class="partner-item--aside">
+                      <div class="partner-item--image p-rel h-full bg-gray">
+                        <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/7.jpg" alt="" width="960" height="1200">
+                        <div class="partner-item--logo p-abs d-flex justify-center items-center bg-white">
+                          <img class="w-full h-auto obj-fill obj-center" src="assets/img/logo/bourdoncle-groupe.png" alt="" width="266" height="74">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="partner-item--body">
+                      <h3 class="partner-item--title font-light">Donec cursus ipsum ligula, quis elementum tellus posuere vitae. Fusce accumsan</h3>
+                      <div class="partner-item--summary font-light">Quisque aliquam, ante ut mattis facilisis, risus quam vestibulum nibh, sit amet mattis ipsum turpis at augue. Etiam dictum, mauris eget lacinia congue, nunc velit tincidunt libero, eget feugiat lorem neque vitae purus.</div>
+                      <div class="partner-item--link">
+                        <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center max-w-360 w-full font-medium text-uppercase" href="#">
+                          <span>En savoir plus</span>
+                          <svg width="17" height="17">
+                            <use xlink:href="assets/img/sprites.svg#plus"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="partner-item i1 p-rel d-flex flex-wrap justify-start items-end">
+                    <div class="partner-item--aside">
+                      <div class="partner-item--image p-rel h-full bg-gray">
+                        <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/8.jpg" alt="" width="1440" height="960">
+                        <div class="partner-item--logo p-abs d-flex justify-center items-center bg-white">
+                          <img class="w-full h-auto obj-fill obj-center" src="assets/img/logo/sapian.png" alt="" width="540" height="128">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="partner-item--body">
+                      <h3 class="partner-item--title font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula a nisl</h3>
+                      <div class="partner-item--summary font-light">Vivamus vitae arcu porta, imperdiet ligula et, tincidunt quam. Nam iaculis nibh nec enim aliquet, ac tempor ex consectetur. Nam sodales pellentesque neque, convallis consectetur augue dapibus quis.</div>
+                      <div class="partner-item--link">
+                        <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center max-w-360 w-full font-medium text-uppercase" href="#">
+                          <span>En savoir plus</span>
+                          <svg width="17" height="17">
+                            <use xlink:href="assets/img/sprites.svg#plus"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slickx-slide">
+                  <div class="partner-item i1 p-rel d-flex flex-wrap justify-start items-end">
+                    <div class="partner-item--aside">
+                      <div class="partner-item--image p-rel h-full bg-gray">
+                        <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/5.jpg" alt="" width="1000" height="550">
+                        <div class="partner-item--logo p-abs d-flex justify-center items-center bg-white">
+                          <img class="w-full h-auto obj-fill obj-center" src="assets/img/logo/ecomiam.png" alt="" width="248" height="216">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="partner-item--body">
+                      <h3 class="partner-item--title font-light">Etiam lectus nisi, egestas ut orci at, sagittis eleifend mauris. Sed quis lobortis dolor cursus</h3>
+                      <div class="partner-item--summary font-light">Pellentesque ac nisl odio. Nam faucibus urna at interdum sagittis. Integer vehicula augue enim, nec ullamcorper arcu tempor at. Nam nec lorem ac metus bibendum pretium sit amet sed libero.</div>
+                      <div class="partner-item--link">
+                        <a class="button medium edge-2 icon-right white outline d-inline-flex justify-between items-center max-w-360 w-full font-medium text-uppercase" href="#">
+                          <span>En savoir plus</span>
+                          <svg width="17" height="17">
+                            <use xlink:href="assets/img/sprites.svg#plus"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- partner-block -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+      </main>
+      <!-- main -->
+
+      <div class="modal is-content w1" id="mAccessDenied" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal-container" role="dialog" aria-modal="true">
+            <button class="modal-close d-flex justify-center items-center" aria-label="Fermer" data-micromodal-close>
+              <svg width="15" height="15" data-micromodal-close>
+                <use xlink:href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="modal-content">
+              <h2 class="modal-title font-semibold">Acc&egrave;s refus&eacute;</h2>
+              <div class="modal-block d-flex flex-col justify-center items-stretch text-center">
+                <div class="modal-icon d-flex justify-center items-center mx-auto">
+                  <svg width="16" height="16">
+                    <use xlink:href="assets/img/sprites.svg#close"></use>
+                  </svg>
+                </div>
+                <div class="modal-text">Vous ne pouvez pas acc&eacute;der &agrave; cette page.</div>
+                <div class="modal-button">
+                  <a class="button medium edge-2 purple filled d-inline-block font-medium text-center" href="#" target="_blank">Retour &agrave; l&apos;accueil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="modal is-content w2" id="mPrivateWealth" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal-container" role="dialog" aria-modal="true">
+            <button class="modal-close d-flex justify-center items-center" aria-label="Fermer" data-micromodal-close>
+              <svg width="15" height="15" data-micromodal-close>
+                <use xlink:href="assets/img/sprites.svg#close"></use>
+              </svg>
+            </button>
+            <div class="modal-content">
+              <h2 class="modal-title font-semibold">Acc&egrave;s investisseur professionnel</h2>
+              <div class="modal-grid d-flex flex-wrap justify-start items-start">
+                <div class="modal-column i1">
+                  <h3 class="modal-subtitle font-medium">Veuillez s&eacute;lectionner la cat&eacute;gorie correspondant &agrave; votre statut afin d&apos;acc&eacute;der aux informations pr&eacute;sent&eacute;es sur cette page.</h3>
+                  <div class="modal-radio">
+                    <input class="pw-input" type="radio" id="pWRadio1" name="pWRadio" required>
+                    <label for="pWRadio1">
+                      <strong class="font-medium">Investisseur professionnel par nature</strong>
+                      <em class="font-medium">Art. L. 533-16 CMF &middot; Directive MiFID II 2014/65/UE, Annexe II &sect;I</em>
+                    </label>
+                  </div>
+                  <div class="modal-radio">
+                    <input class="pw-input" type="radio" id="pWRadio2" name="pWRadio" required>
+                    <label for="pWRadio2">
+                      <strong class="font-medium">Investisseur professionnel sur option</strong>
+                      <em class="font-medium">Art. D. 533-12 et D. 533-12-1 CMF</em>
+                    </label>
+                  </div>
+                  <div class="modal-checkbox">
+                    <input class="pw-input" type="checkbox" id="pWCheckbox" name="pWCheckbox" required>
+                    <label class="font-medium" for="pWCheckbox">Je certifie sur l&apos;honneur relever de l&apos;une des cat&eacute;gories d&apos;investisseurs s&eacute;lectionn&eacute;e ci-dessus, avoir pris connaissance des avertissements ci-contre et accepter que l&apos;acc&egrave;s &agrave; ces informations soit r&eacute;serv&eacute; aux investisseurs qualifi&eacute;s conform&eacute;ment aux dispositions applicables. Je m&apos;engage &agrave; ne pas diffuser ces informations &agrave; des tiers non qualifi&eacute;s.*</label>
+                  </div>
+                  <div class="modal-required">*Champ obligatoire</div>
+                </div>
+                <div class="modal-column i2">
+                  <div class="modal-editor">
+                    <h3>Conditions d'utilisation</h3>
+                    <p>Pr&eacute;alablement &agrave; la navigation sur ce site internet, veuillez lire attentivement l&rsquo;avertissement ci-dessous. Il indique certaines restrictions impos&eacute;es par la r&eacute;glementation sur la diffusion et l&rsquo;utilisation des informations pr&eacute;sent&eacute;es relativement aux produits propos&eacute;s par Weinberg Capital Partners.</p>
+                    <p>Les informations figurant sur ce site sont fournies &agrave; titre exclusivement informatif et ne constituent ni un conseil en investissement, ni une offre de souscription, ni une sollicitation relative &agrave; des instruments financiers ou services d&rsquo;investissement.</p>
+                    <p>Ce site a pour objectif de pr&eacute;senter l&rsquo;activit&eacute; de gestion de portefeuille et d&rsquo;investissement de Weinberg Capital Partners. Il ne constitue pas un site transactionnel et ne permet aucune souscription en ligne.</p>
+                    <p>Les solutions et v&eacute;hicules d&rsquo;investissement pr&eacute;sent&eacute;s sont destin&eacute;s exclusivement &agrave; une client&egrave;le &eacute;ligible au sens de la r&eacute;glementation applicable. L&rsquo;acc&egrave;s &agrave; certains produits, fonds ou strat&eacute;gies peut &ecirc;tre soumis &agrave; des conditions d&rsquo;&eacute;ligibilit&eacute;, de r&eacute;sidence fiscale ou de juridiction.</p>
+                    <p>Les investissements en actifs non cot&eacute;s pr&eacute;sentent des risques sp&eacute;cifiques, notamment un risque de perte totale ou partielle du capital investi, un risque d&rsquo;illiquidit&eacute;, ainsi qu&rsquo;un horizon d&rsquo;investissement long. Les performances pass&eacute;es ne pr&eacute;jugent pas des performances futures et aucun rendement n&rsquo;est garanti.</p>
+                    <p>Avant toute souscription et pour toute information compl&eacute;mentaire relative aux caract&eacute;ristiques, aux risques, aux frais et aux modalit&eacute;s des solutions propos&eacute;es, l&rsquo;investisseur est invit&eacute; &agrave; prendre connaissance attentivement de la documentation r&eacute;glementaire applicable, notamment des r&egrave;glements, documents d&rsquo;information et informations relatives aux risques.</p>
+                    <p>Avant toute d&eacute;cision d&rsquo;investissement, il appartient &agrave; chaque investisseur d&rsquo;&eacute;valuer, avec l&rsquo;assistance de ses conseils habituels, l&rsquo;ad&eacute;quation des solutions envisag&eacute;es &agrave; sa situation patrimoniale, financi&egrave;re, fiscale, juridique et &agrave; ses objectifs d&rsquo;investissement ainsi qu&rsquo;&agrave; sa capacit&eacute; &agrave; supporter les risques associ&eacute;s.</p>
+                    <p>Les informations figurant sur ce site proviennent de sources consid&eacute;r&eacute;es comme fiables &agrave; la date de leur publication. Aucune garantie n&rsquo;est donn&eacute;e quant &agrave; leur exactitude, leur exhaustivit&eacute; ou leur mise &agrave; jour.</p>
+                    <p>Weinberg Capital Partners est une soci&eacute;t&eacute; de gestion de portefeuille agr&eacute;&eacute;e par l&rsquo;Autorit&eacute; des March&eacute;s Financiers sous le num&eacute;ro GP-05000018.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-toolbar d-flex flex-wrap justify-end items-center">
+                <a class="button medium edge-2 purple filled font-medium text-center pw-button disabled" href="#">Confirmer et acc&eacute;der &agrave; la page</a>
+                <a class="button medium edge-2 gray outline font-medium text-center modal-access-denied" href="#mAccessDenied" data-micromodal-trigger="mAccessDenied">Je ne rel&egrave;ve pas de ces cat&eacute;gories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+
+      <footer class="footer hidden-print">
+        <div class="container max-w-1280 mx-auto d-flex flex-wrap justify-between items-center">
+          <div class="footer-logo">
+            <a href="#">
+              <img class="w-auto" src="assets/img/logo.svg" alt="WCP" width="208" height="60">
+            </a>
+          </div>
+          <div class="footer-toolbar d-flex flex-wrap justify-center items-center font-light">
+            <div class="footer-link">
+              <ul class="d-flex flex-wrap justify-center items-center">
+                <li><a class="d-block" href="#">Mentions l&eacute;gales</a></li>
+                <li><a class="d-block" href="#">Politique de confidentialit&eacute;</a></li>
+                <li><a class="d-block" href="#">Gestion des cookies</a></li>
+                <li><a class="d-block" href="#">Plan du site</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <ul class="d-flex justify-center items-center">
+                <li>
+                  <a class="d-block" href="https://www.linkedin.com/company/weinberg-capital-partners" target="_blank">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block" href="#" target="_blank">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprites.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-support">
+              <ul class="d-flex flex-wrap justify-center items-center">
+                <li>
+                  <a class="d-flex justify-start items-center" href="#">
+                    <span class="hidden-xs hidden-sm hidden-md">Accessibilit&eacute;</span>
+                    <i class="d-flex justify-center items-center bg-black c-white">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprites.svg#accessibility"></use>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex justify-start items-center" href="#">
+                    <span class="hidden-xs hidden-sm hidden-md">Nous contacter</span>
+                    <i class="d-flex justify-center items-center bg-purple c-white">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprites.svg#contact"></use>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <div class="cookie p-fixed bg-white hidden">
+        <div class="container max-w-1280 mx-auto d-flex flex-wrap justify-center items-center">
+          <div class="cookie-text font-light">En poursuivant votre navigation sur le site, <strong>vous acceptez l&rsquo;utilisation des cookies</strong> pour vous proposer des contenus et services adapt&eacute;s</div>
+          <div class="cookie-button text-center">
+            <ul class="d-flex flex-wrap justify-center items-center">
+              <li>
+                <a class="button small edge-1 purple filled d-block font-medium text-uppercase" href="#">Tout accepter</a>
+              </li>
+              <li>
+                <a class="button small edge-1 purple outline d-block font-medium text-uppercase" href="#">Tout refuser</a>
+              </li>
+              <li>
+                <a class="button small edge-1 purple outline d-block font-medium text-uppercase" href="#">Personnaliser</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- cookie -->
+
+    </div>
+    <!-- wrapper -->
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- script -->
+
+  </body>
+
+</html>

@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WCP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header class="header p-fixed bg-white">
+        <div class="header-container">
+          <div class="container p-rel max-w-1280 mx-auto">
+            <h2 class="header-title hidden-visually">Weinberg Capital Partners</h2>
+            <div class="header-logo p-abs">
+              <a href="#">
+                <img class="w-auto" src="assets/img/logo.svg" alt="WCP" width="208" height="60">
+              </a>
+            </div>
+            <div class="header-toolbar d-flex justify-between items-start hidden-md hidden-lg hidden-print">
+              <div class="header-lang p-rel text-center js-rollover">
+                <span class="d-block">FR</span>
+                <ul class="p-abs">
+                  <li><a class="d-block" href="#">EN</a></li>
+                </ul>
+              </div>
+              <div class="header-icon text-right">
+                <button class="no-padding no-text no-background no-border js-toggler" type="button" data-target="#hMenu">
+                  <span class="on">
+                    <svg width="32" height="24">
+                      <use xlink:href="assets/img/sprites.svg#menu"></use>
+                    </svg>
+                  </span>
+                  <span class="off">
+                    <svg width="24" height="24">
+                      <use xlink:href="assets/img/sprites.svg#close"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="header-toolbar hidden-xs hidden-sm hidden-print">
+              <div class="header-client d-flex justify-end items-start">
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase modal-private-wealth" href="#mPrivateWealth" data-micromodal-trigger="mPrivateWealth">Private Wealth</a>
+                <br>
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase" href="#" target="_blank">Espace investisseur</a>
+              </div>
+              <div class="header-group d-flex justify-end items-start">
+                <div class="header-nav">
+                  <ul class="d-flex flex-wrap justify-center items-start">
+                    <li>
+                      <a class="d-block js-toggler" href="#hMenu1" data-target="#hMenu1">&Agrave; propos</a>
+                      <div class="header-modal p-abs font-light bg-gray" id="hMenu1">
+                        <button class="p-abs no-text no-background no-border js-toggler" type="button" data-target="#hMenu1">
+                          <svg width="24" height="24">
+                            <use xlink:href="assets/img/sprites.svg#close"></use>
+                          </svg>
+                        </button>
+                        <ul>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Notre ADN</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Notre histoire</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Notre strategie</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">News</a></li>
+                        </ul>
+                      </div>
+                      <div class="header-gap"></div>
+                    </li>
+                    <li><a class="d-block" href="#">Engagements</a></li>
+                    <li><a class="d-block" href="#">&Eacute;quipe</a></li>
+                    <li>
+                      <a class="d-block js-toggler" href="#hMenu4" data-target="#hMenu4">Expertises</a>
+                      <div class="header-modal p-abs font-light bg-gray" id="hMenu4">
+                        <button class="p-abs no-text no-background no-border js-toggler" type="button" data-target="#hMenu4">
+                          <svg width="24" height="24">
+                            <use xlink:href="assets/img/sprites.svg#close"></use>
+                          </svg>
+                        </button>
+                        <ul>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">LBO</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Real Estate</a></li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Impact</a></li>
+                          <li class="has-sublist of-hidden">
+                            <a class="d-flex justify-start items-center max-w-1280 mx-auto js-collapse" href="#hSubA" data-target="#hSubA">
+                              <span>D&eacute;fense &amp; S&eacute;curit&eacute;</span>
+                              <svg class="on" width="16" height="16">
+                                <use xlink:href="assets/img/sprites.svg#plus"></use>
+                              </svg>
+                              <svg class="off" width="16" height="16">
+                                <use xlink:href="assets/img/sprites.svg#minus"></use>
+                              </svg>
+                            </a>
+                            <div class="bg-white" id="hSubA">
+                              <ul>
+                                <li class="max-w-1200 mx-auto"><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Mid cap</a></li>
+                                <li class="max-w-1200 mx-auto"><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Small cap &amp; capital-d&eacute;veloppement</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a class="d-block max-w-1280 mx-auto" href="#">Co-Investissement</a></li>
+                        </ul>
+                      </div>
+                      <div class="header-gap"></div>
+                    </li>
+                    <li><a class="d-block active" href="#">Investissements</a></li>
+                  </ul>
+                </div>
+                <div class="header-social">
+                  <ul class="d-flex justify-start items-center">
+                    <li>
+                      <a class="d-block" href="https://www.linkedin.com/company/weinberg-capital-partners" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="d-block" href="#" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="assets/img/sprites.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header-lang p-rel text-center js-rollover">
+                  <span class="d-block">FR</span>
+                  <ul class="p-abs">
+                    <li><a class="d-block" href="#">EN</a></li>
+                  </ul>
+                </div>
+                <div class="header-line"></div>
+                <div class="header-icon text-right">
+                  <button class="no-padding no-text no-background no-border js-toggler" type="button" data-target="#hSearch">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprites.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-modal p-abs bg-gray hidden-md hidden-lg" id="hMenu">
+          <div class="header-flex d-flex flex-col justify-between items-stretch h-full">
+            <div class="header-flex--item">
+              <div class="header-search p-rel bg-purple c-white">
+                <input class="w-full no-padding no-background no-border font-light" type="text" placeholder="Rechercher">
+                <button class="no-background no-border p-abs" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="header-nav font-light">
+                <div class="header-subnav header-panel" id="hNav0">
+                  <ul>
+                    <li class="has-icon">
+                      <a class="d-block" href="#">&Agrave; propos</a>
+                      <div class="header-toggle p-abs">
+                        <button class="no-text no-background no-border js-switcher" type="button" data-target="#hNav1">
+                          <svg width="10" height="18">
+                            <use xlink:href="assets/img/sprites.svg#right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li><a class="d-block" href="#">Engagements</a></li>
+                    <li><a class="d-block" href="#">&Eacute;quipe</a></li>
+                    <li class="has-icon">
+                      <a class="d-block" href="#">Expertises</a>
+                      <div class="header-toggle p-abs">
+                        <button class="no-text no-background no-border js-switcher" type="button" data-target="#hNav4">
+                          <svg width="10" height="18">
+                            <use xlink:href="assets/img/sprites.svg#right"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                    <li><a class="d-block" href="#">Investissements</a></li>
+                  </ul>
+                </div>
+                <div class="header-subnav header-panel hidden" id="hNav1">
+                  <div class="header-back">
+                    <a class="d-flex justify-start items-center font-medium js-switcher" href="#hNav0" data-target="#hNav0">
+                      <svg width="10" height="18">
+                        <use xlink:href="assets/img/sprites.svg#right"></use>
+                      </svg>
+                      <span>Retour</span>
+                    </a>
+                  </div>
+                  <ul>
+                    <li><a class="d-block" href="#">Notre ADN</a></li>
+                    <li><a class="d-block" href="#">Notre histoire</a></li>
+                    <li><a class="d-block" href="#">Notre strategie</a></li>
+                    <li><a class="d-block" href="#">News</a></li>
+                  </ul>
+                </div>
+                <div class="header-subnav header-panel hidden" id="hNav4">
+                  <div class="header-back">
+                    <a class="d-flex justify-start items-center font-medium js-switcher" href="#hNav0" data-target="#hNav0">
+                      <svg width="10" height="18">
+                        <use xlink:href="assets/img/sprites.svg#right"></use>
+                      </svg>
+                      <span>Retour</span>
+                    </a>
+                  </div>
+                  <ul>
+                    <li><a class="d-block" href="#">LBO</a></li>
+                    <li><a class="d-block" href="#">Real Estate</a></li>
+                    <li><a class="d-block" href="#">Impact</a></li>
+                    <li class="has-sublist of-hidden">
+                      <a class="d-flex justify-between items-center max-w-1280 mx-auto js-collapse" href="#hSubB" data-target="#hSubB">
+                        <span>D&eacute;fense &amp; S&eacute;curit&eacute;</span>
+                        <svg class="on" width="16" height="16">
+                          <use xlink:href="assets/img/sprites.svg#plus"></use>
+                        </svg>
+                        <svg class="off" width="16" height="16">
+                          <use xlink:href="assets/img/sprites.svg#minus"></use>
+                        </svg>
+                      </a>
+                      <div class="bg-white" id="hSubB">
+                        <ul>
+                          <li><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Mid cap</a></li>
+                          <li><a class="d-block" href="#">D&eacute;fense &amp; S&eacute;curit&eacute; - Small cap &amp; capital-d&eacute;veloppement</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a class="d-block" href="#">Co-Investissement</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-social">
+                <ul class="d-flex justify-start items-center">
+                  <li>
+                    <a class="d-block" href="https://www.linkedin.com/company/weinberg-capital-partners" target="_blank">
+                      <svg width="20" height="20">
+                        <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="d-block" href="#" target="_blank">
+                      <svg width="20" height="20">
+                        <use xlink:href="assets/img/sprites.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-flex--item">
+              <div class="header-client max-w-420 mx-auto">
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase modal-private-wealth" href="#mPrivateWealth" data-micromodal-trigger="mPrivateWealth">Private Wealth</a>
+                <br>
+                <a class="button small edge-2 purple outline d-block font-medium text-center text-uppercase" href="#" target="_blank">Espace investisseur</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-modal p-abs bg-gray hidden-xs hidden-sm" id="hSearch">
+          <div class="container max-w-1280 mx-auto">
+            <div class="search-container">
+              <div class="search-form p-rel">
+                <input class="w-full no-padding no-background no-border font-light js-field" type="text" placeholder="Rechercher" value="">
+                <button class="no-padding no-text no-background no-border p-abs js-reset" type="reset">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprites.svg#close"></use>
+                  </svg>
+                </button>
+                <button class="no-padding no-text no-background no-border p-abs" type="submit">
+                  <svg width="24" height="24">
+                    <use xlink:href="assets/img/sprites.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+
+      <main class="main">
+
+        <div class="breadcrumb hidden-xs">
+          <div class="container max-w-1280 mx-auto">
+            <div class="d-flex flex-wrap justify-start items-center font-light">
+              <a href="#">Actualit&eacute;s</a>
+              <span>-</span>
+              <strong class="font-bold">WCP annonce la cession du Groupe Alliance Marine &agrave; LBO France</strong>
+            </div>
+          </div>
+        </div>
+        <!-- breadcrumb -->
+
+        <section class="article-detail">
+          <div class="container p-rel max-w-1280 mx-auto">
+            <div class="article-detail--body without-image">
+              <div class="article-detail--category font-light text-uppercase c-purple">#Investissement</div>
+              <h1 class="article-detail--title font-semibold c-blue">WCP annonce la cession du Groupe Alliance Marine &agrave; LBO France</h1>
+              <div class="article-detail--meta font-bold">23/12/23</div>
+              <div class="article-detail--toolbar hidden-print">
+                <ul class="d-flex justify-start items-start">
+                  <li>
+                    <div class="share i1 p-rel js-rollover">
+                      <button class="share-button button bold-purple outline no-padding no-background no-border no-text" type="button">
+                        <svg width="21" height="21">
+                          <use xlink:href="assets/img/sprites.svg#share"></use>
+                        </svg>
+                      </button>
+                      <div class="share-list p-abs">
+                        <ul>
+                          <li>
+                            <a class="p-rel d-block" href="#">
+                              <span class="p-abs d-flex justify-center items-center">
+                                <img src="assets/img/icon/facebook.svg" alt="" width="16" height="32">
+                              </span>
+                              <em>Partager par Facebook</em>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="p-rel d-block" href="#">
+                              <span class="p-abs d-flex justify-center items-center">
+                                <img src="assets/img/icon/linkedin.svg" alt="" width="32" height="32">
+                              </span>
+                              <em>Partager par Linkedin</em>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="p-rel d-block" href="#">
+                              <span class="p-abs d-flex justify-center items-center">
+                                <img src="assets/img/icon/twitter.svg" alt="" width="40" height="32">
+                              </span>
+                              <em>Partager par Twitter</em>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="p-rel d-block" href="#">
+                              <span class="p-abs d-flex justify-center items-center">
+                                <svg width="20" height="16">
+                                  <use xlink:href="assets/img/sprites.svg#email"></use>
+                                </svg>
+                              </span>
+                              <em>Partager par mail</em>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="p-rel d-block" href="#">
+                              <span class="p-abs d-flex justify-center items-center">
+                                <svg width="20" height="10">
+                                  <use xlink:href="assets/img/sprites.svg#link"></use>
+                                </svg>
+                              </span>
+                              <em>Copier le lien</em>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <button class="button bold-purple outline no-padding no-background no-border no-text" type="button">
+                      <svg width="21" height="21">
+                        <use xlink:href="assets/img/sprites.svg#print"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="hidden-md hidden-lg">
+                    <a class="button purple filled rounded of-hidden d-flex justify-center items-center" href="#">
+                      <svg width="45" height="45">
+                        <use xlink:href="assets/img/sprites.svg#download"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="hidden-xs hidden-sm">
+                    <a class="button medium edge-1 black outline d-block font-medium text-center text-uppercase" href="#">T&eacute;l&eacute;charger le communiqu&eacute;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- article-detail -->
+
+        <div class="section section-pt-3 section-pb-3">
+          <div class="container max-w-880 mx-auto">
+
+            <div class="editor-text font-regular">Depuis plus de 20 ans Alliance Marine s&rsquo;est sp&eacute;cialis&eacute; dans la distribution des &eacute;quipements et des pi&egrave;ces d&eacute;tach&eacute;es, de marques tierces et de marques propres, pour la maintenance et la r&eacute;novation de bateaux de plaisance et professionnels.</div>
+            <!-- editor -->
+
+            <div class="editor-text font-light">
+              <p>Co-fond&eacute; par Jean-Paul Roche en 1999, le Groupe a r&eacute;alis&eacute; plus de 20 acquisitions qui ont permis de b&acirc;tir un mod&egrave;le unique par sa diversification produits, fournisseurs, clients, et une pr&eacute;sence &agrave; l&rsquo;international au Royaume-Uni, en Allemagne, Italie, Espagne et Su&egrave;de.<br>Avec un chiffre d&rsquo;affaires de 220 millions d&rsquo;euros et un effectif de 635 personnes, Alliance Marine b&eacute;n&eacute;ficie aujourd&rsquo;hui de positions de leader au sein de ses principaux march&eacute;s.</p>
+              <figure>
+                <img src="assets/img/misc/16.jpg" alt="" width="1440" height="960">
+              </figure>
+              <h2>Jean-Paul Roche, Pr&eacute;sident d&rsquo;Alliance Marine</h2>
+              <p>Au cours de ces derni&egrave;res ann&eacute;es, Alliance Marine a chang&eacute; de dimension tout en maintenant les &eacute;quilibres qui font la richesse de son mod&egrave;le avec une forte exposition &agrave; l&rsquo;aftermarket, une pr&eacute;sence diversifi&eacute;e &agrave; la fois sur le march&eacute; de la plaisance et les march&eacute;s professionnels et un portefeuille comp&eacute;titif de marques propres. WCP a &eacute;t&eacute; le partenaire id&eacute;al pour nous aider &agrave; franchir ce cap en sachant conjuguer professionnalisme et enthousiasme&rdquo;</p>
+              <p>Le Groupe est maintenant id&eacute;alement positionn&eacute; pour poursuivre, avec le soutien de son nouvel actionnaire, la consolidation &agrave; l&rsquo;international qui offre des opportunit&eacute;s de d&eacute;veloppement significatives. La r&eacute;alisation de la transaction est soumise &agrave; l&rsquo;approbation de l&rsquo;autorit&eacute; de la concurrence.</p>
+            </div>
+            <!-- editor -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <div class="section section-pt-2 section-pb-2">
+          <div class="container max-w-1280 mx-auto">
+
+            <div class="quote p-rel">
+              <div class="quote-image bg-gray">
+                <img class="w-full h-full obj-cover obj-center" src="assets/img/team/3.jpg" alt="" width="960" height="960">
+              </div>
+              <div class="quote-body d-flex flex-col justify-center items-stretch">
+                <div class="quote-content font-light">&ldquo; Depuis notre entr&eacute;e au capital en 2016, Alliance Marine a connu une trajectoire remarquable en doublant de taille et en devenant un acteur de premier plan &agrave; l&rsquo;international.<br>Nous sommes particuli&egrave;rement heureux d&rsquo;avoir accompagn&eacute; Jean-Paul Roche et son &eacute;quipe dans cette importante &eacute;tape de d&eacute;veloppement et nous sommes convaincus que cette belle histoire continuera avec LBO France &agrave; leurs c&ocirc;t&eacute;s. &rdquo;</div>
+                <div class="quote-source font-light"><strong class="font-bold">Philippe Klocanas</strong> - Associ&eacute;</div>
+              </div>
+            </div>
+            <!-- quote -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <section class="section section-pt-2 section-pb-2">
+          <div class="section-pt-3 section-pb-3 max-w-1200 mx-auto bg-blue c-white">
+            <div class="container max-w-880 mx-auto">
+              <h2 class="section-title small font-light">Omnis iste natus error sit voluptatem</h2>
+              <div class="section-body section-mt-3">
+
+                <div class="editor-text font-bold">Morbi eget neque justo. Duis nec elit nunc. In placerat laoreet quam sit amet viverra. Cras mattis aliquet venenatis. Vestibulum vitae velit est. Vestibulum quis posuere ante. In eu quam lectus. Mauris porta fermentum viverra. Fusce nec rutrum sem. Aliquam consectetur tincidunt erat rutrum luctus. Sed vel posuere nunc, a eleifend quam.</div>
+                <div class="editor-flex i1 d-flex flex-wrap justify-start items-stretch">
+                  <div class="editor-flex--item">
+                    <div class="editor-text font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum lorem eget ante mattis, vitae cursus massa aliquam. Nam suscipit scelerisque arcu, quis condimentum lorem. Fusce molestie leo id</div>
+                  </div>
+                  <div class="editor-flex--item">
+                    <div class="editor-text font-light">Phasellus ultricies mattis sollicitudin. Pellentesque lorem mauris, placerat id orci in, sagittis suscipit justo. Donec sed massa euismod, eleifend lectus ac, consectetur libero. Ut vitae justo sollicitudin</div>
+                  </div>
+                </div>
+                <!-- editor -->
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+        <section class="section section-pt-2 section-pb-2">
+          <div class="container max-w-1280 mx-auto">
+
+            <div class="editor-flex i2 d-flex flex-wrap justify-start items-stretch">
+              <div class="editor-flex--item i1">
+                <div class="figure-item i2 d-flex flex-col justify-end items-stretch h-full bg-brown c-white">
+                  <div class="figure-item--number font-light text-wordbreak">1,5</div>
+                  <div class="figure-item--caption font-light text-wordbreak">Mds&euro; d&rsquo;actifs sous gestion.</div>
+                  <div class="figure-item--summary font-light">Nequi dolorerro consequiam, sitatem amusam ra quis si voluptat. dolorerro consequiam, tem osa musam ra quis si voluptat</div>
+                </div>
+              </div>
+              <div class="editor-flex--item i2">
+                <div class="editor-text font-light">
+                  <h2>Omnis iste natus error sit voluptatem</h2>
+                  <p>Fond&eacute; en 2005 par Serge Weinberg et Philippe Klocanas, WCP est un acteur de r&eacute;f&eacute;rence de l&rsquo;investissement en capital au sein de PME et d&rsquo;ETI fran&ccedil;aises, dot&eacute; de 1,3 Mds&euro; d&rsquo;actifs sous gestion. Initialement centr&eacute; sur le LBO mid-cap fran&ccedil;ais, WCP a &eacute;largi ses activit&eacute;s &agrave; l&rsquo;immobilier en 2007, puis &agrave; l&rsquo;investissement actif, amical et de long-terme au sein de soci&eacute;t&eacute;s cot&eacute;es en 2015, et enfin &agrave; l&rsquo;impact investing avec le fonds WCP IMPACT DEV. Depuis l&rsquo;origine, WCP se singularise tant par son positionnement institutionnel, son ancrage en tant qu&rsquo;investisseur responsable, que par sa proximit&eacute; avec les dirigeants de ses participations li&eacute;e &agrave; l&rsquo;exp&eacute;rience op&eacute;rationnelle de ses associ&eacute;s. L&rsquo;&eacute;quipe WCP compte 32 collaborateurs &agrave; ce jour. WCP est signataire des Principes pour l&rsquo;Investissement Responsable depuis 2011 (notation A+). Il est &eacute;galement membre de l&rsquo;Initiative Climat International.</p>
+                </div>
+              </div>
+            </div>
+            <!-- editor -->
+
+          </div>
+        </section>
+        <!-- section -->
+
+        <div class="section section-pt-2 section-pb-2">
+          <div class="container max-w-880 mx-auto">
+
+            <div class="editor-text font-light">
+              <p>Pellentesque a tempus sapien. Sed mattis sapien ligula, vitae condimentum nibh sodales ut. Ut faucibus lectus quis volutpat fermentum. Aenean placerat id sapien et vestibulum. Fusce sagittis sollicitudin nunc eget interdum. Curabitur tempor dignissim lectus, dictum rutrum ipsum tristique in. Morbi nec mollis tellus, dictum pellentesque ipsum. Ut varius eu nibh sed imperdiet. Aliquam molestie hendrerit eros, sit amet mattis dui pretium a. Phasellus eu pellentesque tortor. Sed non luctus orci, quis ullamcorper est. Nam ligula felis, volutpat ac convallis ut, rutrum id ex. Aliquam elementum nunc eget arcu vulputate feugiat sollicitudin et justo. Nulla semper, nulla non condimentum mollis, sem dolor pharetra tellus, non pellentesque odio arcu sit amet lectus.</p>
+              <figure>
+                <img src="assets/img/misc/16.jpg" alt="" width="1440" height="960">
+                <figcaption>L&eacute;gende : consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</figcaption>
+              </figure>
+              <p><strong>Donec justo felis</strong>, luctus volutpat porta at, laoreet at ipsum. Cras porttitor imperdiet sapien eget consectetur. Phasellus at nisi vel felis feugiat mattis vitae non nibh. Curabitur augue massa, dapibus ut sem et, dignissim iaculis justo. Morbi et nisi a augue auctor rutrum. Duis et tincidunt erat, at feugiat lectus. Sed laoreet rutrum risus, vel mollis sem fringilla eu.</p>
+              <p><strong>Morbi et tristique lorem</strong>, vel molestie eros. Ut ac neque placerat, dapibus lectus pulvinar, pellentesque augue. Mauris blandit risus ex, et semper nulla venenatis sit amet. Integer mattis dolor at porttitor posuere. Phasellus nunc enim, gravida vitae libero eu, venenatis aliquet nibh.</p>
+              <p><strong>Nam et maximus urna</strong>. Morbi lobortis, orci condimentum dapibus pretium, tellus orci bibendum mi, eu blandit justo nunc non ligula. Nam bibendum, lorem at posuere commodo, quam turpis venenatis velit, ac laoreet purus nulla tempor dolor. Etiam ac semper felis, eu ultrices nisl. Phasellus ac rhoncus erat. Quisque eget massa mollis, ultricies purus a, vestibulum metus.</p>
+            </div>
+            <!-- editor -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <div class="section section-pt-3 section-pb-3 bg-light-blue c-white">
+          <div class="container max-w-880 mx-auto">
+
+            <div class="quote-content font-light">&ldquo; Depuis notre entr&eacute;e au capital en 2016, Alliance Marine a connu une trajectoire remarquable en doublant de taille et en devenant un acteur de premier plan &agrave; l&rsquo;international.<br>Nous sommes particuli&egrave;rement heureux d&rsquo;avoir accompagn&eacute; Jean-Paul Roche et son &eacute;quipe dans cette importante &eacute;tape de d&eacute;veloppement et nous sommes convaincus que cette belle histoire continuera avec LBO France &agrave; leurs c&ocirc;t&eacute;s. &rdquo;</div>
+            <!-- quote -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <div class="section section-pt-3 section-pb-1">
+          <div class="container max-w-880 mx-auto">
+
+            <div class="editor-text font-light">
+              <p><strong>Donec justo felis</strong>, luctus volutpat porta at, laoreet at ipsum. Cras porttitor imperdiet sapien eget consectetur. Phasellus at nisi vel felis feugiat mattis vitae non nibh. Curabitur augue massa, dapibus ut sem et, dignissim iaculis justo. Morbi et nisi a augue auctor rutrum. Duis et tincidunt erat, at feugiat lectus. Sed laoreet rutrum risus, vel mollis sem fringilla eu.</p>
+              <p><strong>Morbi et tristique lorem</strong>, vel molestie eros. Ut ac neque placerat, dapibus lectus pulvinar, pellentesque augue. Mauris blandit risus ex, et semper nulla venenatis sit amet. Integer mattis dolor at porttitor posuere. Phasellus nunc enim, gravida vitae libero eu, venenatis aliquet nibh.</p>
+              <p><strong>Nam et maximus urna</strong>. Morbi lobortis, orci condimentum dapibus pretium, tellus orci bibendum mi, eu blandit justo nunc non ligula. Nam bibendum, lorem at posuere commodo, quam turpis venenatis velit, ac laoreet purus nulla tempor dolor. Etiam ac semper felis, eu ultrices nisl. Phasellus ac rhoncus erat. Quisque eget massa mollis, ultricies purus a, vestibulum metus.</p>
+            </div>
+            <!-- editor -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <div class="section section-pt-1 section-pb-3">
+          <div class="container max-w-880 mx-auto">
+
+            <div class="editor-flex i3 d-flex flex-wrap justify-center items-stretch">
+              <div class="editor-flex--item">
+                <div class="editor-contact h-full text-wordbreak">
+                  <div class="editor-contact--name font-bold">Laurence Roy-Rojo</div>
+                  <div class="editor-contact--info">
+                    <p>Associ&eacute;e - Relations Investisseurs</p>
+                    <ul>
+                      <li><a href="mailto:laurence.royrojo@weinbergcapital.com">laurence.royrojo@weinbergcapital.com</a></li>
+                      <li><a href="tel:+330153535516">+ 33 (0)1 53 53 55 16</a></li>
+                    </ul>
+                  </div>
+                  <div class="editor-contact--icon">
+                    <ul class="d-flex justify-start items-center">
+                      <li>
+                        <a class="d-block" href="#" target="_blank">
+                          <svg width="30" height="30">
+                            <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-block" href="#" target="_blank">
+                          <svg width="30" height="30">
+                            <use xlink:href="assets/img/sprites.svg#twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="editor-flex--item">
+                <div class="editor-contact h-full text-wordbreak">
+                  <div class="editor-contact--name font-bold">Communiqu&eacute; de presse</div>
+                  <div class="editor-contact--info">WCP annonce la cession du Groupe Alliance Marine &agrave; LBO France</div>
+                  <div class="editor-contact--link">
+                    <a class="button small edge-2 black outline d-inline-block font-medium text-center text-uppercase" href="#">T&eacute;l&eacute;charger</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+
+          </div>
+        </div>
+        <!-- section -->
+
+        <section class="section section-pt-3 section-pb-3 bg-gray">
+          <div class="container max-w-880 mx-auto">
+            <h2 class="section-title small font-light">A propos de &ldquo;WCP&rdquo; Weinberg Capital Partners</h2>
+            <div class="section-body section-mt-3">
+
+              <div class="editor-text font-light">Fond&eacute; en 2005 par Serge Weinberg et Philippe Klocanas, WCP est un acteur de r&eacute;f&eacute;rence de l&rsquo;investissement en capital au sein de PME et d&rsquo;ETI fran&ccedil;aises, dot&eacute; de 1,3 Mds&euro; d&rsquo;actifs sous gestion. Initialement centr&eacute; sur le LBO mid-cap fran&ccedil;ais, WCP a &eacute;largi ses activit&eacute;s &agrave; l&rsquo;immobilier en 2007, puis &agrave; l&rsquo;investissement actif, amical et de long-terme au sein de soci&eacute;t&eacute;s cot&eacute;es en 2015, et enfin &agrave; l&rsquo;impact investing avec le fonds WCP IMPACT DEV. Depuis l&rsquo;origine, WCP se singularise tant par son positionnement institutionnel, son ancrage en tant qu&rsquo;investisseur responsable, que par sa proximit&eacute; avec les dirigeants de ses participations li&eacute;e &agrave; l&rsquo;exp&eacute;rience op&eacute;rationnelle de ses associ&eacute;s. L&rsquo;&eacute;quipe WCP compte 32 collaborateurs &agrave; ce jour. WCP est signataire des Principes pour l&rsquo;Investissement Responsable depuis 2011 (notation A+). Il est &eacute;galement membre de l&rsquo;Initiative Climat International.</div>
+              <!-- editor -->
+
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+        <section class="section section-pt-3 section-pb-3 hidden-print">
+          <div class="container max-w-1280 mx-auto">
+            <h2 class="section-title small font-light">D&eacute;couvrir plus de news</h2>
+            <div class="section-body">
+
+              <div class="article-slider slickx-slider i1 dot-rel dot-center dot-purple hidden-sm hidden-md hidden-lg">
+                <div class="slickx-slide">
+                  <article class="article-item">
+                    <div class="article-item--image h2 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/7.jpg" alt="" width="960" height="1200">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Investissement</div>
+                    <h3 class="article-item--title font-medium">Le groupe Bourdoncle renforce sa pr&eacute;sence &agrave; Meg&egrave;ve avec l&rsquo;ouverture d&rsquo;Amore Hibou</h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                  </article>
+                </div>
+                <div class="slickx-slide">
+                  <article class="article-item">
+                    <div class="article-item--image h2 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/11.jpg" alt="" width="1440" height="900">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Impact</div>
+                    <h3 class="article-item--title font-medium">Entr&eacute;e au capital du groupe WebForce3</h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                  </article>
+                </div>
+                <div class="slickx-slide">
+                  <article class="article-item">
+                    <div class="article-item--image h2 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/1.jpg" alt="" width="1440" height="960">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Investissement</div>
+                    <h3 class="article-item--title font-medium">Lorem ipsum dolor sit met non tantrum sed etiam rosam et doloris</h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                  </article>
+                </div>
+              </div>
+              <!-- article-slider -->
+
+              <div class="article-flex i2 d-flex flex-wrap justify-start items-stretch hidden-xs">
+                <div class="article-flex--item">
+                  <article class="article-item">
+                    <div class="article-item--image h2 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/7.jpg" alt="" width="960" height="1200">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Investissement</div>
+                    <h3 class="article-item--title font-medium">Le groupe Bourdoncle renforce sa pr&eacute;sence &agrave; Meg&egrave;ve avec l&rsquo;ouverture d&rsquo;Amore Hibou</h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                  </article>
+                </div>
+                <div class="article-flex--item">
+                  <article class="article-item">
+                    <div class="article-item--image h2 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/11.jpg" alt="" width="1440" height="900">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Impact</div>
+                    <h3 class="article-item--title font-medium">Entr&eacute;e au capital du groupe WebForce3</h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                  </article>
+                </div>
+                <div class="article-flex--item">
+                  <article class="article-item">
+                    <div class="article-item--image h2 bg-gray">
+                      <img class="w-full h-full obj-cover obj-center" src="assets/img/misc/1.jpg" alt="" width="1440" height="960">
+                    </div>
+                    <div class="article-item--category text-uppercase c-purple">#Investissement</div>
+                    <h3 class="article-item--title font-medium">Lorem ipsum dolor sit met non tantrum sed etiam rosam et doloris</h3>
+                    <div class="article-item--meta font-bold">23/12/23</div>
+                  </article>
+                </div>
+              </div>
+              <!-- article-flex -->
+
+            </div>
+            <div class="section-button section-mt-5 text-center">
+              <a class="button medium edge-2 icon-right purple outline d-inline-flex justify-between items-center max-w-420 w-full font-medium text-uppercase" href="#">
+                <span class="hidden-sm hidden-md hidden-lg">Toutes les informations</span>
+                <span class="hidden-xs">Retrouvez toutes les informations</span>
+                <svg width="17" height="17">
+                  <use xlink:href="assets/img/sprites.svg#plus"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- section -->
+
+      </main>
+      <!-- main -->
+
+      <footer class="footer hidden-print">
+        <div class="container max-w-1280 mx-auto d-flex flex-wrap justify-between items-center">
+          <div class="footer-logo">
+            <a href="#">
+              <img class="w-auto" src="assets/img/logo.svg" alt="WCP" width="208" height="60">
+            </a>
+          </div>
+          <div class="footer-toolbar d-flex flex-wrap justify-center items-center font-light">
+            <div class="footer-link">
+              <ul class="d-flex flex-wrap justify-center items-center">
+                <li><a class="d-block" href="#">Mentions l&eacute;gales</a></li>
+                <li><a class="d-block" href="#">Politique de confidentialit&eacute;</a></li>
+                <li><a class="d-block" href="#">Gestion des cookies</a></li>
+                <li><a class="d-block" href="#">Plan du site</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <ul class="d-flex justify-center items-center">
+                <li>
+                  <a class="d-block" href="https://www.linkedin.com/company/weinberg-capital-partners" target="_blank">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprites.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-block" href="#" target="_blank">
+                    <svg width="20" height="20">
+                      <use xlink:href="assets/img/sprites.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-support">
+              <ul class="d-flex flex-wrap justify-center items-center">
+                <li>
+                  <a class="d-flex justify-start items-center" href="#">
+                    <span class="hidden-xs hidden-sm hidden-md">Accessibilit&eacute;</span>
+                    <i class="d-flex justify-center items-center bg-black c-white">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprites.svg#accessibility"></use>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex justify-start items-center" href="#">
+                    <span class="hidden-xs hidden-sm hidden-md">Nous contacter</span>
+                    <i class="d-flex justify-center items-center bg-purple c-white">
+                      <svg width="24" height="24">
+                        <use xlink:href="assets/img/sprites.svg#contact"></use>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </div>
+    <!-- wrapper -->
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- script -->
+
+  </body>
+
+</html>
