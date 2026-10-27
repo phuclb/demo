@@ -28,60 +28,65 @@
       </header>
       <!-- header -->
 
-      <main class="form">
+      <main class="main">
         <div class="container">
-          <form id="fConnect" novalidate>
-            <div class="form-input form-pristine">
-              <label for="fI1">Nom <span class="form-required">*</span></label>
-              <input type="text" id="fI1" name="fI1" required>
-            </div>
-            <div class="form-input form-pristine">
-              <label for="fI2">Pr&eacute;nom <span class="form-required">*</span></label>
-              <input type="text" id="fI2" name="fI2" required>
-            </div>
-            <div class="form-input form-pristine">
-              <label for="fI3">Adresse e-mail <span class="form-required">*</span></label>
-              <input type="email" id="fI3" name="fI3" required>
-            </div>
-            <div class="form-input form-pristine">
-              <label for="fI4">T&eacute;l&eacute;phone</label>
-              <input type="text" id="fI4" name="fI4">
-            </div>
-            <div class="form-input form-pristine">
-              <label for="fI5">Lieu d&rsquo;exercice</label>
-              <input type="text" id="fI5" name="fI5">
-            </div>
-            <div class="form-input form-pristine">
-              <label for="fI6">Sp&eacute;cialit&eacute; <span class="form-required">*</span></label>
-              <input type="text" id="fI6" name="fI6" required>
-            </div>
-            <div class="form-input form-pristine">
-              <label for="fI7">N&deg; RPPS <span class="form-required">*</span></label>
-              <input type="text" id="fI7" name="fI7" required>
-            </div>
-            <div class="form-info">Pour recevoir des informations ou &ecirc;tre recontact&eacute;, cochez une ou plusieurs case(s) ci-dessous selon vos pr&eacute;f&eacute;rences.</div>
-            <div class="form-option form-pristine">
-              <input type="checkbox" id="fI8" name="fI8" required>
-              <label for="fI8">En envoyant ce formulaire, je certifie &ecirc;tre un professionnel de sant&eacute; et r&eacute;sider en France. J&apos;accepte la <a href="https://alnylampolicies.com/fr/privacy" target="_blank">politique de confidentialit&eacute;</a> d&apos;Alnylam et je consens au traitement de mes donn&eacute;es &agrave; caract&egrave;re personnel conform&eacute;ment aux conditions &eacute;nonc&eacute;es dans la &laquo; Notification relative &agrave; la protection des donn&eacute;es et au consentement &raquo;. <span class="form-required">*</span></label>
-            </div>
-            <div class="form-option form-pristine">
-              <input type="checkbox" id="fI9" name="fI9">
-              <label for="fI9">J&apos;accepte qu&apos;un repr&eacute;sentant d&apos;Alnylam me contacte.</label>
-            </div>
-            <div class="form-option form-pristine">
-              <input type="checkbox" id="fI10" name="fI10">
-              <label for="fI10">J&rsquo;accepte d&rsquo;&ecirc;tre inform&eacute;(e) des nouveaut&eacute;s du site ATTR y voir plus clair.</label>
-            </div>
-            <div class="form-option form-pristine">
-              <input type="checkbox" id="fI11" name="fI11">
-              <label for="fI11">J&rsquo;accepte de recevoir une newsletter trimestrielle sur l&rsquo;actualit&eacute; dans l&rsquo;ATTR-CM.</label>
-            </div>
-            <div class="form-info"><span class="form-required">*</span> Champs obligatoire</div>
-            <button class="form-button" type="submit">Envoyer</button>
-          </form>
+
+          <div class="form">
+            <form id="fConnect" novalidate>
+              <div class="form-input form-pristine">
+                <label for="fI1">Nom <span class="form-required">*</span></label>
+                <input type="text" id="fI1" name="fI1" required>
+              </div>
+              <div class="form-input form-pristine">
+                <label for="fI2">Pr&eacute;nom <span class="form-required">*</span></label>
+                <input type="text" id="fI2" name="fI2" required>
+              </div>
+              <div class="form-input form-pristine">
+                <label for="fI3">Adresse e-mail <span class="form-required">*</span></label>
+                <input type="email" id="fI3" name="fI3" required>
+              </div>
+              <div class="form-input form-pristine">
+                <label for="fI4">T&eacute;l&eacute;phone</label>
+                <input type="text" id="fI4" name="fI4">
+              </div>
+              <div class="form-input form-pristine">
+                <label for="fI5">Lieu d&rsquo;exercice</label>
+                <input type="text" id="fI5" name="fI5">
+              </div>
+              <div class="form-input form-pristine">
+                <label for="fI6">Sp&eacute;cialit&eacute; <span class="form-required">*</span></label>
+                <input type="text" id="fI6" name="fI6" required>
+              </div>
+              <div class="form-input form-pristine">
+                <label for="fI7">N&deg; RPPS <span class="form-required">*</span></label>
+                <input type="text" id="fI7" name="fI7" required>
+              </div>
+              <div class="form-info">Pour recevoir des informations ou &ecirc;tre recontact&eacute;, cochez une ou plusieurs case(s) ci-dessous selon vos pr&eacute;f&eacute;rences.</div>
+              <div class="form-option form-pristine">
+                <input type="checkbox" id="fI8" name="fI8" required>
+                <label for="fI8">En envoyant ce formulaire, je certifie &ecirc;tre un professionnel de sant&eacute; et r&eacute;sider en France. J&apos;accepte la <a href="https://alnylampolicies.com/fr/privacy" target="_blank">politique de confidentialit&eacute;</a> d&apos;Alnylam et je consens au traitement de mes donn&eacute;es &agrave; caract&egrave;re personnel conform&eacute;ment aux conditions &eacute;nonc&eacute;es dans la &laquo; Notification relative &agrave; la protection des donn&eacute;es et au consentement &raquo;. <span class="form-required">*</span></label>
+              </div>
+              <div class="form-option form-pristine">
+                <input type="checkbox" id="fI9" name="fI9">
+                <label for="fI9">J&apos;accepte qu&apos;un repr&eacute;sentant d&apos;Alnylam me contacte.</label>
+              </div>
+              <div class="form-option form-pristine">
+                <input type="checkbox" id="fI10" name="fI10">
+                <label for="fI10">J&rsquo;accepte d&rsquo;&ecirc;tre inform&eacute;(e) des nouveaut&eacute;s du site ATTR y voir plus clair.</label>
+              </div>
+              <div class="form-option form-pristine">
+                <input type="checkbox" id="fI11" name="fI11">
+                <label for="fI11">J&rsquo;accepte de recevoir une newsletter trimestrielle sur l&rsquo;actualit&eacute; dans l&rsquo;ATTR-CM.</label>
+              </div>
+              <div class="form-info"><span class="form-required">*</span> Champs obligatoire</div>
+              <button class="form-button" type="submit">Envoyer</button>
+            </form>
+          </div>
+          <!-- form -->
+
         </div>
       </main>
-      <!-- form -->
+      <!-- main -->
 
       <footer class="footer">
         <div class="container">
