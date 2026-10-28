@@ -16,13 +16,19 @@ const App = {
       errorTextClass: 'form-alert'
     };
 
-    const fConnect = document.getElementById('fConnect');
+    const fConnect = document.getElementById('fConnect'), fMessage = fConnect.querySelector('.form-message');
     if (fConnect) {
       const pConnect = new Pristine(fConnect, fConfig);
       fConnect.addEventListener('submit', function(e) {
-        const valid = pConnect.validate();
-        console.log(valid);
+        const isFormValid = pConnect.validate();
+        fMessage.classList.toggle('hidden', !isFormValid);
         e.preventDefault();
+      });
+      fConnect.addEventListener('input', function() {
+        const isFormValid = pConnect.validate();
+        if (!isFormValid) {
+          fMessage.classList.add('hidden');
+        }
       });
     }
   }
